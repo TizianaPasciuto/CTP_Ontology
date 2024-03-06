@@ -12,7 +12,9 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology">
         <rdfs:comment xml:lang="en">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
 Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</rdfs:comment>
@@ -101,11 +103,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <terms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</terms:description>
-        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Creator</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
     </owl:AnnotationProperty>
@@ -115,10 +112,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
-        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Description</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
     </owl:AnnotationProperty>
     
@@ -136,10 +129,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
-        <terms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</terms:description>
-        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Subject</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
     </owl:AnnotationProperty>
     
@@ -157,10 +146,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
-        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</terms:description>
-        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Type</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
     </owl:AnnotationProperty>
     
@@ -169,12 +154,20 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/ontology/olo/core#item -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ontology/olo/core#item">
-        <rdfs:comment xml:lang="en">An item of a slot in an ordered list.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has item</rdfs:label>
-        <ns:term_status xml:lang="en">stable</ns:term_status>
         <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#Slot"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
     
 
 
@@ -217,6 +210,12 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
     
 
 
@@ -293,6 +292,43 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#item -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#item">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#Slot"/>
+    </owl:ObjectProperty>
     
 
 
@@ -401,6 +437,18 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
         <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
         <rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Fine di una entità temporale.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/locn#geometry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry"/>
+        <rdfs:comment xml:lang="it">Associa un oggetto spaziale con una geometria corrispondente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a spatial thing with a corresponding geometry.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -788,6 +836,61 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
+    <!-- http://www.w3.org/ns/locn#geometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#geometry">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+        <terms:identifier>locn:geometry</terms:identifier>
+        <vann:example xml:lang="en">
+The following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.
+- WKT (GeoSPARQL)
+:Resource locn:geometry
+  &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral .
+- GML
+:Resource locn:geometry
+  &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
+  &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral .
+- RDF+WKT (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asWKT &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral ] .
+- RDF+GML (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asGML
+     &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
+      &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral ] .
+- RDF (WGS84 lat/long)
+:Resource locn:geometry [ a geo:Point; geo:lat &quot;51.477811&quot;; geo:long &quot;-0.001475&quot; ] .
+- RDF (schema.org)
+:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude &quot;51.477811&quot;; schema:longitude &quot;-0.001475&quot; ] .
+- geo URI
+:Resource locn:geometry &lt;geo:51.477811,-0.001475;u=0;crs=wgs84&gt; .
+- GeoHash URI
+:Resource locn:geometry &lt;http://geohash.org/gcpuzgnzvxkp&gt; .
+    </vann:example>
+        <vann:usageNote xml:lang="en">
+Depending on how a geometry is encoded, the range of this property may be one of the following:
+- a literal (e.g., WKT - string literal -, GML, KML - XML literal)
+- a geometry class, as those defined in the OGC&apos;s GeoSPARQL specification, in the W3C&apos;s Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;
+- geocoded URIs, as geo or GeoHash URIs, treated as URI references.
+For interoperability reasons, it is recommended using one of the following:
+- Any geometry:
+  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.
+  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.
+  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).
+- Points: one of the above, or:
+  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.
+  - GeoHash URIs.
+  - geo URIs.
+    </vann:usageNote>
+        <rdfs:comment xml:lang="en">Associates any resource with the corresponding geometry.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">geometry</rdfs:label>
+        <ns:term_status xml:lang="en">testing</ns:term_status>
+        <powder-s:describedby rdf:resource="https://joinup.ec.europa.eu/node/55858"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/prov#hadRole -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadRole">
@@ -837,6 +940,15 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -960,23 +1072,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>description</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Associa un oggetto spaziale con una geometria corrispondente.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Associates a spatial thing with a corresponding geometry.</rdfs:comment>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>geometry</rdfs:comment>
     </owl:Axiom>
     
 
@@ -1304,6 +1399,16 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+        <rdfs:comment xml:lang="it">L&apos;identificazione di una posizione come punto, linea, poligono, ecc., espressa utilizzando coordinate in un determinato sistema di riferimento cartesiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The identification of a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group">
@@ -1561,6 +1666,19 @@ The development and use of this enjoyment strategy can be profitable to convey m
         <rdfs:comment xml:lang="en">This is based on the UN/CEFACT Identifier class.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#Geometry -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/locn#Geometry">
+        <terms:identifier>locn:Geometry</terms:identifier>
+        <vann:usageNote xml:lang="en">This class defines the notion of &quot;geometry&quot; at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property).</vann:usageNote>
+        <rdfs:comment xml:lang="en">The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+        <ns:term_status xml:lang="en">unstable</ns:term_status>
     </owl:Class>
     
 
@@ -3499,16 +3617,47 @@ L&apos;opera fu tradotta in francese nelle &quot;Observations sur la physique&qu
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Created</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</terms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
         <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</terms:description>
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+        <terms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</terms:description>
+        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Title</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/type">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</terms:description>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#item">
+        <rdfs:comment xml:lang="en">An item of a slot in an ordered list.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has item</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
     </rdf:Description>
 </rdf:RDF>
 

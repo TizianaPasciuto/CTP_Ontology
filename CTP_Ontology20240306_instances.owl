@@ -107,6 +107,17 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry"/>
+        <rdfs:comment xml:lang="it">Associa un oggetto spaziale con una geometria corrispondente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a spatial thing with a corresponding geometry.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem">
@@ -529,23 +540,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
-    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Associa un oggetto spaziale con una geometria corrispondente.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Associates a spatial thing with a corresponding geometry.</rdfs:comment>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>geometry</rdfs:comment>
-    </owl:Axiom>
-    
-
-
     <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex">
@@ -695,6 +689,15 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource">
         <rdfs:comment xml:lang="en">A tangible or intangible resource, movable or immovable, realized by nature or man-made, that has been identified as possessing artistic, historical, archaeological, or ethno-anthropological significance.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una risorsa tangibile o intangibile, mobile o immobile, realizzata dalla natura o dall&apos;uomo, identificata come possedente significato artistico, storico, archeologico o etno-antropologico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry">
+        <rdfs:comment xml:lang="it">L&apos;identificazione di una posizione come punto, linea, poligono, ecc., espressa utilizzando coordinate in un determinato sistema di riferimento cartesiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The identification of a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
     </owl:Class>
     
 

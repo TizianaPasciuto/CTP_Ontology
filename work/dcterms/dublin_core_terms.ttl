@@ -476,7 +476,7 @@ dcterms:creator
     dcam:rangeIncludes dcterms:Agent ;
     dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:comment "An entity responsible for making the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Creator"@en ;
@@ -815,7 +815,7 @@ dcterms:spatial
 dcterms:subject
     dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:comment "A topic of the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Subject"@en ;
@@ -850,7 +850,7 @@ dcterms:title
 dcterms:type
     dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:comment "The nature or genre of the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Type"@en ;
