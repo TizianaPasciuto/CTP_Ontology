@@ -1,0 +1,2539 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#"
+     xml:base="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ctp="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#"
+     xmlns:olo="http://purl.org/ontology/olo/core#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:locn="http://www.w3.org/ns/locn#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="https://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology">
+        <rdfs:comment xml:lang="en">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
+Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l&apos;efficacia di tali percorsi, si intende sviluppare un&apos;ontologia che ne guidi la struttura e l&apos;organizzazione. 
+La realizzazione di un&apos;ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l&apos;organizzazione dei contenuti. L&apos;obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un&apos;ontologia che funga da strumento per l&apos;organizzazione, la gestione, l&apos;interscambio e la fruizione delle informazioni online.
+Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural Thematic Path (CTP) Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcam/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcam/rangeIncludes"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#item -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/olo/core#item"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorsDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorsDefinition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:item -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:item">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:comment xml:lang="en">An item of a slot in an ordered list.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has item</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:next -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:next">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/olo/core#olo:previous"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:comment xml:lang="en">Associates the next slot in an ordered list.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has next</rdfs:label>
+        <ns:term_status xml:lang="en">testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:ordered_list -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:ordered_list">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/olo/core#olo:slot"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:comment xml:lang="en">An ordered list of an slot.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has ordered list</rdfs:label>
+        <ns:term_status xml:lang="en">testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:previous -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:previous">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:comment xml:lang="en">Associates the previous slot in an ordered list</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has previous</rdfs:label>
+        <ns:term_status xml:lang="en">testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:slot -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:slot">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:comment xml:lang="en">A slot in an ordered list.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has slot</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#allowsTheSaleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#allowsTheSaleOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product"/>
+        <rdfs:comment xml:lang="it">Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBeginning">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <rdfs:comment xml:lang="en">Beginning of a temporal entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Inizio di un&apos;entità temporale.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="it">Indica tramite quale agente pubblico o privato è stato creato il codice di identificazione della risorsa culturale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates by which public or private agent the identification code of the cultural resource was created.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasEnd">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Fine di una entità temporale.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/locn#locn:geometry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry"/>
+        <rdfs:comment xml:lang="it">Associa un oggetto spaziale con una geometria corrispondente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a spatial thing with a corresponding geometry.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <rdfs:comment xml:lang="it">Indica una risorsa culturale in una lista ordinata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a slot cultural resource in an ordered list.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:comment xml:lang="it">Indica la posizione dell&apos;entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the location of the entity. In the case of CulturalResource, it&apos;s referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="it">Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that a group (intended as a simple grouping of people or as a company) has agents as members.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica come sono organizzati gli slot del percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates how the slots of the thematic path are organized.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between the thematic path and the cultural resources that compose it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:comment xml:lang="it">Indica la localizzazione di un agente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the location of an agent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRelationToAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRelationToAgent">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un&apos;entità e un agente coinvolto con un determinato ruolo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between an entity and an agent involved with a certain role.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRole">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"/>
+        <rdfs:comment xml:lang="it">Indica il tipo di ruolo svolto dall&apos;agente (ad esempio creatore, finanziatore, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the type of role played by the agent (i.e. creator, funder, etc).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSecondaryIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSecondaryIdentifier">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/adms#adms:identifier"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un&apos;entità e il codice di identificazione assegnato ad essa da un agente che la gestisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:comment xml:lang="it">Per consentire la classificazione delle risorse culturali secondo un determinato criterio, il percorso tematico è organizzato attraverso slot che possono essere indicizzati.</rdfs:comment>
+        <rdfs:comment xml:lang="en">To allow the sorting of cultural resources according to a certain criterion, the thematic path is organized through slots that can be indexed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+        <rdfs:comment xml:lang="it">Indica a quale/i soggetto/i l&apos;entità si riferisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates to which subject/subjects the entity refers/refer.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTheme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <rdfs:comment xml:lang="it">Indica il tema su cui si basa il percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the theme on which the thematic path is based.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:comment xml:lang="it">Indica il momento in cui un&apos;entità è stata creata e/o un evento è avvenuto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the time an entity was created and/or an event occurred.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"/>
+        <rdfs:comment xml:lang="it">Indica il tipo di entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the type of entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#includes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica che un percorso tematico può includere sottopercorsi tematici. Pertanto, possono essere utilizzati come approfondimento degli argomenti trattati precedentemente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that a thematic path may include sub-thematic paths. Therefore, they can be used as a deepening of the topics dealt with previously.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="it">Indica quale agente è coinvolto in una relazione con un certo ruolo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates which agent is involved in a relationship with a certain role.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica che un sottopercorso tematico è incluso in un percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that a sub-thematic path is included in a thematic path.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isInspiredByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isInspiredByAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e l&apos;agente che lo ispira.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between the thematic path and the agent that inspires it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="it">Indica l&apos;associazione tra una posizione e l&apos;entità che vi è localizzata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the association between a location and the entity that is located there.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra l&apos;oggetto culturale e il/i percorso/percorsi tematico/i a cui è collegato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between the cultural object and the thematic path/paths to which it is linked.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPreservedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPreservedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <rdfs:comment xml:lang="it">Indica l&apos;agente pubblico o privato responsabile della conservazione della risorsa culturale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the public or private agent responsible for preserving the cultural resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isRealizedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isRealizedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"/>
+        <rdfs:comment xml:lang="it">Indica che un agente fa parte di un gruppo, inteso come semplice raggruppamento di persone o come società.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that an agent is part of a group, intended as a simple grouping of people or as a company.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:comment xml:lang="en">In an ordered collection, indicates the link to the next item in a list.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In un insieme ordinato, indica il collegamento all&apos;elemento successivo in un elenco.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:comment xml:lang="en">In an ordered collection, indicates the link to the previous item in a list.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In un insieme ordinato, indica il collegamento all&apos;elemento precedente in un elenco.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e i luoghi a cui è collegato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the relationship between the thematic path and the places to which it is linked.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToTemporalEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToTemporalEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between the thematic path and the historical period to which it refers.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#takesPlaceIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un evento culturale e il luogo in cui si è svolto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a cultural event and the place where it took place.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment xml:lang="en">Beginning of a temporal entity</rdfs:comment>
+        <rdfs:comment xml:lang="es">Comienzo de una entidad temporal.</rdfs:comment>
+        <rdfs:label xml:lang="en">has beginning</rdfs:label>
+        <rdfs:label xml:lang="es">tiene principio</rdfs:label>
+        <skos:definition xml:lang="en">Beginning of a temporal entity.</skos:definition>
+        <skos:definition xml:lang="es">Comienzo de una entidad temporal.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Final de una entidad temporal.</rdfs:comment>
+        <rdfs:label xml:lang="en">has end</rdfs:label>
+        <rdfs:label xml:lang="es">tiene fin</rdfs:label>
+        <skos:definition xml:lang="en">End of a temporal entity.</skos:definition>
+        <skos:definition xml:lang="es">Final de una entidad temporal.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="es">Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Supports the association of a temporal entity (instant or interval) to any thing</rdfs:comment>
+        <rdfs:label xml:lang="en">has time</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tiempo</rdfs:label>
+        <skos:definition xml:lang="es">Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.</skos:definition>
+        <skos:definition xml:lang="en">Supports the association of a temporal entity (instant or interval) to any thing</skos:definition>
+        <skos:editorialNote xml:lang="es">Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia.</skos:editorialNote>
+        <skos:editorialNote xml:lang="en">Feature at risk - added in 2017 revision, and not yet widely used. </skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#adms:identifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#adms:identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/adms#adms:Identifier"/>
+        <rdfs:comment xml:lang="en">Links a resource to an adms:Identifier class.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#locn:geometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#locn:geometry">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/locn#locn:Geometry"/>
+        <dcterms:identifier>locn:geometry</dcterms:identifier>
+        <vann:example xml:lang="en">
+The following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.
+- WKT (GeoSPARQL)
+:Resource locn:geometry
+  &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral .
+- GML
+:Resource locn:geometry
+  &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
+  &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral .
+- RDF+WKT (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asWKT &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral ] .
+- RDF+GML (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asGML
+     &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
+      &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral ] .
+- RDF (WGS84 lat/long)
+:Resource locn:geometry [ a geo:Point; geo:lat &quot;51.477811&quot;; geo:long &quot;-0.001475&quot; ] .
+- RDF (schema.org)
+:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude &quot;51.477811&quot;; schema:longitude &quot;-0.001475&quot; ] .
+- geo URI
+:Resource locn:geometry &lt;geo:51.477811,-0.001475;u=0;crs=wgs84&gt; .
+- GeoHash URI
+:Resource locn:geometry &lt;http://geohash.org/gcpuzgnzvxkp&gt; .
+    </vann:example>
+        <vann:usageNote xml:lang="en">
+Depending on how a geometry is encoded, the range of this property may be one of the following:
+- a literal (e.g., WKT - string literal -, GML, KML - XML literal)
+- a geometry class, as those defined in the OGC&apos;s GeoSPARQL specification, in the W3C&apos;s Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;
+- geocoded URIs, as geo or GeoHash URIs, treated as URI references.
+For interoperability reasons, it is recommended using one of the following:
+- Any geometry:
+  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.
+  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.
+  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).
+- Points: one of the above, or:
+  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.
+  - GeoHash URIs.
+  - geo URIs.
+    </vann:usageNote>
+        <rdfs:comment xml:lang="en">Associates any resource with the corresponding geometry.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">geometry</rdfs:label>
+        <ns:term_status xml:lang="en">testing</ns:term_status>
+        <powder-s:describedby rdf:resource="https://joinup.ec.europa.eu/node/55858"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadRole">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Role"/>
+        <rdfs:comment xml:lang="en">The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ].</rdfs:comment>
+        <rdfs:comment>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href=&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>hadRole</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:editorsDefinition xml:lang="en">prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end.</prov:editorsDefinition>
+        <prov:inverse>wasRoleIn</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:index -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/olo/core#olo:index">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">An index of a slot in an ordered list.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">has index</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica un messaggio che può trasmettere valori culturali, etici e sociali attraverso il percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a message that can convey cultural, ethical and social values through the thematic path.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>meaning</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#bbox"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Il riquadro delimitatore geografico di un oggetto spaziale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The geographic bounding box of a spatial thing.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>bounding box</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#centroid"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La cornice geografica delimitante di un&apos;entità spaziale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The geographic bounding box of a spatial thing.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>centroid</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Indica quando è stato creato il percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates when the thematic path was created.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDate">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/time#inXSDDate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="it">Indica una data o un intervallo cronologico che caratterizza un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a date or a chronological range that characterizes an entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica una descrizione di un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a description of an entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>description</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica come le risorse culturali vengono indicizzate all&apos;interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc).</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>index</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName">
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il nome associato a un agente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the name associated with an agent.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>appellation</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica il codice di identificazione associato all&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The string that constitutes the cultural resource identifier.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>notation</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica un identificatore univoco della risorsa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates a unique identifier of the entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica il titolo di un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the title of an entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>title</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica il collegamento che consente l&apos;acquisto della risorsa disponibile sul web attraverso un hyperlink.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the link that allows purchasing the resource available on the web through an hyperlink.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>link</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Indica il collegamento che consente di visualizzare l&apos;entità disponibile sul web attraverso un hyperlink o un codice QR.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>link</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <skos:definition xml:lang="en">A notation, also known as classification code, is a string of characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope of a given concept scheme.</skos:definition>
+        <skos:scopeNote xml:lang="en">By convention, skos:notation is used with a typed literal in the object position of the triple.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDate">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">Posición de un instante, expresado utilizando xsd:date.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position of an instant, expressed using xsd:date</rdfs:comment>
+        <rdfs:label xml:lang="es">en fecha XSD</rdfs:label>
+        <rdfs:label xml:lang="en">in XSD date</rdfs:label>
+        <skos:definition xml:lang="es">Posición de un instante, expresado utilizando xsd:date.</skos:definition>
+        <skos:definition xml:lang="en">Position of an instant, expressed using xsd:date</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#bbox -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#bbox">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="da">bounding box</rdfs:label>
+        <rdfs:label xml:lang="en">bounding box</rdfs:label>
+        <rdfs:label xml:lang="es">cuadro delimitador</rdfs:label>
+        <rdfs:label xml:lang="cs">ohraničení oblasti</rdfs:label>
+        <rdfs:label xml:lang="it">quadro di delimitazione</rdfs:label>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="da">Ny egenskab tilføjet i DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Propiedad nueva agregada en DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="da">Den geografiske omskrevne firkant af en ressource.</skos:definition>
+        <skos:definition xml:lang="es">El cuadro delimitador geográfico para un recurso.</skos:definition>
+        <skos:definition xml:lang="it">Il riquadro di delimitazione geografica di una risorsa.</skos:definition>
+        <skos:definition xml:lang="cs">Ohraničení geografické oblasti zdroje.</skos:definition>
+        <skos:definition xml:lang="en">The geographic bounding box of a resource.</skos:definition>
+        <skos:scopeNote xml:lang="es">El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#centroid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#centroid">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="cs">centroid</rdfs:label>
+        <rdfs:label xml:lang="en">centroid</rdfs:label>
+        <rdfs:label xml:lang="es">centroide</rdfs:label>
+        <rdfs:label xml:lang="it">centroide</rdfs:label>
+        <rdfs:label xml:lang="da">geometrisk tyngdepunkt</rdfs:label>
+        <skos:altLabel xml:lang="da">centroide</skos:altLabel>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="da">Ny egenskab tilføjet i DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="da">Det geometrisk tyngdepunkt (centroid) for en ressource.</skos:definition>
+        <skos:definition xml:lang="es">El centro geográfico (centroide) de un recurso.</skos:definition>
+        <skos:definition xml:lang="cs">Geografický střed (centroid) zdroje.</skos:definition>
+        <skos:definition xml:lang="it">Il centro geografico (centroide) di una risorsa.</skos:definition>
+        <skos:definition xml:lang="en">The geographic center (centroid) of a resource.</skos:definition>
+        <skos:scopeNote xml:lang="es">El rango de esta propiedad es intencionalmente genérico con el objetivo de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede codificarse como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige geokodninger. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/olo/core#olo:Slot -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/olo/core#olo:Slot">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:next"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:ordered_list"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:previous"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:index"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A slot in an ordered list with a fixed index.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
+        <rdfs:label xml:lang="en">Slot</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">A person, family, group or institution that performs a certain action.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una persona, famiglia, gruppo o istituzione che compie una certa azione.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent">
+        <rdfs:comment xml:lang="en">A planned or an unplanned cultural situation that includes a number of activities. It occurs in a certain time and space, and may involve agents.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una situazione culturale pianificata o non pianificata che comprende una serie di attività. Si verifica in un determinato tempo e spazio e può coinvolgere agenti.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource">
+        <rdfs:comment xml:lang="en">A tangible or intangible resource, movable or immovable, realized by nature or man-made, that has been identified as possessing artistic, historical, archaeological, or ethno-anthropological significance.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una risorsa tangibile o intangibile, mobile o immobile, realizzata dalla natura o dall&apos;uomo, identificata come possedente significato artistico, storico, archeologico o etno-antropologico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/locn#locn:Geometry"/>
+        <rdfs:comment xml:lang="it">L&apos;identificazione di una posizione come punto, linea, poligono, ecc., espressa utilizzando coordinate in un determinato sistema di riferimento cartesiano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The identification of a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"/>
+        <rdfs:comment xml:lang="en">A collection of individual agents that can itself act as an agent, capable of performing actions.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una collezione di agenti individuali che può a sua volta agire come un agente, capace di compiere azioni.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="en">A collection of individual agents.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una collezione di agenti individuali.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/adms#adms:Identifier"/>
+        <rdfs:comment xml:lang="en">A sequence of characters or symbols that serves to uniquely distinguish an entity or object within a specific system or context.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una sequenza di caratteri o simboli che serve a distinguere in modo univoco un&apos;entità o un oggetto all&apos;interno di un sistema o contesto specifico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with an extent or duration.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;entità temporale con un&apos;estensione o una durata.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;entità temporale con durata o estensione pari a zero.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot">
+        <rdfs:comment xml:lang="en">A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (i.e. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un percorso tematico è strutturato come un collezionista di oggetti culturali o presentato con un ordine casuale o predeterminato. In quest&apos;ultimo caso, gli oggetti culturali possono essere ordinati secondo un certo criterio (ad esempio, alfabetico, cronologico, in base all&apos;autore, ecc.). Questa classe indica lo slot in una lista ordinata con un indice fisso.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <rdfs:comment xml:lang="en">A specific type of agent that corresponds to social institutions, such as companies and societies.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un tipo specifico di agente che corrisponde a istituzioni sociali, come aziende e società.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"/>
+        <rdfs:comment xml:lang="en">Human individuals, regardless of whether they are alive, dead, real, or imaginary.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Individui umani, indipendentemente dal fatto che siano vivi, morti, reali o immaginari.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place">
+        <rdfs:comment xml:lang="it">Posizione specifica nello spazio fisico; identifica la localizzazione di qualsiasi entità. Può essere un punto preciso nello spazio (ad esempio, coordinate geografiche) o un&apos;area più ampia (ad esempio, regione geografica).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specific position in physical space; identify the localization of any entity. It can be a precise point in space (i.e. geographical coordinates) or a larger area (i.e. geographical region).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product">
+        <rdfs:comment xml:lang="en">A tangible good or an intangible service offered on the market to satisfy consumers&apos; needs or desires.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un bene tangibile o un servizio intangibile offerto sul mercato per soddisfare i bisogni o desideri dei consumatori.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+        <rdfs:comment xml:lang="en">Class that allows linking another class to an agent playing a specific role.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classe che consente di collegare un&apos;altra classe a un agente che svolge un ruolo specifico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Role"/>
+        <rdfs:comment xml:lang="it">Il ruolo svolto da un agente in un contesto specifico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The role performed by an agent in a specific context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject">
+        <rdfs:comment xml:lang="en">A concept or a series of concepts that concern and describe the thematic path.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath">
+        <skos:Concept xml:lang="en">A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes. 
+The chosen theme, which may concern specific topics, contexts, events, places, historical periods or characters and so on, is expressed synthetically by a title and in-depth with a written descriptive text; they can be further identified through subjects. 
+The thematic path could be structured either as a collector of cultural objects, without establishing an order of priority, or present a predetermined order. 
+The development and use of this enjoyment strategy can be profitable to convey messages and cultural, ethical and social values.</skos:Concept>
+        <skos:Concept xml:lang="it">Un percorso tematico è uno strumento per  la valorizzazione del patrimonio culturale che consente di collegare oggetti culturali di diversa natura (tangibili e intangibili) attraverso l&apos;identificazione di temi comuni. Il tema scelto, che può riguardare argomenti specifici, contesti, eventi, luoghi, periodi storici o personaggi e così via, è espresso in modo sintetico da un titolo e approfondito con un testo descrittivo scritto; possono essere ulteriormente identificati attraverso soggettazioni. Il percorso tematico potrebbe essere strutturato sia come un collezionista di oggetti culturali, senza stabilire un ordine di priorità, sia presentare un ordine predefinito. Lo sviluppo e l&apos;uso di questa strategia di valorizzazione possono essere utili per trasmettere messaggi e valori culturali, etici e sociali.</skos:Concept>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme">
+        <rdfs:comment xml:lang="en">A broad concept or a general idea that can be explored through various subjects.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto ampio o un&apos;idea generale che può essere esplorata attraverso vari argomenti.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type">
+        <rdfs:comment xml:lang="it">La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una entidad temporal con una extensión o duración cero.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time instant</rdfs:label>
+        <rdfs:label xml:lang="es">instante de tiempo.</rdfs:label>
+        <skos:definition xml:lang="en">A temporal entity with zero extent or duration</skos:definition>
+        <skos:definition xml:lang="es">Una entidad temporal con una extensión o duración cero.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with an extent or duration</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una entidad temporal con una extensión o duración.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time interval</rdfs:label>
+        <rdfs:label xml:lang="es">intervalo de tiempo</rdfs:label>
+        <skos:definition xml:lang="en">A temporal entity with an extent or duration</skos:definition>
+        <skos:definition xml:lang="es">Una entidad temporal con una extensión o duración.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un intervalo temporal o un instante.</rdfs:comment>
+        <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
+        <rdfs:label xml:lang="es">entidad temporal</rdfs:label>
+        <skos:definition xml:lang="en">A temporal interval or instant.</skos:definition>
+        <skos:definition xml:lang="es">Un intervalo temporal o un instante.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#adms:Identifier -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/adms#adms:Identifier">
+        <rdfs:comment xml:lang="en">This is based on the UN/CEFACT Identifier class.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#locn:Geometry -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/locn#locn:Geometry">
+        <dcterms:identifier>locn:Geometry</dcterms:identifier>
+        <vann:usageNote xml:lang="en">This class defines the notion of &quot;geometry&quot; at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property).</vann:usageNote>
+        <rdfs:comment xml:lang="en">The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+        <ns:term_status xml:lang="en">unstable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#AgentInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#AgentInfluence">
+        <rdfs:comment xml:lang="en">AgentInfluence provides additional descriptions of an Agent&apos;s binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>AgentInfluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#agent"/>
+        <prov:category>qualified</prov:category>
+        <prov:editorsDefinition xml:lang="en">AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other.</prov:editorsDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Role -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Role</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+        <rdfs:label>Agent</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>A class of Agents.</rdfs:comment>
+        <rdfs:label>Group</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment>An organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>Organization</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Anatomy_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Anatomy_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">From Fontana&apos;s own words it is possible to discover that his knowledge of anatomy was presumably acquired in Padua, the home of many great anatomists. His first recorded anatomical research was that concerning the study of the inner ear, testified by his correspondence with Cotugno and Caldani. Instead, the first publication appeared in 1767 and focused on the study of the human testicle: even according to modern opinions it is an excellent description of the epididymis. The Fountain also focused its studies on intercostal nerves: he wrote that the intercostal nerves so nota rise form the sixth pair of cranial nerves but running togheter with them in a common sheath with no interconnections, between cavernous sinus and the orbit. Fontana&apos;s efforts convinced the Italian anatomists, they dispelled the confusion of centuries which had arisen partly from differences in the numbering of the cranial nerves. There were numerous studies on nerves in general and on their reproduction. One of Fontana&apos;s best–known works in anatomy was his description of a canal in the eye of the ox: his study will lead to the definition of a structure in the human eye. Many important studies with the microscope were made by Fontana: the first published was about the red globules of the blood. Of all the human tissues at which the microscope has been directed, blood has undoubtedly been the most frequently examined, since it is readily available in a fresh state and requires no complicated handling. Fontana discovered that the red blood cells have a spheroid shape, more swollen along the external surface: instead the previous studies, operated by the Neapolitan histologist Giovanni Maria Della Torre, claimed that the corpuscles were ring–shaped or &quot;doughnuts&quot;. Fontana conducted the same observations as Della Torre, with the same type of lenses and microscope but, by varying the illumination, discovered the true shape of the blood corpuscles. 
+Bibliography: Fontana, Felice, Nuove osservazioni sopra i globetti rossi del sangue, Lucca, Giusti, 1766. Fontana, Felice, Trattato del veleno della vipera, de&apos; veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d&apos;un nuovo canale dell&apos;occhio, Napoli, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984</hasDescription>
+        <hasTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Anatomy</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Animal_physics_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Animal_physics_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">In the 18th century the term physics was comprehensive, including what would now be called phyisics, as well as chemistry, and biology. It signified “the science of nature”. While Fontana&apos;s appointment in Florence was that of Physicist to the Court, we would say rather, Scientist. The work he projected on the grandest scale, although never completed, was called “Animal Physics”, and his earliest printed work was on physiology, entitled simply “Epistolary Dissertation”, dated 23 may 1757. Among the topics covered are the sensitivity and identification of &quot;animal spirits&quot; with electricity. In 1765 Fontana published two works entitled &quot;The laws of irritability&quot;, focused on the contraction of the muscles by an external stimulus. These topics were treated with greater attention in the publication &quot;Animal Physics&quot; of 1775. The scientist also dealt with animal respiration, combining observations in physiology, those in pharmacology and his interest in airs. Starting from the truth accepted as demonstrable that atmospheric air was an indispensable necessity for animal life, he pointed out that there were two different types of air besides atmospheric air. One type concerns both inflammable air and phlogisticated air, namely hydrogen and nitrogen respectively: these airs do not support life, but are in themselves devoid of any harmful principle. Instead, the other type of air included, among others, the fixed air, or carbon dioxide: they were found to be harmful to the body because they attack and harm vital organs. One of Fontana&apos;s most important works concerns the movements of the iris: the starting point of this work was the existence of the iris, that is a body that moved responding to light but not to being irritated. The behaviour of the iris was therefore totally different from that of the skeletal muscle. Bibliography: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis, et de spirituum animalium in movendis musculis inefficacia, Lucca, Riccomini, 1767. Fontana, Felice, Dei moti dell&apos;iride, Lucca, Giusti, 1765. Knoefel P.K., Felice Fontana life and works, Trento, 1984.</hasDescription>
+        <hasTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Animal physics</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group"/>
+        <hasName>Ansaldo family</hasName>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://viaf.org/viaf/211013856</hasPrimaryIdentifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Villa_Cattaneo_dell&apos;Olmo,_Genoa,_Italy"/>
+        <hasName>Ansaldo Foundation</hasName>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://viaf.org/viaf/247468924</hasPrimaryIdentifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Beatrice_Carabelli"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Claudia_Cerioli"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Lorenzo_Fiori"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Pietro_Repetto"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+        <hasName>Ansaldo Foundation staff</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Claudia_Cerioli"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Beatrice_Carabelli"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Pietro_Repetto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Beatrice_Carabelli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Beatrice_Carabelli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+        <hasName>Beatrice Carabelli</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff"/>
+        <hasPlace rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy"/>
+        <hasName>CNR IMATI Genoa</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Roberta_Maggi"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tiziana_Pasciuto"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa"/>
+        <hasName>CNR IMATI Genoa staff</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catalogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catalogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Claudia_Cerioli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Claudia_Cerioli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+        <hasName>Claudia Cerioli</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tiziana_Pasciuto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Gerolamo_Lazzeri"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_section -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_section">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_1"/>
+        <hasTheme rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_theme"/>
+        <isIncludedIn rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions"/>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023.01.01</hasCreationDate>
+        <hasTitle xml:lang="en">Enterprise section</hasTitle>
+        <hasTitle xml:lang="it">Sezione Impresa</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Energy"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industrial_energy"/>
+        <hasDescription xml:lang="en">In-depth text
+“1765: James Watt perfects the long-invented steam engine, finding a way to generate enough power to propel large vehicles. […]”</hasDescription>
+        <hasDescription xml:lang="it">Testo di approfondimento &quot;1765: James Watt perfeziona il motore a vapore, da lungo tempo inventato, trovando un modo per generare abbastanza potenza da far muovere grandi veicoli. [...]&quot;</hasDescription>
+        <hasTitle xml:lang="en">Enterprise</hasTitle>
+        <hasTitle xml:lang="it">Impresa</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ethic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ethic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GBA.000028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GBA.000028">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <hasCreator rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+        <hasNotation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">GBA.000028 (fot.)</hasNotation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Gerolamo_Lazzeri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Gerolamo_Lazzeri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <hasName>Gerolamo Lazzeri</hasName>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://viaf.org/viaf/7770920</hasPrimaryIdentifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder"/>
+        <involves rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"/>
+        <hasIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasIndex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industrial_energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industrial_energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#LSF.000032 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#LSF.000032">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <hasCreator rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+        <hasNotation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">LSF.000032</hasNotation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Lorenzo_Fiori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Lorenzo_Fiori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+        <hasName>Lorenzo Fiori</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Luigi_Ansaldo_e_due_donne_non_identificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Luigi_Ansaldo_e_due_donne_non_identificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_4"/>
+        <hasSecondaryIdentifier rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GBA.000028"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1904-09-08"/>
+        <hasType rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Photograph"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section"/>
+        <isPreservedBy rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder_1"/>
+        <hasDescription xml:lang="it">Ritratto di Luigi Ansaldo con due donne non identificate.</hasDescription>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">GBA.000028 (fot.)</hasPrimaryIdentifier>
+        <hasTitle xml:lang="it">Luigi Ansaldo e due donne non identificate</hasTitle>
+        <linkToResource rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://archimondi.it/s/1/item/2825</linkToResource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Oral_history -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Oral_history">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Periodical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Periodical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Photograph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Photograph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Pietro_Repetto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Pietro_Repetto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation_staff"/>
+        <hasName>Pietro Repetto</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Poisons_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Poisons_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fontana began his studies of venomous vipers in 1764 in Pisa and published his first work on them in Lucca in 1767, but subsequently he returned to the subject many times and performed more experiments, as well he might, since he had raised such difficult questions as: how does the venom bring about the death of an animai? At what point is an animal dead, rather than alive? What is death? What is life? Searching for answers to these questions led him down other paths in biology, such as the study of animals which die and revive (anabiosis).During his life, he also studied the so–called American poison, also known by the names Ticunas, Woorara or Curaro. Arrived in London, Fontana received from William Heberden, Fellow of the Royal Society, a number of American arrows, well preserved and impregnated with poison, also a pot labeled: &quot;Indian poison, brought from the banks of the river of the Amazons, by Don Pedro Maldonado&quot;. Much had been written about this poison, and Fontana&apos;s first effort was to dispel the error that had been spread, that the very smell of it was noxious, as written by Gomara in 1554, according to Benedicenti, or as in La Condamine&apos;s story that &quot;this poison is prepared by women condamned to death; and they determine its having attained its point of perfection, when the vapor it emits, during the boiling, kills the person who attends it&quot;. Fontana found that the smoke or vapor from it did no harm to a pigeon, nor to him nauseous and disagreeable though it was. He found that &quot;the American poison takne internally, is a poison, but that a considerable quantity of it is required to kill even a small animal&quot;. Among the most dangerous poisons studied by Fontana appears the cherry–Laurel. The reason given by Fontana for studying the cherry–laurel was as follows: “ this oil […] is one of the most terrible and deadly poisons known. This important truth will, I hope, destroy once for all the abuse that has crept into several places in Italy, of selling the oil of the cherry–laurel publicly in the shops, to all those who ask for it.” Although many previous works were available to substantiate this thesis, Fontana developed his considerations without mentioning any, following only his principles and formulating various preparations of cherry–laurel for his experiments.
+Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Milan, Hoepli, 1951. Fontana, Felice, Trattato del veleno della vipera, de&apos; veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d&apos;un nuovo canale dell&apos;occhio, Naples, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984.</hasDescription>
+        <hasTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Poisons</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Repetto_Mariadiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Repetto_Mariadiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_2"/>
+        <hasSecondaryIdentifier rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#LSF.000032"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2006-11-30"/>
+        <hasType rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Oral_history"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section"/>
+        <isPreservedBy rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder_1"/>
+        <hasDescription xml:lang="it">Mariadiva Repetto nasce a Genova nel 1940. Proveniente da famiglia operaia (papà all&apos;Eridania, zio all&apos;Ansaldo, zia alla Siac). Dopo una breve esperienza lavorativa presso un commercialista, viene assunta alla Siac di Campi nel reparto officina spedizione lamiere; descrive la novità e lo stupore della presenza di una ragazza di 19 anni in un reparto tutto maschile.
+Trasferita all&apos;Oscar Sinigaglia di Cornigliano, lavora come impiegata al reparto Officina, quello di Guido Rossa ed è testimone della tragedia inflitta dal terrorismo delle BR. E&apos; tra le protagoniste della costituzione del &quot;Coordinamento donne Italsider&quot; e partecipa ai corsi universitari delle &quot;150 ore&quot;.
+Anche il marito, esponente del CdF, lavora nello stesso stabilimento. Nel 1987 usufruisce del prepensionamento e lascia l&apos;azienda. Attualmente cura l&apos;organizzazione e l&apos;amministrazione di una scuola di danza fondata dalla figlia.
+In particolare l&apos;abstract realizzato riguarda gli inizi della sua vita professionale e l&apos;impatto, non facile, con una realtà lavorativa prettamente maschile.</hasDescription>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">LSF.000032</hasPrimaryIdentifier>
+        <hasTitle xml:lang="it">Repetto Mariadiva</hasTitle>
+        <linkToResource rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://archimondi.it/s/1/item/462</linkToResource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Rights -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Rights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Roberta_Maggi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Roberta_Maggi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff"/>
+        <hasName>Roberta Maggi</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Santiago_de_Compostela_pilgrim_routes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Santiago_de_Compostela_pilgrim_routes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The legend holds that St. James&apos;s remains were carried by boat from Jerusalem to northern Spain, where he was buried in what is now the city of Santiago de Compostela.
+Since the discovery of the supposed tomb of the saint in the 9th century, the Way of St. James became one of the most important Christian pilgrimages during the Middle Ages, as its completion guaranteed earning a plenary indulgence.
+
+Heritage - As a result of this pilgrimage, a rich heritage was formed. Tangible heritage such as places of worship, hospitals, accommodation facilities, bridges, as well as non-tangible heritage in the form of myths, legends and songs are present along the Santiago Routes and can be enjoyed by the traveller.
+
+Travelling today - Each year, hundreds of thousands of travellers set out to make their way to Santiago de Compostela. As there are endless numbers of branches to the route, it is common to begin the journey literally from one&apos;s doorstep. Most travel by foot, some by bicycle, and a few travel on horseback or by donkey, as some of their medieval counterparts did.</hasDescription>
+        <hasTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Santiago de Compostela pilgrim routes</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_section -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_section">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_3"/>
+        <hasTheme rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_theme"/>
+        <isIncludedIn rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions"/>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023.01.01</hasCreationDate>
+        <hasTitle xml:lang="it">Sezione Società</hasTitle>
+        <hasTitle xml:lang="en">Society section</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Industry"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society"/>
+        <hasDescription xml:lang="en">In-depth text ..............</hasDescription>
+        <hasDescription xml:lang="it">Testo di approfondimento .........................</hasDescription>
+        <hasTitle xml:lang="en">Society</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tiziana_Pasciuto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tiziana_Pasciuto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff"/>
+        <hasName>Tiziana Pasciuto</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <allowsTheSaleOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_catalogue"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_1"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator_1"/>
+        <hasTheme rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_theme"/>
+        <includes rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise_section"/>
+        <includes rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society_section"/>
+        <includes rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section"/>
+        <isRealizedIn rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_exhibition"/>
+        <refersToTemporalEntity rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850/2023"/>
+        <conveys xml:lang="en">Promotion and enjoyment of the cultural heritage of the Ansaldo Foundation</conveys>
+        <conveys xml:lang="it">Promozione e valorizzazione del patrimonio culturale della Fondazione Ansaldo.</conveys>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-06</hasCreationDate>
+        <hasDescription xml:lang="en">Long text - Introduction to the exhibition</hasDescription>
+        <hasDescription xml:lang="it">Testo lungo - Introduzione alla mostra</hasDescription>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">cod123450670rrrroas</hasPrimaryIdentifier>
+        <hasTitle xml:lang="en">Transitions</hasTitle>
+        <hasTitle xml:lang="it">Transizioni</hasTitle>
+        <linkToResource rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">www.transitions-ansaldofoundation.it</linkToResource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_catalogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_catalogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product"/>
+        <hasType rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catalogue"/>
+        <hasTitle xml:lang="en">Cerioli, Fiori, Repetto, &quot;Transitions - Industry-Work-Society&quot;, Erga edizioni, 2023</hasTitle>
+        <hasTitle xml:lang="it">Cerioli, Fiori, Repetto, &quot;Transizioni - Impresa-Lavoro-Società&quot;, Erga edizioni, 2023</hasTitle>
+        <isSelledBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://erga.it/catalogo/transizioni-transitions-impresa-lavoro-societa-industry-work-society/</isSelledBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_exhibition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_exhibition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Curator_1"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22/2023-04-25"/>
+        <takesPlaceIn rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Falcone_Theater,_Royal_Palace,_Genoa,_Italy"/>
+        <hasDescription xml:lang="it">Mostra TRANSIZIONI Ι impresa – lavoro – società Una mostra che invita a riflettere sui grandi cambiamenti del Novecento attraverso fotografie, filmati e opere d’arte.
+Palazzo Reale, Teatro del Falcone dal 22 febbraio al 10 aprile 2023 – PROROGATA AL 25 APRILE 2023
+Palazzo Reale di Genova, ospita nella sua sede espositiva del Teatro del Falcone, fino al 25 aprile 2023 la mostra a cura della Fondazione Ansaldo TRANSIZIONI Ι impresa – lavoro – società. Le grandi transizioni del Novecento sono i temi attorno ai quali si snoda il percorso espositivo, suddiviso in tre macroaree: Impresa, Lavoro e Società. Il ricco corredo fotografico e audiovisivo proveniente dagli archivi della Fondazione è ulteriormente impreziosito da una nutrita selezione di opere d’arte provenienti da musei pubblici e collezioni private che hanno lo scopo di illustrare il rapporto arte-industria. Infine, ampio spazio è dato alla Street art, forma di arte contemporanea e urbana per eccellenza, simbolo delle nevrosi, dei bisogni, della rabbia e dei desideri delle nuove generazioni.
+Approfondimento alla pagina della Fondazione Ansaldo
+Ingresso gratuito
+Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orari e biglietti</hasDescription>
+        <hasTitle xml:lang="it">Mostra Transizioni</hasTitle>
+        <hasTitle xml:lang="en">Transitions Exhibition</hasTitle>
+        <linkToResource rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://palazzorealegenova.cultura.gov.it/mostra-transizioni/</linkToResource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Enterprise"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Society"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change.</hasDescription>
+        <hasTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Foreword</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Luigi_Ansaldo_e_due_donne_non_identificate"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Repetto_Mariadiva"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Bianco_Rosso_e_Verde,_n._3,_1915"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Author_2"/>
+        <hasTheme rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_theme"/>
+        <isIncludedIn rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Transitions"/>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023.01.01</hasCreationDate>
+        <hasTitle xml:lang="it">Sezione Lavoro</hasTitle>
+        <hasTitle xml:lang="en">Work section</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ethic"/>
+        <hasSubject rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work"/>
+        <hasDescription xml:lang="en">In-depth text .................................</hasDescription>
+        <hasDescription xml:lang="it">Testo di approfondimento ..................................</hasDescription>
+        <hasTitle xml:lang="it">Lavoro</hasTitle>
+        <hasTitle xml:lang="it">Work</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1850</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850/2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850/2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval"/>
+        <hasBeginning rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1850"/>
+        <hasEnd rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1904-09-08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1904-09-08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1904-09-08</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1915-08-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1915-08-15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1915-08-15</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2006-11-30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2006-11-30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-11-30</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-22</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22/2023-04-25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22/2023-04-25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval"/>
+        <hasBeginning rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-02-22"/>
+        <hasEnd rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-04-25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-04-25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#2023-04-25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-04-25</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Bianco_Rosso_e_Verde,_n._3,_1915 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Bianco_Rosso_e_Verde,_n._3,_1915">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"/>
+        <hasRelationToAgent rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_3"/>
+        <hasSecondaryIdentifier rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#PER.000075/1"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1915-08-15"/>
+        <hasType rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Periodical"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Work_section"/>
+        <isPreservedBy rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Holder_1"/>
+        <hasDescription xml:lang="it">In copertina: &quot;La Grande Armata Bianca&quot;
+- La grande Armata bianca (di Stelio), p. 2
+- Cantori di guerra: Henry Bataille, p. 4
+- Zona di guerra (di Arnaldo Fraccaroli), p. 6
+- Frammenti di Gloria: il Colonnello Mensingher, p. 8
+- La mobilitazione civile: il Sindaco Caldara, p. 8
+- Pie mani (di sorella Maria), p. 10
+- Un anno prima, un anno dopo, p. 11
+- Le Telefoniste di Milano per la Croce Rossa (di Andrea Marchiori), p. 12
+- Cent&apos;anni dopo il congresso di Vienna, p. 15
+- La Croce Rossa Italiana (di donna Laura), p. 16
+- Soldati di domani (di Enzo Tuccio), p. 18
+- Tra le quinte del patriottismo (di Bel ami), p. 20
+- Rimbombi di guerra (di fra Stuono), p. 22</hasDescription>
+        <hasPrimaryIdentifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PER.000075/1</hasPrimaryIdentifier>
+        <hasTitle xml:lang="it">Bianco Rosso e Verde, n. 3, 1915</hasTitle>
+        <linkToResource rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://archimondi.it/s/1/item/7452</linkToResource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Falcone_Theater,_Royal_Palace,_Genoa,_Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Falcone_Theater,_Royal_Palace,_Genoa,_Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <hasCentroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">44.414913 8.92616</hasCentroid>
+        <hasTitle xml:lang="en">Falcone Theater, Royal Palace, Genoa, Italy</hasTitle>
+        <hasTitle xml:lang="it">Teatro del Falcone, Palazzo Reale, Genova, Italia</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#PER.000075/1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#PER.000075/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"/>
+        <hasCreator rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Ansaldo_Foundation"/>
+        <hasNotation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">PER.000075/1</hasNotation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Villa_Cattaneo_dell&apos;Olmo,_Genoa,_Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Villa_Cattaneo_dell&apos;Olmo,_Genoa,_Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <hasCentroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">44.4355125628061, 8.88577224883766</hasCentroid>
+        <hasTitle xml:lang="en">Villa Cattaneo dell&apos;Olmo, Genoa, Italy</hasTitle>
+        <hasTitle xml:lang="it">Villa Cattaneo dell&apos;Olmo, Genova, Italia</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"/>
+        <hasCentroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">44.40872901586253, 8.901019601274273</hasCentroid>
+        <hasTitle xml:lang="it">Via de Marini, 6, Genova, Italia</hasTitle>
+        <hasTitle xml:lang="en">de Marini street, 6, Genoa, Italy</hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dcterms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dcterms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</dcterms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</dcterms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+        <dcterms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</dcterms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/type">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</dcterms:description>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
