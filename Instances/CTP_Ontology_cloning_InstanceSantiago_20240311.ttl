@@ -1,0 +1,1652 @@
+@prefix : <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ctp: <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <https://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
+@base <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology> .
+
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology> rdf:type owl:Ontology ;
+                                                                        rdfs:comment """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
+Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
+                                                                                     """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
+La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
+Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
+                                                                        rdfs:label "Cultural Thematic Path (CTP) Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/dcam/rangeIncludes
+dcam:rangeIncludes rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dc:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:date ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:creator ,
+                                   dcterms:contributor .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dc:description .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf dc:identifier ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf dc:subject .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:subPropertyOf dc:title ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dc:type .
+
+
+###  http://purl.org/ontology/olo/core#item
+olo:item rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/example
+vann:example rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/usageNote
+vann:usageNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+ns:term_status rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+skos:changeNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+skos:editorialNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2007/05/powder-s#describedby
+powder-s:describedby rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#category
+prov:category rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#component
+prov:component rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#definition
+prov:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#dm
+prov:dm rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#editorsDefinition
+prov:editorsDefinition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#inverse
+prov:inverse rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#n
+prov:n rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#sharesDefinitionWith
+prov:sharesDefinitionWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty ctp:hasCreator .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty ctp:hasSubject .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty ctp:hasType .
+
+
+###  http://purl.org/ontology/olo/core#olo:item
+olo:olo:item rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty ctp:hasItem ;
+             rdfs:domain olo:olo:Slot ;
+             rdfs:comment "An item of a slot in an ordered list."@en ;
+             rdfs:isDefinedBy olo: ;
+             rdfs:label "has item"@en ;
+             ns:term_status "stable"@en .
+
+
+###  http://purl.org/ontology/olo/core#olo:next
+olo:olo:next rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty ctp:nextItem ;
+             owl:inverseOf olo:olo:previous ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain olo:olo:Slot ;
+             rdfs:range olo:olo:Slot ;
+             rdfs:comment "Associates the next slot in an ordered list."@en ;
+             rdfs:isDefinedBy olo: ;
+             rdfs:label "has next"@en ;
+             ns:term_status "testing"@en .
+
+
+###  http://purl.org/ontology/olo/core#olo:ordered_list
+olo:olo:ordered_list rdf:type owl:ObjectProperty ;
+                     owl:equivalentProperty ctp:hasOrderedList ;
+                     owl:inverseOf olo:olo:slot ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain olo:olo:Slot ;
+                     rdfs:comment "An ordered list of an slot."@en ;
+                     rdfs:isDefinedBy olo: ;
+                     rdfs:label "has ordered list"@en ;
+                     ns:term_status "testing"@en .
+
+
+###  http://purl.org/ontology/olo/core#olo:previous
+olo:olo:previous rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty ctp:previousItem ;
+                 rdf:type owl:InverseFunctionalProperty ;
+                 rdfs:domain olo:olo:Slot ;
+                 rdfs:range olo:olo:Slot ;
+                 rdfs:comment "Associates the previous slot in an ordered list"@en ;
+                 rdfs:isDefinedBy olo: ;
+                 rdfs:label "has previous"@en ;
+                 ns:term_status "testing"@en .
+
+
+###  http://purl.org/ontology/olo/core#olo:slot
+olo:olo:slot rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty ctp:hasSlot ;
+             rdfs:range olo:olo:Slot ;
+             rdfs:comment "A slot in an ordered list."@en ;
+             rdfs:isDefinedBy olo: ;
+             rdfs:label "has slot"@en ;
+             ns:term_status "stable"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#allowsTheSaleOf
+ctp:allowsTheSaleOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain ctp:ThematicPath ;
+                    rdfs:range ctp:Product ;
+                    rdfs:comment "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
+                                 "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBeginning
+ctp:hasBeginning rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty <http://www.w3.org/2006/time#hasBeginning> ;
+                 rdfs:subPropertyOf ctp:hasTime ;
+                 rdfs:domain ctp:TemporalEntity ;
+                 rdfs:range ctp:Istant ;
+                 rdfs:comment "Beginning of a temporal entity."@en ,
+                              "Inizio di un'entità temporale."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator
+ctp:hasCreator rdf:type owl:ObjectProperty ;
+               rdfs:domain ctp:Identifier ;
+               rdfs:range ctp:Agent ;
+               rdfs:comment "Indica tramite quale agente pubblico o privato è stato creato il codice di identificazione della risorsa culturale."@it ,
+                            "Indicates by which public or private agent the identification code of the cultural resource was created."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasEnd
+ctp:hasEnd rdf:type owl:ObjectProperty ;
+           owl:equivalentProperty <http://www.w3.org/2006/time#hasEnd> ;
+           rdfs:subPropertyOf ctp:hasTime ;
+           rdfs:domain ctp:TemporalEntity ;
+           rdfs:range ctp:Istant ;
+           rdfs:comment "End of a temporal entity."@en ,
+                        "Fine di una entità temporale."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry
+ctp:hasGeometry rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty locn:locn:geometry ;
+                rdfs:domain ctp:Place ;
+                rdfs:range ctp:Geometry ;
+                rdfs:comment "Associa un oggetto spaziale con una geometria corrispondente."@it ,
+                             "Associates a spatial thing with a corresponding geometry."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem
+ctp:hasItem rdf:type owl:ObjectProperty ;
+            rdfs:domain ctp:OrderedListSlot ;
+            rdfs:range ctp:CulturalResource ;
+            rdfs:comment "Indica una risorsa culturale in una lista ordinata."@it ,
+                         "Indicates a slot cultural resource in an ordered list."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasLocation
+ctp:hasLocation rdf:type owl:ObjectProperty ;
+                owl:inverseOf ctp:isLocationOf ;
+                rdfs:domain owl:Thing ;
+                rdfs:range ctp:Place ;
+                rdfs:comment "Indica la posizione dell'entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.)."@it ,
+                             "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.)."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasMember
+ctp:hasMember rdf:type owl:ObjectProperty ;
+              owl:inverseOf ctp:memberOf ;
+              rdfs:domain ctp:GroupsOfPeople ;
+              rdfs:range ctp:Agent ;
+              rdfs:comment "Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri."@it ,
+                           "Indicates that a group (intended as a simple grouping of people or as a company) has agents as members."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList
+ctp:hasOrderedList rdf:type owl:ObjectProperty ;
+                   owl:inverseOf ctp:hasSlot ;
+                   rdfs:domain ctp:OrderedListSlot ;
+                   rdfs:range ctp:ThematicPath ;
+                   rdfs:comment "Indica come sono organizzati gli slot del percorso tematico."@it ,
+                                "It indicates how the slots of the thematic path are organized."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPart
+ctp:hasPart rdf:type owl:ObjectProperty ;
+            owl:inverseOf ctp:isPartOf ;
+            rdfs:domain ctp:ThematicPath ;
+            rdfs:range ctp:CulturalResource ;
+            owl:propertyChainAxiom ( ctp:hasSlot
+                                     ctp:hasItem
+                                   ) ;
+            rdfs:comment "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it ,
+                         "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPlace
+ctp:hasPlace rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:Agent ;
+             rdfs:range ctp:Place ;
+             rdfs:comment "Indica la localizzazione di un agente."@it ,
+                          "Indicates the location of an agent."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRelationToAgent
+ctp:hasRelationToAgent rdf:type owl:ObjectProperty ;
+                       rdfs:domain owl:Thing ;
+                       rdfs:range ctp:RelationToAgent ;
+                       rdfs:comment "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."@it ,
+                                    "Indicates the relationship between an entity and an agent involved with a certain role."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRole
+ctp:hasRole rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty prov:hadRole ;
+            rdfs:domain ctp:RelationToAgent ;
+            rdfs:range ctp:Role ;
+            rdfs:comment "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it ,
+                         "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSecondaryIdentifier
+ctp:hasSecondaryIdentifier rdf:type owl:ObjectProperty ;
+                           owl:equivalentProperty adms:adms:identifier ;
+                           rdfs:domain owl:Thing ;
+                           rdfs:range ctp:Identifier ;
+                           rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
+                                        "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot
+ctp:hasSlot rdf:type owl:ObjectProperty ;
+            rdfs:domain ctp:ThematicPath ;
+            rdfs:range ctp:OrderedListSlot ;
+            rdfs:comment "Per consentire la classificazione delle risorse culturali secondo un determinato criterio, il percorso tematico è organizzato attraverso slot che possono essere indicizzati."@it ,
+                         "To allow the sorting of cultural resources according to a certain criterion, the thematic path is organized through slots that can be indexed."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject
+ctp:hasSubject rdf:type owl:ObjectProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range ctp:Subject ;
+               rdfs:comment "Indica a quale/i soggetto/i l'entità si riferisce."@it ,
+                            "Indicates to which subject/subjects the entity refers/refer."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTheme
+ctp:hasTheme rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:ThematicPath ;
+             rdfs:range ctp:Theme ;
+             rdfs:comment "Indica il tema su cui si basa il percorso tematico."@it ,
+                          "Indicates the theme on which the thematic path is based."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime
+ctp:hasTime rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty <http://www.w3.org/2006/time#hasTime> ;
+            rdfs:domain owl:Thing ;
+            rdfs:range ctp:TemporalEntity ;
+            rdfs:comment "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."@it ,
+                         "Indicates the time an entity was created and/or an event occurred."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType
+ctp:hasType rdf:type owl:ObjectProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range ctp:Type ;
+            rdfs:comment "Indica il tipo di entità."@it ,
+                         "Indicates the type of entity."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#includes
+ctp:includes rdf:type owl:ObjectProperty ;
+             owl:inverseOf ctp:isIncludedIn ;
+             rdfs:domain ctp:ThematicPath ;
+             rdfs:range ctp:ThematicPath ;
+             rdfs:comment "Indica che un percorso tematico può includere sottopercorsi tematici. Pertanto, possono essere utilizzati come approfondimento degli argomenti trattati precedentemente."@it ,
+                          "Indicates that a thematic path may include sub-thematic paths. Therefore, they can be used as a deepening of the topics dealt with previously."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#involves
+ctp:involves rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:RelationToAgent ;
+             rdfs:range ctp:Agent ;
+             rdfs:comment "Indica quale agente è coinvolto in una relazione con un certo ruolo."@it ,
+                          "Indicates which agent is involved in a relationship with a certain role."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn
+ctp:isIncludedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:ThematicPath ;
+                 rdfs:range ctp:ThematicPath ;
+                 rdfs:comment "Indica che un sottopercorso tematico è incluso in un percorso tematico."@it ,
+                              "Indicates that a sub-thematic path is included in a thematic path."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isInspiredByAgent
+ctp:isInspiredByAgent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ctp:hasSubject ;
+                      rdfs:domain ctp:ThematicPath ;
+                      rdfs:range ctp:Agent ;
+                      rdfs:comment "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it ,
+                                   "Indicates the relationship between the thematic path and the agent that inspires it."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf
+ctp:isLocationOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:Place ;
+                 rdfs:range owl:Thing ;
+                 rdfs:comment "Indica l'associazione tra una posizione e l'entità che vi è localizzata."@it ,
+                              "Indicates the association between a location and the entity that is located there."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf
+ctp:isPartOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:CulturalResource ;
+             rdfs:range ctp:ThematicPath ;
+             rdfs:comment "Indica la relazione tra l'oggetto culturale e il/i percorso/percorsi tematico/i a cui è collegato."@it ,
+                          "Indicates the relationship between the cultural object and the thematic path/paths to which it is linked."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPreservedBy
+ctp:isPreservedBy rdf:type owl:ObjectProperty ;
+                  rdfs:domain ctp:CulturalResource ;
+                  rdfs:comment "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it ,
+                               "Indicates the public or private agent responsible for preserving the cultural resource."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isRealizedIn
+ctp:isRealizedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:ThematicPath ;
+                 rdfs:range ctp:CulturalEvent ;
+                 rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
+                              "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf
+ctp:memberOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:Agent ;
+             rdfs:range ctp:GroupsOfPeople ;
+             rdfs:comment "Indica che un agente fa parte di un gruppo, inteso come semplice raggruppamento di persone o come società."@it ,
+                          "Indicates that an agent is part of a group, intended as a simple grouping of people or as a company."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem
+ctp:nextItem rdf:type owl:ObjectProperty ;
+             owl:inverseOf ctp:previousItem ;
+             rdfs:domain ctp:OrderedListSlot ;
+             rdfs:range ctp:OrderedListSlot ;
+             rdfs:comment "In an ordered collection, indicates the link to the next item in a list."@en ,
+                          "In un insieme ordinato, indica il collegamento all'elemento successivo in un elenco."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem
+ctp:previousItem rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:OrderedListSlot ;
+                 rdfs:range ctp:OrderedListSlot ;
+                 rdfs:comment "In an ordered collection, indicates the link to the previous item in a list."@en ,
+                              "In un insieme ordinato, indica il collegamento all'elemento precedente in un elenco."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToPlace
+ctp:refersToPlace rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf ctp:hasSubject ;
+                  rdfs:domain ctp:ThematicPath ;
+                  rdfs:range ctp:Place ;
+                  rdfs:comment "Indica la relazione tra il percorso tematico e i luoghi a cui è collegato."@it ,
+                               "It indicates the relationship between the thematic path and the places to which it is linked."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToTemporalEntity
+ctp:refersToTemporalEntity rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf ctp:hasSubject ;
+                           rdfs:domain ctp:ThematicPath ;
+                           rdfs:range ctp:TemporalEntity ;
+                           rdfs:comment "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it ,
+                                        "Indicates the relationship between the thematic path and the historical period to which it refers."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#takesPlaceIn
+ctp:takesPlaceIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:CulturalEvent ;
+                 rdfs:range ctp:Place ;
+                 rdfs:comment "Indica la relazione tra un evento culturale e il luogo in cui si è svolto."@it ,
+                              "Indicates the relationship between a cultural event and the place where it took place."@en .
+
+
+###  http://www.w3.org/2006/time#hasBeginning
+<http://www.w3.org/2006/time#hasBeginning> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                           rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                           rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                           rdfs:comment "Beginning of a temporal entity"@en ,
+                                                        "Comienzo de una entidad temporal."@es ;
+                                           rdfs:label "has beginning"@en ,
+                                                      "tiene principio"@es ;
+                                           skos:definition "Beginning of a temporal entity."@en ,
+                                                           "Comienzo de una entidad temporal."@es .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+<http://www.w3.org/2006/time#hasEnd> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                     rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                     rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                     rdfs:comment "End of a temporal entity."@en ,
+                                                  "Final de una entidad temporal."@es ;
+                                     rdfs:label "has end"@en ,
+                                                "tiene fin"@es ;
+                                     skos:definition "End of a temporal entity."@en ,
+                                                     "Final de una entidad temporal."@es .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ,
+                                                   "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+                                      rdfs:label "has time"@en ,
+                                                 "tiene tiempo"@es ;
+                                      skos:definition "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ,
+                                                      "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+                                      skos:editorialNote "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia."@es ,
+                                                         "Feature at risk - added in 2017 revision, and not yet widely used. "@en .
+
+
+###  http://www.w3.org/ns/adms#adms:identifier
+adms:adms:identifier rdf:type owl:ObjectProperty ;
+                     rdfs:range adms:adms:Identifier ;
+                     rdfs:comment "Links a resource to an adms:Identifier class."@en ;
+                     rdfs:isDefinedBy <http://www.w3.org/ns/adms> ;
+                     rdfs:label "identifier"@en .
+
+
+###  http://www.w3.org/ns/locn#locn:geometry
+locn:locn:geometry rdf:type owl:ObjectProperty ;
+                   rdfs:range locn:locn:Geometry ;
+                   dcterms:identifier "locn:geometry" ;
+                   vann:example """
+The following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.
+- WKT (GeoSPARQL)
+:Resource locn:geometry
+  \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral .
+- GML
+:Resource locn:geometry
+  \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>
+  <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral .
+- RDF+WKT (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asWKT \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral ] .
+- RDF+GML (GeoSPARQL)
+:Resource locn:geometry
+  [ a sf:Point; gsp:asGML
+     \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>
+      <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral ] .
+- RDF (WGS84 lat/long)
+:Resource locn:geometry [ a geo:Point; geo:lat \"51.477811\"; geo:long \"-0.001475\" ] .
+- RDF (schema.org)
+:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude \"51.477811\"; schema:longitude \"-0.001475\" ] .
+- geo URI
+:Resource locn:geometry <geo:51.477811,-0.001475;u=0;crs=wgs84> .
+- GeoHash URI
+:Resource locn:geometry <http://geohash.org/gcpuzgnzvxkp> .
+    """@en ;
+                   vann:usageNote """
+Depending on how a geometry is encoded, the range of this property may be one of the following:
+- a literal (e.g., WKT - string literal -, GML, KML - XML literal)
+- a geometry class, as those defined in the OGC's GeoSPARQL specification, in the W3C's Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;
+- geocoded URIs, as geo or GeoHash URIs, treated as URI references.
+For interoperability reasons, it is recommended using one of the following:
+- Any geometry:
+  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.
+  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.
+  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).
+- Points: one of the above, or:
+  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.
+  - GeoHash URIs.
+  - geo URIs.
+    """@en ;
+                   rdfs:comment "Associates any resource with the corresponding geometry."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/locn> ;
+                   rdfs:label "geometry"@en ;
+                   ns:term_status "testing"@en ;
+                   powder-s:describedby <https://joinup.ec.europa.eu/node/55858> .
+
+
+###  http://www.w3.org/ns/prov#hadRole
+prov:hadRole rdf:type owl:ObjectProperty ;
+             rdfs:range prov:Role ;
+             rdfs:comment "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en ,
+                          "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ;
+             rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+             rdfs:label "hadRole" ;
+             prov:category "qualified" ;
+             prov:component "agents-responsibility" ;
+             prov:editorsDefinition "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end."@en ;
+             prov:inverse "wasRoleIn" ;
+             prov:sharesDefinitionWith prov:Role .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                owl:equivalentProperty ctp:hasCreationDate .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:DatatypeProperty ;
+                    owl:equivalentProperty ctp:hasDescription .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   owl:equivalentProperty ctp:hasPrimaryIdentifier .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty ctp:hasTitle .
+
+
+###  http://purl.org/ontology/olo/core#olo:index
+olo:olo:index rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty ctp:hasIndex ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain olo:olo:Slot ;
+              rdfs:range xsd:positiveInteger ;
+              rdfs:comment "An index of a slot in an ordered list."@en ;
+              rdfs:isDefinedBy olo: ;
+              rdfs:label "has index"@en ;
+              ns:term_status "stable"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys
+ctp:conveys rdf:type owl:DatatypeProperty ;
+            rdfs:domain ctp:ThematicPath ;
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "Indica un messaggio che può trasmettere valori culturali, etici e sociali attraverso il percorso tematico."@it ,
+                         "Indicates a message that can convey cultural, ethical and social values through the thematic path."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:conveys ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "meaning"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox
+ctp:hasBoundingBox rdf:type owl:DatatypeProperty ;
+                   owl:equivalentProperty dcat:bbox ;
+                   rdfs:domain ctp:Place ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Il riquadro delimitatore geografico di un oggetto spaziale."@it ,
+                                "The geographic bounding box of a spatial thing."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasBoundingBox ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "bounding box"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid
+ctp:hasCentroid rdf:type owl:DatatypeProperty ;
+                owl:equivalentProperty dcat:centroid ;
+                rdfs:domain ctp:Place ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "La cornice geografica delimitante di un'entità spaziale."@it ,
+                             "The geographic bounding box of a spatial thing."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasCentroid ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "centroid"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate
+ctp:hasCreationDate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ctp:ThematicPath ;
+                    rdfs:range xsd:date ;
+                    rdfs:comment "Indica quando è stato creato il percorso tematico."@it ,
+                                 "Indicates when the thematic path was created."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDate
+ctp:hasDate rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty <http://www.w3.org/2006/time#inXSDDate> ;
+            rdfs:domain ctp:TemporalEntity ;
+            rdfs:range xsd:date ;
+            rdfs:comment "Indica una data o un intervallo cronologico che caratterizza un'entità."@it ,
+                         "Indicates a date or a chronological range that characterizes an entity."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription
+ctp:hasDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:domain owl:Thing ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Indica una descrizione di un'entità."@it ,
+                                "Indicates a description of an entity."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasDescription ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "description"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex
+ctp:hasIndex rdf:type owl:DatatypeProperty ;
+             rdfs:domain ctp:OrderedListSlot ;
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."@it ,
+                          "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasIndex ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "index"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName
+ctp:hasName rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty foaf:name ;
+            rdfs:domain ctp:Agent ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Indica il nome associato a un agente."@it ,
+                         "Indicates the name associated with an agent."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasName ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget xsd:string ;
+   rdfs:comment "appellation"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation
+ctp:hasNotation rdf:type owl:DatatypeProperty ;
+                owl:equivalentProperty skos:notation ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain ctp:Identifier ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
+                             "The string that constitutes the cultural resource identifier."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasNotation ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "notation"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier
+ctp:hasPrimaryIdentifier rdf:type owl:DatatypeProperty ;
+                         rdfs:domain owl:Thing ;
+                         rdfs:range rdfs:Literal ;
+                         rdfs:comment "Indica un identificatore univoco della risorsa."@it ,
+                                      "It indicates a unique identifier of the entity."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle
+ctp:hasTitle rdf:type owl:DatatypeProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "Indica il titolo di un'entità."@it ,
+                          "Indicates the title of an entity."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:hasTitle ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "title"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy
+ctp:isSelledBy rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain ctp:Product ;
+               rdfs:range rdfs:Literal ;
+               rdfs:comment "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."@it ,
+                            "Indicates the link that allows purchasing the resource available on the web through an hyperlink."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:isSelledBy ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "link"
+ ] .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource
+ctp:linkToResource rdf:type owl:DatatypeProperty ;
+                   rdfs:domain owl:Thing ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."@it ,
+                                "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource ctp:linkToResource ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget rdfs:Literal ;
+   rdfs:comment "link"
+ ] .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:DatatypeProperty ;
+              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+              rdfs:label "notation"@en ;
+              skos:definition "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
+              skos:scopeNote "By convention, skos:notation is used with a typed literal in the object position of the triple."@en .
+
+
+###  http://www.w3.org/2006/time#inXSDDate
+<http://www.w3.org/2006/time#inXSDDate> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.w3.org/2006/time#Instant> ;
+                                        rdfs:range xsd:date ;
+                                        rdfs:comment "Posición de un instante, expresado utilizando xsd:date."@es ,
+                                                     "Position of an instant, expressed using xsd:date"@en ;
+                                        rdfs:label "en fecha XSD"@es ,
+                                                   "in XSD date"@en ;
+                                        skos:definition "Posición de un instante, expresado utilizando xsd:date."@es ,
+                                                        "Position of an instant, expressed using xsd:date"@en .
+
+
+###  http://www.w3.org/ns/dcat#bbox
+dcat:bbox rdf:type owl:DatatypeProperty ;
+          rdfs:domain dcterms:Location ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "bounding box"@da ,
+                     "bounding box"@en ,
+                     "cuadro delimitador"@es ,
+                     "ohraničení oblasti"@cs ,
+                     "quadro di delimitazione"@it ;
+          skos:changeNote "New property added in DCAT 2.0."@en ,
+                          "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                          "Nuova proprietà aggiunta in DCAT 2.0."@it ,
+                          "Ny egenskab tilføjet i DCAT 2.0."@da ,
+                          "Propiedad nueva agregada en DCAT 2.0."@es ;
+          skos:definition "Den geografiske omskrevne firkant af en ressource."@da ,
+                          "El cuadro delimitador geográfico para un recurso."@es ,
+                          "Il riquadro di delimitazione geografica di una risorsa."@it ,
+                          "Ohraničení geografické oblasti zdroje."@cs ,
+                          "The geographic bounding box of a resource."@en ;
+          skos:scopeNote "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@es ,
+                         "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@it ,
+                         "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."@cs ,
+                         "Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da ,
+                         "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."@en .
+
+
+###  http://www.w3.org/ns/dcat#centroid
+dcat:centroid rdf:type owl:DatatypeProperty ;
+              rdfs:domain dcterms:Location ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "centroid"@cs ,
+                         "centroid"@en ,
+                         "centroide"@es ,
+                         "centroide"@it ,
+                         "geometrisk tyngdepunkt"@da ;
+              skos:altLabel "centroide"@da ;
+              skos:changeNote "New property added in DCAT 2.0."@en ,
+                              "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                              "Nueva propiedad agregada en DCAT 2.0."@es ,
+                              "Nuova proprietà aggiunta in DCAT 2.0."@it ,
+                              "Ny egenskab tilføjet i DCAT 2.0."@da ;
+              skos:definition "Det geometrisk tyngdepunkt (centroid) for en ressource."@da ,
+                              "El centro geográfico (centroide) de un recurso."@es ,
+                              "Geografický střed (centroid) zdroje."@cs ,
+                              "Il centro geografico (centroide) di una risorsa."@it ,
+                              "The geographic center (centroid) of a resource."@en ;
+              skos:scopeNote "El rango de esta propiedad es intencionalmente genérico con el objetivo de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede codificarse como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@es ,
+                             "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@it ,
+                             "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."@cs ,
+                             "Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige geokodninger. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da ,
+                             "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."@en .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
+          rdfs:domain owl:Thing ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "A name for some thing." ;
+          rdfs:isDefinedBy foaf: ;
+          rdfs:label "name" ;
+          ns:term_status "testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/Location
+dcterms:Location rdf:type owl:Class ;
+                 owl:equivalentClass ctp:Place ;
+                 rdfs:comment "A spatial region or named place."@en ;
+                 rdfs:isDefinedBy dcterms: ;
+                 rdfs:label "Location"@en .
+
+
+###  http://purl.org/ontology/olo/core#olo:Slot
+olo:olo:Slot rdf:type owl:Class ;
+             owl:equivalentClass ctp:OrderedListSlot ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty olo:olo:next ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty olo:olo:ordered_list ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty olo:olo:previous ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty olo:olo:index ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:comment "A slot in an ordered list with a fixed index."@en ;
+             rdfs:isDefinedBy olo: ;
+             rdfs:label "Slot"@en ;
+             ns:term_status "stable"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent
+ctp:Agent rdf:type owl:Class ;
+          owl:equivalentClass foaf:Agent ;
+          rdfs:comment "A person, family, group or institution that performs a certain action."@en ,
+                       "Una persona, famiglia, gruppo o istituzione che compie una certa azione."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent
+ctp:CulturalEvent rdf:type owl:Class ;
+                  rdfs:comment "A planned or an unplanned cultural situation that includes a number of activities. It occurs in a certain time and space, and may involve agents."@en ,
+                               "Una situazione culturale pianificata o non pianificata che comprende una serie di attività. Si verifica in un determinato tempo e spazio e può coinvolgere agenti."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource
+ctp:CulturalResource rdf:type owl:Class ;
+                     rdfs:comment "A tangible or intangible resource, movable or immovable, realized by nature or man-made, that has been identified as possessing artistic, historical, archaeological, or ethno-anthropological significance."@en ,
+                                  "Una risorsa tangibile o intangibile, mobile o immobile, realizzata dalla natura o dall'uomo, identificata come possedente significato artistico, storico, archeologico o etno-antropologico."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry
+ctp:Geometry rdf:type owl:Class ;
+             owl:equivalentClass locn:locn:Geometry ;
+             rdfs:comment "L'identificazione di una posizione come punto, linea, poligono, ecc., espressa utilizzando coordinate in un determinato sistema di riferimento cartesiano."@it ,
+                          "The identification of a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group
+ctp:Group rdf:type owl:Class ;
+          owl:equivalentClass foaf:Group ;
+          rdfs:subClassOf ctp:GroupsOfPeople ;
+          rdfs:comment "A collection of individual agents that can itself act as an agent, capable of performing actions."@en ,
+                       "Una collezione di agenti individuali che può a sua volta agire come un agente, capace di compiere azioni."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople
+ctp:GroupsOfPeople rdf:type owl:Class ;
+                   rdfs:subClassOf ctp:Agent ;
+                   rdfs:comment "A collection of individual agents."@en ,
+                                "Una collezione di agenti individuali."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier
+ctp:Identifier rdf:type owl:Class ;
+               owl:equivalentClass adms:adms:Identifier ;
+               rdfs:comment "A sequence of characters or symbols that serves to uniquely distinguish an entity or object within a specific system or context."@en ,
+                            "Una sequenza di caratteri o simboli che serve a distinguere in modo univoco un'entità o un oggetto all'interno di un sistema o contesto specifico."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval
+ctp:Interval rdf:type owl:Class ;
+             owl:equivalentClass <http://www.w3.org/2006/time#Interval> ;
+             rdfs:subClassOf ctp:TemporalEntity ;
+             rdfs:comment "A temporal entity with an extent or duration."@en ,
+                          "Un'entità temporale con un'estensione o una durata."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant
+ctp:Istant rdf:type owl:Class ;
+           owl:equivalentClass <http://www.w3.org/2006/time#Instant> ;
+           rdfs:subClassOf ctp:TemporalEntity ;
+           rdfs:comment "A temporal entity with zero extent or duration."@en ,
+                        "Un'entità temporale con durata o estensione pari a zero."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot
+ctp:OrderedListSlot rdf:type owl:Class ;
+                    rdfs:comment "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (i.e. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."@en ,
+                                 "Un percorso tematico è strutturato come un collezionista di oggetti culturali o presentato con un ordine casuale o predeterminato. In quest'ultimo caso, gli oggetti culturali possono essere ordinati secondo un certo criterio (ad esempio, alfabetico, cronologico, in base all'autore, ecc.). Questa classe indica lo slot in una lista ordinata con un indice fisso."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization
+ctp:Organization rdf:type owl:Class ;
+                 owl:equivalentClass foaf:Organization ;
+                 rdfs:subClassOf ctp:GroupsOfPeople ;
+                 owl:disjointWith ctp:Person ;
+                 rdfs:comment "A specific type of agent that corresponds to social institutions, such as companies and societies."@en ,
+                              "Un tipo specifico di agente che corrisponde a istituzioni sociali, come aziende e società."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person
+ctp:Person rdf:type owl:Class ;
+           owl:equivalentClass foaf:Person ;
+           rdfs:subClassOf ctp:Agent ;
+           rdfs:comment "Human individuals, regardless of whether they are alive, dead, real, or imaginary."@en ,
+                        "Individui umani, indipendentemente dal fatto che siano vivi, morti, reali o immaginari."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place
+ctp:Place rdf:type owl:Class ;
+          rdfs:comment "Posizione specifica nello spazio fisico; identifica la localizzazione di qualsiasi entità. Può essere un punto preciso nello spazio (ad esempio, coordinate geografiche) o un'area più ampia (ad esempio, regione geografica)."@it ,
+                       "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (i.e. geographical coordinates) or a larger area (i.e. geographical region)."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product
+ctp:Product rdf:type owl:Class ;
+            rdfs:comment "A tangible good or an intangible service offered on the market to satisfy consumers' needs or desires."@en ,
+                         "Un bene tangibile o un servizio intangibile offerto sul mercato per soddisfare i bisogni o desideri dei consumatori."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent
+ctp:RelationToAgent rdf:type owl:Class ;
+                    owl:equivalentClass prov:AgentInfluence ;
+                    rdfs:comment "Class that allows linking another class to an agent playing a specific role."@en ,
+                                 "Classe che consente di collegare un'altra classe a un agente che svolge un ruolo specifico."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role
+ctp:Role rdf:type owl:Class ;
+         owl:equivalentClass prov:Role ;
+         rdfs:comment "Il ruolo svolto da un agente in un contesto specifico."@it ,
+                      "The role performed by an agent in a specific context."@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject
+ctp:Subject rdf:type owl:Class ;
+            rdfs:comment "A concept or a series of concepts that concern and describe the thematic path."@en ,
+                         "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity
+ctp:TemporalEntity rdf:type owl:Class ;
+                   owl:equivalentClass <http://www.w3.org/2006/time#TemporalEntity> ,
+                                       [ rdf:type owl:Class ;
+                                         owl:unionOf ( ctp:Interval
+                                                       ctp:Istant
+                                                     )
+                                       ] ;
+                   rdfs:comment "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en ,
+                                "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath
+ctp:ThematicPath rdf:type owl:Class ;
+                 skos:Concept """A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes. 
+The chosen theme, which may concern specific topics, contexts, events, places, historical periods or characters and so on, is expressed synthetically by a title and in-depth with a written descriptive text; they can be further identified through subjects. 
+The thematic path could be structured either as a collector of cultural objects, without establishing an order of priority, or present a predetermined order. 
+The development and use of this enjoyment strategy can be profitable to convey messages and cultural, ethical and social values."""@en ,
+                              "Un percorso tematico è uno strumento per  la valorizzazione del patrimonio culturale che consente di collegare oggetti culturali di diversa natura (tangibili e intangibili) attraverso l'identificazione di temi comuni. Il tema scelto, che può riguardare argomenti specifici, contesti, eventi, luoghi, periodi storici o personaggi e così via, è espresso in modo sintetico da un titolo e approfondito con un testo descrittivo scritto; possono essere ulteriormente identificati attraverso soggettazioni. Il percorso tematico potrebbe essere strutturato sia come un collezionista di oggetti culturali, senza stabilire un ordine di priorità, sia presentare un ordine predefinito. Lo sviluppo e l'uso di questa strategia di valorizzazione possono essere utili per trasmettere messaggi e valori culturali, etici e sociali."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme
+ctp:Theme rdf:type owl:Class ;
+          rdfs:comment "A broad concept or a general idea that can be explored through various subjects."@en ,
+                       "Un concetto ampio o un'idea generale che può essere esplorata attraverso vari argomenti."@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type
+ctp:Type rdf:type owl:Class ;
+         rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
+                      "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty's Art & Architecture Thesaurus)."@en .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "A temporal entity with zero extent or duration"@en ,
+                                                   "Una entidad temporal con una extensión o duración cero."@es ;
+                                      rdfs:label "Time instant"@en ,
+                                                 "instante de tiempo."@es ;
+                                      skos:definition "A temporal entity with zero extent or duration"@en ,
+                                                      "Una entidad temporal con una extensión o duración cero."@es .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                       rdfs:comment "A temporal entity with an extent or duration"@en ,
+                                                    "Una entidad temporal con una extensión o duración."@es ;
+                                       rdfs:label "Time interval"@en ,
+                                                  "intervalo de tiempo"@es ;
+                                       skos:definition "A temporal entity with an extent or duration"@en ,
+                                                       "Una entidad temporal con una extensión o duración."@es .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://www.w3.org/2006/time#Instant>
+                                                                                 <http://www.w3.org/2006/time#Interval>
+                                                                               )
+                                                                 ] ;
+                                             rdfs:comment "A temporal interval or instant."@en ,
+                                                          "Un intervalo temporal o un instante."@es ;
+                                             rdfs:label "Temporal entity"@en ,
+                                                        "entidad temporal"@es ;
+                                             skos:definition "A temporal interval or instant."@en ,
+                                                             "Un intervalo temporal o un instante."@es .
+
+
+###  http://www.w3.org/ns/adms#adms:Identifier
+adms:adms:Identifier rdf:type owl:Class ;
+                     rdfs:comment "This is based on the UN/CEFACT Identifier class."@en ;
+                     rdfs:isDefinedBy <http://www.w3.org/ns/adms> ;
+                     rdfs:label "Identifier"@en .
+
+
+###  http://www.w3.org/ns/locn#locn:Geometry
+locn:locn:Geometry rdf:type owl:Class ;
+                   dcterms:identifier "locn:Geometry" ;
+                   vann:usageNote "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property)."@en ;
+                   rdfs:comment "The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/locn> ;
+                   rdfs:label "Geometry"@en ;
+                   ns:term_status "unstable"@en .
+
+
+###  http://www.w3.org/ns/prov#AgentInfluence
+prov:AgentInfluence rdf:type owl:Class ;
+                    rdfs:comment "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."@en ,
+                                 "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."@en ;
+                    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                    rdfs:label "AgentInfluence" ;
+                    rdfs:seeAlso prov:agent ;
+                    prov:category "qualified" ;
+                    prov:editorsDefinition "AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other."@en .
+
+
+###  http://www.w3.org/ns/prov#Role
+prov:Role rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+          rdfs:label "Role" ;
+          rdfs:seeAlso prov:hadRole ;
+          prov:category "qualified" ;
+          prov:component "agents-responsibility" ;
+          prov:definition "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."@en ;
+          prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role"^^xsd:anyURI ;
+          prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute"^^xsd:anyURI .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class ;
+           rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+           rdfs:label "Agent" ;
+           ns:term_status "stable" .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class ;
+           rdfs:subClassOf foaf:Agent ;
+           rdfs:comment "A class of Agents." ;
+           rdfs:label "Group" ;
+           ns:term_status "stable" .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf foaf:Agent ;
+                  owl:disjointWith foaf:Person ;
+                  rdfs:comment "An organization." ;
+                  rdfs:isDefinedBy foaf: ;
+                  rdfs:label "Organization" ;
+                  ns:term_status "stable" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class ;
+            rdfs:subClassOf foaf:Agent .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Architectural_heritage
+ctp:Architectural_heritage rdf:type owl:NamedIndividual ,
+                                    ctp:Type .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa
+ctp:CNR_IMATI_Genoa rdf:type owl:NamedIndividual ,
+                             ctp:Organization ;
+                    ctp:hasMember ctp:CNR_IMATI_Genoa_staff ;
+                    ctp:hasPlace <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy> ;
+                    ctp:hasName "CNR IMATI Genoa" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CNR_IMATI_Genoa_staff
+ctp:CNR_IMATI_Genoa_staff rdf:type owl:NamedIndividual ,
+                                   ctp:Group ;
+                          ctp:hasMember ctp:Roberta_Maggi ,
+                                        ctp:Tiziana_Pasciuto ;
+                          ctp:memberOf ctp:CNR_IMATI_Genoa ;
+                          ctp:hasName "CNR IMATI Genoa staff" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catedral_de_Santiago_de_Compostela
+ctp:Catedral_de_Santiago_de_Compostela rdf:type owl:NamedIndividual ,
+                                                ctp:CulturalResource ;
+                                       ctp:hasLocation <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catedral_de_Santiago_de_Compostela,_Spain> ;
+                                       ctp:hasTime <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1075> ;
+                                       ctp:hasType ctp:Architectural_heritage ;
+                                       ctp:isPartOf ctp:Road_to_Santiago_de_Compostela ;
+                                       ctp:hasDescription """La basilica cattedrale di San Giacomo di Compostela (in galiziano e spagnolo: Catedral basílica metropolitana de Santiago de Compostela), o semplicemente la cattedrale di San Giacomo di Compostela, è la chiesa madre dell'arcidiocesi di Santiago de Compostela, una basilica minore e uno dei più grandi santuari cattolici al mondo; all'interno, nella cripta, i fedeli venerano le reliquie dell'apostolo Santiago o Maior/el Mayor (San Giacomo Maggiore), il santo patrono della Spagna. La Cattedrale di Santiago segna la fine del Cammino di Santiago de Compostela, un pellegrinaggio storico di origine medievale.
+Nel 2010 sono stati eseguiti significativi lavori di restauro nella cattedrale in previsione di un afflusso molto più ampio di pellegrini quell'anno.
+Secondo la leggenda, il corpo dell'apostolo San Giacomo Maggiore fu scoperto nel IX secolo nella zona dove ora sorge la cattedrale. Una prima chiesa dedicata a San Giacomo fu costruita qui all'inizio del IX secolo, per ordine di Alfonso II delle Asturie. Successivamente, nel 899, sotto il re Alfonso III, la prima chiesa fu sostituita da una più grande, in stile protoromanico.
+Nel 997, durante il saccheggio della città di Santiago de Compostela da parte dei Berberi comandati da Almanzor, la chiesa protoromanica fu incendiata e le sue porte e campane furono portate, da schiavi cristiani, alla Grande Moschea di Cordoba.
+Nel 1095, Papa Urbano II decretò il trasferimento della sede vescovile da Iria Flavia, l'odierna Padrón, a Santiago de Compostela.
+La costruzione dell'attuale cattedrale iniziò nel 1075. Il tempio, in stile romanico, fu completato nel XIII secolo e consacrato nel 1211, alla presenza del re Alfonso IX di León.
+È uno degli edifici che meglio rappresenta il tipo di chiesa romanica che segna il Cammino di Santiago de Compostela tra Francia e Spagna (Sainte-Foy de Conques, Saint-Martial de Limoges, San Martín de Tours e Saint-Sernin a Tolosa), caratterizzato dall'abside con cappelle radiali e dall'ambulacro. Ha subito modifiche tra il XVI e il XVIII secolo."""@it ,
+                                                          """The basilica cathedral of San Giacomo di Compostela (in Galician and Spanish: Catedral basílica metropolitana de Santiago de Compostela), or simply the cathedral of San Giacomo di Compostela, is the mother church of the archdiocese of Santiago de Compostela, a minor basilica, and one of the greatest Catholic sanctuaries in the world; inside, in the crypt, the faithful venerate the relics of the apostle Santiago or Maior/el Mayor (St. James the Greater), the patron saint of Spain. The Cathedral of Santiago marks the end of the Camino de Santiago de Compostela, a historic pilgrimage of medieval origin.
+In 2010, significant restoration work was carried out in the cathedral in anticipation of a much larger influx of pilgrims that year.
+According to legend, the body of the apostle St. James the Greater was discovered in the 9th century in the area where the cathedral now stands. A first church dedicated to St. James was built here in the early 9th century, by order of Alfonso II of Asturias. Subsequently, in 899, under King Alfonso III, the first church was replaced by a larger one, in proto-Romanesque style.
+In 997, during the sack of the city of Santiago de Compostela by the Berbers commanded by Almanzor, the proto-Romanesque church was set on fire and its doors and bells were taken, by Christian slaves, to the Great Mosque of Cordoba.
+In 1095, Pope Urban II decreed the transfer of the episcopal see from Iria Flavia, present-day Padrón, to Santiago de Compostela.
+The construction of the current cathedral began in 1075. The temple, in Romanesque style, was completed in the 13th century and consecrated in 1211, in the presence of King Alfonso IX of León.
+It is one of the buildings that best represents the type of Romanesque church that marks the Camino de Santiago de Compostela between France and Spain (Sainte-Foy de Conques, Saint-Martial de Limoges, San Martín de Tours, and Saint-Sernin in Toulouse), characterized by the apse with radial chapels and ambulatory. It underwent modifications between the 16th and 18th centuries."""@en ;
+                                       ctp:hasTitle "Catedral de Santiago de Compostela"@es ,
+                                                    "Cattedrale di Santiago de Compostela"@it ,
+                                                    "Santiago de Compostela Cathedral"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Certification_body
+ctp:Certification_body rdf:type owl:NamedIndividual ,
+                                ctp:Role .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Certification_body_1
+ctp:Certification_body_1 rdf:type owl:NamedIndividual ,
+                                  ctp:RelationToAgent ;
+                         ctp:hasRole ctp:Certification_body ;
+                         ctp:involves ctp:Council_of_Europe .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Church_of_the_Holy_Cross
+ctp:Church_of_the_Holy_Cross rdf:type owl:NamedIndividual ,
+                                      ctp:CulturalResource ;
+                             ctp:hasLocation <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Church_of_the_Holy_Cross,_Assisi,_Italy> ;
+                             ctp:hasTime ctp:XIII_century ;
+                             ctp:hasType ctp:Architectural_heritage ;
+                             ctp:isPartOf ctp:Road_to_Santiago_de_Compostela ;
+                             ctp:hasDescription "La piccola chiesa di Santa Croce è originaria della metà del XIII secolo ed è stata modificata nel corso del Seicento. L’impianto è quello di stile romanico, con navata unica e fronte a capanna, qui sormontata da un piccolo campanile a vela di fattura posteriore. Il portale voltato richiama nelle forme quello del muro verso il giardino e presenta una cornice superiore a sesto acuto; la nicchia collocata superiormente è frutto di una recente ricostruzione. Il semplice interno è ritmato da due archi a sesto acuto in laterizio impostati su pilastri in pietra connessi alle murature. Il confronto tra questo edificio e altri esempi simili del territorio, inclusa la chiesa di Santo Stefano ad Assisi, ha messo in luce come la chiesa di Santa Croce appaia singolarmente ridotta nella lunghezza e priva di catino absidale. È ipotizzabile quindi che le proporzioni originarie fossero più allungate e la copertura absidale fosse voltata È datato invece 1643 l’affresco che arricchisce la parete di fondo: attribuito al pittore assisano Gerolamo Marinelli, vi sono raffigurate Sant’Elena e la Vergine in adorazione della nuda Croce. Come ricorda lo storico dell’arte Bruno Toscano, il tema che pone come protagonista il lignum crucis, ossia la croce in sé priva della figura di Cristo, era piuttosto frequente e includeva solitamente Sant’Elena e il figlio Costantino, l’imperatore."@it ,
+                                                "The small church of Santa Croce dates back to the mid-13th century and was modified during the seventeenth century. Its layout follows Romanesque style, with a single nave and a gabled facade, topped by a small later-built sail-shaped bell tower. The arched portal resembles that of the garden-facing wall and features an upper pointed arch frame; the niche placed above is a recent reconstruction. The simple interior is punctuated by two pointed brick arches supported by stone pillars connected to the walls. Comparing this building to other similar examples in the area, including the church of Santo Stefano in Assisi, highlights how the church of Santa Croce appears notably shorter in length and lacking an apse. It is therefore hypothesized that the original proportions were more elongated and the apse was vaulted. The fresco adorning the rear wall is dated to 1643: attributed to the Assisi painter Gerolamo Marinelli, it depicts Saint Helena and the Virgin adoring the naked Cross. As art historian Bruno Toscano recalls, the theme featuring the lignum crucis, the cross itself without the figure of Christ, was quite common and typically included Saint Helena and her son Constantine, the emperor."@en ;
+                             ctp:hasTitle "Chiesa di Santa Croce"@it ,
+                                          "Church of the Holy Cross"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Council_of_Europe
+ctp:Council_of_Europe rdf:type owl:NamedIndividual ,
+                               ctp:Organization ;
+                      ctp:hasPlace <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Avenue_de_l'Europe_F-67075_Strasbourg_Cedex,_France> ;
+                      ctp:hasName "Council of Europe" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator
+ctp:Creator rdf:type owl:NamedIndividual ,
+                     ctp:Role .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Creator_1
+ctp:Creator_1 rdf:type owl:NamedIndividual ,
+                       ctp:RelationToAgent ;
+              ctp:hasRole ctp:Creator ;
+              ctp:involves ctp:Tiziana_Pasciuto .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Iglesia_de_San_Salvador_de_Vilar_de_Donas
+ctp:Iglesia_de_San_Salvador_de_Vilar_de_Donas rdf:type owl:NamedIndividual ,
+                                                       ctp:CulturalResource ;
+                                              ctp:hasLocation <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> ;
+                                              ctp:hasTime ctp:XII_century ;
+                                              ctp:hasType ctp:Architectural_heritage ;
+                                              ctp:isPartOf ctp:Road_to_Santiago_de_Compostela ;
+                                              ctp:hasDescription """La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica.
+Uno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna.
+Dal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo.
+Negli ultimi anni sono stati compiuti sforzi di conservazione per salvaguardare la Iglesia de San Salvador de Vilar de Donas per le generazioni future. Questi sforzi mirano non solo a proteggere l'integrità architettonica della chiesa, ma anche a onorare il suo ricco lascito storico e significato culturale. Attraverso progetti di restauro e manutenzione continua, la chiesa continua a ergersi come un monumento vivente allo spirito duraturo di fede, patrimonio e tradizione in Galizia, Spagna.
+Nel complesso, la Iglesia de San Salvador de Vilar de Donas è più di un luogo di culto: è un simbolo di resilienza, perseveranza e del duraturo lascito della Spagna medievale. Mentre i visitatori varcano le sue sacre porte e si immergono nel suo passato ricco di storia, vengono trasportati indietro nel tempo a un'epoca di cavalleria, pietà e bellezza senza tempo."""@it ,
+                                                                 """The Iglesia de San Salvador de Vilar de Donas stands as a testament to both the religious and military history of medieval Spain. Nestled in the picturesque village of Vilar de Donas in the province of Lugo, this Romanesque church embodies centuries of cultural significance and architectural beauty.
+One of the most striking aspects of this church is its historical connection to the Order of Santiago, a prominent military order established during the Reconquista period in Spain. The church served as a focal point for the activities of the order, functioning not only as a place of worship but also as a headquarters and burial site for its members. This association with the Order of Santiago lends a unique and compelling dimension to the church's history, reflecting the intertwining of religious devotion and military valor during this tumultuous period in Spain's past.
+Architecturally, the Iglesia de San Salvador de Vilar de Donas is a prime example of Romanesque design, characterized by its simple yet elegant aesthetic. The church's stone construction and distinctive features, such as its rectangular apse and sturdy buttresses, showcase the craftsmanship and ingenuity of medieval builders. Inside, visitors are treated to a visual feast of frescoes dating back to the 15th century, offering a glimpse into the artistic mastery of the period and providing insights into religious narratives and symbolism.
+In recent years, preservation efforts have been undertaken to safeguard the Iglesia de San Salvador de Vilar de Donas for future generations. These efforts not only aim to protect the architectural integrity of the church but also seek to honor its rich historical legacy and cultural significance. Through restoration projects and ongoing maintenance, the church continues to stand as a living monument to the enduring spirit of faith, heritage, and tradition in Galicia, Spain.
+Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place of worship—it is a symbol of resilience, perseverance, and the enduring legacy of medieval Spain. As visitors step through its hallowed doors and immerse themselves in its storied past, they are transported back in time to an era of chivalry, piety, and timeless beauty."""@en ;
+                                              ctp:hasTitle "Chiesa di San Salvador de Vilar de Donas"@it ,
+                                                           "Church of San Salvador de Vilar de Donas"@en ,
+                                                           "Iglesia de San Salvador de Vilar de Donas"@es .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index01
+ctp:Index01 rdf:type owl:NamedIndividual ,
+                     ctp:OrderedListSlot ;
+            ctp:hasItem ctp:Church_of_the_Holy_Cross ;
+            ctp:nextItem ctp:Index02 ;
+            ctp:hasIndex 1 .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index02
+ctp:Index02 rdf:type owl:NamedIndividual ,
+                     ctp:OrderedListSlot ;
+            ctp:hasItem ctp:Strada_Nuova ;
+            ctp:nextItem ctp:Index03 ;
+            ctp:previousItem ctp:Index01 ;
+            ctp:hasIndex 2 .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index03
+ctp:Index03 rdf:type owl:NamedIndividual ,
+                     ctp:OrderedListSlot ;
+            ctp:hasItem ctp:Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
+            ctp:nextItem ctp:Index04 ;
+            ctp:previousItem ctp:Index02 ;
+            ctp:hasIndex 3 .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Index04
+ctp:Index04 rdf:type owl:NamedIndividual ,
+                     ctp:OrderedListSlot ;
+            ctp:hasItem ctp:Catedral_de_Santiago_de_Compostela ;
+            ctp:previousItem ctp:Index03 ;
+            ctp:hasIndex 4 .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Pilgrim
+ctp:Pilgrim rdf:type owl:NamedIndividual ,
+                     ctp:Subject .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Religion
+ctp:Religion rdf:type owl:NamedIndividual ,
+                      ctp:Subject .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Road_to_Santiago_de_Compostela
+ctp:Road_to_Santiago_de_Compostela rdf:type owl:NamedIndividual ,
+                                            ctp:ThematicPath ;
+                                   ctp:hasRelationToAgent ctp:Certification_body_1 ,
+                                                          ctp:Creator_1 ;
+                                   ctp:hasSlot ctp:Index01 ,
+                                               ctp:Index02 ,
+                                               ctp:Index03 ,
+                                               ctp:Index04 ;
+                                   ctp:hasTheme ctp:Santiago_de_Compostela_pilgrim_routes ;
+                                   ctp:refersToPlace <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catedral_de_Santiago_de_Compostela,_Spain> ;
+                                   ctp:conveys "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it ,
+                                               "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en ;
+                                   ctp:hasCreationDate "2024-02-04"^^xsd:date ;
+                                   ctp:hasDescription "Abbracciando la spiritualità e l'unità culturale, il viaggio da Assisi a Santiago de Compostela incanta con la sua bellezza e ispira con il suo spirito di pellegrinaggio. Certificato come \"Cultural Route of the Council of Europe\" nel 1987."@it ,
+                                                      "Embracing spirituality and cultural unity, the journey from Assisi to Santiago de Compostela enchants with its beauty and inspires with its pilgrimage spirit. Certified as \"Cultural Route of the Council of Europe\" in 1987."@en ;
+                                   ctp:hasTitle "La strada per Santiago de Compostela"@it ,
+                                                "Road to Santiago de Compostela"@en ;
+                                   ctp:linkToResource "https://saintjamesway.eu/blog/portfolios/it_itine/"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Roberta_Maggi
+ctp:Roberta_Maggi rdf:type owl:NamedIndividual ,
+                           ctp:Person ;
+                  ctp:memberOf ctp:CNR_IMATI_Genoa_staff ;
+                  ctp:hasName "Roberta Maggi" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Santiago_de_Compostela_pilgrim_routes
+ctp:Santiago_de_Compostela_pilgrim_routes rdf:type owl:NamedIndividual ,
+                                                   ctp:Theme ;
+                                          ctp:hasSubject ctp:Pilgrim ,
+                                                         ctp:Religion ,
+                                                         ctp:Tradition ;
+                                          ctp:hasDescription """La leggenda narra che le spoglie di San Giacomo furono trasportate via mare da Gerusalemme fino al nord della Spagna, dove fu sepolto nella città di Santiago de Compostela, oggi.
+Dalla scoperta della presunta tomba del santo nel IX secolo, il Cammino di Santiago divenne una delle più importanti pellegrinaggi cristiani durante il Medioevo, poiché il suo completamento garantiva l'ottenimento di un'indulgenza plenaria.
+Patrimonio - Come risultato di questo pellegrinaggio, si è sviluppato un ricco patrimonio. Il patrimonio tangibile, come luoghi di culto, ospedali, strutture ricettive, ponti, così come il patrimonio non tangibile sotto forma di miti, leggende e canzoni, sono presenti lungo le Vie di Santiago e possono essere apprezzati dai viaggiatori.
+Viaggiare oggi - Ogni anno, centinaia di migliaia di viaggiatori si mettono in viaggio verso Santiago de Compostela. Poiché ci sono un numero infinito di diramazioni del percorso, è comune iniziare il viaggio letteralmente dalla propria porta di casa. La maggior parte viaggia a piedi, alcuni in bicicletta, e pochi viaggiano a cavallo o in asino, come facevano alcuni dei loro corrispettivi medievali."""@it ,
+                                                             """The legend holds that St. James's remains were carried by boat from Jerusalem to northern Spain, where he was buried in what is now the city of Santiago de Compostela.
+Since the discovery of the supposed tomb of the saint in the 9th century, the Way of St. James became one of the most important Christian pilgrimages during the Middle Ages, as its completion guaranteed earning a plenary indulgence.
+Heritage - As a result of this pilgrimage, a rich heritage was formed. Tangible heritage such as places of worship, hospitals, accommodation facilities, bridges, as well as non-tangible heritage in the form of myths, legends and songs are present along the Santiago Routes and can be enjoyed by the traveller.
+Travelling today - Each year, hundreds of thousands of travellers set out to make their way to Santiago de Compostela. As there are endless numbers of branches to the route, it is common to begin the journey literally from one's doorstep. Most travel by foot, some by bicycle, and a few travel on horseback or by donkey, as some of their medieval counterparts did."""@en ;
+                                          ctp:hasTitle "Le Vie del pellegrinaggio a Santiago de Compostela"@it ,
+                                                       "Santiago de Compostela pilgrim routes"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Strada_Nuova
+ctp:Strada_Nuova rdf:type owl:NamedIndividual ,
+                          ctp:CulturalResource ;
+                 ctp:hasLocation <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Giuseppe_Garibaldi_street,_Genoa,_Italy> ;
+                 ctp:hasTime <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1550> ;
+                 ctp:hasType ctp:Architectural_heritage ;
+                 ctp:isPartOf ctp:Road_to_Santiago_de_Compostela ;
+                 ctp:hasDescription """Via Giuseppe Garibaldi is a street in the historical centre of Genoa, in Northwestern Italy, well known for its ancient palaces. It is one of the Strade Nuove (Italian for \"new streets\") built by the Genoese aristocracy during the Renaissance. Since July 2006 it is inscribed in the list of UNESCO World Heritage Site Genoa: the Strade Nuove and the system of the Palazzi dei Rolli.
+The street, sanctioned in 1550, was built in 1558–1583. Originally named Strada Maggiore or Strada Nuova, in 1882 it was dedicated to Giuseppe Garibaldi. The street is 250 metres long and 7.5 metres wide.
+Between the first half of the 16th century and the first half of the 17th century, the nobility of the Republic of Genoa started a careful town planning to transform the existing medieval city and initiate a sizeable urban expansion to the North. The move to expand the antique palaces and to build new sumptuous ones was driven by the extraordinary wealth that came into the city through prosperous financing activities towards several European powers. In particular, the Genoese aristocracy financed the expensive undertakings of the Spanish Crown, such as the mercenary army that Spain kept in Flanders from 1566 to the peace of Westphalia in 1648. The ruling class of Genoa, mixing nobility of blood with new mercantile wealth, sought to underpin their prestige by the construction of grand city palaces and suburban villas of unusual splendor."""@en ,
+                                    """Via Giuseppe Garibaldi è una strada nel centro storico di Genova, nel nord-ovest dell'Italia, ben nota per i suoi antichi palazzi. È una delle Strade Nuove costruite dalla nobiltà genovese durante il Rinascimento. Dal luglio 2006 è iscritta nell'elenco dei siti del patrimonio mondiale dell'UNESCO Genova: le Strade Nuove e il sistema dei Palazzi dei Rolli.
+La strada, approvata nel 1550, fu costruita tra il 1558 e il 1583. Originariamente chiamata Strada Maggiore o Strada Nuova, nel 1882 fu dedicata a Giuseppe Garibaldi. La strada è lunga 250 metri e larga 7,5 metri.
+Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà della Repubblica di Genova avviò una pianificazione urbana attenta per trasformare la città medievale esistente e avviare una considerevole espansione urbana verso nord. La decisione di ampliare i palazzi antichi e costruirne di nuovi sfarzosi fu motivata dalla straordinaria ricchezza che entrò in città attraverso attività finanziarie prosperose verso diverse potenze europee. In particolare, l'aristocrazia genovese finanziò le costose imprese della Corona di Spagna, come l'esercito mercenario che la Spagna manteneva nelle Fiandre dal 1566 alla pace di Westfalia nel 1648. La classe dirigente di Genova, mescolando nobiltà di sangue con la nuova ricchezza mercantile, cercò di sostenere il proprio prestigio attraverso la costruzione di grandi palazzi cittadini e ville suburbane di splendore insolito."""@en ;
+                 ctp:hasTitle "Strada Nuova"@it ,
+                              "Via Giuseppe Garibaldi"@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tiziana_Pasciuto
+ctp:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
+                              ctp:Person ;
+                     ctp:memberOf ctp:CNR_IMATI_Genoa_staff ;
+                     ctp:hasName "Tiziana Pasciuto" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Tradition
+ctp:Tradition rdf:type owl:NamedIndividual ,
+                       ctp:Subject .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#XIII_century
+ctp:XIII_century rdf:type owl:NamedIndividual ,
+                          ctp:Interval ;
+                 ctp:hasBeginning <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1201> ;
+                 ctp:hasEnd <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1300> .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#XII_century
+ctp:XII_century rdf:type owl:NamedIndividual ,
+                         ctp:Interval ;
+                ctp:hasBeginning <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1101> ;
+                ctp:hasEnd <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1200> .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1075
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1075> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1075"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1101
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1101> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1101"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1200
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1200> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1200"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1201
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1201> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1201"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1300
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1300> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1300"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1550
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#1550> rdf:type owl:NamedIndividual ,
+                                                                                     ctp:Istant ;
+                                                                            ctp:hasDate "1550"^^xsd:date .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Avenue_de_l'Europe_F-67075_Strasbourg_Cedex,_France
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Avenue_de_l'Europe_F-67075_Strasbourg_Cedex,_France> rdf:type owl:NamedIndividual ,
+                                                                                                                                    ctp:Place ;
+                                                                                                                           ctp:hasCentroid "48.59492549284726, 7.773523691421236"^^rdfs:Literal ;
+                                                                                                                           ctp:hasTitle "Avenue de l'Europa F-67075 Strasburgo Cedex, Francia"@it ,
+                                                                                                                                        "Avenue de l'Europe F-67075 Strasbourg Cedex, France"@fr ,
+                                                                                                                                        "Avenue of Europe F-67075 Strasbourg Cedex, France"@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catedral_de_Santiago_de_Compostela,_Spain
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Catedral_de_Santiago_de_Compostela,_Spain> rdf:type owl:NamedIndividual ,
+                                                                                                                          ctp:Place ;
+                                                                                                                 ctp:isLocationOf ctp:Catedral_de_Santiago_de_Compostela ;
+                                                                                                                 ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^rdfs:Literal ;
+                                                                                                                 ctp:hasTitle "Catedral de Santiago de Compostela, España"@es ,
+                                                                                                                              "Cattedrale di Santiago de Compostela"@it ,
+                                                                                                                              "Santiago de Compostela Cathedral, Spain"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Church_of_the_Holy_Cross,_Assisi,_Italy
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Church_of_the_Holy_Cross,_Assisi,_Italy> rdf:type owl:NamedIndividual ,
+                                                                                                                        ctp:Place ;
+                                                                                                               ctp:isLocationOf ctp:Church_of_the_Holy_Cross ;
+                                                                                                               ctp:hasCentroid "43.082236792101796, 12.615436731593"^^rdfs:Literal ;
+                                                                                                               ctp:hasTitle "Chiesa della Santa Croce, Assisi, Italia"@it ,
+                                                                                                                            "Church of Holy Cross, Assisi, Italy"@en .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Giuseppe_Garibaldi_street,_Genoa,_Italy
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Giuseppe_Garibaldi_street,_Genoa,_Italy> rdf:type owl:NamedIndividual ,
+                                                                                                                        ctp:Place ;
+                                                                                                               ctp:isLocationOf ctp:Strada_Nuova ;
+                                                                                                               ctp:hasBoundingBox """POLYGON ((
+44.4113889 8.931388888888888 , 44.4116667 8.931388888888888
+44.4105556 8.934722222222222 , 44.4108333 , 8.935
+))"""^^rdfs:Literal ;
+                                                                                                               ctp:hasTitle "Giuseppe Garibaldi street, Genoa, Italy"@en ,
+                                                                                                                            "Via Giuseppe Garibaldi, Genova, Italia"@it .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> rdf:type owl:NamedIndividual ,
+                                                                                                                                               ctp:Place ;
+                                                                                                                                      ctp:isLocationOf ctp:Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
+                                                                                                                                      ctp:hasCentroid "42.89254902812202, -7.807993849231925"^^rdfs:Literal ;
+                                                                                                                                      ctp:hasTitle "Church of San Salvador de Vilar de Donas, Palas de Rei, Spain"@en ,
+                                                                                                                                                   "Iglesia de San Salvador de Vilar de Donas, Palais de Rei, España"@es .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#de_Marini_street,_6,_Genoa,_Italy> rdf:type owl:NamedIndividual ,
+                                                                                                                  ctp:Place ;
+                                                                                                         ctp:hasCentroid "44.40872901586253, 8.901019601274273"^^rdfs:Literal ;
+                                                                                                         ctp:hasTitle "Via de Marini, 6, Genova, Italia"^^rdfs:Literal ,
+                                                                                                                      "de Marini street, 6, Genoa, Italy"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+dcterms:created rdfs:isDefinedBy dcterms: ;
+                rdfs:comment "Date of creation of the resource."@en ;
+                rdfs:label "Date Created"@en ;
+                dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+
+
+dcterms:creator rdfs:isDefinedBy dcterms: ;
+                dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
+                rdfs:comment "An entity responsible for making the resource."@en ;
+                rdfs:label "Creator"@en .
+
+
+dcterms:description rdfs:label "Description"@en ;
+                    rdfs:isDefinedBy dcterms: ;
+                    rdfs:comment "An account of the resource."@en ;
+                    dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
+
+
+dcterms:identifier dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
+                   rdfs:isDefinedBy dcterms: ;
+                   rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                   rdfs:label "Identifier"@en .
+
+
+dcterms:subject rdfs:label "Subject"@en ;
+                rdfs:comment "A topic of the resource."@en ;
+                dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
+                rdfs:isDefinedBy dcterms: .
+
+
+dcterms:title rdfs:label "Title"@en ;
+              rdfs:comment "A name given to the resource."@en ;
+              rdfs:isDefinedBy dcterms: .
+
+
+dcterms:type rdfs:isDefinedBy dcterms: ;
+             dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
+             rdfs:comment "The nature or genre of the resource."@en ;
+             rdfs:label "Type"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
