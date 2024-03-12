@@ -19,47 +19,26 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
-@base <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology> .
+@base <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#> .
 
 <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology> rdf:type owl:Ontology ;
+                                                                        dcterms:created "2023-03-06"^^xsd:date ;
+                                                                        dcterms:description """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
+Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
+                                                                                            """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
+La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
+Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
+                                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                        dcterms:title "Cultural Thematic Path (CTP) Ontology"@en ;
+                                                                        vann:preferredNamespacePrefix "ctp" ;
                                                                         rdfs:comment """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
 Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
                                                                                      """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
 La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
 Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
                                                                         rdfs:label "Cultural Thematic Path (CTP) Ontology"@en ;
-dcterms:description """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
-                                                                                     """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
-La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
-                                                                        dcterms:creator <https://orcid.org/0000-0002-2440-2376>;
-                                                                        dcterms:creator <https://orcid.org/0000-0001-5648-2713>, :zroberta;
-                                                                        vann:preferredNamespacePrefix "ctp"; 
-                                                                        owl:versionInfo "0.0.1" ;
-                                                                        dcterms:created "2023-03-06"^^xsd:date;
-                                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                                                        dcterms:title "Cultural Thematic Path (CTP) Ontology"@en.
+                                                                        owl:versionInfo "0.0.1" .
 
-:zroberta foaf:name "Roberta Maggi"@en ; rdfs:label "Roberta Maggi"@en ; org:memberOf :cnr-imati .
-
-
-<https://orcid.org/0000-0001-5648-2713> foaf:name "Riccardo Albertoni"@en ;  rdfs:label "Riccardo Albertoni"@en ; org:memberOf :cnr-imati  .
-<https://orcid.org/0000-0002-2440-2376> foaf:name "Tiziana Pasciuto"@en ;   rdfs:label  "Tiziana Pasciuto"@en ; 
-org:memberOf  :universitaDiGenova , :cnr-imati  .
-
-
-
-:cnr-imati rdf:type owl:NamedIndividual ,
-                                   foaf:Organization ;
-                          foaf:homepage "https://imati.cnr.it/" ;
-                          foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en; 
-                          rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en  .
-:universitaDiGenova rdf:type owl:NamedIndividual ,
-                                   foaf:Organization ;
-                          foaf:homepage "https://unige.it/" ;
-                          foaf:name "University of Genoa, Italy"@en ;
-                          rdfs:label "University of Genoa, Italy"@en .
 #################################################################
 #    Annotation properties
 #################################################################
@@ -123,6 +102,10 @@ dcterms:identifier rdf:type owl:AnnotationProperty ;
                    rdfs:range rdfs:Literal .
 
 
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/subject
 dcterms:subject rdf:type owl:AnnotationProperty ;
                 rdfs:subPropertyOf dc:subject .
@@ -145,6 +128,10 @@ olo:item rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/vocab/vann/example
 vann:example rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/usageNote
@@ -183,6 +170,10 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 powder-s:describedby rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/org#memberOf
+<http://www.w3.org/ns/org#memberOf> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/prov#category
 prov:category rdf:type owl:AnnotationProperty .
 
@@ -213,6 +204,10 @@ prov:n rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/ns/prov#sharesDefinitionWith
 prov:sharesDefinitionWith rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -1292,48 +1287,97 @@ foaf:Person rdf:type owl:Class ;
 
 
 #################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology
+<http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology> rdf:type owl:NamedIndividual ;
+                                                                       dcterms:creator ctp:zroberta ,
+                                                                                       <https://orcid.org/0000-0001-5648-2713> ,
+                                                                                       <https://orcid.org/0000-0002-2440-2376> .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#cnr-imati
+ctp:cnr-imati rdf:type owl:NamedIndividual ,
+                       foaf:Organization ;
+              foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" ;
+              rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
+              foaf:homepage "https://imati.cnr.it/" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#universitaDiGenova
+ctp:universitaDiGenova rdf:type owl:NamedIndividual ,
+                                foaf:Organization ;
+                       foaf:name "University of Genoa, Italy" ;
+                       rdfs:label "University of Genoa, Italy"@en ;
+                       foaf:homepage "https://unige.it/" .
+
+
+###  http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#zroberta
+ctp:zroberta rdf:type owl:NamedIndividual ;
+             foaf:name "Roberta Maggi" ;
+             rdfs:label "Roberta Maggi"@en ;
+             <http://www.w3.org/ns/org#memberOf> ctp:cnr-imati .
+
+
+###  https://orcid.org/0000-0001-5648-2713
+<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
+                                        ctp:linkToResource "Riccardo Albertoni" ;
+                                        rdfs:label "Riccardo Albertoni"@en ;
+                                        <http://www.w3.org/ns/org#memberOf> ctp:cnr-imati .
+
+
+###  https://orcid.org/0000-0002-2440-2376
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
+                                        foaf:name "Tiziana Pasciuto" ;
+                                        rdfs:label "Tiziana Pasciuto"@en ;
+                                        <http://www.w3.org/ns/org#memberOf> ctp:cnr-imati ,
+                                                                            ctp:universitaDiGenova .
+
+
+#################################################################
 #    Annotations
 #################################################################
 
-dcterms:created rdfs:isDefinedBy dcterms: ;
+dcterms:created dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
                 rdfs:comment "Date of creation of the resource."@en ;
-                rdfs:label "Date Created"@en ;
-                dcterms:description "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+                rdfs:isDefinedBy dcterms: ;
+                rdfs:label "Date Created"@en .
 
 
-dcterms:creator rdfs:isDefinedBy dcterms: ;
-                dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
+dcterms:creator dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
                 rdfs:comment "An entity responsible for making the resource."@en ;
+                rdfs:isDefinedBy dcterms: ;
                 rdfs:label "Creator"@en .
 
 
-dcterms:description rdfs:label "Description"@en ;
-                    rdfs:isDefinedBy dcterms: ;
+dcterms:description dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
                     rdfs:comment "An account of the resource."@en ;
-                    dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
+                    rdfs:isDefinedBy dcterms: ;
+                    rdfs:label "Description"@en .
 
 
-dcterms:identifier rdfs:isDefinedBy dcterms: ;
-                   dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
+dcterms:identifier dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
                    rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                   rdfs:isDefinedBy dcterms: ;
                    rdfs:label "Identifier"@en .
 
 
-dcterms:subject rdfs:label "Subject"@en ;
+dcterms:subject dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
                 rdfs:comment "A topic of the resource."@en ;
-                dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
-                rdfs:isDefinedBy dcterms: .
+                rdfs:isDefinedBy dcterms: ;
+                rdfs:label "Subject"@en .
 
 
-dcterms:title rdfs:label "Title"@en ;
-              rdfs:comment "A name given to the resource."@en ;
-              rdfs:isDefinedBy dcterms: .
+dcterms:title rdfs:comment "A name given to the resource."@en ;
+              rdfs:isDefinedBy dcterms: ;
+              rdfs:label "Title"@en .
 
 
-dcterms:type rdfs:isDefinedBy dcterms: ;
-             dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
+dcterms:type dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
              rdfs:comment "The nature or genre of the resource."@en ;
+             rdfs:isDefinedBy dcterms: ;
              rdfs:label "Type"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

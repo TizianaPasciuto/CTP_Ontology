@@ -1,0 +1,2527 @@
+[ {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:next"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:ordered_list"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:previous"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:index"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval"
+    }, {
+      "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    }, {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "meaning"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "bounding box"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "centroid"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "index"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "appellation"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "notation"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/dcam/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial region or named place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date of creation of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date Created"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An entity responsible for making the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/creator"
+  }, {
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An account of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/description"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An unambiguous reference to the resource within a given context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A topic of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/subject"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A name given to the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/title"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The nature or genre of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/type"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:Slot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A slot in an ordered list with a fixed index."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:index",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An index of a slot in an ordered list."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has index"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An item of a slot in an ordered list."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has item"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:next",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the next slot in an ordered list."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has next"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:previous"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:ordered_list",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ordered list of an slot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has ordered list"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:slot"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:previous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the previous slot in an ordered list"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has previous"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/olo/core#olo:slot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A slot in an ordered list."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/olo/core#olo:Slot"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/usageNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-03-06"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#zroberta"
+  }, {
+    "@id" : "https://orcid.org/0000-0001-5648-2713"
+  }, {
+    "@id" : "https://orcid.org/0000-0002-2440-2376"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.\nScope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."
+  }, {
+    "@language" : "it",
+    "@value" : "Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nAmbito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Cultural Thematic Path (CTP) Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ctp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.\nScope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."
+  }, {
+    "@language" : "it",
+    "@value" : "Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nAmbito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cultural Thematic Path (CTP) Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person, family, group or institution that performs a certain action."
+  }, {
+    "@language" : "it",
+    "@value" : "Una persona, famiglia, gruppo o istituzione che compie una certa azione."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A planned or an unplanned cultural situation that includes a number of activities. It occurs in a certain time and space, and may involve agents."
+  }, {
+    "@language" : "it",
+    "@value" : "Una situazione culturale pianificata o non pianificata che comprende una serie di attività. Si verifica in un determinato tempo e spazio e può coinvolgere agenti."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tangible or intangible resource, movable or immovable, realized by nature or man-made, that has been identified as possessing artistic, historical, archaeological, or ethno-anthropological significance."
+  }, {
+    "@language" : "it",
+    "@value" : "Una risorsa tangibile o intangibile, mobile o immobile, realizzata dalla natura o dall'uomo, identificata come possedente significato artistico, storico, archeologico o etno-antropologico."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'identificazione di una posizione come punto, linea, poligono, ecc., espressa utilizzando coordinate in un determinato sistema di riferimento cartesiano."
+  }, {
+    "@language" : "en",
+    "@value" : "The identification of a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locn:Geometry"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of individual agents that can itself act as an agent, capable of performing actions."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione di agenti individuali che può a sua volta agire come un agente, capace di compiere azioni."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Group"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of individual agents."
+  }, {
+    "@language" : "it",
+    "@value" : "Una collezione di agenti individuali."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sequence of characters or symbols that serves to uniquely distinguish an entity or object within a specific system or context."
+  }, {
+    "@language" : "it",
+    "@value" : "Una sequenza di caratteri o simboli che serve a distinguere in modo univoco un'entità o un oggetto all'interno di un sistema o contesto specifico."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/ns/adms#adms:Identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with an extent or duration."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'entità temporale con un'estensione o una durata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#Interval"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with zero extent or duration."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'entità temporale con durata o estensione pari a zero."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (i.e. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."
+  }, {
+    "@language" : "it",
+    "@value" : "Un percorso tematico è strutturato come un collezionista di oggetti culturali o presentato con un ordine casuale o predeterminato. In quest'ultimo caso, gli oggetti culturali possono essere ordinati secondo un certo criterio (ad esempio, alfabetico, cronologico, in base all'autore, ecc.). Questa classe indica lo slot in una lista ordinata con un indice fisso."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific type of agent that corresponds to social institutions, such as companies and societies."
+  }, {
+    "@language" : "it",
+    "@value" : "Un tipo specifico di agente che corrisponde a istituzioni sociali, come aziende e società."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Human individuals, regardless of whether they are alive, dead, real, or imaginary."
+  }, {
+    "@language" : "it",
+    "@value" : "Individui umani, indipendentemente dal fatto che siano vivi, morti, reali o immaginari."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Posizione specifica nello spazio fisico; identifica la localizzazione di qualsiasi entità. Può essere un punto preciso nello spazio (ad esempio, coordinate geografiche) o un'area più ampia (ad esempio, regione geografica)."
+  }, {
+    "@language" : "en",
+    "@value" : "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (i.e. geographical coordinates) or a larger area (i.e. geographical region)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tangible good or an intangible service offered on the market to satisfy consumers' needs or desires."
+  }, {
+    "@language" : "it",
+    "@value" : "Un bene tangibile o un servizio intangibile offerto sul mercato per soddisfare i bisogni o desideri dei consumatori."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class that allows linking another class to an agent playing a specific role."
+  }, {
+    "@language" : "it",
+    "@value" : "Classe che consente di collegare un'altra classe a un agente che svolge un ruolo specifico."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/ns/prov#AgentInfluence"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il ruolo svolto da un agente in un contesto specifico."
+  }, {
+    "@language" : "en",
+    "@value" : "The role performed by an agent in a specific context."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A concept or a series of concepts that concern and describe the thematic path."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2004/02/skos/core#Concept" : [ {
+    "@language" : "en",
+    "@value" : "A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes. \nThe chosen theme, which may concern specific topics, contexts, events, places, historical periods or characters and so on, is expressed synthetically by a title and in-depth with a written descriptive text; they can be further identified through subjects. \nThe thematic path could be structured either as a collector of cultural objects, without establishing an order of priority, or present a predetermined order. \nThe development and use of this enjoyment strategy can be profitable to convey messages and cultural, ethical and social values."
+  }, {
+    "@language" : "it",
+    "@value" : "Un percorso tematico è uno strumento per  la valorizzazione del patrimonio culturale che consente di collegare oggetti culturali di diversa natura (tangibili e intangibili) attraverso l'identificazione di temi comuni. Il tema scelto, che può riguardare argomenti specifici, contesti, eventi, luoghi, periodi storici o personaggi e così via, è espresso in modo sintetico da un titolo e approfondito con un testo descrittivo scritto; possono essere ulteriormente identificati attraverso soggettazioni. Il percorso tematico potrebbe essere strutturato sia come un collezionista di oggetti culturali, senza stabilire un ordine di priorità, sia presentare un ordine predefinito. Lo sviluppo e l'uso di questa strategia di valorizzazione possono essere utili per trasmettere messaggi e valori culturali, etici e sociali."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A broad concept or a general idea that can be explored through various subjects."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto ampio o un'idea generale che può essere esplorata attraverso vari argomenti."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."
+  }, {
+    "@language" : "en",
+    "@value" : "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty's Art & Architecture Thesaurus)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#allowsTheSaleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#cnr-imati",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://imati.cnr.it/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#conveys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica un messaggio che può trasmettere valori culturali, etici e sociali attraverso il percorso tematico."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates a message that can convey cultural, ethical and social values through the thematic path."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Beginning of a temporal entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Inizio di un'entità temporale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasBeginning"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasBoundingBox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Il riquadro delimitatore geografico di un oggetto spaziale."
+  }, {
+    "@language" : "en",
+    "@value" : "The geographic bounding box of a spatial thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#bbox"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCentroid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La cornice geografica delimitante di un'entità spaziale."
+  }, {
+    "@language" : "en",
+    "@value" : "The geographic bounding box of a spatial thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#centroid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica quando è stato creato il percorso tematico."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates when the thematic path was created."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica tramite quale agente pubblico o privato è stato creato il codice di identificazione della risorsa culturale."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates by which public or private agent the identification code of the cultural resource was created."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica una data o un intervallo cronologico che caratterizza un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates a date or a chronological range that characterizes an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#inXSDDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica una descrizione di un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates a description of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "End of a temporal entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Fine di una entità temporale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Istant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasEnd"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un oggetto spaziale con una geometria corrispondente."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a spatial thing with a corresponding geometry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Geometry"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locn:geometry"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica una risorsa culturale in una lista ordinata."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates a slot cultural resource in an ordered list."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la posizione dell'entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates that a group (intended as a simple grouping of people or as a company) has agents as members."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il nome associato a un agente."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the name associated with an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasNotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il codice di identificazione associato all'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "The string that constitutes the cultural resource identifier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasOrderedList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica come sono organizzati gli slot del percorso tematico."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates how the slots of the thematic path are organized."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between the thematic path and the cultural resources that compose it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot"
+    }, {
+      "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasItem"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la localizzazione di un agente."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the location of an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasPrimaryIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica un identificatore univoco della risorsa."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates a unique identifier of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRelationToAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between an entity and an agent involved with a certain role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the type of role played by the agent (i.e. creator, funder, etc)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Role"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#hadRole"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSecondaryIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/ns/adms#adms:identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Per consentire la classificazione delle risorse culturali secondo un determinato criterio, il percorso tematico è organizzato attraverso slot che possono essere indicizzati."
+  }, {
+    "@language" : "en",
+    "@value" : "To allow the sorting of cultural resources according to a certain criterion, the thematic path is organized through slots that can be indexed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica a quale/i soggetto/i l'entità si riferisce."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates to which subject/subjects the entity refers/refer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Subject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il tema su cui si basa il percorso tematico."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the theme on which the thematic path is based."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Theme"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the time an entity was created and/or an event occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il titolo di un'entità."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the title of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il tipo di entità."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the type of entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che un percorso tematico può includere sottopercorsi tematici. Pertanto, possono essere utilizzati come approfondimento degli argomenti trattati precedentemente."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates that a thematic path may include sub-thematic paths. Therefore, they can be used as a deepening of the topics dealt with previously."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica quale agente è coinvolto in una relazione con un certo ruolo."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates which agent is involved in a relationship with a certain role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#RelationToAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isIncludedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che un sottopercorso tematico è incluso in un percorso tematico."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates that a sub-thematic path is included in a thematic path."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isInspiredByAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra il percorso tematico e l'agente che lo ispira."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between the thematic path and the agent that inspires it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica l'associazione tra una posizione e l'entità che vi è localizzata."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the association between a location and the entity that is located there."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra l'oggetto culturale e il/i percorso/percorsi tematico/i a cui è collegato."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between the cultural object and the thematic path/paths to which it is linked."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isPreservedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the public or private agent responsible for preserving the cultural resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalResource"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isRealizedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#isSelledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the link that allows purchasing the resource available on the web through an hyperlink."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#linkToResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che un agente fa parte di un gruppo, inteso come semplice raggruppamento di persone o come società."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates that an agent is part of a group, intended as a simple grouping of people or as a company."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#GroupsOfPeople"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#nextItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In an ordered collection, indicates the link to the next item in a list."
+  }, {
+    "@language" : "it",
+    "@value" : "In un insieme ordinato, indica il collegamento all'elemento successivo in un elenco."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#previousItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In an ordered collection, indicates the link to the previous item in a list."
+  }, {
+    "@language" : "it",
+    "@value" : "In un insieme ordinato, indica il collegamento all'elemento precedente in un elenco."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#OrderedListSlot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra il percorso tematico e i luoghi a cui è collegato."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates the relationship between the thematic path and the places to which it is linked."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#refersToTemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between the thematic path and the historical period to which it refers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#hasSubject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#takesPlaceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra un evento culturale e il luogo in cui si è svolto."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between a cultural event and the place where it took place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#CulturalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#universitaDiGenova",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "University of Genoa, Italy"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@value" : "https://unige.it/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "University of Genoa, Italy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#zroberta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Roberta Maggi"
+  } ],
+  "http://www.w3.org/ns/org#memberOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#cnr-imati"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Roberta Maggi"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#changeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "notation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "By convention, skos:notation is used with a typed literal in the object position of the triple."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with zero extent or duration"
+  }, {
+    "@language" : "es",
+    "@value" : "Una entidad temporal con una extensión o duración cero."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time instant"
+  }, {
+    "@language" : "es",
+    "@value" : "instante de tiempo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with zero extent or duration"
+  }, {
+    "@language" : "es",
+    "@value" : "Una entidad temporal con una extensión o duración cero."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with an extent or duration"
+  }, {
+    "@language" : "es",
+    "@value" : "Una entidad temporal con una extensión o duración."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time interval"
+  }, {
+    "@language" : "es",
+    "@value" : "intervalo de tiempo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with an extent or duration"
+  }, {
+    "@language" : "es",
+    "@value" : "Una entidad temporal con una extensión o duración."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal interval or instant."
+  }, {
+    "@language" : "es",
+    "@value" : "Un intervalo temporal o un instante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temporal entity"
+  }, {
+    "@language" : "es",
+    "@value" : "entidad temporal"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A temporal interval or instant."
+  }, {
+    "@language" : "es",
+    "@value" : "Un intervalo temporal o un instante."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasBeginning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Beginning of a temporal entity"
+  }, {
+    "@language" : "es",
+    "@value" : "Comienzo de una entidad temporal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has beginning"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene principio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Beginning of a temporal entity."
+  }, {
+    "@language" : "es",
+    "@value" : "Comienzo de una entidad temporal."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "End of a temporal entity."
+  }, {
+    "@language" : "es",
+    "@value" : "Final de una entidad temporal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has end"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene fin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "End of a temporal entity."
+  }, {
+    "@language" : "es",
+    "@value" : "Final de una entidad temporal."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."
+  }, {
+    "@language" : "en",
+    "@value" : "Supports the association of a temporal entity (instant or interval) to any thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has time"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tiempo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."
+  }, {
+    "@language" : "en",
+    "@value" : "Supports the association of a temporal entity (instant or interval) to any thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "es",
+    "@value" : "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia."
+  }, {
+    "@language" : "en",
+    "@value" : "Feature at risk - added in 2017 revision, and not yet widely used. "
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#inXSDDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Posición de un instante, expresado utilizando xsd:date."
+  }, {
+    "@language" : "en",
+    "@value" : "Position of an instant, expressed using xsd:date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "en fecha XSD"
+  }, {
+    "@language" : "en",
+    "@value" : "in XSD date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "es",
+    "@value" : "Posición de un instante, expresado utilizando xsd:date."
+  }, {
+    "@language" : "en",
+    "@value" : "Position of an instant, expressed using xsd:date"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2007/05/powder-s#describedby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#adms:Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is based on the UN/CEFACT Identifier class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/adms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identifier"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#adms:identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a resource to an adms:Identifier class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/adms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/adms#adms:Identifier"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#bbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/dc/terms/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "da",
+    "@value" : "bounding box"
+  }, {
+    "@language" : "en",
+    "@value" : "bounding box"
+  }, {
+    "@language" : "es",
+    "@value" : "cuadro delimitador"
+  }, {
+    "@language" : "cs",
+    "@value" : "ohraničení oblasti"
+  }, {
+    "@language" : "it",
+    "@value" : "quadro di delimitazione"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@language" : "en",
+    "@value" : "New property added in DCAT 2.0."
+  }, {
+    "@language" : "cs",
+    "@value" : "Nová vlastnost přidaná ve verzi DCAT 2.0."
+  }, {
+    "@language" : "it",
+    "@value" : "Nuova proprietà aggiunta in DCAT 2.0."
+  }, {
+    "@language" : "da",
+    "@value" : "Ny egenskab tilføjet i DCAT 2.0."
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad nueva agregada en DCAT 2.0."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "da",
+    "@value" : "Den geografiske omskrevne firkant af en ressource."
+  }, {
+    "@language" : "es",
+    "@value" : "El cuadro delimitador geográfico para un recurso."
+  }, {
+    "@language" : "it",
+    "@value" : "Il riquadro di delimitazione geografica di una risorsa."
+  }, {
+    "@language" : "cs",
+    "@value" : "Ohraničení geografické oblasti zdroje."
+  }, {
+    "@language" : "en",
+    "@value" : "The geographic bounding box of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "es",
+    "@value" : "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "it",
+    "@value" : "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "cs",
+    "@value" : "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "da",
+    "@value" : "Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "en",
+    "@value" : "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#centroid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/dc/terms/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "cs",
+    "@value" : "centroid"
+  }, {
+    "@language" : "en",
+    "@value" : "centroid"
+  }, {
+    "@language" : "es",
+    "@value" : "centroide"
+  }, {
+    "@language" : "it",
+    "@value" : "centroide"
+  }, {
+    "@language" : "da",
+    "@value" : "geometrisk tyngdepunkt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "da",
+    "@value" : "centroide"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@language" : "en",
+    "@value" : "New property added in DCAT 2.0."
+  }, {
+    "@language" : "cs",
+    "@value" : "Nová vlastnost přidaná ve verzi DCAT 2.0."
+  }, {
+    "@language" : "es",
+    "@value" : "Nueva propiedad agregada en DCAT 2.0."
+  }, {
+    "@language" : "it",
+    "@value" : "Nuova proprietà aggiunta in DCAT 2.0."
+  }, {
+    "@language" : "da",
+    "@value" : "Ny egenskab tilføjet i DCAT 2.0."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "da",
+    "@value" : "Det geometrisk tyngdepunkt (centroid) for en ressource."
+  }, {
+    "@language" : "es",
+    "@value" : "El centro geográfico (centroide) de un recurso."
+  }, {
+    "@language" : "cs",
+    "@value" : "Geografický střed (centroid) zdroje."
+  }, {
+    "@language" : "it",
+    "@value" : "Il centro geografico (centroide) di una risorsa."
+  }, {
+    "@language" : "en",
+    "@value" : "The geographic center (centroid) of a resource."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "es",
+    "@value" : "El rango de esta propiedad es intencionalmente genérico con el objetivo de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede codificarse como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "it",
+    "@value" : "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "cs",
+    "@value" : "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "da",
+    "@value" : "Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige geokodninger. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."
+  }, {
+    "@language" : "en",
+    "@value" : "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locn:Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "locn:Geometry"
+  } ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/locn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geometry"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locn:geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "locn:geometry"
+  } ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@language" : "en",
+    "@value" : "\nThe following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.\n- WKT (GeoSPARQL)\n:Resource locn:geometry\n  \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral .\n- GML\n:Resource locn:geometry\n  \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>\n  <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral .\n- RDF+WKT (GeoSPARQL)\n:Resource locn:geometry\n  [ a sf:Point; gsp:asWKT \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral ] .\n- RDF+GML (GeoSPARQL)\n:Resource locn:geometry\n  [ a sf:Point; gsp:asGML\n     \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>\n      <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral ] .\n- RDF (WGS84 lat/long)\n:Resource locn:geometry [ a geo:Point; geo:lat \"51.477811\"; geo:long \"-0.001475\" ] .\n- RDF (schema.org)\n:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude \"51.477811\"; schema:longitude \"-0.001475\" ] .\n- geo URI\n:Resource locn:geometry <geo:51.477811,-0.001475;u=0;crs=wgs84> .\n- GeoHash URI\n:Resource locn:geometry <http://geohash.org/gcpuzgnzvxkp> .\n    "
+  } ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "\nDepending on how a geometry is encoded, the range of this property may be one of the following:\n- a literal (e.g., WKT - string literal -, GML, KML - XML literal)\n- a geometry class, as those defined in the OGC's GeoSPARQL specification, in the W3C's Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;\n- geocoded URIs, as geo or GeoHash URIs, treated as URI references.\nFor interoperability reasons, it is recommended using one of the following:\n- Any geometry:\n  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.\n  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.\n  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).\n- Points: one of the above, or:\n  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.\n  - GeoHash URIs.\n  - geo URIs.\n    "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates any resource with the corresponding geometry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/locn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locn:Geometry"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@language" : "en",
+    "@value" : "testing"
+  } ],
+  "http://www.w3.org/2007/05/powder-s#describedby" : [ {
+    "@id" : "https://joinup.ec.europa.eu/node/55858"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#AgentInfluence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."
+  }, {
+    "@language" : "en",
+    "@value" : "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AgentInfluence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/ns/prov#agent"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "qualified"
+  } ],
+  "http://www.w3.org/ns/prov#editorsDefinition" : [ {
+    "@language" : "en",
+    "@value" : "AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/ns/prov#hadRole"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "qualified"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "agents-responsibility"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@language" : "en",
+    "@value" : "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."
+  } ],
+  "http://www.w3.org/ns/prov#dm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role"
+  } ],
+  "http://www.w3.org/ns/prov#n" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#dm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#editorsDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#hadRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."
+  }, {
+    "@value" : "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hadRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "qualified"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "agents-responsibility"
+  } ],
+  "http://www.w3.org/ns/prov#editorsDefinition" : [ {
+    "@language" : "en",
+    "@value" : "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end."
+  } ],
+  "http://www.w3.org/ns/prov#inverse" : [ {
+    "@value" : "wasRoleIn"
+  } ],
+  "http://www.w3.org/ns/prov#sharesDefinitionWith" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#inverse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#n",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#sharesDefinitionWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An agent (eg. person, group, software or physical artifact)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class of Agents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A name for some thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0001-5648-2713",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Riccardo Albertoni"
+  } ],
+  "http://www.w3.org/ns/org#memberOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#cnr-imati"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Riccardo Albertoni"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0002-2440-2376",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tiziana Pasciuto"
+  } ],
+  "http://www.w3.org/ns/org#memberOf" : [ {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#cnr-imati"
+  }, {
+    "@id" : "http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#universitaDiGenova"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Tiziana Pasciuto"
+  } ]
+} ]
