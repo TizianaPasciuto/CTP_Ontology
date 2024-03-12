@@ -27,8 +27,39 @@ Scope:  Although the structuring of thematic paths can be related to any sector,
                                                                                      """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
 La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
 Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
-                                                                        rdfs:label "Cultural Thematic Path (CTP) Ontology"@en .
+                                                                        rdfs:label "Cultural Thematic Path (CTP) Ontology"@en ;
+dcterms:description """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
+Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
+                                                                                     """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
+La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
+Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
+                                                                        dcterms:creator <https://orcid.org/0000-0002-2440-2376>;
+                                                                        dcterms:creator <https://orcid.org/0000-0001-5648-2713>, :zroberta;
+                                                                        vann:preferredNamespacePrefix "ctp"; 
+                                                                        owl:versionInfo "0.0.1" ;
+                                                                        dcterms:created "2023-03-06"^^xsd:date;
+                                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                        dcterms:title "Cultural Thematic Path (CTP) Ontology"@en.
 
+:zroberta foaf:name "Roberta Maggi"@en ; rdfs:label "Roberta Maggi"@en ; org:memberOf :cnr-imati .
+
+
+<https://orcid.org/0000-0001-5648-2713> foaf:name "Riccardo Albertoni"@en ;  rdfs:label "Riccardo Albertoni"@en ; org:memberOf :cnr-imati  .
+<https://orcid.org/0000-0002-2440-2376> foaf:name "Tiziana Pasciuto"@en ;   rdfs:label  "Tiziana Pasciuto"@en ; 
+org:memberOf  :universitaDiGenova , :cnr-imati  .
+
+
+
+:cnr-imati rdf:type owl:NamedIndividual ,
+                                   foaf:Organization ;
+                          foaf:homepage "https://imati.cnr.it/" ;
+                          foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en; 
+                          rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en  .
+:universitaDiGenova rdf:type owl:NamedIndividual ,
+                                   foaf:Organization ;
+                          foaf:homepage "https://unige.it/" ;
+                          foaf:name "University of Genoa, Italy"@en ;
+                          rdfs:label "University of Genoa, Italy"@en .
 #################################################################
 #    Annotation properties
 #################################################################
