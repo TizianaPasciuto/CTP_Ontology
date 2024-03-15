@@ -4,12 +4,12 @@
 @prefix : <> .
 <..\index-en.html> a prov:Entity;
 	 dc:title "Cultural Thematic Path (CTP) Ontology";
-	 prov:wasAttributedTo <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#zroberta>;
-	 dc:creator <http://www.semanticweb.org/principale/ontologies/2024/0/CTP_Ontology#zroberta>;
-	 prov:wasAttributedTo <https://orcid.org/0000-0001-5648-2713>;
-	 dc:creator <https://orcid.org/0000-0001-5648-2713>;
 	 prov:wasAttributedTo <https://orcid.org/0000-0002-2440-2376>;
 	 dc:creator <https://orcid.org/0000-0002-2440-2376>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0001-5648-2713>;
+	 dc:creator <https://orcid.org/0000-0001-5648-2713>;
+	 prov:wasAttributedTo <https://w3id.org/ctp#croberta>;
+	 dc:creator <https://w3id.org/ctp#croberta>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2023-03-06";
 .
