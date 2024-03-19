@@ -19,35 +19,32 @@
      xmlns:schema="https://schema.org/"
      xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
     <owl:Ontology rdf:about="https://w3id.org/ctp">
-        <terms:abstract rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.&lt;br&gt;The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
-In this module the following Ontology Design Patterns have been used:
-- http://www.ontologydesignpatterns.org/cp/owl/list.owl
-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
-- http://www.ontologydesignpatterns.org/cp/owl/place.owl
-This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON &quot;Ricerca e Innovazione&quot; 2014-2020, Asse IV &quot;Istruzione e ricerca per il recupero&quot;, Azione IV.5 &quot;Dottorati su tematiche Green&quot; DM 1061/2021.</terms:abstract>
-        <terms:abstract xml:lang="it">Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.
-In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:
-- http://www.ontologydesignpatterns.org/cp/owl/list.owl
-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
-- http://www.ontologydesignpatterns.org/cp/owl/place.owl
+        <terms:abstract rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.&lt;br&gt;The namespace for CTP terms is &lt;a href=&quot;https://w3id.org/ctp#&quot;&gt;https://w3id.org/ctp#&lt;/a&gt;&lt;br&gt;The suggested prefix for CTP namespace is ctp.&lt;br&gt;
+In this module the following Ontology Design Patterns have been used:&lt;br&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/list.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/list.owl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/place.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON &quot;Ricerca e Innovazione&quot; 2014-2020, Asse IV &quot;Istruzione e ricerca per il recupero&quot;, Azione IV.5 &quot;Dottorati su tematiche Green&quot; DM 1061/2021.&lt;br&gt;
+&lt;img src=&quot;https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true&quot; /&gt;</terms:abstract>
+        <terms:abstract xml:lang="it">Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.&lt;br&gt; Il namespace per i termini CTP è &lt;a href=&quot;https://w3id.org/ctp#&quot;&gt;https://w3id.org/ctp#&lt;/a&gt;&lt;br&gt;Il prefisso suggerito per il namespace CTP è ctp.&lt;br&gt;
+In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:&lt;br&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/list.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/list.owl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/place.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 Questo lavoro è stato sviluppato nell&apos;ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON &quot;Ricerca e Innovazione&quot; 2014-2020, Asse IV &quot;Istruzione e ricerca per il recupero&quot;, Azione IV.5 &quot;Dottorati su tematiche Green&quot; DM 1061/2021.</terms:abstract>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-06</terms:created>
         <terms:creator rdf:resource="https://w3id.org/ctp#atizianapasciuto"/>
         <terms:creator rdf:resource="https://w3id.org/ctp#briccardoalbertoni"/>
         <terms:creator rdf:resource="https://w3id.org/ctp#croberta"/>
-        <terms:description xml:lang="en">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</terms:description>
-        <terms:description xml:lang="it">Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l&apos;efficacia di tali percorsi, si intende sviluppare un&apos;ontologia che ne guidi la struttura e l&apos;organizzazione. 
+        <terms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.&lt;br&gt;
+The development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.&lt;br&gt;
+Although the structuring of thematic paths can be related to any sector, in this case the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</terms:description>
+        <terms:description xml:lang="it">La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l&apos;efficacia di tali percorsi, si intende sviluppare un&apos;ontologia che ne guidi la struttura e l&apos;organizzazione. &lt;br&gt;
 La realizzazione di un&apos;ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l&apos;organizzazione dei contenuti. L&apos;obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un&apos;ontologia che funga da strumento per l&apos;organizzazione, la gestione, l&apos;interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</terms:description>
+Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo caso l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Cultural Thematic Path (CTP) Ontology</terms:title>
         <vann:preferredNamespacePrefix>ctp</vann:preferredNamespacePrefix>
-        <rdfs:comment xml:lang="en">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l&apos;efficacia di tali percorsi, si intende sviluppare un&apos;ontologia che ne guidi la struttura e l&apos;organizzazione. 
-La realizzazione di un&apos;ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l&apos;organizzazione dei contenuti. L&apos;obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un&apos;ontologia che funga da strumento per l&apos;organizzazione, la gestione, l&apos;interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural Thematic Path (CTP) Ontology</rdfs:label>
         <owl:versionInfo>0.0.1</owl:versionInfo>
     </owl:Ontology>
@@ -363,6 +360,13 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
     
 
 
@@ -1747,8 +1751,8 @@ For interoperability reasons, it is recommended using one of the following:
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Agent">
-        <rdfs:comment xml:lang="en">A person, family, group or institution that performs a certain action.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Una persona, famiglia, gruppo o istituzione che compie una certa azione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An agent, that could be a person, family, group or institution.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un agente, che potrebbe essere una persona, famiglia, gruppo o istituzione.</rdfs:comment>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     

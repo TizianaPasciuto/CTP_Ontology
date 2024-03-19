@@ -23,32 +23,29 @@
 @base <https://w3id.org/ctp#> .
 
 <https://w3id.org/ctp> rdf:type owl:Ontology ;
-                        dcterms:abstract """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.
-In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:
-- http://www.ontologydesignpatterns.org/cp/owl/list.owl
-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
-- http://www.ontologydesignpatterns.org/cp/owl/place.owl
-Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."""@it ,
-                                         """This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
-In this module the following Ontology Design Patterns have been used:
-- http://www.ontologydesignpatterns.org/cp/owl/list.owl
-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
-- http://www.ontologydesignpatterns.org/cp/owl/place.owl
-This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."""^^rdf:HTML ;
+                        dcterms:abstract """This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br>The suggested prefix for CTP namespace is ctp.<br>
+In this module the following Ontology Design Patterns have been used:<br><ul>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul>
+This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
+<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" />"""^^rdf:HTML ,
+                                         """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br>Il prefisso suggerito per il namespace CTP è ctp.<br>
+In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
+<li><a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul>
+Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."""@it ;
                         dcterms:created "2023-03-06"^^xsd:date ;
-                        dcterms:description """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
-                                            """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
+                        dcterms:description """La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. <br>
 La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
+Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo caso l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ,
+                                            """The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.<br>
+The development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.<br>
+Although the structuring of thematic paths can be related to any sector, in this case the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""^^rdf:HTML ;
                         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                         dcterms:title "Cultural Thematic Path (CTP) Ontology"@en ;
                         vann:preferredNamespacePrefix "ctp" ;
-                        rdfs:comment """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
-                                     """Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. 
-La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
                         rdfs:label "Cultural Thematic Path (CTP) Ontology"@en ;
                         owl:versionInfo "0.0.1" .
 
@@ -228,6 +225,10 @@ prov:n rdf:type owl:AnnotationProperty .
 prov:sharesDefinitionWith rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/depiction
+foaf:depiction rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:AnnotationProperty .
 
@@ -239,6 +240,10 @@ foaf:homepage rdf:type owl:AnnotationProperty .
 #################################################################
 #    Datatypes
 #################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
 
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
@@ -1218,8 +1223,9 @@ foaf:Person rdf:type owl:Class ;
 
 ###  https://w3id.org/ctp#Agent
 ctp:Agent rdf:type owl:Class ;
-          rdfs:comment "A person, family, group or institution that performs a certain action."@en ,
-                       "Una persona, famiglia, gruppo o istituzione che compie una certa azione."@it ;
+          owl:equivalentClass foaf:Agent ;
+          rdfs:comment "An agent, that could be a person, family, group or institution."@en ,
+                       "Un agente, che potrebbe essere una persona, famiglia, gruppo o istituzione."@it ;
           rdfs:label "Agent"@en .
 
 
@@ -1383,33 +1389,43 @@ ctp:Type rdf:type owl:Class ;
 #################################################################
 
 ###  https://orcid.org/0000-0001-5648-2713
-# <https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ,
-ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,                         
-                                        ctp:Person ;
-                                        foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
-                                        owl:sameAs <https://orcid.org/0000-0001-5648-2713> ;
-                                        foaf:name "Riccardo Albertoni" ;
-                                        rdfs:label "Riccardo Albertoni"@en ;
-                                        org:memberOf ctp:cnr-imati .
+<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs ctp:briccardoalbertoni .
 
+
+###  https://w3id.org/ctp#briccardoalbertoni
 
 ###  https://orcid.org/0000-0002-2440-2376
-# <https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ,
-ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
-                                        ctp:Person ;
-                                        foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
-                                        owl:sameAs <https://orcid.org/0000-0002-2440-2376> ;
-                                        foaf:name "Tiziana Pasciuto" ;
-                                        rdfs:label "Tiziana Pasciuto"@en ;
-                                        org:memberOf ctp:cnr-imati ,
-                                                     ctp:universitaDiGenova .
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs ctp:atizianapasciuto .
 
+
+###  https://w3id.org/ctp#atizianapasciuto
 
 ###  https://w3id.org/ctp
 <https://w3id.org/ctp> rdf:type owl:NamedIndividual ;
                        dcterms:creator ctp:atizianapasciuto ,
-                                       ctp:briccardoalbertoni,
+                                       ctp:briccardoalbertoni ,
                                        ctp:croberta .
+
+
+###  https://w3id.org/ctp#atizianapasciuto
+ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
+                              ctp:Person ;
+                     foaf:name "Tiziana Pasciuto" ;
+                     rdfs:label "Tiziana Pasciuto"@en ;
+                     org:memberOf ctp:cnr-imati ,
+                                  ctp:universitaDiGenova ;
+                     foaf:homepage <https://orcid.org/0000-0002-2440-2376> .
+
+
+###  https://w3id.org/ctp#briccardoalbertoni
+ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,
+                                ctp:Person ;
+                       foaf:name "Riccardo Albertoni" ;
+                       rdfs:label "Riccardo Albertoni"@en ;
+                       org:memberOf ctp:cnr-imati ;
+                       foaf:homepage <https://orcid.org/0000-0001-5648-2713> .
 
 
 ###  https://w3id.org/ctp#cnr-imati
@@ -1420,12 +1436,12 @@ ctp:cnr-imati rdf:type owl:NamedIndividual ,
               foaf:homepage "https://imati.cnr.it/" .
 
 
-###  https://w3id.org/ctp#roberta
+###  https://w3id.org/ctp#croberta
 ctp:croberta rdf:type owl:NamedIndividual ,
-                     ctp:Person ;
-            foaf:name "Roberta Maggi" ;
-            rdfs:label "Roberta Maggi"@en ;
-            org:memberOf ctp:cnr-imati .
+                      ctp:Person ;
+             foaf:name "Roberta Maggi" ;
+             rdfs:label "Roberta Maggi"@en ;
+             org:memberOf ctp:cnr-imati .
 
 
 ###  https://w3id.org/ctp#universitaDiGenova
