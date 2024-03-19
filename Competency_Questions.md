@@ -8,6 +8,13 @@ Che cosa è un percorso tematico?
 What is the theme/What are the themes of the path X?  
 Quale è la tematica/Quali sono le tematiche del percorso X?  
 
+PREFIX ctp: <https://w3id.org/ctp#>
+SELECT ?ThematicPath ?Theme
+WHERE{
+  ?ThematicPath ctp:hasTheme ?Theme.
+}
+limit 100
+
 ## CQ3
 Where are cultural objects connected to thematic route X usually kept?  
 Dove sono solitamente conservati gli oggetti culturali connessi al percorso tematico X?  
@@ -26,15 +33,22 @@ Da chi e quando sono stati realizzati gli oggetti appartenenti al percorso temat
 
 ## CQ7
 When were the objects linked to the thematic path X made?  
-Quando sono stati realizzati gli oggetti collegati al percorso tematico X?  
+Quando sono stati realizzati gli oggetti collegati al percorso tematico X? 
 
 ## CQ8
 To which agent is the thematic path X inspired by?  
 A quale agente è ispirato il percorso tematico X?  
 
+PREFIX ctp: <https://w3id.org/ctp#>
+SELECT ?ThematicPath ?Agent
+WHERE{
+  ?ThematicPath ctp:isInspiredByAgent ?Agent.
+}
+limit 100
+
 ## CQ9
 Which cultural resources are part of more than one thematic path?  
-Quali risorse culturali sono parte di più percorsi tematici?  
+Quali risorse culturali sono parte di più percorsi tematici? 
 
 ## CQ10
 How many and which thematic paths have been created by the same agent?  
@@ -73,8 +87,15 @@ The thematic path X is composed by one or more sub-thematic paths (i.e. exhibiti
 Il percorso tematico X è composto da uno o più sotto percorsi tematici (per esempio sottofiloni tematici di una mostra)?  
 
 ## CQ19
-Is it possible to access the thematic path X? How (URL/QR CODE)?  
-E' possibile accedere al percorso tematico X? Come (URL/QR CODE)?  
+How is it possible to access the thematic path X?  
+Come è possibile accedere al percorso tematico X?  
+
+PREFIX ctp: <https://w3id.org/ctp#>
+SELECT ?ThematicPath ?Agent
+WHERE{
+  ?ThematicPath ctp:isInspiredByAgent ?Agent.
+}
+limit 100
 
 ## CQ20
 Can cultural resources related to the thematic path X be viewed? Where?  
@@ -89,13 +110,35 @@ Is it possible to buy products related to the thematic path X? Where?
 E' possibile acquistare prodotti relativi al percorso tematico X? Dove?  
 
 ## CQ23
-What is the identification code associated with the cultural resource by Holder X ?  
-Qual è il codice identificativo associato alla risorsa culturale dall'agente X?  
+What is the identification code associated with the cultural resource X by holder X ?  
+Qual è il codice identificativo associato alla risorsa culturale X dall'agente X?  
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResource ?Identifier ?Agent 
+WHERE{  
+  ?CulturalResource ctp:hasSecondaryIdentifier ?Idenfier.  
+  ?Identifier ctp:hasCreator ?Agent.  
+}  
+limit 100  
 
 ## CQ24
-What is the internal identifier of the resource in the XY catalog?  
-Qual è l'identificativo interno della risorsa nel catalogo XY?  
+What is the internal identifier of the resource X in the XY catalog?  
+Qual è l'identificativo interno della risorsa X nel catalogo XY? 
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResource ?rdfs:Literal  
+WHERE{  
+  ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs:Literal.  
+}  
+limit 100
 
 ## CQ25
 What thematic routes have been created in the year XX?  
 Quali percorsi tematici sono stati creati nell'anno XX?  
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?xsd:date  
+WHERE{  
+  ?ThematicPath ctp:hasCreationDate ?xsd:date.  
+}  
+limit 100
