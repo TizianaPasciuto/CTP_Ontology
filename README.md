@@ -28,7 +28,21 @@ To identify **(III) a set of functional requirements** of the ontology, it is po
     ***b. Relations:*** group all the relations between concepts;  
     ***c. Attributes:*** group all related attributes under the relevant concepts.  
 
+### Ontology implementation
+The activity concerns the construction of the ontology using a formal language, generating as output a version of the ontology itself.  
 
-## Documentation
-The documentation for the Cultural Thematic Path Ontology is realized using [WIDOCO - WIzard for DOCumenting Ontologies](https://github.com/dgarijo/Widoco).
+The first phase is the **(I) ontology conceptualization**, which is achieved by creating a model representing the ontology's domain. The [CTP ontology model](https://github.com/TizianaPasciuto/CTP_Ontology/blob/a0c530ce6cd49e77ff99eedfaa4a6e9a3f215695/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png) has been developed using [Graffoo](https://essepuntato.it/graffoo), where all relationships, entities, and attributes identified in previous stages are synthesized. Among the various modeling choices that can be implemented during conceptualization, a useful solution for some recurring modeling problems is the use of an **[Ontology Design Pattern (ODP)](http://ontologydesignpatterns.org/)**, that is a reusable solution implemented by other ontology developers.  
 
+The next phase involves **(II) ontology encoding**, so the ontology must be produced in an implementation language; to achieve this, the [Protégé ontology editor](https://protege.stanford.edu) was used.  
+
+The last phase of this activity involves the **(III) Ontology evaluation**, that refers to checking the technical quality of the ontology.  
+
+### Ontology publication ###
+The activity provides to make the ontology accessible both as a human-readable documentation and a machine-readable file from its URI.  
+The documentation for the Cultural Thematic Path Ontology is realized using [WIDOCO - WIzard for DOCumenting Ontologies](https://github.com/dgarijo/Widoco).  
+
+### Ontology maintenance ###
+The objective of this activity is to update the ontology during its life cycle, detecting bugs and new requirements.  
+
+### References ###
+TBD
