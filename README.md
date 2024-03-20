@@ -8,6 +8,7 @@ The development of the ontology on Cultural Thematic Paths follows the Linked Op
 
 ### Ontology requirements specification
 This activity comprises the collection of requirements that the ontology should satisfy. The fundamental phases consist of **(I) identifying scenarios**, which are situations in which the ontology can be used, **(II) specifying the purpose and scope** within which ontology operates and produce a **(III) set of functional requirements**.  
+
 First of all, **(I) 3 scenarios** have been selected:  
 **1. Exhibition "Transitions | enterprise - work - society":** The purpose of this scenario is to keep the memory alive of the exhibition "Transitions | enterprise - work - society", organized by the Ansaldo Foundation and held at the Falcone Theater of the Royal Palace of Genoa from 22 February to 25 April 2023. The exhibition recounted the evolution of three interconnected sub-thematic paths (enterprise, work, and society) associated with the development of the Ansaldo Company, spanning from its inception in the early 1850s to the present day.  
 **Actors:** Genoese citizens, tourists, scholars.  
@@ -22,7 +23,7 @@ With regard to the **(II) scope**, although the structuring of thematic paths ca
 
 To identify **(III) a set of functional requirements** of the ontology, it is possible to materialize them into one or more forms. In this case, have been selected:  
 **[1. Competency Questions (CQs):](https://github.com/TizianaPasciuto/CTP_Ontology/blob/0fdd8bbd03df998c3dd2aa1b1a311f9b798a6108/Competency_Questions.md)** a set of queries that the ontology to be developed should answer;  
-**2. Tabular information:** information structured into 3 types of tables:  
+**[2. Tabular information:](https://docs.google.com/spreadsheets/d/1qAHCUKAJaNcs_p7jHjx3pVr0d7cdsuijOhjfuWuraPA/edit?usp=sharing)** information structured into 3 types of tables:  
     ***a. Concepts:*** identify and define entities;  
     ***b. Relations:*** group all the relations between concepts;  
     ***c. Attributes:*** group all related attributes under the relevant concepts.  
