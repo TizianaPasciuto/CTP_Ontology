@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ctp","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ctp","name":"Cultural Thematic Path (CTP) Ontology", "headline":"This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href="https://w3id.org/ctp#">https://w3id.org/ctp#</a><br>The suggested prefix for CTP namespace is ctp.<br>In this module the following Ontology Design Patterns have been used:<br><ul><li><a href="http://www.ontologydesignpatterns.org/cp/owl/list.owl">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li><li><a href="http://www.ontologydesignpatterns.org/cp/owl/partof.owl">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li><li><a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul>This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021.<br><img src="https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true" />", "dateReleased":"2023-03-06", "version":"0.0.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Tiziana Pasciuto","url":"https://orcid.org/0000-0002-2440-2376"},{"@type":"Person","name":"Riccardo Albertoni","url":"https://orcid.org/0000-0001-5648-2713"},{"@type":"Person","name":"Roberta Maggi","url":"https://w3id.org/ctp#croberta"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ctp","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ctp","name":"Cultural Thematic Path (CTP) Ontology", "headline":"This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.In this module the following Ontology Design Patterns have been used:- http://www.ontologydesignpatterns.org/cp/owl/list.owl- http://www.ontologydesignpatterns.org/cp/owl/partof.owl- http://www.ontologydesignpatterns.org/cp/owl/place.owlThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021.<br><!-- img src="https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true" -->", "dateReleased":"2023-03-06", "version":"0.0.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Tiziana Pasciuto","url":"https://orcid.org/0000-0002-2440-2376"},{"@type":"Person","name":"Riccardo Albertoni","url":"https://orcid.org/0000-0001-5648-2713"},{"@type":"Person","name":"Roberta Maggi","url":"https://w3id.org/ctp#croberta"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -76,22 +76,15 @@ $(function(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href="https://w3id.org/ctp#">https://w3id.org/ctp#</a><br>The suggested prefix for CTP namespace is ctp.<br>
-In this module the following Ontology Design Patterns have been used:<br><ul>
-<li><a href="http://www.ontologydesignpatterns.org/cp/owl/list.owl">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
-<li><a href="http://www.ontologydesignpatterns.org/cp/owl/partof.owl">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
-<li><a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul>
+This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
+In this module the following Ontology Design Patterns have been used:
+- http://www.ontologydesignpatterns.org/cp/owl/list.owl
+- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
+- http://www.ontologydesignpatterns.org/cp/owl/place.owl
 This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021.<br>
-<img src="https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true" /></span>
+<!-- img src="https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true" --></span>
 </div>
-<div id="toc"></div> 
-
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
-</div>
-  
+<div id="toc"></div>  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Cultural Thematic Path (CTP) Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -102,7 +95,9 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
+         <span>agent</span>
+      </a>
    </li>
    <li>
       <a href="#Agent" title="https://w3id.org/ctp#Agent">Agent</a>
@@ -446,9 +441,8 @@ This ontology has the following classes and properties.</span>
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Cultural Thematic Path (CTP) Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.<br>
-The development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.<br>
-Although the structuring of thematic paths can be related to any sector, in this case the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</span></div>
+<span class="markdown">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
+Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</span></div>
    
 
 <!--CROSSREF SECTION-->
@@ -460,7 +454,9 @@ This section provides details for each class and property defined by Cultural Th
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+         <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
+            <span>agent</span>
+         </a>
       </li>
       <li>
          <a href="#Agent" title="https://w3id.org/ctp#Agent">Agent</a>
@@ -563,19 +559,12 @@ This section provides details for each class and property defined by Cultural Th
       </li>
    </ul>
    <div class="entity" id="http://xmlns.com/foaf/0.1/Agent">
-      <h3>Agent<sup class="type-c" title="class">c</sup>
+      <h3>agent<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Agent</p>
-      <div class="comment">
-         <span class="markdown">An agent (eg. person, group, software or physical artifact).</span>
-      </div>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -599,7 +588,7 @@ This section provides details for each class and property defined by Cultural Th
       <p>
          <strong>IRI:</strong> https://w3id.org/ctp#Agent</p>
       <div class="comment">
-         <span class="markdown">An agent, that could be a person, family, group or institution.</span>
+         <span class="markdown">A person, family, group or institution that performs a certain action.</span>
       </div>
       <dl class="description">
          <dt>has sub-classes</dt>
@@ -770,7 +759,7 @@ This section provides details for each class and property defined by Cultural Th
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1009,7 +998,7 @@ This section provides details for each class and property defined by Cultural Th
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -1070,7 +1059,7 @@ This section provides details for each class and property defined by Cultural Th
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
+            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -4015,15 +4004,6 @@ The following are examples of equivalent statements using different geometry enc
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

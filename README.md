@@ -44,5 +44,5 @@ The documentation for the Cultural Thematic Path Ontology is realized using [WID
 ### Ontology maintenance ###
 The objective of this activity is to update the ontology during its life cycle, detecting bugs and new requirements.  
 
-### References ###
+## References ##
 TBD
