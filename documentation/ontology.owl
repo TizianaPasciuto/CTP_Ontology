@@ -8,22 +8,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="http://purl.org/ontology/olo/core#"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/"
      xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
     <owl:Ontology rdf:about="https://w3id.org/ctp">
-        <dc:description xml:lang="en">Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
-Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment.</dc:description>
-        <dc:description xml:lang="it">Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l&apos;efficacia di tali percorsi, si intende sviluppare un&apos;ontologia che ne guidi la struttura e l&apos;organizzazione. 
-La realizzazione di un&apos;ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l&apos;organizzazione dei contenuti. L&apos;obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un&apos;ontologia che funga da strumento per l&apos;organizzazione, la gestione, l&apos;interscambio e la fruizione delle informazioni online.
-Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</dc:description>
         <terms:abstract rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.&lt;br&gt;The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
 In this module the following Ontology Design Patterns have been used:
 - http://www.ontologydesignpatterns.org/cp/owl/list.owl
@@ -177,6 +169,10 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</terms:description>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:AnnotationProperty>
@@ -194,6 +190,10 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+        <terms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</terms:description>
+        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
     </owl:AnnotationProperty>
     
@@ -213,15 +213,12 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</terms:description>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#item -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/olo/core#item"/>
     
 
 
@@ -316,62 +313,6 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
-    <!-- http://www.w3.org/ns/prov#category -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#component -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#definition -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#dm -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#editorsDefinition -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorsDefinition"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#inverse -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#n -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/homepage -->
 
 
@@ -379,10 +320,10 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     
 
 
-    <!-- https://schema.org/fundingGrant -->
+    <!-- http://xmlns.com/foaf/0.1/name -->
 
 
-    <owl:AnnotationProperty rdf:about="https://schema.org/fundingGrant"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -434,241 +375,7 @@ Ambito: Nonostante la strutturazione di percorsi tematici possa essere riferita 
     <!-- http://purl.org/dc/terms/creator -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasCreator"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/subject -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasSubject"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/type -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:item -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:item">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasItem"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:comment xml:lang="en">An item of a slot in an ordered list.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has item</rdfs:label>
-        <ns:term_status xml:lang="en">stable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:next -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:next">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#nextItem"/>
-        <owl:inverseOf rdf:resource="http://purl.org/ontology/olo/core#olo:previous"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:comment xml:lang="en">Associates the next slot in an ordered list.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has next</rdfs:label>
-        <ns:term_status xml:lang="en">testing</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:ordered_list -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:ordered_list">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasOrderedList"/>
-        <owl:inverseOf rdf:resource="http://purl.org/ontology/olo/core#olo:slot"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:comment xml:lang="en">An ordered list of an slot.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has ordered list</rdfs:label>
-        <ns:term_status xml:lang="en">testing</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:previous -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:previous">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#previousItem"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:comment xml:lang="en">Associates the previous slot in an ordered list</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has previous</rdfs:label>
-        <ns:term_status xml:lang="en">testing</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:slot -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/olo/core#olo:slot">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasSlot"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:comment xml:lang="en">A slot in an ordered list.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has slot</rdfs:label>
-        <ns:term_status xml:lang="en">stable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/time#hasBeginning -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasBeginning"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
-        <rdfs:comment xml:lang="en">Beginning of a temporal entity</rdfs:comment>
-        <rdfs:comment xml:lang="es">Comienzo de una entidad temporal.</rdfs:comment>
-        <rdfs:label xml:lang="en">has beginning</rdfs:label>
-        <rdfs:label xml:lang="es">tiene principio</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/time#hasEnd -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasEnd"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasTime"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
-        <rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Final de una entidad temporal.</rdfs:comment>
-        <rdfs:label xml:lang="en">has end</rdfs:label>
-        <rdfs:label xml:lang="es">tiene fin</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/time#hasTime -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasTime"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:comment xml:lang="es">Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Supports the association of a temporal entity (instant or interval) to any thing</rdfs:comment>
-        <rdfs:label xml:lang="en">has time</rdfs:label>
-        <rdfs:label xml:lang="es">tiene tiempo</rdfs:label>
-        <skos:editorialNote xml:lang="es">Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia.</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">Feature at risk - added in 2017 revision, and not yet widely used. </skos:editorialNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/adms#adms:identifier -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#adms:identifier">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasSecondaryIdentifier"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/adms#adms:Identifier"/>
-        <rdfs:comment xml:lang="en">Links a resource to an adms:Identifier class.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/locn#locn:geometry -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#locn:geometry">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasGeometry"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/locn#locn:Geometry"/>
-        <terms:identifier>locn:geometry</terms:identifier>
-        <vann:example xml:lang="en">
-The following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.
-- WKT (GeoSPARQL)
-:Resource locn:geometry
-  &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral .
-- GML
-:Resource locn:geometry
-  &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
-  &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral .
-- RDF+WKT (GeoSPARQL)
-:Resource locn:geometry
-  [ a sf:Point; gsp:asWKT &quot;&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; Point(-0.001475 51.477811)&quot;^^gsp:wktLiteral ] .
-- RDF+GML (GeoSPARQL)
-:Resource locn:geometry
-  [ a sf:Point; gsp:asGML
-     &quot;&lt;gml:Point srsName=&apos;http://www.opengis.net/def/crs/OGC/1.3/CRS84&apos;&gt;
-      &lt;gml:coordinates&gt;-0.001475, 51.477811&lt;/gml:coordinates&gt;&lt;/gml:Point&gt;&quot;^^gsp:gmlLiteral ] .
-- RDF (WGS84 lat/long)
-:Resource locn:geometry [ a geo:Point; geo:lat &quot;51.477811&quot;; geo:long &quot;-0.001475&quot; ] .
-- RDF (schema.org)
-:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude &quot;51.477811&quot;; schema:longitude &quot;-0.001475&quot; ] .
-- geo URI
-:Resource locn:geometry &lt;geo:51.477811,-0.001475;u=0;crs=wgs84&gt; .
-- GeoHash URI
-:Resource locn:geometry &lt;http://geohash.org/gcpuzgnzvxkp&gt; .
-    </vann:example>
-        <vann:usageNote xml:lang="en">
-Depending on how a geometry is encoded, the range of this property may be one of the following:
-- a literal (e.g., WKT - string literal -, GML, KML - XML literal)
-- a geometry class, as those defined in the OGC&apos;s GeoSPARQL specification, in the W3C&apos;s Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;
-- geocoded URIs, as geo or GeoHash URIs, treated as URI references.
-For interoperability reasons, it is recommended using one of the following:
-- Any geometry:
-  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.
-  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.
-  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).
-- Points: one of the above, or:
-  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.
-  - GeoHash URIs.
-  - geo URIs.
-    </vann:usageNote>
-        <rdfs:comment xml:lang="en">Associates any resource with the corresponding geometry.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
-        <rdfs:label xml:lang="en">geometry</rdfs:label>
-        <ns:term_status xml:lang="en">testing</ns:term_status>
-        <powder-s:describedby rdf:resource="https://joinup.ec.europa.eu/node/55858"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#hadRole -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadRole">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasRole"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Role"/>
-        <rdfs:comment xml:lang="en">The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ].</rdfs:comment>
-        <rdfs:comment>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href=&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <rdfs:label xml:lang="en">hadRole</rdfs:label>
-        <prov:category>qualified</prov:category>
-        <prov:component>agents-responsibility</prov:component>
-        <prov:editorsDefinition xml:lang="en">prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end.</prov:editorsDefinition>
-        <prov:inverse>wasRoleIn</prov:inverse>
-        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Role"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -691,7 +398,7 @@ For interoperability reasons, it is recommended using one of the following:
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#hasBeginning">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#hasTime"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#Istant"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#Instant"/>
         <rdfs:comment xml:lang="en">Beginning of a temporal entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Inizio di un&apos;entità temporale.</rdfs:comment>
         <rdfs:label xml:lang="en">hasBeginning</rdfs:label>
@@ -718,7 +425,7 @@ For interoperability reasons, it is recommended using one of the following:
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#hasEnd">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#hasTime"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#Istant"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#Instant"/>
         <rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Fine di una entità temporale.</rdfs:comment>
         <rdfs:label xml:lang="en">hasEnd</rdfs:label>
@@ -1128,170 +835,24 @@ For interoperability reasons, it is recommended using one of the following:
     
 
 
-    <!-- http://purl.org/dc/terms/abstract -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/abstract">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/dc/terms/created -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasCreationDate"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasDescription"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasPrimaryIdentifier"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasTitle"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:index -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/olo/core#olo:index">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasIndex"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#olo:Slot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">An index of a slot in an ordered list.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">has index</rdfs:label>
-        <ns:term_status xml:lang="en">stable</ns:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#notation -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasNotation"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">notation</rdfs:label>
-        <skos:definition xml:lang="en">A notation, also known as classification code, is a string of characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope of a given concept scheme.</skos:definition>
-        <skos:scopeNote xml:lang="en">By convention, skos:notation is used with a typed literal in the object position of the triple.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/time#inXSDDate -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDDate">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasDate"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="es">Posición de un instante, expresado utilizando xsd:date.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Position of an instant, expressed using xsd:date</rdfs:comment>
-        <rdfs:label xml:lang="es">en fecha XSD</rdfs:label>
-        <rdfs:label xml:lang="en">in XSD date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#bbox -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#bbox">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasBoundingBox"/>
-        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="da">bounding box</rdfs:label>
-        <rdfs:label xml:lang="en">bounding box</rdfs:label>
-        <rdfs:label xml:lang="es">cuadro delimitador</rdfs:label>
-        <rdfs:label xml:lang="cs">ohraničení oblasti</rdfs:label>
-        <rdfs:label xml:lang="it">quadro di delimitazione</rdfs:label>
-        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="da">Ny egenskab tilføjet i DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="es">Propiedad nueva agregada en DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="da">Den geografiske omskrevne firkant af en ressource.</skos:definition>
-        <skos:definition xml:lang="es">El cuadro delimitador geográfico para un recurso.</skos:definition>
-        <skos:definition xml:lang="it">Il riquadro di delimitazione geografica di una risorsa.</skos:definition>
-        <skos:definition xml:lang="cs">Ohraničení geografické oblasti zdroje.</skos:definition>
-        <skos:definition xml:lang="en">The geographic bounding box of a resource.</skos:definition>
-        <skos:scopeNote xml:lang="es">El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="cs">Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="da">Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#centroid -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#centroid">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasCentroid"/>
-        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="cs">centroid</rdfs:label>
-        <rdfs:label xml:lang="en">centroid</rdfs:label>
-        <rdfs:label xml:lang="es">centroide</rdfs:label>
-        <rdfs:label xml:lang="it">centroide</rdfs:label>
-        <rdfs:label xml:lang="da">geometrisk tyngdepunkt</rdfs:label>
-        <skos:altLabel xml:lang="da">centroide</skos:altLabel>
-        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="da">Ny egenskab tilføjet i DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="da">Det geometrisk tyngdepunkt (centroid) for en ressource.</skos:definition>
-        <skos:definition xml:lang="es">El centro geográfico (centroide) de un recurso.</skos:definition>
-        <skos:definition xml:lang="cs">Geografický střed (centroid) zdroje.</skos:definition>
-        <skos:definition xml:lang="it">Il centro geografico (centroide) di una risorsa.</skos:definition>
-        <skos:definition xml:lang="en">The geographic center (centroid) of a resource.</skos:definition>
-        <skos:scopeNote xml:lang="es">El rango de esta propiedad es intencionalmente genérico con el objetivo de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede codificarse como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="cs">Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="da">Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige geokodninger. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL]).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/ctp#hasName"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>A name for some thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>name</rdfs:label>
-        <ns:term_status>testing</ns:term_status>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1538,214 +1099,6 @@ For interoperability reasons, it is recommended using one of the following:
     
 
 
-    <!-- http://purl.org/dc/terms/Location -->
-
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Place"/>
-        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Location</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/olo/core#olo:Slot -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/olo/core#olo:Slot">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#OrderedListSlot"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:next"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:ordered_list"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:previous"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/olo/core#olo:index"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A slot in an ordered list with a fixed index.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/olo/core#"/>
-        <rdfs:label xml:lang="en">Slot</rdfs:label>
-        <ns:term_status xml:lang="en">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2006/time#Instant -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Istant"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una entidad temporal con una extensión o duración cero.</rdfs:comment>
-        <rdfs:label xml:lang="en">Time instant</rdfs:label>
-        <rdfs:label xml:lang="es">instante de tiempo.</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2006/time#Interval -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Interval"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">A temporal entity with an extent or duration</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una entidad temporal con una extensión o duración.</rdfs:comment>
-        <rdfs:label xml:lang="en">Time interval</rdfs:label>
-        <rdfs:label xml:lang="es">intervalo de tiempo</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2006/time#TemporalEntity -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un intervalo temporal o un instante.</rdfs:comment>
-        <rdfs:label xml:lang="en">Temporal entity</rdfs:label>
-        <rdfs:label xml:lang="es">entidad temporal</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/adms#adms:Identifier -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/adms#adms:Identifier">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Identifier"/>
-        <rdfs:comment xml:lang="en">This is based on the UN/CEFACT Identifier class.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
-        <rdfs:label xml:lang="en">Identifier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/locn#locn:Geometry -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/locn#locn:Geometry">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Geometry"/>
-        <terms:identifier>locn:Geometry</terms:identifier>
-        <vann:usageNote xml:lang="en">This class defines the notion of &quot;geometry&quot; at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property).</vann:usageNote>
-        <rdfs:comment xml:lang="en">The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
-        <rdfs:label xml:lang="en">Geometry</rdfs:label>
-        <ns:term_status xml:lang="en">unstable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#AgentInfluence -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#AgentInfluence">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#RelationToAgent"/>
-        <rdfs:comment xml:lang="en">AgentInfluence provides additional descriptions of an Agent&apos;s binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent.</rdfs:comment>
-        <rdfs:comment xml:lang="en">It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <rdfs:label>AgentInfluence</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#agent"/>
-        <prov:category>qualified</prov:category>
-        <prov:editorsDefinition xml:lang="en">AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other.</prov:editorsDefinition>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Role -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Role"/>
-        <rdfs:comment xml:lang="en">A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <rdfs:label>Role</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
-        <prov:category>qualified</prov:category>
-        <prov:component>agents-responsibility</prov:component>
-        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role</prov:dm>
-        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute</prov:n>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Group -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Group"/>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>A class of Agents.</rdfs:comment>
-        <rdfs:label>Group</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Organization"/>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:comment>An organization.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:label>Organization</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ctp#Person"/>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>A person.</rdfs:comment>
-        <rdfs:label>Person</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ctp#Agent -->
 
 
@@ -1825,6 +1178,18 @@ For interoperability reasons, it is recommended using one of the following:
     
 
 
+    <!-- https://w3id.org/ctp#Instant -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ctp#Instant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;entità temporale con durata o estensione pari a zero.</rdfs:comment>
+        <rdfs:label xml:lang="en">Instant</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ctp#Interval -->
 
 
@@ -1833,18 +1198,6 @@ For interoperability reasons, it is recommended using one of the following:
         <rdfs:comment xml:lang="en">A temporal entity with an extent or duration.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un&apos;entità temporale con un&apos;estensione o una durata.</rdfs:comment>
         <rdfs:label xml:lang="en">Interval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ctp#Istant -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ctp#Istant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">A temporal entity with zero extent or duration.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un&apos;entità temporale con durata o estensione pari a zero.</rdfs:comment>
-        <rdfs:label xml:lang="en">Instant</rdfs:label>
     </owl:Class>
     
 
@@ -1947,8 +1300,8 @@ For interoperability reasons, it is recommended using one of the following:
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ctp#Instant"/>
                     <rdf:Description rdf:about="https://w3id.org/ctp#Interval"/>
-                    <rdf:Description rdf:about="https://w3id.org/ctp#Istant"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2051,11 +1404,11 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#atizianapasciuto">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
-        <foaf:name>Tiziana Pasciuto</foaf:name>
         <rdfs:label xml:lang="en">Tiziana Pasciuto</rdfs:label>
         <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
         <org:memberOf rdf:resource="https://w3id.org/ctp#universitaDiGenova"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0002-2440-2376"/>
+        <foaf:name>Tiziana Pasciuto</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2065,10 +1418,10 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#briccardoalbertoni">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
-        <foaf:name>Riccardo Albertoni</foaf:name>
         <rdfs:label xml:lang="en">Riccardo Albertoni</rdfs:label>
         <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+        <foaf:name>Riccardo Albertoni</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2077,10 +1430,10 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#cnr-imati">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:name>Istitute for Applied Mathematics and Information Technologies &apos;Enrico Magenes&apos;</foaf:name>
+        <rdf:type rdf:resource="https://w3id.org/ctp#Organization"/>
         <rdfs:label xml:lang="en">Istitute for Applied Mathematics and Information Technologies &apos;Enrico Magenes&apos;</rdfs:label>
         <foaf:homepage>https://imati.cnr.it/</foaf:homepage>
+        <foaf:name>Istitute for Applied Mathematics and Information Technologies &apos;Enrico Magenes&apos;</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2090,9 +1443,9 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#croberta">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
-        <foaf:name>Roberta Maggi</foaf:name>
         <rdfs:label xml:lang="en">Roberta Maggi</rdfs:label>
         <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
+        <foaf:name>Roberta Maggi</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2101,10 +1454,10 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#universitaDiGenova">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:name>University of Genoa, Italy</foaf:name>
+        <rdf:type rdf:resource="https://w3id.org/ctp#Organization"/>
         <rdfs:label xml:lang="en">University of Genoa, Italy</rdfs:label>
         <foaf:homepage>https://unige.it/</foaf:homepage>
+        <foaf:name>University of Genoa, Italy</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2142,28 +1495,10 @@ The development and use of this enjoyment strategy can be profitable to convey m
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Description</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
-        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</terms:description>
-        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Identifier</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
-        <terms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</terms:description>
-        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Subject</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Title</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/type">
-        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</terms:description>
-        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Type</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 

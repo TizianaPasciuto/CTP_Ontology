@@ -1,6 +1,4 @@
 <https://w3id.org/ctp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/ctp> <http://purl.org/dc/elements/1.1/description> "Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.\nScope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."@en .
-<https://w3id.org/ctp> <http://purl.org/dc/elements/1.1/description> "Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nAmbito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."@it .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.\nIn this module the following Ontology Design Patterns have been used:\n- http://www.ontologydesignpatterns.org/cp/owl/list.owl\n- http://www.ontologydesignpatterns.org/cp/owl/partof.owl\n- http://www.ontologydesignpatterns.org/cp/owl/place.owl\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:\n- http://www.ontologydesignpatterns.org/cp/owl/list.owl\n- http://www.ontologydesignpatterns.org/cp/owl/partof.owl\n- http://www.ontologydesignpatterns.org/cp/owl/place.owl\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."@it .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/created> "2023-03-06"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -72,6 +70,10 @@
 # 
 # http://purl.org/dc/terms/identifier
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/description> "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
@@ -80,6 +82,10 @@
 # 
 # http://purl.org/dc/terms/subject
 <http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/subject> <http://purl.org/dc/terms/description> "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A topic of the resource."@en .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
 # 
 # http://purl.org/dc/terms/title
@@ -89,10 +95,11 @@
 # 
 # http://purl.org/dc/terms/type
 <http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/type> <http://purl.org/dc/terms/description> "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#comment> "The nature or genre of the resource."@en .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
 <http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/type> .
-# 
-# http://purl.org/ontology/olo/core#item
-<http://purl.org/ontology/olo/core#item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/example
 <http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -133,35 +140,11 @@
 # http://www.w3.org/ns/org#memberOf
 <http://www.w3.org/ns/org#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.w3.org/ns/prov#category
-<http://www.w3.org/ns/prov#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#component
-<http://www.w3.org/ns/prov#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#definition
-<http://www.w3.org/ns/prov#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#dm
-<http://www.w3.org/ns/prov#dm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#editorsDefinition
-<http://www.w3.org/ns/prov#editorsDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#inverse
-<http://www.w3.org/ns/prov#inverse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#n
-<http://www.w3.org/ns/prov#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/prov#sharesDefinitionWith
-<http://www.w3.org/ns/prov#sharesDefinitionWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://schema.org/fundingGrant
-<https://schema.org/fundingGrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -192,135 +175,6 @@
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasCreator> .
-# 
-# http://purl.org/dc/terms/subject
-<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasSubject> .
-# 
-# http://purl.org/dc/terms/type
-<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/type> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasType> .
-# 
-# http://purl.org/ontology/olo/core#olo:item
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasItem> .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2000/01/rdf-schema#comment> "An item of a slot in an ordered list."@en .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2000/01/rdf-schema#label> "has item"@en .
-<http://purl.org/ontology/olo/core#olo:item> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-# 
-# http://purl.org/ontology/olo/core#olo:next
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#nextItem> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/olo/core#olo:previous> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates the next slot in an ordered list."@en .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2000/01/rdf-schema#label> "has next"@en .
-<http://purl.org/ontology/olo/core#olo:next> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
-# 
-# http://purl.org/ontology/olo/core#olo:ordered_list
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasOrderedList> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/olo/core#olo:slot> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of an slot."@en .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2000/01/rdf-schema#label> "has ordered list"@en .
-<http://purl.org/ontology/olo/core#olo:ordered_list> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
-# 
-# http://purl.org/ontology/olo/core#olo:previous
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#previousItem> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates the previous slot in an ordered list"@en .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2000/01/rdf-schema#label> "has previous"@en .
-<http://purl.org/ontology/olo/core#olo:previous> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
-# 
-# http://purl.org/ontology/olo/core#olo:slot
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasSlot> .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2000/01/rdf-schema#comment> "A slot in an ordered list."@en .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2000/01/rdf-schema#label> "has slot"@en .
-<http://purl.org/ontology/olo/core#olo:slot> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-# 
-# http://www.w3.org/2006/time#hasBeginning
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasBeginning> .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasTime> .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Instant> .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Beginning of a temporal entity"@en .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Comienzo de una entidad temporal."@es .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#label> "has beginning"@en .
-<http://www.w3.org/2006/time#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#label> "tiene principio"@es .
-# 
-# http://www.w3.org/2006/time#hasEnd
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasEnd> .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasTime> .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Instant> .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "End of a temporal entity."@en .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Final de una entidad temporal."@es .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "has end"@en .
-<http://www.w3.org/2006/time#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "tiene fin"@es .
-# 
-# http://www.w3.org/2006/time#hasTime
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasTime> .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Supports the association of a temporal entity (instant or interval) to any thing"@en .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#label> "has time"@en .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tiempo"@es .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2004/02/skos/core#editorialNote> "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia."@es .
-<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2004/02/skos/core#editorialNote> "Feature at risk - added in 2017 revision, and not yet widely used. "@en .
-# 
-# http://www.w3.org/ns/adms#adms:identifier
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasSecondaryIdentifier> .
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/adms#adms:Identifier> .
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a resource to an adms:Identifier class."@en .
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
-<http://www.w3.org/ns/adms#adms:identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
-# 
-# http://www.w3.org/ns/locn#locn:geometry
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasGeometry> .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/locn#locn:Geometry> .
-<http://www.w3.org/ns/locn#locn:geometry> <http://purl.org/dc/terms/identifier> "locn:geometry" .
-<http://www.w3.org/ns/locn#locn:geometry> <http://purl.org/vocab/vann/example> "\nThe following are examples of equivalent statements using different geometry encodings. In the examples, prefix gsp is used for namespace URI http://www.opengis.net/ont/geosparql#, whereas prefix sf is used for namespace URI http://www.opengis.net/ont/sf#.\n- WKT (GeoSPARQL)\n:Resource locn:geometry\n  \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral .\n- GML\n:Resource locn:geometry\n  \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>\n  <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral .\n- RDF+WKT (GeoSPARQL)\n:Resource locn:geometry\n  [ a sf:Point; gsp:asWKT \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Point(-0.001475 51.477811)\"^^gsp:wktLiteral ] .\n- RDF+GML (GeoSPARQL)\n:Resource locn:geometry\n  [ a sf:Point; gsp:asGML\n     \"<gml:Point srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'>\n      <gml:coordinates>-0.001475, 51.477811</gml:coordinates></gml:Point>\"^^gsp:gmlLiteral ] .\n- RDF (WGS84 lat/long)\n:Resource locn:geometry [ a geo:Point; geo:lat \"51.477811\"; geo:long \"-0.001475\" ] .\n- RDF (schema.org)\n:Resource locn:geometry [ a schema:GeoCoordinates; schema:latitude \"51.477811\"; schema:longitude \"-0.001475\" ] .\n- geo URI\n:Resource locn:geometry <geo:51.477811,-0.001475;u=0;crs=wgs84> .\n- GeoHash URI\n:Resource locn:geometry <http://geohash.org/gcpuzgnzvxkp> .\n    "@en .
-<http://www.w3.org/ns/locn#locn:geometry> <http://purl.org/vocab/vann/usageNote> "\nDepending on how a geometry is encoded, the range of this property may be one of the following:\n- a literal (e.g., WKT - string literal -, GML, KML - XML literal)\n- a geometry class, as those defined in the OGC's GeoSPARQL specification, in the W3C's Basic Geo (WGS84 lat/long) vocabulary, and at schema.org;\n- geocoded URIs, as geo or GeoHash URIs, treated as URI references.\nFor interoperability reasons, it is recommended using one of the following:\n- Any geometry:\n  - WKT, GML, and RDF+WKT/GML, as per the GeoSPARQL specification.\n  - KML (Keyhole Markup Language) - note that KML supports the following geometries only: point, line string, linear ring, and polygon.\n  - RDF as per the schema.org vocabulary (see classes schema:GeoCoordinates and schema:GeoShape).\n- Points: one of the above, or:\n  - RDF as per the W3C Basic Geo (WGS84 lat/long) vocabulary.\n  - GeoHash URIs.\n  - geo URIs.\n    "@en .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates any resource with the corresponding geometry."@en .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2000/01/rdf-schema#label> "geometry"@en .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
-<http://www.w3.org/ns/locn#locn:geometry> <http://www.w3.org/2007/05/powder-s#describedby> <https://joinup.ec.europa.eu/node/55858> .
-# 
-# http://www.w3.org/ns/prov#hadRole
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasRole> .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Role> .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#label> "hadRole"@en .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/ns/prov#category> "qualified" .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/ns/prov#editorsDefinition> "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end."@en .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/ns/prov#inverse> "wasRoleIn" .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/ns/prov#sharesDefinitionWith> <http://www.w3.org/ns/prov#Role> .
 # 
 # https://w3id.org/ctp#allowsTheSaleOf
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -334,7 +188,7 @@
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#hasTime> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
-<https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Istant> .
+<https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Instant> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Beginning of a temporal entity."@en .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Inizio di un'entità temporale."@it .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#label> "hasBeginning"@en .
@@ -351,7 +205,7 @@
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#hasTime> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
-<https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Istant> .
+<https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Instant> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "End of a temporal entity."@en .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine di una entità temporale."@it .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasEnd"@en .
@@ -613,117 +467,14 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # #################################################################
 # 
 # 
-# http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
-# 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasCreationDate> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasDescription> .
-# 
-# http://purl.org/dc/terms/identifier
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasPrimaryIdentifier> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasTitle> .
-# 
-# http://purl.org/ontology/olo/core#olo:index
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasIndex> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/olo/core#olo:Slot> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2000/01/rdf-schema#comment> "An index of a slot in an ordered list."@en .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2000/01/rdf-schema#label> "has index"@en .
-<http://purl.org/ontology/olo/core#olo:index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-# 
-# http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasNotation> .
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2000/01/rdf-schema#label> "notation"@en .
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2004/02/skos/core#definition> "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en .
-<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:notation is used with a typed literal in the object position of the triple."@en .
-# 
-# http://www.w3.org/2006/time#inXSDDate
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasDate> .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Instant> .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Posición de un instante, expresado utilizando xsd:date."@es .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of an instant, expressed using xsd:date"@en .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#label> "en fecha XSD"@es .
-<http://www.w3.org/2006/time#inXSDDate> <http://www.w3.org/2000/01/rdf-schema#label> "in XSD date"@en .
-# 
-# http://www.w3.org/ns/dcat#bbox
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasBoundingBox> .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/Location> .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#label> "bounding box"@da .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#label> "bounding box"@en .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#label> "cuadro delimitador"@es .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#label> "ohraničení oblasti"@cs .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2000/01/rdf-schema#label> "quadro di delimitazione"@it .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#changeNote> "Propiedad nueva agregada en DCAT 2.0."@es .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#definition> "Den geografiske omskrevne firkant af en ressource."@da .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#definition> "El cuadro delimitador geográfico para un recurso."@es .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#definition> "Il riquadro di delimitazione geografica di una risorsa."@it .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#definition> "Ohraničení geografické oblasti zdroje."@cs .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#definition> "The geographic bounding box of a resource."@en .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@es .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#scopeNote> "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@it .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#scopeNote> "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."@cs .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da .
-<http://www.w3.org/ns/dcat#bbox> <http://www.w3.org/2004/02/skos/core#scopeNote> "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."@en .
-# 
-# http://www.w3.org/ns/dcat#centroid
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasCentroid> .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/Location> .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#label> "centroid"@cs .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#label> "centroid"@en .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#label> "centroide"@es .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#label> "centroide"@it .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2000/01/rdf-schema#label> "geometrisk tyngdepunkt"@da .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#altLabel> "centroide"@da .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#definition> "Det geometrisk tyngdepunkt (centroid) for en ressource."@da .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#definition> "El centro geográfico (centroide) de un recurso."@es .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#definition> "Geografický střed (centroid) zdroje."@cs .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#definition> "Il centro geografico (centroide) di una risorsa."@it .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#definition> "The geographic center (centroid) of a resource."@en .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el objetivo de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede codificarse como WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@es .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#scopeNote> "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:wktLiteral [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@it .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#scopeNote> "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:wktLiteral [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."@cs .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige geokodninger. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da .
-<http://www.w3.org/ns/dcat#centroid> <http://www.w3.org/2004/02/skos/core#scopeNote> "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:wktLiteral [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."@en .
-# 
-# http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ctp#hasName> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "A name for some thing." .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # https://w3id.org/ctp#conveys
 <https://w3id.org/ctp#conveys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -890,142 +641,6 @@ _:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # #################################################################
 # 
 # 
-# http://purl.org/dc/terms/Location
-<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Place> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial region or named place."@en .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
-# 
-# http://purl.org/ontology/olo/core#olo:Slot
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#OrderedListSlot> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/olo/core#olo:next> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/olo/core#olo:ordered_list> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/olo/core#olo:previous> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/olo/core#olo:index> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#comment> "A slot in an ordered list with a fixed index."@en .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/olo/core#> .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2000/01/rdf-schema#label> "Slot"@en .
-<http://purl.org/ontology/olo/core#olo:Slot> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-# 
-# http://www.w3.org/2006/time#Instant
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Istant> .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with zero extent or duration"@en .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "Una entidad temporal con una extensión o duración cero."@es .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "Time instant"@en .
-<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "instante de tiempo."@es .
-# 
-# http://www.w3.org/2006/time#Interval
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Interval> .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration"@en .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "Una entidad temporal con una extensión o duración."@es .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Time interval"@en .
-<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "intervalo de tiempo"@es .
-# 
-# http://www.w3.org/2006/time#TemporalEntity
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#TemporalEntity> .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Instant> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un intervalo temporal o un instante."@es .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal entity"@en .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "entidad temporal"@es .
-# 
-# http://www.w3.org/ns/adms#adms:Identifier
-<http://www.w3.org/ns/adms#adms:Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/adms#adms:Identifier> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Identifier> .
-<http://www.w3.org/ns/adms#adms:Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "This is based on the UN/CEFACT Identifier class."@en .
-<http://www.w3.org/ns/adms#adms:Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
-<http://www.w3.org/ns/adms#adms:Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
-# 
-# http://www.w3.org/ns/locn#locn:Geometry
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Geometry> .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://purl.org/dc/terms/identifier> "locn:Geometry" .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://purl.org/vocab/vann/usageNote> "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property)."@en .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
-<http://www.w3.org/ns/locn#locn:Geometry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
-# 
-# http://www.w3.org/ns/prov#AgentInfluence
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#RelationToAgent> .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."@en .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."@en .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2000/01/rdf-schema#label> "AgentInfluence" .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#agent> .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/ns/prov#category> "qualified" .
-<http://www.w3.org/ns/prov#AgentInfluence> <http://www.w3.org/ns/prov#editorsDefinition> "AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other."@en .
-# 
-# http://www.w3.org/ns/prov#Role
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Role> .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."@en .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#hadRole> .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/ns/prov#category> "qualified" .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://www.w3.org/ns/prov#Role> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-# 
-# http://xmlns.com/foaf/0.1/Agent
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Agent> .
-# 
-# http://xmlns.com/foaf/0.1/Group
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Group> .
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of Agents." .
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# http://xmlns.com/foaf/0.1/Organization
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Organization> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://xmlns.com/foaf/0.1/Person> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization." .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ctp#Person> .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person." .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
 # https://w3id.org/ctp#Agent
 <https://w3id.org/ctp#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, family, group or institution that performs a certain action."@en .
@@ -1070,19 +685,19 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/ctp#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Una sequenza di caratteri o simboli che serve a distinguere in modo univoco un'entità o un oggetto all'interno di un sistema o contesto specifico."@it .
 <https://w3id.org/ctp#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
 # 
+# https://w3id.org/ctp#Instant
+<https://w3id.org/ctp#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ctp#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#TemporalEntity> .
+<https://w3id.org/ctp#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with zero extent or duration."@en .
+<https://w3id.org/ctp#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "Un'entità temporale con durata o estensione pari a zero."@it .
+<https://w3id.org/ctp#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "Instant"@en .
+# 
 # https://w3id.org/ctp#Interval
 <https://w3id.org/ctp#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ctp#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#TemporalEntity> .
 <https://w3id.org/ctp#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration."@en .
 <https://w3id.org/ctp#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "Un'entità temporale con un'estensione o una durata."@it .
 <https://w3id.org/ctp#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval"@en .
-# 
-# https://w3id.org/ctp#Istant
-<https://w3id.org/ctp#Istant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Istant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#TemporalEntity> .
-<https://w3id.org/ctp#Istant> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with zero extent or duration."@en .
-<https://w3id.org/ctp#Istant> <http://www.w3.org/2000/01/rdf-schema#comment> "Un'entità temporale con durata o estensione pari a zero."@it .
-<https://w3id.org/ctp#Istant> <http://www.w3.org/2000/01/rdf-schema#label> "Instant"@en .
 # 
 # https://w3id.org/ctp#OrderedListSlot
 <https://w3id.org/ctp#OrderedListSlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1137,15 +752,15 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/ctp#TemporalEntity
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Istant> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -1195,40 +810,40 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ctp#atizianapasciuto
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp#atizianapasciuto> <http://xmlns.com/foaf/0.1/name> "Tiziana Pasciuto" .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/2000/01/rdf-schema#label> "Tiziana Pasciuto"@en .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#universitaDiGenova> .
 <https://w3id.org/ctp#atizianapasciuto> <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0002-2440-2376> .
+<https://w3id.org/ctp#atizianapasciuto> <http://xmlns.com/foaf/0.1/name> "Tiziana Pasciuto" .
 # 
 # https://w3id.org/ctp#briccardoalbertoni
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp#briccardoalbertoni> <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni" .
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/2000/01/rdf-schema#label> "Riccardo Albertoni"@en .
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-5648-2713> .
+<https://w3id.org/ctp#briccardoalbertoni> <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni" .
 # 
 # https://w3id.org/ctp#cnr-imati
 <https://w3id.org/ctp#cnr-imati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp#cnr-imati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
-<https://w3id.org/ctp#cnr-imati> <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
+<https://w3id.org/ctp#cnr-imati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
 <https://w3id.org/ctp#cnr-imati> <http://www.w3.org/2000/01/rdf-schema#label> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en .
 <https://w3id.org/ctp#cnr-imati> <http://xmlns.com/foaf/0.1/homepage> "https://imati.cnr.it/" .
+<https://w3id.org/ctp#cnr-imati> <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 # 
 # https://w3id.org/ctp#croberta
 <https://w3id.org/ctp#croberta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp#croberta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp#croberta> <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
 <https://w3id.org/ctp#croberta> <http://www.w3.org/2000/01/rdf-schema#label> "Roberta Maggi"@en .
 <https://w3id.org/ctp#croberta> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
+<https://w3id.org/ctp#croberta> <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
 # 
 # https://w3id.org/ctp#universitaDiGenova
 <https://w3id.org/ctp#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
-<https://w3id.org/ctp#universitaDiGenova> <http://xmlns.com/foaf/0.1/name> "University of Genoa, Italy" .
+<https://w3id.org/ctp#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
 <https://w3id.org/ctp#universitaDiGenova> <http://www.w3.org/2000/01/rdf-schema#label> "University of Genoa, Italy"@en .
 <https://w3id.org/ctp#universitaDiGenova> <http://xmlns.com/foaf/0.1/homepage> "https://unige.it/" .
+<https://w3id.org/ctp#universitaDiGenova> <http://xmlns.com/foaf/0.1/name> "University of Genoa, Italy" .
 # 
 # 
 # 
@@ -1259,23 +874,8 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
 # 
-<http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/description> "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
-# 
-<http://purl.org/dc/terms/subject> <http://purl.org/dc/terms/description> "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A topic of the resource."@en .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
-# 
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
-# 
-<http://purl.org/dc/terms/type> <http://purl.org/dc/terms/description> "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en .
-<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#comment> "The nature or genre of the resource."@en .
-<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
