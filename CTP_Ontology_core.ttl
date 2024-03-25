@@ -17,19 +17,19 @@
 @base <https://w3id.org/ctp#> .
 
 <https://w3id.org/ctp> rdf:type owl:Ontology ;
-                        dcterms:abstract """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.
-In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:
-- http://www.ontologydesignpatterns.org/cp/owl/list.owl
-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
-- http://www.ontologydesignpatterns.org/cp/owl/place.owl
-Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."""@it ,
-                                         """This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
+                        dcterms:abstract """This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.
 In this module the following Ontology Design Patterns have been used:
 - http://www.ontologydesignpatterns.org/cp/owl/list.owl
 - http://www.ontologydesignpatterns.org/cp/owl/partof.owl
 - http://www.ontologydesignpatterns.org/cp/owl/place.owl
 This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
-<!-- img src="https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true" -->"""^^rdf:HTML ;
+<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"""^^rdf:HTML ,
+                                         """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.
+In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:
+- http://www.ontologydesignpatterns.org/cp/owl/list.owl
+- http://www.ontologydesignpatterns.org/cp/owl/partof.owl
+- http://www.ontologydesignpatterns.org/cp/owl/place.owl
+Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."""@it ;
                         dcterms:created "2023-03-06"^^xsd:date ;
                         dcterms:description """Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.
 Scope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."""@en ,
@@ -111,6 +111,10 @@ dcterms:description rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/identifier
 dcterms:identifier rdf:type owl:AnnotationProperty ;
+                   dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
+                   rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                   rdfs:isDefinedBy dcterms: ;
+                   rdfs:label "Identifier"@en ;
                    rdfs:subPropertyOf dc:identifier ;
                    rdfs:range rdfs:Literal .
 
@@ -121,6 +125,10 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/subject
 dcterms:subject rdf:type owl:AnnotationProperty ;
+                dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
+                rdfs:comment "A topic of the resource."@en ;
+                rdfs:isDefinedBy dcterms: ;
+                rdfs:label "Subject"@en ;
                 rdfs:subPropertyOf dc:subject .
 
 
@@ -132,6 +140,10 @@ dcterms:title rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/terms/type
 dcterms:type rdf:type owl:AnnotationProperty ;
+             dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
+             rdfs:comment "The nature or genre of the resource."@en ;
+             rdfs:isDefinedBy dcterms: ;
+             rdfs:label "Type"@en ;
              rdfs:subPropertyOf dc:type .
 
 
@@ -183,13 +195,25 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 powder-s:describedby rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/org#memberOf
+org:memberOf rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Datatypes
 #################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
 
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
@@ -207,8 +231,19 @@ dcterms:abstract rdf:type owl:ObjectProperty .
 dcterms:creator rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/ctp#IsInvolvedIn
+ctp:IsInvolvedIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf ctp:involves ;
+                 rdfs:domain ctp:Agent ;
+                 rdfs:range ctp:RelationToAgent ;
+                 rdfs:comment "Indica l'agente coinvolto in una relazione."@it ,
+                              "Indicates the agent involved in a relation."@en ;
+                 rdfs:label "IsInvolvedIn"@en .
+
+
 ###  https://w3id.org/ctp#allowsTheSaleOf
 ctp:allowsTheSaleOf rdf:type owl:ObjectProperty ;
+                    owl:inverseOf ctp:soldThrough ;
                     rdfs:domain ctp:ThematicPath ;
                     rdfs:range ctp:Product ;
                     rdfs:comment "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
@@ -219,6 +254,7 @@ ctp:allowsTheSaleOf rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ctp#hasBeginning
 ctp:hasBeginning rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf ctp:hasTime ;
+                 owl:inverseOf ctp:isBeginningOf ;
                  rdfs:domain ctp:TemporalEntity ;
                  rdfs:range ctp:Instant ;
                  rdfs:comment "Beginning of a temporal entity."@en ,
@@ -228,6 +264,7 @@ ctp:hasBeginning rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasCreator
 ctp:hasCreator rdf:type owl:ObjectProperty ;
+               owl:inverseOf ctp:isCreatorOf ;
                rdfs:domain ctp:Identifier ;
                rdfs:range ctp:Agent ;
                rdfs:comment "Indica tramite quale agente pubblico o privato è stato creato il codice di identificazione della risorsa culturale."@it ,
@@ -238,6 +275,7 @@ ctp:hasCreator rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ctp#hasEnd
 ctp:hasEnd rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf ctp:hasTime ;
+           owl:inverseOf ctp:isEndOf ;
            rdfs:domain ctp:TemporalEntity ;
            rdfs:range ctp:Instant ;
            rdfs:comment "End of a temporal entity."@en ,
@@ -247,6 +285,7 @@ ctp:hasEnd rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasGeometry
 ctp:hasGeometry rdf:type owl:ObjectProperty ;
+                owl:inverseOf ctp:isGeometryOf ;
                 rdfs:domain ctp:Place ;
                 rdfs:range ctp:Geometry ;
                 rdfs:comment "Associa un oggetto spaziale con una geometria corrispondente."@it ,
@@ -256,6 +295,7 @@ ctp:hasGeometry rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasItem
 ctp:hasItem rdf:type owl:ObjectProperty ;
+            owl:inverseOf ctp:isItemOf ;
             rdfs:domain ctp:OrderedListSlot ;
             rdfs:range ctp:CulturalResource ;
             rdfs:comment "Indica una risorsa culturale in una lista ordinata."@it ,
@@ -308,6 +348,7 @@ ctp:hasPart rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasPlace
 ctp:hasPlace rdf:type owl:ObjectProperty ;
+             owl:inverseOf ctp:isPlaceOf ;
              rdfs:domain ctp:Agent ;
              rdfs:range ctp:Place ;
              rdfs:comment "Indica la localizzazione di un agente."@it ,
@@ -317,6 +358,7 @@ ctp:hasPlace rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasRelationToAgent
 ctp:hasRelationToAgent rdf:type owl:ObjectProperty ;
+                       owl:inverseOf ctp:isRelatedTo ;
                        rdfs:domain owl:Thing ;
                        rdfs:range ctp:RelationToAgent ;
                        rdfs:comment "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."@it ,
@@ -326,6 +368,7 @@ ctp:hasRelationToAgent rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasRole
 ctp:hasRole rdf:type owl:ObjectProperty ;
+            owl:inverseOf ctp:isRoleOf ;
             rdfs:domain ctp:RelationToAgent ;
             rdfs:range ctp:Role ;
             rdfs:comment "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it ,
@@ -335,6 +378,7 @@ ctp:hasRole rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasSecondaryIdentifier
 ctp:hasSecondaryIdentifier rdf:type owl:ObjectProperty ;
+                           owl:inverseOf ctp:isSecondaryIdentifierOf ;
                            rdfs:domain owl:Thing ;
                            rdfs:range ctp:Identifier ;
                            rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
@@ -353,6 +397,7 @@ ctp:hasSlot rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasSubject
 ctp:hasSubject rdf:type owl:ObjectProperty ;
+               owl:inverseOf ctp:isSubjectOf ;
                rdfs:domain owl:Thing ;
                rdfs:range ctp:Subject ;
                rdfs:comment "Indica a quale/i soggetto/i l'entità si riferisce."@it ,
@@ -362,15 +407,17 @@ ctp:hasSubject rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasTheme
 ctp:hasTheme rdf:type owl:ObjectProperty ;
+             owl:inverseOf ctp:isThemeOf ;
              rdfs:domain ctp:ThematicPath ;
              rdfs:range ctp:Theme ;
-             rdfs:comment "Indica il tema su cui si basa il percorso tematico."@it ,
-                          "Indicates the theme on which the thematic path is based."@en ;
+             rdfs:comment "Indica che il percorso tematico si basa su un tema."@it ,
+                          "Indicates that the thematic path is based on a theme."@en ;
              rdfs:label "hasTheme"@en .
 
 
 ###  https://w3id.org/ctp#hasTime
 ctp:hasTime rdf:type owl:ObjectProperty ;
+            owl:inverseOf ctp:isTimeOf ;
             rdfs:domain owl:Thing ;
             rdfs:range ctp:TemporalEntity ;
             rdfs:comment "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."@it ,
@@ -380,11 +427,22 @@ ctp:hasTime rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#hasType
 ctp:hasType rdf:type owl:ObjectProperty ;
+            owl:inverseOf ctp:isTypeOf ;
             rdfs:domain owl:Thing ;
             rdfs:range ctp:Type ;
             rdfs:comment "Indica il tipo di entità."@it ,
                          "Indicates the type of entity."@en ;
             rdfs:label "hasType"@en .
+
+
+###  https://w3id.org/ctp#hostsTheCulturalEvent
+ctp:hostsTheCulturalEvent rdf:type owl:ObjectProperty ;
+                          owl:inverseOf ctp:takesPlaceIn ;
+                          rdfs:domain ctp:Place ;
+                          rdfs:range ctp:CulturalEvent ;
+                          rdfs:comment "Indica la relazione tra un evento culturale e il luogo in cui si svolge."@it ,
+                                       "Indicates the relationship between a cultural event and the place where it took place."@en ;
+                          rdfs:label "hostsTheCulturalEvent"@en .
 
 
 ###  https://w3id.org/ctp#includes
@@ -397,6 +455,17 @@ ctp:includes rdf:type owl:ObjectProperty ;
              rdfs:label "includes"@en .
 
 
+###  https://w3id.org/ctp#inspires
+ctp:inspires rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf ctp:isSubjectOf ;
+             owl:inverseOf ctp:isInspiredByAgent ;
+             rdfs:domain ctp:Agent ;
+             rdfs:range ctp:ThematicPath ;
+             rdfs:comment "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it ,
+                          "Indicates the relationship between the thematic path and the agent that inspires it."@en ,
+                          "inspires"@en .
+
+
 ###  https://w3id.org/ctp#involves
 ctp:involves rdf:type owl:ObjectProperty ;
              rdfs:domain ctp:RelationToAgent ;
@@ -404,6 +473,44 @@ ctp:involves rdf:type owl:ObjectProperty ;
              rdfs:comment "Indica quale agente è coinvolto in una relazione con un certo ruolo."@it ,
                           "Indicates which agent is involved in a relationship with a certain role."@en ;
              rdfs:label "involves"@en .
+
+
+###  https://w3id.org/ctp#isBeginningOf
+ctp:isBeginningOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf ctp:isTimeOf ;
+                  rdfs:domain ctp:Instant ;
+                  rdfs:range ctp:TemporalEntity ;
+                  rdfs:comment "Indica da quale istante inizia un'entità temporale."@en ,
+                               "Indicates from which moment a temporal entity begins."@en ;
+                  rdfs:label "isBeginningOf"@en .
+
+
+###  https://w3id.org/ctp#isCreatorOf
+ctp:isCreatorOf rdf:type owl:ObjectProperty ;
+                rdfs:domain ctp:Agent ;
+                rdfs:range ctp:Identifier ;
+                rdfs:comment "Indica l'agente pubblico o privato che crea il codice identificativo della risorsa culturale."@it ,
+                             "Indicates the public or private agent that creates the identification code of the cultural resource."@en ;
+                rdfs:label "isCreatorOf"@en .
+
+
+###  https://w3id.org/ctp#isEndOf
+ctp:isEndOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ctp:isTimeOf ;
+            rdfs:domain ctp:Instant ;
+            rdfs:range ctp:TemporalEntity ;
+            rdfs:comment "Indica da quale istante termina un'entità temporale."@en ,
+                         "Indicates from which moment a temporal entity ends."@en ;
+            rdfs:label "isEndOf"@en .
+
+
+###  https://w3id.org/ctp#isGeometryOf
+ctp:isGeometryOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain ctp:Geometry ;
+                 rdfs:range ctp:Place ;
+                 rdfs:comment "Associa una geometria a un oggetto spaziale."@it ,
+                              "Associates a geometry with a spatial entity."@en ;
+                 rdfs:label "isGeometryOf"@en .
 
 
 ###  https://w3id.org/ctp#isIncludedIn
@@ -425,6 +532,15 @@ ctp:isInspiredByAgent rdf:type owl:ObjectProperty ;
                       rdfs:label "isInspiredByAgent"@en .
 
 
+###  https://w3id.org/ctp#isItemOf
+ctp:isItemOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:CulturalResource ;
+             rdfs:range ctp:OrderedListSlot ;
+             rdfs:comment "Indica una risorsa culturale in una lista ordinata."@it ,
+                          "Indicates a slot cultural resource in an ordered list."@en ;
+             rdfs:label "isItemOf"@en .
+
+
 ###  https://w3id.org/ctp#isLocationOf
 ctp:isLocationOf rdf:type owl:ObjectProperty ;
                  rdfs:domain ctp:Place ;
@@ -443,8 +559,18 @@ ctp:isPartOf rdf:type owl:ObjectProperty ;
              rdfs:label "isPartOf"@en .
 
 
+###  https://w3id.org/ctp#isPlaceOf
+ctp:isPlaceOf rdf:type owl:ObjectProperty ;
+              rdfs:domain ctp:Place ;
+              rdfs:range ctp:Agent ;
+              rdfs:comment "Indica la localizzazione di un agente."@it ,
+                           "Indicates the location of an agent."@en ;
+              rdfs:label "isPlaceOf"@en .
+
+
 ###  https://w3id.org/ctp#isPreservedBy
 ctp:isPreservedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf ctp:preserves ;
                   rdfs:domain ctp:CulturalResource ;
                   rdfs:range ctp:RelationToAgent ;
                   rdfs:comment "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it ,
@@ -454,11 +580,75 @@ ctp:isPreservedBy rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ctp#isRealizedIn
 ctp:isRealizedIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf ctp:occursIn ;
                  rdfs:domain ctp:ThematicPath ;
                  rdfs:range ctp:CulturalEvent ;
                  rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
                               "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en ;
                  rdfs:label "isRealizedIn"@en .
+
+
+###  https://w3id.org/ctp#isRelatedTo
+ctp:isRelatedTo rdf:type owl:ObjectProperty ;
+                rdfs:domain ctp:RelationToAgent ;
+                rdfs:range owl:Thing ;
+                rdfs:comment "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."@it ,
+                             "Indicates the relationship between an entity and an agent with a certain role."@en ;
+                rdfs:label "isRelatedTo"@en .
+
+
+###  https://w3id.org/ctp#isRoleOf
+ctp:isRoleOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:Role ;
+             rdfs:range ctp:RelationToAgent ;
+             rdfs:comment "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it ,
+                          "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en ;
+             rdfs:label "isRoleOf"@en .
+
+
+###  https://w3id.org/ctp#isSecondaryIdentifierOf
+ctp:isSecondaryIdentifierOf rdf:type owl:ObjectProperty ;
+                            rdfs:domain ctp:Identifier ;
+                            rdfs:range ctp:CulturalResource ;
+                            rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
+                                         "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en ;
+                            rdfs:label "isSecondaryIdentifierOf"@en .
+
+
+###  https://w3id.org/ctp#isSubjectOf
+ctp:isSubjectOf rdf:type owl:ObjectProperty ;
+                rdfs:domain ctp:Subject ;
+                rdfs:range owl:Thing ;
+                rdfs:comment "Indica a quale/i soggetto/i l'entità si riferisce."@it ,
+                             "Indicates to which subject/subjects the entity refers/refer."@en ;
+                rdfs:label "isSubjectOf"@en .
+
+
+###  https://w3id.org/ctp#isThemeOf
+ctp:isThemeOf rdf:type owl:ObjectProperty ;
+              rdfs:domain ctp:Theme ;
+              rdfs:range ctp:ThematicPath ;
+              rdfs:comment "Indica il tema su cui si basa il percorso tematico."@it ,
+                           "Indicates the theme on which the thematic path is based."@en ;
+              rdfs:label "isThemeOf"@en .
+
+
+###  https://w3id.org/ctp#isTimeOf
+ctp:isTimeOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:TemporalEntity ;
+             rdfs:range owl:Thing ;
+             rdfs:comment "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."@it ,
+                          "Indicates the time an entity was created and/or an event occurred."@en ;
+             rdfs:label "isTimeOf"@en .
+
+
+###  https://w3id.org/ctp#isTypeOf
+ctp:isTypeOf rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:Type ;
+             rdfs:range owl:Thing ;
+             rdfs:comment "Indica di che tipologia è l'entità."@it ,
+                          "Indicates what type the entity belongs to."@en ;
+             rdfs:label "isTypeOf"@en .
 
 
 ###  https://w3id.org/ctp#memberOf
@@ -478,6 +668,35 @@ ctp:nextItem rdf:type owl:ObjectProperty ;
              rdfs:comment "In an ordered collection, indicates the link to the next item in a list."@en ,
                           "In un insieme ordinato, indica il collegamento all'elemento successivo in un elenco."@it ;
              rdfs:label "nextItem"@en .
+
+
+###  https://w3id.org/ctp#occursIn
+ctp:occursIn rdf:type owl:ObjectProperty ;
+             rdfs:domain ctp:CulturalEvent ;
+             rdfs:range ctp:ThematicPath ;
+             rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
+                          "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en ;
+             rdfs:label "occursIn"@en .
+
+
+###  https://w3id.org/ctp#placeRefersTo
+ctp:placeRefersTo rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf ctp:isSubjectOf ;
+                  owl:inverseOf ctp:refersToPlace ;
+                  rdfs:domain ctp:Place ;
+                  rdfs:range ctp:ThematicPath ;
+                  rdfs:comment "Indica la relazione tra il percorso tematico e i luoghi a cui è collegato."@it ,
+                               "It indicates the relationship between the thematic path and the places to which it is linked."@en ;
+                  rdfs:label "placeRefersTo"@en .
+
+
+###  https://w3id.org/ctp#preserves
+ctp:preserves rdf:type owl:ObjectProperty ;
+              rdfs:domain ctp:RelationToAgent ;
+              rdfs:range ctp:CulturalResource ;
+              rdfs:comment "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it ,
+                           "Indicates the public or private agent responsible for preserving the cultural resource."@en ;
+              rdfs:label "preserves"@en .
 
 
 ###  https://w3id.org/ctp#previousItem
@@ -502,11 +721,21 @@ ctp:refersToPlace rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ctp#refersToTemporalEntity
 ctp:refersToTemporalEntity rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf ctp:hasSubject ;
+                           owl:inverseOf ctp:temporalEntityRefersTo ;
                            rdfs:domain ctp:ThematicPath ;
                            rdfs:range ctp:TemporalEntity ;
                            rdfs:comment "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it ,
                                         "Indicates the relationship between the thematic path and the historical period to which it refers."@en ;
                            rdfs:label "refersToTemporalEntity"@en .
+
+
+###  https://w3id.org/ctp#soldThrough
+ctp:soldThrough rdf:type owl:ObjectProperty ;
+                rdfs:domain ctp:Product ;
+                rdfs:range ctp:ThematicPath ;
+                rdfs:comment "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
+                             "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en ;
+                rdfs:label "soldThrough"@en .
 
 
 ###  https://w3id.org/ctp#takesPlaceIn
@@ -518,10 +747,19 @@ ctp:takesPlaceIn rdf:type owl:ObjectProperty ;
                  rdfs:label "takePlaceIn"@en .
 
 
+###  https://w3id.org/ctp#temporalEntityRefersTo
+ctp:temporalEntityRefersTo rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf ctp:isSubjectOf ;
+                           rdfs:domain ctp:TemporalEntity ;
+                           rdfs:range ctp:ThematicPath ;
+                           rdfs:comment "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it ,
+                                        "Indicates the relationship between the thematic path and the historical period to which it refers."@en ;
+                           rdfs:label "temporalEntityRefersTo"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
-
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:DatatypeProperty .
@@ -779,20 +1017,20 @@ ctp:Identifier rdf:type owl:Class ;
                rdfs:label "Identifier"@en .
 
 
+###  https://w3id.org/ctp#Instant
+ctp:Instant rdf:type owl:Class ;
+            rdfs:subClassOf ctp:TemporalEntity ;
+            rdfs:comment "A temporal entity with zero extent or duration."@en ,
+                         "Un'entità temporale con durata o estensione pari a zero."@it ;
+            rdfs:label "Instant"@en .
+
+
 ###  https://w3id.org/ctp#Interval
 ctp:Interval rdf:type owl:Class ;
              rdfs:subClassOf ctp:TemporalEntity ;
              rdfs:comment "A temporal entity with an extent or duration."@en ,
                           "Un'entità temporale con un'estensione o una durata."@it ;
              rdfs:label "Interval"@en .
-
-
-###  https://w3id.org/ctp#Instant
-ctp:Instant rdf:type owl:Class ;
-           rdfs:subClassOf ctp:TemporalEntity ;
-           rdfs:comment "A temporal entity with zero extent or duration."@en ,
-                        "Un'entità temporale con durata o estensione pari a zero."@it ;
-           rdfs:label "Instant"@en .
 
 
 ###  https://w3id.org/ctp#OrderedListSlot
@@ -857,8 +1095,8 @@ ctp:Subject rdf:type owl:Class ;
 ###  https://w3id.org/ctp#TemporalEntity
 ctp:TemporalEntity rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Class ;
-                                         owl:unionOf ( ctp:Interval
-                                                       ctp:Instant
+                                         owl:unionOf ( ctp:Instant
+                                                       ctp:Interval
                                                      )
                                        ] ;
                    rdfs:comment "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en ,
@@ -895,57 +1133,67 @@ ctp:Type rdf:type owl:Class ;
 #################################################################
 
 ###  https://orcid.org/0000-0001-5648-2713
-# <https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ,
-ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,                         
-                                        ctp:Person ;
-                                        foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
-                                        owl:sameAs <https://orcid.org/0000-0001-5648-2713> ;
-                                        foaf:name "Riccardo Albertoni" ;
-                                        rdfs:label "Riccardo Albertoni"@en ;
-                                        org:memberOf ctp:cnr-imati .
+<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs ctp:briccardoalbertoni .
 
+
+###  https://w3id.org/ctp#briccardoalbertoni
 
 ###  https://orcid.org/0000-0002-2440-2376
-# <https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ,
-ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
-                                        ctp:Person ;
-                                        foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
-                                        owl:sameAs <https://orcid.org/0000-0002-2440-2376> ;
-                                        foaf:name "Tiziana Pasciuto" ;
-                                        rdfs:label "Tiziana Pasciuto"@en ;
-                                        org:memberOf ctp:cnr-imati ,
-                                                     ctp:universitaDiGenova .
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs ctp:atizianapasciuto .
 
+
+###  https://w3id.org/ctp#atizianapasciuto
 
 ###  https://w3id.org/ctp
 <https://w3id.org/ctp> rdf:type owl:NamedIndividual ;
                        dcterms:creator ctp:atizianapasciuto ,
-                                       ctp:briccardoalbertoni,
+                                       ctp:briccardoalbertoni ,
                                        ctp:croberta .
+
+
+###  https://w3id.org/ctp#atizianapasciuto
+ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
+                              ctp:Person ;
+                     rdfs:label "Tiziana Pasciuto"@en ;
+                     org:memberOf ctp:cnr-imati ,
+                                  ctp:universitaDiGenova ;
+                     foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
+                     foaf:name "Tiziana Pasciuto" .
+
+
+###  https://w3id.org/ctp#briccardoalbertoni
+ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,
+                                ctp:Person ;
+                       rdfs:label "Riccardo Albertoni"@en ;
+                       org:memberOf ctp:cnr-imati ;
+                       foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
+                       foaf:name "Riccardo Albertoni" .
 
 
 ###  https://w3id.org/ctp#cnr-imati
 ctp:cnr-imati rdf:type owl:NamedIndividual ,
                        ctp:Organization ;
-              foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" ;
               rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
-              foaf:homepage "https://imati.cnr.it/" .
+              foaf:homepage "https://imati.cnr.it/" ;
+              foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 
 
-###  https://w3id.org/ctp#roberta
+###  https://w3id.org/ctp#croberta
 ctp:croberta rdf:type owl:NamedIndividual ,
-                     ctp:Person ;
-            foaf:name "Roberta Maggi" ;
-            rdfs:label "Roberta Maggi"@en ;
-            org:memberOf ctp:cnr-imati .
+                      ctp:Person ;
+             rdfs:label "Roberta Maggi"@en ;
+             org:memberOf ctp:cnr-imati ;
+             foaf:name "Roberta Maggi" .
 
 
 ###  https://w3id.org/ctp#universitaDiGenova
 ctp:universitaDiGenova rdf:type owl:NamedIndividual ,
                                 ctp:Organization ;
-                       foaf:name "University of Genoa, Italy" ;
                        rdfs:label "University of Genoa, Italy"@en ;
-                       foaf:homepage "https://unige.it/" .
+                       foaf:homepage "https://unige.it/" ;
+                       foaf:name "University of Genoa, Italy" .
 
 
 #################################################################
@@ -976,26 +1224,9 @@ dcterms:description dcterms:description "Description may include but is not limi
                     rdfs:label "Description"@en .
 
 
-dcterms:identifier dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en ;
-                   rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
-                   rdfs:isDefinedBy dcterms: ;
-                   rdfs:label "Identifier"@en .
-
-
-dcterms:subject dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
-                rdfs:comment "A topic of the resource."@en ;
-                rdfs:isDefinedBy dcterms: ;
-                rdfs:label "Subject"@en .
-
-
 dcterms:title rdfs:comment "A name given to the resource."@en ;
               rdfs:isDefinedBy dcterms: ;
               rdfs:label "Title"@en .
 
-
-dcterms:type dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
-             rdfs:comment "The nature or genre of the resource."@en ;
-             rdfs:isDefinedBy dcterms: ;
-             rdfs:label "Type"@en .
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
