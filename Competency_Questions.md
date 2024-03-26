@@ -19,7 +19,7 @@ SELECT ?ThematicPath ?Theme
 WHERE{  
   ?ThematicPath ctp:hasTheme ?Theme.  
 }  
-LIMIT 10
+LIMIT 10  
 
 ## CQ3
 Where are cultural objects connected to thematic route X usually kept?  
@@ -101,7 +101,7 @@ SELECT ?ThematicPath ?Agent
 WHERE{  
   ?ThematicPath ctp:isInspiredByAgent ?Agent.  
 }  
-LIMIT 10
+LIMIT 10  
 
 ## CQ9
 Which cultural resources are part of more than one thematic path?  
@@ -119,7 +119,7 @@ Which thematic paths have been created by the same agent?
 Quali percorsi tematici sono stati realizzati dallo stesso agente?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?Agent ?Role.  
+SELECT ?ThematicPath ?Agent ?Role  
 WHERE{  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "creator", "i").  
@@ -132,7 +132,7 @@ Which thematic paths have been funded by the same agent?
 Quali percorsi tematici sono stati finanziati dallo stesso agente?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?Agent ?Role.  
+SELECT ?ThematicPath ?Agent ?Role  
 WHERE{  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "funder", "i").  
@@ -157,7 +157,7 @@ Which thematic paths can be identified through the subject "XYZ"?
 Quali percorsi tematici sono individuabili attraverso il soggetto "XYZ"?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?Subject ?ThematicPath.  
+SELECT ?Subject ?ThematicPath  
 WHERE{  
   ?ThematicPath ctp:hasSubject ?Subject.  
 }  
@@ -169,7 +169,7 @@ Which are the places related to the thematic path X?
 Quali sono i luoghi legati al percorso tematico X?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?Place.  
+SELECT ?ThematicPath ?Place  
 WHERE{  
   ?ThematicPath ctp:refersToPlace ?Place.  
 }  
@@ -181,9 +181,9 @@ Which cultural, ethical and social values does the thematic path X want to conve
 Quali valori culturali, etici e sociali vuole trasmettere il percorso tematico X?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?rdfs:Literal  
+SELECT ?ThematicPath ?rdfs  
 WHERE{  
-  ?ThematicPath ctp:conveys ?rdfs:Literal.  
+  ?ThematicPath ctp:conveys ?rdfs.  
 }  
 LIMIT 10  
 
@@ -197,7 +197,7 @@ SELECT *
 WHERE{  
   ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
   ?OrderedListSlot ctp:hasItem ?CulturalResource.  
-  ?OrderedListSlot ctp:hasIndex ?rdfs:Literal.  
+  ?OrderedListSlot ctp:hasIndex ?rdfs.  
 }  
 LIMIT 10  
 
@@ -220,7 +220,7 @@ The thematic path X is composed by one or more sub-thematic paths (i.e. exhibiti
 Il percorso tematico X è composto da uno o più sotto percorsi tematici (per esempio sottofiloni tematici di una mostra)?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?ThematicPath.  
+SELECT ?ThematicPath ?ThematicPath  
 WHERE{  
   ?ThematicPath ctp:includes ?ThematicPath.  
 }  
@@ -231,9 +231,9 @@ How is it possible to access the thematic path X?
 Come è possibile accedere al percorso tematico X?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?rdfs:Literal.  
+SELECT ?ThematicPath ?rdfs   
 WHERE{  
-  ?ThematicPath ctp:linkToResource ?rdfs:Literal.  
+  ?ThematicPath ctp:linkToResource ?rdfs  
 }  
 LIMIT 10  
 
@@ -242,10 +242,10 @@ Where can cultural resources related to the thematic path X be viewed?
 Dove sono visualizzabili gli oggetti legati al percorso tematico X?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?CulturalResource ?ThematicPath ?rdfs:Literal.  
+SELECT ?CulturalResource ?ThematicPath ?rdfs   
 WHERE{  
   ?CulturalResource ctp:isPartOf ?ThematicPath.  
-  ?CulturalResource ctp:linkToResource ?rdfs:Literal.  
+  ?CulturalResource ctp:linkToResource ?rdfs.  
 }  
 LIMIT 10  
 
@@ -265,11 +265,11 @@ Where is it possible to buy products related to the thematic path X?
 Dove è possibile acquistare prodotti relativi al percorso tematico X?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?Product ?Type ?rdfs:Literal  
+SELECT ?ThematicPath ?Product ?Type ?rdfs  
 WHERE{  
   ?ThematicPath ctp:allowsTheSaleOf ?Product.  
-  ?Product ctp:isSelledBy ?rdfs:Literal.  
-  ?Product ctp:hasTitle ?rdfs:Literal.  
+  ?Product ctp:isSelledBy ?rdfs.  
+  ?Product ctp:hasTitle ?rdfs.  
   ?Product ctp:hasType ?Type.  
 }  
 LIMIT 10  
@@ -291,19 +291,19 @@ Which is the internal identifier of the resource X in the XY catalog?
 Qual è l'identificativo interno della risorsa X nel catalogo XY?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?CulturalResource ?rdfs:Literal  
+SELECT ?CulturalResource ?rdfs  
 WHERE{  
-  ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs:Literal.  
+  ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs.  
 }  
-LIMIT 10
+LIMIT 10  
 
 ## CQ25
 Which thematic routes have been created in the year XX?  
 Quali percorsi tematici sono stati creati nell'anno XX?  
 
 PREFIX ctp: ```<https://w3id.org/ctp#>```  
-SELECT ?ThematicPath ?xsd:date  
+SELECT ?ThematicPath ?xsd  
 WHERE{  
-  ?ThematicPath ctp:hasCreationDate ?xsd:date.  
+  ?ThematicPath ctp:hasCreationDate ?xsd.  
 }  
-LIMIT 10
+LIMIT 10  
