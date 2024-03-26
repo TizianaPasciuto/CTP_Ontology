@@ -2,6 +2,7 @@
 ## Cultural Thematic Path Ontology - An ontology to travel in culture  
 This repository is dedicated to the development of an ontological module on the creation of cultural thematic path related to the GLAM (Galleries, Libraries, Archives, and Museum) domain, serving as a tool to "travel" through the cultural heritage by allowing the linking between cultural resources, of various types and stored in different places, unified by one or more themes.  
 The ontological module aims to be autonomous yet easily reusable with other existing domain ontologies, widely used in the GLAM sector.  
+The ontology can be found [here](https://github.com/TizianaPasciuto/CTP_Ontology/blob/f43eece9c202ff75ac3054c2f89a5f859ea5c56d/documentation/index-en.html).  
 
 ## Development  
 The development of the ontology on Cultural Thematic Paths follows the Linked Open Terms (LOT) methodology, as outlined by [Poveda-Villalón et al.](https://www.sciencedirect.com/science/article/pii/S0952197622000525)  
@@ -43,6 +44,3 @@ The documentation for the Cultural Thematic Path Ontology is realized using [WID
 
 ### Ontology maintenance ###
 The objective of this activity is to update the ontology during its life cycle, detecting bugs and new requirements.  
-
-## References ##
-TBD
