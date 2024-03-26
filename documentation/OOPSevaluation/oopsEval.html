@@ -62,24 +62,24 @@
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse0">
-P11. Missing domain or range in properties<span style="float: right;">5 cases detected. <span class="label label-warning">Important</span></span></a>
+P05. Defining wrong inverse relationships<span style="float: right;">1 case detected. <span class="label label-danger">Critical</span></span></a>
 </h4>
 </div>
 <div id="collapse0" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href=""http://purl.org/dc/terms/description"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/description"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/creator"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/creator"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/title"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/title"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/abstract"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/abstract"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/created"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/created"^^xsd:anyURI</a></li></ul></div>
+<p>Two relationships are defined as inverse relations when they are not necessarily inverse.	</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="https://w3id.org/ctp#hasSecondaryIdentifier" target="_blank">https://w3id.org/ctp#hasSecondaryIdentifier</a> may not be inverse of <a href="https://w3id.org/ctp#isSecondaryIdentifierOf" target="_blank">https://w3id.org/ctp#isSecondaryIdentifierOf</a></li></ul></div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse1">
-P13. Inverse relationships not explicitly declared<span style="float: right;">23 cases detected. <span class="label label-minor">Minor</span></span></a>
+P22. Using different naming conventions in the ontology<span style="float: right;"> ontology *<span class="label label-minor">Minor</span></span></a>
 </h4>
 </div>
 <div id="collapse1" class="panel-collapse collapse">
 <div class="panel-body">
-<p>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href=""https://w3id.org/ctp#hasTheme"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasTheme"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasType"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasType"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#isPreservedBy"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#isPreservedBy"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#involves"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#involves"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasCreator"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasCreator"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#isRealizedIn"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#isRealizedIn"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasBeginning"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasBeginning"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#allowsTheSaleOf"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#allowsTheSaleOf"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasPlace"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasPlace"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/abstract"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/abstract"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#refersToPlace"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#refersToPlace"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasEnd"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasEnd"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#isInspiredByAgent"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#isInspiredByAgent"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasRole"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasRole"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasSecondaryIdentifier"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasSecondaryIdentifier"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasRelationToAgent"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasRelationToAgent"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasGeometry"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasGeometry"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#refersToTemporalEntity"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#refersToTemporalEntity"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasTime"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasTime"^^xsd:anyURI</a></li><li><a href=""http://purl.org/dc/terms/creator"^^xsd:anyURI" target="_blank">"http://purl.org/dc/terms/creator"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasItem"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasItem"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#hasSubject"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#hasSubject"^^xsd:anyURI</a></li><li><a href=""https://w3id.org/ctp#takesPlaceIn"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#takesPlaceIn"^^xsd:anyURI</a></li></ul></div>
+<p>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</p><p>*This pitfall applies to the ontology in general instead of specific elements</p></div>
 </div>
 </div>
 <div class="panel panel-default">
@@ -91,7 +91,7 @@ P30. Equivalent classes not explicitly declared<span style="float: right;">1 cas
 </div>
 <div id="collapse2" class="panel-collapse collapse">
 <div class="panel-body">
-<p>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href=""https://w3id.org/ctp#Subject"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#Subject"^^xsd:anyURI</a> , <a href=""https://w3id.org/ctp#Theme"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#Theme"^^xsd:anyURI</a></li></ul></div>
+<p>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href=""https://w3id.org/ctp#Theme"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#Theme"^^xsd:anyURI</a> , <a href=""https://w3id.org/ctp#Subject"^^xsd:anyURI" target="_blank">"https://w3id.org/ctp#Subject"^^xsd:anyURI</a></li></ul></div>
 </div>
 </div>
 </div>

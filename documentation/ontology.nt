@@ -1,17 +1,15 @@
 <https://w3id.org/ctp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is https://w3id.org/ctp# The suggested prefix for CTP namespace is ctp.\nIn this module the following Ontology Design Patterns have been used:\n- http://www.ontologydesignpatterns.org/cp/owl/list.owl\n- http://www.ontologydesignpatterns.org/cp/owl/partof.owl\n- http://www.ontologydesignpatterns.org/cp/owl/place.owl\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
-<https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale. Il namespace per i termini CTP è https://w3id.org/ctp#. Il prefisso suggerito per il namespace CTP è ctp.\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:\n- http://www.ontologydesignpatterns.org/cp/owl/list.owl\n- http://www.ontologydesignpatterns.org/cp/owl/partof.owl\n- http://www.ontologydesignpatterns.org/cp/owl/place.owl\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021."@it .
+<https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>\nIn this module the following Ontology Design Patterns have been used:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://w3id.org/ctp> <http://purl.org/dc/terms/abstract> "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"@it .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/created> "2023-03-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#atizianapasciuto> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#briccardoalbertoni> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#croberta> .
-<https://w3id.org/ctp> <http://purl.org/dc/terms/description> "Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.\nScope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."@en .
-<https://w3id.org/ctp> <http://purl.org/dc/terms/description> "Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nAmbito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."@it .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/title> "Cultural Thematic Path (CTP) Ontology"@en .
 <https://w3id.org/ctp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctp" .
-<https://w3id.org/ctp> <http://www.w3.org/2000/01/rdf-schema#comment> "Purpose: The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.\nScope:  Although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to cultural heritage and its enjoyment."@en .
-<https://w3id.org/ctp> <http://www.w3.org/2000/01/rdf-schema#comment> "Scopo: La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nAmbito: Nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."@it .
+<https://w3id.org/ctp> <http://www.w3.org/2000/01/rdf-schema#comment> "The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.<br>\nThe development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.<br>\nWith regard to the scope, although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to the cultural heritage."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://w3id.org/ctp> <http://www.w3.org/2000/01/rdf-schema#comment> "La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nPer quanto riguarda l'ambito, nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."@it .
 <https://w3id.org/ctp> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Thematic Path (CTP) Ontology"@en .
 <https://w3id.org/ctp> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
 # 
@@ -66,6 +64,10 @@
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/description> <http://purl.org/dc/terms/description> "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/description> .
 # 
 # http://purl.org/dc/terms/identifier
@@ -73,7 +75,7 @@
 <http://purl.org/dc/terms/identifier> <http://purl.org/dc/terms/description> "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
@@ -85,7 +87,7 @@
 <http://purl.org/dc/terms/subject> <http://purl.org/dc/terms/description> "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en .
 <http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A topic of the resource."@en .
 <http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject"@en .
 <http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
 # 
 # http://purl.org/dc/terms/title
@@ -98,7 +100,7 @@
 <http://purl.org/dc/terms/type> <http://purl.org/dc/terms/description> "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en .
 <http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#comment> "The nature or genre of the resource."@en .
 <http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@en .
 <http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/type> .
 # 
 # http://purl.org/vocab/vann/example
@@ -113,8 +115,8 @@
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://www.w3.org/2003/06/sw-vocab-status/ns#termStatus
+<http://www.w3.org/2003/06/sw-vocab-status/ns#termStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -170,61 +172,76 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# https://w3id.org/ctp#IsInvolvedIn
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#involves> .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Agent> .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#RelationToAgent> .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'agente coinvolto in una relazione."@it .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the agent involved in a relation."@en .
+<https://w3id.org/ctp#IsInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isInvolvedIn"@en .
 # 
 # https://w3id.org/ctp#allowsTheSaleOf
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#soldThrough> .
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Product> .
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it .
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en .
 <https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2000/01/rdf-schema#label> "allowsTheSaleOf"@en .
+<https://w3id.org/ctp#allowsTheSaleOf> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasBeginning
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#hasTime> .
+<https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isBeginningOf> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Instant> .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Beginning of a temporal entity."@en .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#comment> "Inizio di un'entità temporale."@it .
 <https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2000/01/rdf-schema#label> "hasBeginning"@en .
+<https://w3id.org/ctp#hasBeginning> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasCreator
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasCreator> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isCreatorOf> .
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Identifier> .
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Agent> .
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica tramite quale agente pubblico o privato è stato creato il codice di identificazione della risorsa culturale."@it .
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates by which public or private agent the identification code of the cultural resource was created."@en .
 <https://w3id.org/ctp#hasCreator> <http://www.w3.org/2000/01/rdf-schema#label> "hasCreator"@en .
+<https://w3id.org/ctp#hasCreator> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasEnd
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#hasTime> .
+<https://w3id.org/ctp#hasEnd> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isEndOf> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Instant> .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "End of a temporal entity."@en .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine di una entità temporale."@it .
 <https://w3id.org/ctp#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasEnd"@en .
+<https://w3id.org/ctp#hasEnd> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasGeometry
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isGeometryOf> .
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Place> .
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Geometry> .
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un oggetto spaziale con una geometria corrispondente."@it .
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a spatial thing with a corresponding geometry."@en .
 <https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry"@en .
+<https://w3id.org/ctp#hasGeometry> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasItem
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasItem> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isItemOf> .
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#OrderedListSlot> .
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una risorsa culturale in una lista ordinata."@it .
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a slot cultural resource in an ordered list."@en .
 <https://w3id.org/ctp#hasItem> <http://www.w3.org/2000/01/rdf-schema#label> "hasItem"@en .
+<https://w3id.org/ctp#hasItem> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasLocation
 <https://w3id.org/ctp#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -238,7 +255,7 @@
 # https://w3id.org/ctp#hasMember
 <https://w3id.org/ctp#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#memberOf> .
-<https://w3id.org/ctp#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#GroupsOfPeople> .
+<https://w3id.org/ctp#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#GroupOfPeople> .
 <https://w3id.org/ctp#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Agent> .
 <https://w3id.org/ctp#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri."@it .
 <https://w3id.org/ctp#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a group (intended as a simple grouping of people or as a company) has agents as members."@en .
@@ -271,35 +288,43 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # 
 # https://w3id.org/ctp#hasPlace
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasPlace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPlaceOf> .
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Agent> .
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Place> .
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la localizzazione di un agente."@it .
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the location of an agent."@en .
 <https://w3id.org/ctp#hasPlace> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlace"@en .
+<https://w3id.org/ctp#hasPlace> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasRelationToAgent
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isRelatedTo> .
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."@it .
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between an entity and an agent involved with a certain role."@en .
 <https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2000/01/rdf-schema#label> "hasRelationToAgent"@en .
+<https://w3id.org/ctp#hasRelationToAgent> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasRole
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isRoleOf> .
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Role> .
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it .
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en .
 <https://w3id.org/ctp#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole"@en .
+<https://w3id.org/ctp#hasRole> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasSecondaryIdentifier
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isSecondaryIdentifierOf> .
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Identifier> .
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it .
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en .
 <https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "hasSecondaryIdentifier"@en .
+<https://w3id.org/ctp#hasSecondaryIdentifier> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasSlot
 <https://w3id.org/ctp#hasSlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -311,35 +336,52 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # 
 # https://w3id.org/ctp#hasSubject
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasSubject> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isSubjectOf> .
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Subject> .
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica a quale/i soggetto/i l'entità si riferisce."@it .
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates to which subject/subjects the entity refers/refer."@en .
 <https://w3id.org/ctp#hasSubject> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubject"@en .
+<https://w3id.org/ctp#hasSubject> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasTheme
 <https://w3id.org/ctp#hasTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isThemeOf> .
 <https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Theme> .
-<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il tema su cui si basa il percorso tematico."@it .
-<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the theme on which the thematic path is based."@en .
+<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che il percorso tematico si basa su un tema."@it .
+<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the thematic path is based on a theme."@en .
 <https://w3id.org/ctp#hasTheme> <http://www.w3.org/2000/01/rdf-schema#label> "hasTheme"@en .
+<https://w3id.org/ctp#hasTheme> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasTime
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasTime> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isTimeOf> .
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#TemporalEntity> .
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."@it .
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the time an entity was created and/or an event occurred."@en .
 <https://w3id.org/ctp#hasTime> <http://www.w3.org/2000/01/rdf-schema#label> "hasTime"@en .
+<https://w3id.org/ctp#hasTime> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#hasType
 <https://w3id.org/ctp#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hasType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isTypeOf> .
 <https://w3id.org/ctp#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Type> .
 <https://w3id.org/ctp#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il tipo di entità."@it .
 <https://w3id.org/ctp#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of entity."@en .
 <https://w3id.org/ctp#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType"@en .
+<https://w3id.org/ctp#hasType> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#hostsTheCulturalEvent
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#takesPlaceIn> .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Place> .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalEvent> .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un evento culturale e il luogo in cui si svolge."@it .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between a cultural event and the place where it took place."@en .
+<https://w3id.org/ctp#hostsTheCulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "hostsTheCulturalEvent"@en .
 # 
 # https://w3id.org/ctp#includes
 <https://w3id.org/ctp#includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -350,6 +392,16 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#includes> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a thematic path may include sub-thematic paths. Therefore, they can be used as a deepening of the topics dealt with previously."@en .
 <https://w3id.org/ctp#includes> <http://www.w3.org/2000/01/rdf-schema#label> "includes"@en .
 # 
+# https://w3id.org/ctp#inspires
+<https://w3id.org/ctp#inspires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#isSubjectOf> .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isInspiredByAgent> .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Agent> .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the agent that inspires it."@en .
+<https://w3id.org/ctp#inspires> <http://www.w3.org/2000/01/rdf-schema#label> "inspires"@en .
+# 
 # https://w3id.org/ctp#involves
 <https://w3id.org/ctp#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#RelationToAgent> .
@@ -357,6 +409,41 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica quale agente è coinvolto in una relazione con un certo ruolo."@it .
 <https://w3id.org/ctp#involves> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which agent is involved in a relationship with a certain role."@en .
 <https://w3id.org/ctp#involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves"@en .
+<https://w3id.org/ctp#involves> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#isBeginningOf
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#isTimeOf> .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Instant> .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#TemporalEntity> .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica da quale istante inizia un'entità temporale."@en .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates from which moment a temporal entity begins."@en .
+<https://w3id.org/ctp#isBeginningOf> <http://www.w3.org/2000/01/rdf-schema#label> "isBeginningOf"@en .
+# 
+# https://w3id.org/ctp#isCreatorOf
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Agent> .
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Identifier> .
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'agente pubblico o privato che crea il codice identificativo della risorsa culturale."@it .
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the public or private agent that creates the identification code of the cultural resource."@en .
+<https://w3id.org/ctp#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCreatorOf"@en .
+# 
+# https://w3id.org/ctp#isEndOf
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#isTimeOf> .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Instant> .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#TemporalEntity> .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica da quale istante termina un'entità temporale."@en .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates from which moment a temporal entity ends."@en .
+<https://w3id.org/ctp#isEndOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEndOf"@en .
+# 
+# https://w3id.org/ctp#isGeometryOf
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Geometry> .
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Place> .
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una geometria a un oggetto spaziale."@it .
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a geometry with a spatial entity."@en .
+<https://w3id.org/ctp#isGeometryOf> <http://www.w3.org/2000/01/rdf-schema#label> "isGeometryOf"@en .
 # 
 # https://w3id.org/ctp#isIncludedIn
 <https://w3id.org/ctp#isIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -374,6 +461,15 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#isInspiredByAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it .
 <https://w3id.org/ctp#isInspiredByAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the agent that inspires it."@en .
 <https://w3id.org/ctp#isInspiredByAgent> <http://www.w3.org/2000/01/rdf-schema#label> "isInspiredByAgent"@en .
+<https://w3id.org/ctp#isInspiredByAgent> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#isItemOf
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#OrderedListSlot> .
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una risorsa culturale in una lista ordinata."@it .
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a slot cultural resource in an ordered list."@en .
+<https://w3id.org/ctp#isItemOf> <http://www.w3.org/2000/01/rdf-schema#label> "isItemOf"@en .
 # 
 # https://w3id.org/ctp#isLocationOf
 <https://w3id.org/ctp#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -391,26 +487,94 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the cultural object and the thematic path/paths to which it is linked."@en .
 <https://w3id.org/ctp#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPartOf"@en .
 # 
+# https://w3id.org/ctp#isPlaceOf
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Place> .
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#Agent> .
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la localizzazione di un agente."@it .
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the location of an agent."@en .
+<https://w3id.org/ctp#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPlaceOf"@en .
+# 
 # https://w3id.org/ctp#isPreservedBy
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#preserves> .
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#CulturalResource> .
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it .
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the public or private agent responsible for preserving the cultural resource."@en .
 <https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isPreservedBy"@en .
+<https://w3id.org/ctp#isPreservedBy> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#isRealizedIn
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#occursIn> .
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalEvent> .
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it .
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en .
 <https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isRealizedIn"@en .
+<https://w3id.org/ctp#isRealizedIn> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#isRelatedTo
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#RelationToAgent> .
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un'entità e un agente coinvolto con un determinato ruolo."@it .
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between an entity and an agent with a certain role."@en .
+<https://w3id.org/ctp#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "isRelatedTo"@en .
+# 
+# https://w3id.org/ctp#isRoleOf
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Role> .
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#RelationToAgent> .
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it .
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en .
+<https://w3id.org/ctp#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "isRoleOf"@en .
+# 
+# https://w3id.org/ctp#isSecondaryIdentifierOf
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Identifier> .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSecondaryIdentifierOf"@en .
+# 
+# https://w3id.org/ctp#isSubjectOf
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Subject> .
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica a quale/i soggetto/i l'entità si riferisce."@it .
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates to which subject/subjects the entity refers/refer."@en .
+<https://w3id.org/ctp#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSubjectOf"@en .
+# 
+# https://w3id.org/ctp#isThemeOf
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Theme> .
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il tema su cui si basa il percorso tematico."@it .
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the theme on which the thematic path is based."@en .
+<https://w3id.org/ctp#isThemeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isThemeOf"@en .
+# 
+# https://w3id.org/ctp#isTimeOf
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il momento in cui un'entità è stata creata e/o un evento è avvenuto."@it .
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the time an entity was created and/or an event occurred."@en .
+<https://w3id.org/ctp#isTimeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTimeOf"@en .
+# 
+# https://w3id.org/ctp#isTypeOf
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Type> .
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica di che tipologia è l'entità."@it .
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates what type the entity belongs to."@en .
+<https://w3id.org/ctp#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTypeOf"@en .
 # 
 # https://w3id.org/ctp#memberOf
 <https://w3id.org/ctp#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Agent> .
-<https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#GroupsOfPeople> .
+<https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#GroupOfPeople> .
 <https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che un agente fa parte di un gruppo, inteso come semplice raggruppamento di persone o come società."@it .
 <https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an agent is part of a group, intended as a simple grouping of people or as a company."@en .
 <https://w3id.org/ctp#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "memberOf"@en .
@@ -423,6 +587,32 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#nextItem> <http://www.w3.org/2000/01/rdf-schema#comment> "In an ordered collection, indicates the link to the next item in a list."@en .
 <https://w3id.org/ctp#nextItem> <http://www.w3.org/2000/01/rdf-schema#comment> "In un insieme ordinato, indica il collegamento all'elemento successivo in un elenco."@it .
 <https://w3id.org/ctp#nextItem> <http://www.w3.org/2000/01/rdf-schema#label> "nextItem"@en .
+# 
+# https://w3id.org/ctp#occursIn
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#CulturalEvent> .
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it .
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en .
+<https://w3id.org/ctp#occursIn> <http://www.w3.org/2000/01/rdf-schema#label> "occursIn"@en .
+# 
+# https://w3id.org/ctp#placeRefersTo
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#isSubjectOf> .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#refersToPlace> .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Place> .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e i luoghi a cui è collegato."@it .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the relationship between the thematic path and the places to which it is linked."@en .
+<https://w3id.org/ctp#placeRefersTo> <http://www.w3.org/2000/01/rdf-schema#label> "placeRefersTo"@en .
+# 
+# https://w3id.org/ctp#preserves
+<https://w3id.org/ctp#preserves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#preserves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#RelationToAgent> .
+<https://w3id.org/ctp#preserves> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp#preserves> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it .
+<https://w3id.org/ctp#preserves> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the public or private agent responsible for preserving the cultural resource."@en .
+<https://w3id.org/ctp#preserves> <http://www.w3.org/2000/01/rdf-schema#label> "preserves"@en .
 # 
 # https://w3id.org/ctp#previousItem
 <https://w3id.org/ctp#previousItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -440,15 +630,26 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#refersToPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e i luoghi a cui è collegato."@it .
 <https://w3id.org/ctp#refersToPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the relationship between the thematic path and the places to which it is linked."@en .
 <https://w3id.org/ctp#refersToPlace> <http://www.w3.org/2000/01/rdf-schema#label> "refersToPlace"@en .
+<https://w3id.org/ctp#refersToPlace> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 # 
 # https://w3id.org/ctp#refersToTemporalEntity
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#hasSubject> .
+<https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#temporalEntityRefersTo> .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#TemporalEntity> .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the historical period to which it refers."@en .
 <https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "refersToTemporalEntity"@en .
+<https://w3id.org/ctp#refersToTemporalEntity> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#soldThrough
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Product> .
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it .
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en .
+<https://w3id.org/ctp#soldThrough> <http://www.w3.org/2000/01/rdf-schema#label> "soldThrough"@en .
 # 
 # https://w3id.org/ctp#takesPlaceIn
 <https://w3id.org/ctp#takesPlaceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -457,6 +658,16 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un evento culturale e il luogo in cui si è svolto."@it .
 <https://w3id.org/ctp#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between a cultural event and the place where it took place."@en .
 <https://w3id.org/ctp#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#label> "takePlaceIn"@en .
+<https://w3id.org/ctp#takesPlaceIn> <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+# 
+# https://w3id.org/ctp#temporalEntityRefersTo
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ctp#isSubjectOf> .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#TemporalEntity> .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#ThematicPath> .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the historical period to which it refers."@en .
+<https://w3id.org/ctp#temporalEntityRefersTo> <http://www.w3.org/2000/01/rdf-schema#label> "temporalEntityRefersTo"@en .
 # 
 # 
 # 
@@ -466,15 +677,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # #
 # #################################################################
 # 
-# 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://w3id.org/ctp#conveys
 <https://w3id.org/ctp#conveys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -643,8 +845,8 @@ _:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # https://w3id.org/ctp#Agent
 <https://w3id.org/ctp#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, family, group or institution that performs a certain action."@en .
-<https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona, famiglia, gruppo o istituzione che compie una certa azione."@it .
+<https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent, that could be a person, family, group or institution."@en .
+<https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Un agente, che può essere una persona, famiglia, gruppo o istituzione."@it .
 <https://w3id.org/ctp#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
 # 
 # https://w3id.org/ctp#CulturalEvent
@@ -667,17 +869,17 @@ _:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # https://w3id.org/ctp#Group
 <https://w3id.org/ctp#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#GroupsOfPeople> .
+<https://w3id.org/ctp#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#GroupOfPeople> .
 <https://w3id.org/ctp#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of individual agents that can itself act as an agent, capable of performing actions."@en .
 <https://w3id.org/ctp#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "Una collezione di agenti individuali che può a sua volta agire come un agente, capace di compiere azioni."@it .
 <https://w3id.org/ctp#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group"@en .
 # 
-# https://w3id.org/ctp#GroupsOfPeople
-<https://w3id.org/ctp#GroupsOfPeople> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#GroupsOfPeople> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#Agent> .
-<https://w3id.org/ctp#GroupsOfPeople> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of individual agents."@en .
-<https://w3id.org/ctp#GroupsOfPeople> <http://www.w3.org/2000/01/rdf-schema#comment> "Una collezione di agenti individuali."@it .
-<https://w3id.org/ctp#GroupsOfPeople> <http://www.w3.org/2000/01/rdf-schema#label> "GroupsOfPeople"@en .
+# https://w3id.org/ctp#GroupOfPeople
+<https://w3id.org/ctp#GroupOfPeople> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ctp#GroupOfPeople> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#Agent> .
+<https://w3id.org/ctp#GroupOfPeople> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of individual agents."@en .
+<https://w3id.org/ctp#GroupOfPeople> <http://www.w3.org/2000/01/rdf-schema#comment> "Una collezione di agenti individuali."@it .
+<https://w3id.org/ctp#GroupOfPeople> <http://www.w3.org/2000/01/rdf-schema#label> "GroupOfPeople"@en .
 # 
 # https://w3id.org/ctp#Identifier
 <https://w3id.org/ctp#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -707,7 +909,7 @@ _:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # https://w3id.org/ctp#Organization
 <https://w3id.org/ctp#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#GroupsOfPeople> .
+<https://w3id.org/ctp#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ctp#GroupOfPeople> .
 <https://w3id.org/ctp#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ctp#Person> .
 <https://w3id.org/ctp#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific type of agent that corresponds to social institutions, such as companies and societies."@en .
 <https://w3id.org/ctp#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Un tipo specifico di agente che corrisponde a istituzioni sociali, come aziende e società."@it .
@@ -857,25 +1059,20 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "A summary of the resource."@en .
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "A summary of the resource."@en .
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Abstract"@en .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "abstract"@en .
 # 
 <http://purl.org/dc/terms/created> <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
 <http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of creation of the resource."@en .
 <http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "Date Created"@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "dateCreated"@en .
 # 
 <http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource."@en .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
-# 
-<http://purl.org/dc/terms/description> <http://purl.org/dc/terms/description> "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource."@en .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "creator"@en .
 # 
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
