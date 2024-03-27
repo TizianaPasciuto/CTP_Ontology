@@ -33,7 +33,7 @@ Questo lavoro è stato sviluppato nell&apos;ambito del Progetto di Ricerca per i
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-06</terms:created>
         <terms:creator rdf:resource="https://w3id.org/ctp#atizianapasciuto"/>
         <terms:creator rdf:resource="https://w3id.org/ctp#briccardoalbertoni"/>
-        <terms:creator rdf:resource="https://w3id.org/ctp#croberta"/>
+        <terms:creator rdf:resource="https://w3id.org/ctp#crobertamaggi"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Cultural Thematic Path (CTP) Ontology</terms:title>
         <vann:preferredNamespacePrefix>ctp</vann:preferredNamespacePrefix>
@@ -917,7 +917,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isSecondaryIdentifierOf">
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Identifier"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#CulturalResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="it">Indica la relazione tra un&apos;entità e il codice di identificazione assegnato ad essa da un agente che la gestisce.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it.</rdfs:comment>
         <rdfs:label xml:lang="en">isSecondaryIdentifierOf</rdfs:label>
@@ -1152,12 +1152,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates a message that can convey cultural, ethical and social values through the thematic path.</rdfs:comment>
         <rdfs:label xml:lang="en">conveys</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#conveys"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>meaning</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1171,12 +1165,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">The geographic bounding box of a spatial thing.</rdfs:comment>
         <rdfs:label xml:lang="en">hasBoundingBox</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasBoundingBox"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>bounding box</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1190,12 +1178,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">The geographic bounding box of a spatial thing.</rdfs:comment>
         <rdfs:label xml:lang="en">hasCentroid</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasCentroid"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>centroid</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1235,12 +1217,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates a description of an entity.</rdfs:comment>
         <rdfs:label>hasDescription</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasDescription"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>description</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1254,12 +1230,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc).</rdfs:comment>
         <rdfs:label xml:lang="en">hasIndex</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasIndex"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>index</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1273,12 +1243,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates the name associated with an agent.</rdfs:comment>
         <rdfs:label xml:lang="en">hasName</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasName"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>appellation</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1293,12 +1257,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">The string that constitutes the cultural resource identifier.</rdfs:comment>
         <rdfs:label xml:lang="en">hasNotation</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasNotation"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>notation</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1325,12 +1283,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates the title of an entity.</rdfs:comment>
         <rdfs:label xml:lang="en">hasTitle</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#hasTitle"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>title</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1345,12 +1297,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates the link that allows purchasing the resource available on the web through an hyperlink.</rdfs:comment>
         <rdfs:label xml:lang="en">isSelledBy</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#isSelledBy"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>link</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1364,12 +1310,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code.</rdfs:comment>
         <rdfs:label xml:lang="en">linkToResource</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/ctp#linkToResource"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>link</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1561,8 +1501,8 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Role">
-        <rdfs:comment xml:lang="it">Il ruolo svolto da un agente in un contesto specifico.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The role performed by an agent in a specific context.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
         <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
     
@@ -1572,8 +1512,8 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Subject">
-        <rdfs:comment xml:lang="en">A concept or a series of concepts that concern and describe the thematic path.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
         <rdfs:label xml:lang="en">Subject</rdfs:label>
     </owl:Class>
     
@@ -1616,8 +1556,8 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Theme">
-        <rdfs:comment xml:lang="en">A broad concept or a general idea that can be explored through various subjects.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un concetto ampio o un&apos;idea generale che può essere esplorata attraverso vari argomenti.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes.</rdfs:comment>
         <rdfs:label xml:lang="en">Theme</rdfs:label>
     </owl:Class>
     
@@ -1627,8 +1567,8 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Type">
-        <rdfs:comment xml:lang="it">La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
-        <rdfs:comment xml:lang="en">The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+        <rdfs:comment xml:lang="it">La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Getty&apos;s Art &amp; Architecture Thesaurus).</rdfs:comment>
         <rdfs:label xml:lang="en">Type</rdfs:label>
     </owl:Class>
     
@@ -1691,7 +1631,7 @@ The development and use of this enjoyment strategy can be profitable to convey m
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#atizianapasciuto">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
         <rdfs:label xml:lang="en">Tiziana Pasciuto</rdfs:label>
-        <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
+        <org:memberOf rdf:resource="https://w3id.org/ctp#cnrImati"/>
         <org:memberOf rdf:resource="https://w3id.org/ctp#universitaDiGenova"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0002-2440-2376"/>
         <foaf:name>Tiziana Pasciuto</foaf:name>
@@ -1705,17 +1645,17 @@ The development and use of this enjoyment strategy can be profitable to convey m
     <owl:NamedIndividual rdf:about="https://w3id.org/ctp#briccardoalbertoni">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
         <rdfs:label xml:lang="en">Riccardo Albertoni</rdfs:label>
-        <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
+        <org:memberOf rdf:resource="https://w3id.org/ctp#cnrImati"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
         <foaf:name>Riccardo Albertoni</foaf:name>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ctp#cnr-imati -->
+    <!-- https://w3id.org/ctp#cnrImati -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ctp#cnr-imati">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ctp#cnrImati">
         <rdf:type rdf:resource="https://w3id.org/ctp#Organization"/>
         <rdfs:label xml:lang="en">Istitute for Applied Mathematics and Information Technologies &apos;Enrico Magenes&apos;</rdfs:label>
         <foaf:homepage>https://imati.cnr.it/</foaf:homepage>
@@ -1724,13 +1664,13 @@ The development and use of this enjoyment strategy can be profitable to convey m
     
 
 
-    <!-- https://w3id.org/ctp#croberta -->
+    <!-- https://w3id.org/ctp#crobertamaggi -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ctp#croberta">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ctp#crobertamaggi">
         <rdf:type rdf:resource="https://w3id.org/ctp#Person"/>
         <rdfs:label xml:lang="en">Roberta Maggi</rdfs:label>
-        <org:memberOf rdf:resource="https://w3id.org/ctp#cnr-imati"/>
+        <org:memberOf rdf:resource="https://w3id.org/ctp#cnrImati"/>
         <foaf:name>Roberta Maggi</foaf:name>
     </owl:NamedIndividual>
     

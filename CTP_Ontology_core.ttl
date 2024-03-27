@@ -34,7 +34,7 @@ Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dot
                         dcterms:created "2023-03-06"^^xsd:date ;
                         dcterms:creator ctp:atizianapasciuto ,
                                         ctp:briccardoalbertoni ,
-                                        ctp:croberta ;
+                                        ctp:crobertamaggi ;
                         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                         dcterms:title "Cultural Thematic Path (CTP) Ontology"@en ;
                         vann:preferredNamespacePrefix "ctp" ;
@@ -638,7 +638,7 @@ ctp:isRoleOf rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ctp#isSecondaryIdentifierOf
 ctp:isSecondaryIdentifierOf rdf:type owl:ObjectProperty ;
                             rdfs:domain ctp:Identifier ;
-                            rdfs:range ctp:CulturalResource ;
+                            rdfs:range owl:Thing ;
                             rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
                                          "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en ;
                             rdfs:label "isSecondaryIdentifierOf"@en .
@@ -801,13 +801,6 @@ ctp:conveys rdf:type owl:DatatypeProperty ;
                          "Indicates a message that can convey cultural, ethical and social values through the thematic path."@en ;
             rdfs:label "conveys"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:conveys ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "meaning"
- ] .
-
 
 ###  https://w3id.org/ctp#hasBoundingBox
 ctp:hasBoundingBox rdf:type owl:DatatypeProperty ;
@@ -817,13 +810,6 @@ ctp:hasBoundingBox rdf:type owl:DatatypeProperty ;
                                 "The geographic bounding box of a spatial thing."@en ;
                    rdfs:label "hasBoundingBox"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasBoundingBox ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "bounding box"
- ] .
-
 
 ###  https://w3id.org/ctp#hasCentroid
 ctp:hasCentroid rdf:type owl:DatatypeProperty ;
@@ -832,13 +818,6 @@ ctp:hasCentroid rdf:type owl:DatatypeProperty ;
                 rdfs:comment "La cornice geografica delimitante di un'entità spaziale."@it ,
                              "The geographic bounding box of a spatial thing."@en ;
                 rdfs:label "hasCentroid"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasCentroid ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "centroid"
- ] .
 
 
 ###  https://w3id.org/ctp#hasCreationDate
@@ -867,13 +846,6 @@ ctp:hasDescription rdf:type owl:DatatypeProperty ;
                                 "Indicates a description of an entity."@en ;
                    rdfs:label "hasDescription" .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasDescription ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "description"
- ] .
-
 
 ###  https://w3id.org/ctp#hasIndex
 ctp:hasIndex rdf:type owl:DatatypeProperty ;
@@ -882,13 +854,6 @@ ctp:hasIndex rdf:type owl:DatatypeProperty ;
              rdfs:comment "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."@it ,
                           "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."@en ;
              rdfs:label "hasIndex"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasIndex ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "index"
- ] .
 
 
 ###  https://w3id.org/ctp#hasName
@@ -899,13 +864,6 @@ ctp:hasName rdf:type owl:DatatypeProperty ;
                          "Indicates the name associated with an agent."@en ;
             rdfs:label "hasName"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasName ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget xsd:string ;
-   rdfs:comment "appellation"
- ] .
-
 
 ###  https://w3id.org/ctp#hasNotation
 ctp:hasNotation rdf:type owl:DatatypeProperty ;
@@ -915,13 +873,6 @@ ctp:hasNotation rdf:type owl:DatatypeProperty ;
                 rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
                              "The string that constitutes the cultural resource identifier."@en ;
                 rdfs:label "hasNotation"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasNotation ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "notation"
- ] .
 
 
 ###  https://w3id.org/ctp#hasPrimaryIdentifier
@@ -941,13 +892,6 @@ ctp:hasTitle rdf:type owl:DatatypeProperty ;
                           "Indicates the title of an entity."@en ;
              rdfs:label "hasTitle"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:hasTitle ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "title"
- ] .
-
 
 ###  https://w3id.org/ctp#isSelledBy
 ctp:isSelledBy rdf:type owl:DatatypeProperty ;
@@ -958,13 +902,6 @@ ctp:isSelledBy rdf:type owl:DatatypeProperty ;
                             "Indicates the link that allows purchasing the resource available on the web through an hyperlink."@en ;
                rdfs:label "isSelledBy"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:isSelledBy ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "link"
- ] .
-
 
 ###  https://w3id.org/ctp#linkToResource
 ctp:linkToResource rdf:type owl:DatatypeProperty ;
@@ -973,13 +910,6 @@ ctp:linkToResource rdf:type owl:DatatypeProperty ;
                    rdfs:comment "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."@it ,
                                 "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."@en ;
                    rdfs:label "linkToResource"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource ctp:linkToResource ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "link"
- ] .
 
 
 #################################################################
@@ -1100,15 +1030,15 @@ ctp:RelationToAgent rdf:type owl:Class ;
 
 ###  https://w3id.org/ctp#Role
 ctp:Role rdf:type owl:Class ;
-         rdfs:comment "Il ruolo svolto da un agente in un contesto specifico."@it ,
-                      "The role performed by an agent in a specific context."@en ;
+         rdfs:comment "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
+                      "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
          rdfs:label "Role"@en .
 
 
 ###  https://w3id.org/ctp#Subject
 ctp:Subject rdf:type owl:Class ;
-            rdfs:comment "A concept or a series of concepts that concern and describe the thematic path."@en ,
-                         "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico."@it ;
+            rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ,
+                         "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ;
             rdfs:label "Subject"@en .
 
 
@@ -1136,15 +1066,15 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 ###  https://w3id.org/ctp#Theme
 ctp:Theme rdf:type owl:Class ;
-          rdfs:comment "A broad concept or a general idea that can be explored through various subjects."@en ,
-                       "Un concetto ampio o un'idea generale che può essere esplorata attraverso vari argomenti."@it ;
+          rdfs:comment "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ,
+                       "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ;
           rdfs:label "Theme"@en .
 
 
 ###  https://w3id.org/ctp#Type
 ctp:Type rdf:type owl:Class ;
-         rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
-                      "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty's Art & Architecture Thesaurus)."@en ;
+         rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
+                      "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
          rdfs:label "Type"@en .
 
 
@@ -1174,7 +1104,7 @@ ctp:Type rdf:type owl:Class ;
 ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
                               ctp:Person ;
                      rdfs:label "Tiziana Pasciuto"@en ;
-                     org:memberOf ctp:cnr-imati ,
+                     org:memberOf ctp:cnrImati ,
                                   ctp:universitaDiGenova ;
                      foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
                      foaf:name "Tiziana Pasciuto" .
@@ -1184,24 +1114,24 @@ ctp:atizianapasciuto rdf:type owl:NamedIndividual ,
 ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,
                                 ctp:Person ;
                        rdfs:label "Riccardo Albertoni"@en ;
-                       org:memberOf ctp:cnr-imati ;
+                       org:memberOf ctp:cnrImati ;
                        foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
                        foaf:name "Riccardo Albertoni" .
 
 
-###  https://w3id.org/ctp#cnr-imati
-ctp:cnr-imati rdf:type owl:NamedIndividual ,
+###  https://w3id.org/ctp#cnrImati
+ctp:cnrImati rdf:type owl:NamedIndividual ,
                        ctp:Organization ;
               rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
               foaf:homepage "https://imati.cnr.it/" ;
               foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 
 
-###  https://w3id.org/ctp#croberta
-ctp:croberta rdf:type owl:NamedIndividual ,
+###  https://w3id.org/ctp#crobertamaggi
+ctp:crobertamaggi rdf:type owl:NamedIndividual ,
                       ctp:Person ;
              rdfs:label "Roberta Maggi"@en ;
-             org:memberOf ctp:cnr-imati ;
+             org:memberOf ctp:cnrImati ;
              foaf:name "Roberta Maggi" .
 
 

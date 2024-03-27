@@ -4,7 +4,7 @@
 <https://w3id.org/ctp> <http://purl.org/dc/terms/created> "2023-03-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#atizianapasciuto> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#briccardoalbertoni> .
-<https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#croberta> .
+<https://w3id.org/ctp> <http://purl.org/dc/terms/creator> <https://w3id.org/ctp#crobertamaggi> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/ctp> <http://purl.org/dc/terms/title> "Cultural Thematic Path (CTP) Ontology"@en .
 <https://w3id.org/ctp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctp" .
@@ -534,7 +534,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://w3id.org/ctp#isSecondaryIdentifierOf
 <https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#Identifier> .
-<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it .
 <https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en .
 <https://w3id.org/ctp#isSecondaryIdentifierOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSecondaryIdentifierOf"@en .
@@ -685,11 +685,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ctp#conveys> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica un messaggio che può trasmettere valori culturali, etici e sociali attraverso il percorso tematico."@it .
 <https://w3id.org/ctp#conveys> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a message that can convey cultural, ethical and social values through the thematic path."@en .
 <https://w3id.org/ctp#conveys> <http://www.w3.org/2000/01/rdf-schema#label> "conveys"@en .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid3 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#conveys> .
-_:genid3 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid3 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "meaning" .
 # 
 # https://w3id.org/ctp#hasBoundingBox
 <https://w3id.org/ctp#hasBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -698,11 +693,6 @@ _:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "meaning" .
 <https://w3id.org/ctp#hasBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "Il riquadro delimitatore geografico di un oggetto spaziale."@it .
 <https://w3id.org/ctp#hasBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic bounding box of a spatial thing."@en .
 <https://w3id.org/ctp#hasBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoundingBox"@en .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid4 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasBoundingBox> .
-_:genid4 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid4 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid4 <http://www.w3.org/2000/01/rdf-schema#comment> "bounding box" .
 # 
 # https://w3id.org/ctp#hasCentroid
 <https://w3id.org/ctp#hasCentroid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -711,11 +701,6 @@ _:genid4 <http://www.w3.org/2000/01/rdf-schema#comment> "bounding box" .
 <https://w3id.org/ctp#hasCentroid> <http://www.w3.org/2000/01/rdf-schema#comment> "La cornice geografica delimitante di un'entità spaziale."@it .
 <https://w3id.org/ctp#hasCentroid> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic bounding box of a spatial thing."@en .
 <https://w3id.org/ctp#hasCentroid> <http://www.w3.org/2000/01/rdf-schema#label> "hasCentroid"@en .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid5 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasCentroid> .
-_:genid5 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid5 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid5 <http://www.w3.org/2000/01/rdf-schema#comment> "centroid" .
 # 
 # https://w3id.org/ctp#hasCreationDate
 <https://w3id.org/ctp#hasCreationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -740,11 +725,6 @@ _:genid5 <http://www.w3.org/2000/01/rdf-schema#comment> "centroid" .
 <https://w3id.org/ctp#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una descrizione di un'entità."@it .
 <https://w3id.org/ctp#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a description of an entity."@en .
 <https://w3id.org/ctp#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid6 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasDescription> .
-_:genid6 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid6 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "description" .
 # 
 # https://w3id.org/ctp#hasIndex
 <https://w3id.org/ctp#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -753,11 +733,6 @@ _:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "description" .
 <https://w3id.org/ctp#hasIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."@it .
 <https://w3id.org/ctp#hasIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."@en .
 <https://w3id.org/ctp#hasIndex> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndex"@en .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid7 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasIndex> .
-_:genid7 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid7 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#comment> "index" .
 # 
 # https://w3id.org/ctp#hasName
 <https://w3id.org/ctp#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -766,11 +741,6 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#comment> "index" .
 <https://w3id.org/ctp#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il nome associato a un agente."@it .
 <https://w3id.org/ctp#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the name associated with an agent."@en .
 <https://w3id.org/ctp#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName"@en .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid8 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasName> .
-_:genid8 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid8 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#comment> "appellation" .
 # 
 # https://w3id.org/ctp#hasNotation
 <https://w3id.org/ctp#hasNotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -780,11 +750,6 @@ _:genid8 <http://www.w3.org/2000/01/rdf-schema#comment> "appellation" .
 <https://w3id.org/ctp#hasNotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il codice di identificazione associato all'entità."@it .
 <https://w3id.org/ctp#hasNotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The string that constitutes the cultural resource identifier."@en .
 <https://w3id.org/ctp#hasNotation> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotation"@en .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid9 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasNotation> .
-_:genid9 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid9 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#comment> "notation" .
 # 
 # https://w3id.org/ctp#hasPrimaryIdentifier
 <https://w3id.org/ctp#hasPrimaryIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -801,11 +766,6 @@ _:genid9 <http://www.w3.org/2000/01/rdf-schema#comment> "notation" .
 <https://w3id.org/ctp#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il titolo di un'entità."@it .
 <https://w3id.org/ctp#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the title of an entity."@en .
 <https://w3id.org/ctp#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle"@en .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid10 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#hasTitle> .
-_:genid10 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid10 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#comment> "title" .
 # 
 # https://w3id.org/ctp#isSelledBy
 <https://w3id.org/ctp#isSelledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -815,11 +775,6 @@ _:genid10 <http://www.w3.org/2000/01/rdf-schema#comment> "title" .
 <https://w3id.org/ctp#isSelledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."@it .
 <https://w3id.org/ctp#isSelledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the link that allows purchasing the resource available on the web through an hyperlink."@en .
 <https://w3id.org/ctp#isSelledBy> <http://www.w3.org/2000/01/rdf-schema#label> "isSelledBy"@en .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid11 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#isSelledBy> .
-_:genid11 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid11 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # https://w3id.org/ctp#linkToResource
 <https://w3id.org/ctp#linkToResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -828,11 +783,6 @@ _:genid11 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 <https://w3id.org/ctp#linkToResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."@it .
 <https://w3id.org/ctp#linkToResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."@en .
 <https://w3id.org/ctp#linkToResource> <http://www.w3.org/2000/01/rdf-schema#label> "linkToResource"@en .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:genid12 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/ctp#linkToResource> .
-_:genid12 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:genid12 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # 
 # 
@@ -942,27 +892,27 @@ _:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "link" .
 # 
 # https://w3id.org/ctp#Role
 <https://w3id.org/ctp#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Il ruolo svolto da un agente in un contesto specifico."@it .
-<https://w3id.org/ctp#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "The role performed by an agent in a specific context."@en .
+<https://w3id.org/ctp#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it .
+<https://w3id.org/ctp#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en .
 <https://w3id.org/ctp#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
 # 
 # https://w3id.org/ctp#Subject
 <https://w3id.org/ctp#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept or a series of concepts that concern and describe the thematic path."@en .
-<https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico."@it .
+<https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en .
+<https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 # 
 # https://w3id.org/ctp#TemporalEntity
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -975,14 +925,14 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/ctp#Theme
 <https://w3id.org/ctp#Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "A broad concept or a general idea that can be explored through various subjects."@en .
-<https://w3id.org/ctp#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto ampio o un'idea generale che può essere esplorata attraverso vari argomenti."@it .
+<https://w3id.org/ctp#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it .
+<https://w3id.org/ctp#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en .
 <https://w3id.org/ctp#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Theme"@en .
 # 
 # https://w3id.org/ctp#Type
 <https://w3id.org/ctp#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ctp#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it .
-<https://w3id.org/ctp#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty's Art & Architecture Thesaurus)."@en .
+<https://w3id.org/ctp#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it .
+<https://w3id.org/ctp#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en .
 <https://w3id.org/ctp#Type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
 # 
 # 
@@ -1013,7 +963,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/2000/01/rdf-schema#label> "Tiziana Pasciuto"@en .
-<https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
+<https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnrImati> .
 <https://w3id.org/ctp#atizianapasciuto> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#universitaDiGenova> .
 <https://w3id.org/ctp#atizianapasciuto> <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0002-2440-2376> .
 <https://w3id.org/ctp#atizianapasciuto> <http://xmlns.com/foaf/0.1/name> "Tiziana Pasciuto" .
@@ -1022,23 +972,23 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/2000/01/rdf-schema#label> "Riccardo Albertoni"@en .
-<https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
+<https://w3id.org/ctp#briccardoalbertoni> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnrImati> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-5648-2713> .
 <https://w3id.org/ctp#briccardoalbertoni> <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni" .
 # 
-# https://w3id.org/ctp#cnr-imati
-<https://w3id.org/ctp#cnr-imati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp#cnr-imati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp#cnr-imati> <http://www.w3.org/2000/01/rdf-schema#label> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en .
-<https://w3id.org/ctp#cnr-imati> <http://xmlns.com/foaf/0.1/homepage> "https://imati.cnr.it/" .
-<https://w3id.org/ctp#cnr-imati> <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
+# https://w3id.org/ctp#cnrImati
+<https://w3id.org/ctp#cnrImati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ctp#cnrImati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
+<https://w3id.org/ctp#cnrImati> <http://www.w3.org/2000/01/rdf-schema#label> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en .
+<https://w3id.org/ctp#cnrImati> <http://xmlns.com/foaf/0.1/homepage> "https://imati.cnr.it/" .
+<https://w3id.org/ctp#cnrImati> <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 # 
-# https://w3id.org/ctp#croberta
-<https://w3id.org/ctp#croberta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp#croberta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp#croberta> <http://www.w3.org/2000/01/rdf-schema#label> "Roberta Maggi"@en .
-<https://w3id.org/ctp#croberta> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnr-imati> .
-<https://w3id.org/ctp#croberta> <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
+# https://w3id.org/ctp#crobertamaggi
+<https://w3id.org/ctp#crobertamaggi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ctp#crobertamaggi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
+<https://w3id.org/ctp#crobertamaggi> <http://www.w3.org/2000/01/rdf-schema#label> "Roberta Maggi"@en .
+<https://w3id.org/ctp#crobertamaggi> <http://www.w3.org/ns/org#memberOf> <https://w3id.org/ctp#cnrImati> .
+<https://w3id.org/ctp#crobertamaggi> <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
 # 
 # https://w3id.org/ctp#universitaDiGenova
 <https://w3id.org/ctp#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

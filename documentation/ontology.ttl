@@ -24,7 +24,7 @@ Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dot
                         <http://purl.org/dc/terms/created> "2023-03-06"^^xsd:date ;
                         <http://purl.org/dc/terms/creator> :atizianapasciuto ,
                                                            :briccardoalbertoni ,
-                                                           :croberta ;
+                                                           :crobertamaggi ;
                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                         <http://purl.org/dc/terms/title> "Cultural Thematic Path (CTP) Ontology"@en ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctp" ;
@@ -613,7 +613,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#isSecondaryIdentifierOf
 :isSecondaryIdentifierOf rdf:type owl:ObjectProperty ;
                          rdfs:domain :Identifier ;
-                         rdfs:range :CulturalResource ;
+                         rdfs:range owl:Thing ;
                          rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
                                       "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en ;
                          rdfs:label "isSecondaryIdentifierOf"@en .
@@ -776,13 +776,6 @@ xsd:date rdf:type rdfs:Datatype .
                       "Indicates a message that can convey cultural, ethical and social values through the thematic path."@en ;
          rdfs:label "conveys"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :conveys ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "meaning"
- ] .
-
 
 ###  https://w3id.org/ctp#hasBoundingBox
 :hasBoundingBox rdf:type owl:DatatypeProperty ;
@@ -792,13 +785,6 @@ xsd:date rdf:type rdfs:Datatype .
                              "The geographic bounding box of a spatial thing."@en ;
                 rdfs:label "hasBoundingBox"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasBoundingBox ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "bounding box"
- ] .
-
 
 ###  https://w3id.org/ctp#hasCentroid
 :hasCentroid rdf:type owl:DatatypeProperty ;
@@ -807,13 +793,6 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:comment "La cornice geografica delimitante di un'entità spaziale."@it ,
                           "The geographic bounding box of a spatial thing."@en ;
              rdfs:label "hasCentroid"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasCentroid ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "centroid"
- ] .
 
 
 ###  https://w3id.org/ctp#hasCreationDate
@@ -842,13 +821,6 @@ xsd:date rdf:type rdfs:Datatype .
                              "Indicates a description of an entity."@en ;
                 rdfs:label "hasDescription" .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasDescription ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "description"
- ] .
-
 
 ###  https://w3id.org/ctp#hasIndex
 :hasIndex rdf:type owl:DatatypeProperty ;
@@ -857,13 +829,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."@it ,
                        "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."@en ;
           rdfs:label "hasIndex"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasIndex ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "index"
- ] .
 
 
 ###  https://w3id.org/ctp#hasName
@@ -874,13 +839,6 @@ xsd:date rdf:type rdfs:Datatype .
                       "Indicates the name associated with an agent."@en ;
          rdfs:label "hasName"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasName ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget xsd:string ;
-   rdfs:comment "appellation"
- ] .
-
 
 ###  https://w3id.org/ctp#hasNotation
 :hasNotation rdf:type owl:DatatypeProperty ;
@@ -890,13 +848,6 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
                           "The string that constitutes the cultural resource identifier."@en ;
              rdfs:label "hasNotation"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasNotation ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "notation"
- ] .
 
 
 ###  https://w3id.org/ctp#hasPrimaryIdentifier
@@ -916,13 +867,6 @@ xsd:date rdf:type rdfs:Datatype .
                        "Indicates the title of an entity."@en ;
           rdfs:label "hasTitle"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :hasTitle ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "title"
- ] .
-
 
 ###  https://w3id.org/ctp#isSelledBy
 :isSelledBy rdf:type owl:DatatypeProperty ;
@@ -933,13 +877,6 @@ xsd:date rdf:type rdfs:Datatype .
                          "Indicates the link that allows purchasing the resource available on the web through an hyperlink."@en ;
             rdfs:label "isSelledBy"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :isSelledBy ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "link"
- ] .
-
 
 ###  https://w3id.org/ctp#linkToResource
 :linkToResource rdf:type owl:DatatypeProperty ;
@@ -948,13 +885,6 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."@it ,
                              "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."@en ;
                 rdfs:label "linkToResource"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :linkToResource ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget rdfs:Literal ;
-   rdfs:comment "link"
- ] .
 
 
 #################################################################
@@ -1075,15 +1005,15 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ctp#Role
 :Role rdf:type owl:Class ;
-      rdfs:comment "Il ruolo svolto da un agente in un contesto specifico."@it ,
-                   "The role performed by an agent in a specific context."@en ;
+      rdfs:comment "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
+                   "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
       rdfs:label "Role"@en .
 
 
 ###  https://w3id.org/ctp#Subject
 :Subject rdf:type owl:Class ;
-         rdfs:comment "A concept or a series of concepts that concern and describe the thematic path."@en ,
-                      "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico."@it ;
+         rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ,
+                      "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ;
          rdfs:label "Subject"@en .
 
 
@@ -1111,15 +1041,15 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 ###  https://w3id.org/ctp#Theme
 :Theme rdf:type owl:Class ;
-       rdfs:comment "A broad concept or a general idea that can be explored through various subjects."@en ,
-                    "Un concetto ampio o un'idea generale che può essere esplorata attraverso vari argomenti."@it ;
+       rdfs:comment "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ,
+                    "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ;
        rdfs:label "Theme"@en .
 
 
 ###  https://w3id.org/ctp#Type
 :Type rdf:type owl:Class ;
-      rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le categorie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
-                   "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the categorizations can be taken from thesauri and controlled vocabularies (ie.e Getty's Art & Architecture Thesaurus)."@en ;
+      rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
+                   "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
       rdfs:label "Type"@en .
 
 
@@ -1149,7 +1079,7 @@ The development and use of this enjoyment strategy can be profitable to convey m
 :atizianapasciuto rdf:type owl:NamedIndividual ,
                            :Person ;
                   rdfs:label "Tiziana Pasciuto"@en ;
-                  <http://www.w3.org/ns/org#memberOf> :cnr-imati ,
+                  <http://www.w3.org/ns/org#memberOf> :cnrImati ,
                                                       :universitaDiGenova ;
                   <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0002-2440-2376> ;
                   <http://xmlns.com/foaf/0.1/name> "Tiziana Pasciuto" .
@@ -1159,25 +1089,25 @@ The development and use of this enjoyment strategy can be profitable to convey m
 :briccardoalbertoni rdf:type owl:NamedIndividual ,
                              :Person ;
                     rdfs:label "Riccardo Albertoni"@en ;
-                    <http://www.w3.org/ns/org#memberOf> :cnr-imati ;
+                    <http://www.w3.org/ns/org#memberOf> :cnrImati ;
                     <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-5648-2713> ;
                     <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni" .
 
 
-###  https://w3id.org/ctp#cnr-imati
-:cnr-imati rdf:type owl:NamedIndividual ,
-                    :Organization ;
-           rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
-           <http://xmlns.com/foaf/0.1/homepage> "https://imati.cnr.it/" ;
-           <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
+###  https://w3id.org/ctp#cnrImati
+:cnrImati rdf:type owl:NamedIndividual ,
+                   :Organization ;
+          rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
+          <http://xmlns.com/foaf/0.1/homepage> "https://imati.cnr.it/" ;
+          <http://xmlns.com/foaf/0.1/name> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 
 
-###  https://w3id.org/ctp#croberta
-:croberta rdf:type owl:NamedIndividual ,
-                   :Person ;
-          rdfs:label "Roberta Maggi"@en ;
-          <http://www.w3.org/ns/org#memberOf> :cnr-imati ;
-          <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
+###  https://w3id.org/ctp#crobertamaggi
+:crobertamaggi rdf:type owl:NamedIndividual ,
+                        :Person ;
+               rdfs:label "Roberta Maggi"@en ;
+               <http://www.w3.org/ns/org#memberOf> :cnrImati ;
+               <http://xmlns.com/foaf/0.1/name> "Roberta Maggi" .
 
 
 ###  https://w3id.org/ctp#universitaDiGenova
