@@ -1,5 +1,4 @@
 @prefix : <https://w3id.org/ctp#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix ctp: <https://w3id.org/ctp#> .
 @prefix org: <http://www.w3.org/ns/org#> .
@@ -31,7 +30,7 @@ In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><
 <li> <a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
 Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
 <!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"""@it ;
-                        dcterms:created "2023-03-06"^^xsd:date ;
+                        dcterms:created "2024-03-06"^^xsd:date ;
                         dcterms:creator ctp:atizianapasciuto ,
                                         ctp:briccardoalbertoni ,
                                         ctp:crobertamaggi ;
@@ -51,49 +50,12 @@ Per quanto riguarda l'ambito, nonostante la strutturazione di percorsi tematici 
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/dcam/rangeIncludes
-dcam:rangeIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/date
-dc:date rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/description
-dc:description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/identifier
-dc:identifier rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/subject
-dc:subject rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-dc:title rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/type
-dc:type rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty ;
                  rdf:comment "A summary of the resource."@en ;
                  rdfs:comment "A summary of the resource."@en ;
                  rdfs:isDefinedBy dcterms: ;
-                 rdfs:label "abstract"@en ;
-                 rdfs:subPropertyOf dc:description .
-
-
-###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty .
+                 rdfs:label "abstract"@en .
 
 
 ###  http://purl.org/dc/terms/created
@@ -102,7 +64,6 @@ dcterms:created rdf:type owl:AnnotationProperty ;
                 rdfs:comment "Date of creation of the resource."@en ;
                 rdfs:isDefinedBy dcterms: ;
                 rdfs:label "dateCreated"@en ;
-                rdfs:subPropertyOf dc:date ;
                 rdfs:range rdfs:Literal .
 
 
@@ -111,9 +72,7 @@ dcterms:creator rdf:type owl:AnnotationProperty ;
                 dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
                 rdfs:comment "An entity responsible for making the resource."@en ;
                 rdfs:isDefinedBy dcterms: ;
-                rdfs:label "creator"@en ;
-                rdfs:subPropertyOf dc:creator ,
-                                   dcterms:contributor .
+                rdfs:label "creator"@en .
 
 
 ###  http://purl.org/dc/terms/description
@@ -121,8 +80,7 @@ dcterms:description rdf:type owl:AnnotationProperty ;
                     dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
                     rdfs:comment "An account of the resource."@en ;
                     rdfs:isDefinedBy dcterms: ;
-                    rdfs:label "description"@en ;
-                    rdfs:subPropertyOf dc:description .
+                    rdfs:label "description"@en .
 
 
 ###  http://purl.org/dc/terms/identifier
@@ -131,7 +89,6 @@ dcterms:identifier rdf:type owl:AnnotationProperty ;
                    rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
                    rdfs:isDefinedBy dcterms: ;
                    rdfs:label "identifier"@en ;
-                   rdfs:subPropertyOf dc:identifier ;
                    rdfs:range rdfs:Literal .
 
 
@@ -144,8 +101,7 @@ dcterms:subject rdf:type owl:AnnotationProperty ;
                 dcterms:description "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
                 rdfs:comment "A topic of the resource."@en ;
                 rdfs:isDefinedBy dcterms: ;
-                rdfs:label "subject"@en ;
-                rdfs:subPropertyOf dc:subject .
+                rdfs:label "subject"@en .
 
 
 ###  http://purl.org/dc/terms/title
@@ -153,7 +109,6 @@ dcterms:title rdf:type owl:AnnotationProperty ;
               rdfs:comment "A name given to the resource."@en ;
               rdfs:isDefinedBy dcterms: ;
               rdfs:label "title"@en ;
-              rdfs:subPropertyOf dc:title ;
               rdfs:range rdfs:Literal .
 
 
@@ -162,8 +117,7 @@ dcterms:type rdf:type owl:AnnotationProperty ;
              dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."@en ;
              rdfs:comment "The nature or genre of the resource."@en ;
              rdfs:isDefinedBy dcterms: ;
-             rdfs:label "type"@en ;
-             rdfs:subPropertyOf dc:type .
+             rdfs:label "type"@en .
 
 
 ###  http://purl.org/vocab/vann/example
@@ -1030,15 +984,15 @@ ctp:RelationToAgent rdf:type owl:Class ;
 
 ###  https://w3id.org/ctp#Role
 ctp:Role rdf:type owl:Class ;
-         rdfs:comment "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
-                      "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
+         rdfs:comment "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ,
+                      "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
          rdfs:label "Role"@en .
 
 
 ###  https://w3id.org/ctp#Subject
 ctp:Subject rdf:type owl:Class ;
-            rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ,
-                         "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ;
+            rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ,
+                         "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ;
             rdfs:label "Subject"@en .
 
 
@@ -1073,8 +1027,8 @@ ctp:Theme rdf:type owl:Class ;
 
 ###  https://w3id.org/ctp#Type
 ctp:Type rdf:type owl:Class ;
-         rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Getty's Art & Architecture Thesaurus)."@it ,
-                      "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Getty's Art & Architecture Thesaurus)."@en ;
+         rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ,
+                      "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
          rdfs:label "Type"@en .
 
 
