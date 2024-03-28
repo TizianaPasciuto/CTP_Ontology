@@ -169,7 +169,7 @@ Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index02
-cp:Index02 rdf:type owl:NamedIndividual ,
+:Index02 rdf:type owl:NamedIndividual ,
                     ctp:OrderedListSlot ;
            ctp:hasItem :Strada_Nuova ;
            ctp:nextItem :Index03 ;
