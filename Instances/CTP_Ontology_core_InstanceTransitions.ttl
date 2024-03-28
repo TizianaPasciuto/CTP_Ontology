@@ -211,9 +211,10 @@
                                "Impresa"@it .
 
 
-###  https://w3id.org/ctp/transitions#Ethic
-:Ethic rdf:type owl:NamedIndividual ,
-                ctp:Subject .
+###  https://w3id.org/ctp/transitions#WorkEthic
+:WorkEthic rdf:type owl:NamedIndividual ,
+                ctp:Subject ;
+       ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148148"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/transitions#GBA.000028
@@ -327,9 +328,10 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
                    ctp:linkToResource "https://archimondi.it/s/1/item/462"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/transitions#Rights
-:Rights rdf:type owl:NamedIndividual ,
-                 ctp:Subject .
+###  https://w3id.org/ctp/transitions#HumanRights
+:HumanRights rdf:type owl:NamedIndividual ,
+                 ctp:Subject ;
+        ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85026379"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/transitions#crobertamaggi
@@ -462,7 +464,8 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 
 ###  https://w3id.org/ctp/transitions#Work
 :Work rdf:type owl:NamedIndividual ,
-               ctp:Subject .
+               ctp:Subject ;
+     ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148133"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/transitions#Work_section
@@ -482,7 +485,7 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 ###  https://w3id.org/ctp/transitions#Work_theme
 :Work_theme rdf:type owl:NamedIndividual ,
                      ctp:Theme ;
-            ctp:hasSubject :Ethic ,
+            ctp:hasSubject :WorkEthic ,
                            :Work ;
             ctp:hasDescription "In-depth text ................................."@en ,
                                "Testo di approfondimento .................................."@it ;

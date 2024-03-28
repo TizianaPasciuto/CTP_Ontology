@@ -127,7 +127,8 @@ It is one of the buildings that best represents the type of Romanesque church th
 
 ###  https://w3id.org/ctp/santiagodecompostela#Creator
 :Creator rdf:type owl:NamedIndividual ,
-                  ctp:Role .
+                  ctp:Role ;
+         ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300386174"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Creator_1
@@ -195,12 +196,14 @@ cp:Index02 rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/ctp/santiagodecompostela#Pilgrim
 :Pilgrim rdf:type owl:NamedIndividual ,
-                  ctp:Subject .
+                  ctp:Subject ;
+         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Religion
 :Religion rdf:type owl:NamedIndividual ,
-                   ctp:Subject .
+                   ctp:Subject ;
+        ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela
@@ -304,7 +307,8 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Tradition
 :Tradition rdf:type owl:NamedIndividual ,
-                    ctp:Subject .
+                    ctp:Subject ;
+           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#XIII_century

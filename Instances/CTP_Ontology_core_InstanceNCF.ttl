@@ -54,7 +54,8 @@
 
 ###  https://w3id.org/ctp/ncf#Anatomy
 :Anatomy rdf:type owl:NamedIndividual ,
-                  ctp:Subject .
+                  ctp:Subject ;
+         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85004835"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Anatomy_theme
@@ -63,7 +64,7 @@
                ctp:hasSubject :Anatomy ,
                               :Eye ,
                               :Nerves ,
-                              :Red_corpuscoles ;
+                              :Red_corpuscles ;
                ctp:hasDescription """Dalle stesse parole di Fontana è possibile scoprire che la sua conoscenza dell'anatomia venne acquisita presumibilmente a Padova, la patria di molti grandi anatomisti.
 La sua prima ricerca anatomica registrata fu quella riguardante lo studio dell'orecchio interno, testimoniata dalla corrispondenza con Cotugno e Caldani. Invece, la prima pubblicazione risale al 1767 e verteva sullo studio del testicolo umano: anche secondo le opinioni moderne si tratta di una eccellente descrizione dell'epididimo.
 Il Fontana focalizzò inoltre i suoi studi sui nervi intercostali: a suo parere, essi non si originano dal sesto paio di nervi cranici, ma corrono assieme ad essi in una comune guaina senza interconnessioni fra il seno cavernoso e l'orbita. Gli sforzi di Fontana convinsero gli altri anatomisti italiani, al punto da eliminare la confusione sorta nel corso dei secoli in base alle differenze nella numerazione dei nervi cranici. Numerosi furono gli studi sui nervi in generale e sulla loro riproduzione.
@@ -93,15 +94,16 @@ Bibliography: Fontana, Felice, Nuove osservazioni sopra i globetti rossi del san
             ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=PPS&voice_code=LST-PPS&fcode=SHOW&ref_idk=IT/ItRC/PPS/00000002"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/ncf#Animal_Physics
-:Animal_Physics rdf:type owl:NamedIndividual ,
-                         ctp:Subject .
+###  https://w3id.org/ctp/ncf#Veterinary_Anatomy
+:Veterinary_Anatomy rdf:type owl:NamedIndividual ,
+                         ctp:Subject ;
+                ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143003"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Animal_physics_theme
 :Animal_physics_theme rdf:type owl:NamedIndividual ,
                                ctp:Theme ;
-                      ctp:hasSubject :Animal_Physics ,
+                      ctp:hasSubject :Veterinary_Anatomy ,
                                      :Breathing ,
                                      :Iris ,
                                      :Irritability ;
@@ -135,17 +137,20 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Barometer
 :Barometer rdf:type owl:NamedIndividual ,
-                    ctp:Type .
+                    ctp:Type ;
+           ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/tgn/1103873"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Book
 :Book rdf:type owl:NamedIndividual ,
-               ctp:Type .
+               ctp:Type ;
+      ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300028051"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Breathing
 :Breathing rdf:type owl:NamedIndividual ,
-                    ctp:Subject .
+                    ctp:Subject ;
+           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85113178"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#CNR_IMATI_Genoa_staff
@@ -167,12 +172,14 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Cherry-Laurel
 :Cherry-Laurel rdf:type owl:NamedIndividual ,
-                        ctp:Subject .
+                        ctp:Subject ;
+               ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85108043"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Contributor
 :Contributor rdf:type owl:NamedIndividual ,
-                      ctp:Role .
+                      ctp:Role ;
+             ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300403974"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Contributor_1
@@ -184,7 +191,8 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Costructor
 :Costructor rdf:type owl:NamedIndividual ,
-                     ctp:Role .
+                     ctp:Role ;
+            ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300025007"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Costructor_1
@@ -196,7 +204,8 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Creator
 :Creator rdf:type owl:NamedIndividual ,
-                  ctp:Role .
+                  ctp:Role ;
+         ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300386174"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Creator_1
@@ -232,7 +241,8 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Eye
 :Eye rdf:type owl:NamedIndividual ,
-              ctp:Subject .
+              ctp:Subject ;
+     ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85046642"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Felice_Fontana
@@ -341,12 +351,14 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Iris
 :Iris rdf:type owl:NamedIndividual ,
-               ctp:Subject .
+               ctp:Subject ;
+      ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068076"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Irritability
 :Irritability rdf:type owl:NamedIndividual ,
-                       ctp:Subject .
+                       ctp:Subject ;
+              ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068313"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Leopoldo_Marco_Antonio_Caldani
@@ -358,12 +370,14 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Letter
 :Letter rdf:type owl:NamedIndividual ,
-                 ctp:Type .
+                 ctp:Type ;
+        ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300026879"^^rdfs:Literal . 
 
 
 ###  https://w3id.org/ctp/ncf#Nerves
 :Nerves rdf:type owl:NamedIndividual ,
-                 ctp:Subject .
+                 ctp:Subject ;
+        ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85090899"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Novum_Corpus_Fontanianum
@@ -388,7 +402,8 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 
 ###  https://w3id.org/ctp/ncf#Poisons
 :Poisons rdf:type owl:NamedIndividual ,
-                  ctp:Subject .
+                  ctp:Subject ;
+         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85103951"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Poisons_theme
@@ -437,9 +452,10 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
              ctp:involves :Leopoldo_Marco_Antonio_Caldani .
 
 
-###  https://w3id.org/ctp/ncf#Red_corpuscoles
-:Red_corpuscoles rdf:type owl:NamedIndividual ,
-                          ctp:Subject .
+###  https://w3id.org/ctp/ncf#Red_corpuscles
+:Red_corpuscles rdf:type owl:NamedIndividual ,
+                          ctp:Subject ;
+                 ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85014968"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Sender
@@ -461,7 +477,8 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 
 ###  https://w3id.org/ctp/ncf#Ticunas
 :Ticunas rdf:type owl:NamedIndividual ,
-                  ctp:Subject .
+                  ctp:Subject ;
+         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85138478"^^rdfs:Literal .
 
 
 ###  https://orcid.org/0000-0002-2440-2376
@@ -514,7 +531,8 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 
 ###  https://w3id.org/ctp/ncf#Viper
 :Viper rdf:type owl:NamedIndividual ,
-                ctp:Subject .
+                ctp:Subject ;
+       ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143723"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#1751
