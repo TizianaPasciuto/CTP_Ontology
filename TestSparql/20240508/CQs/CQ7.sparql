@@ -1,0 +1,7 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?CulturalResource ?TemporalEntity  
+WHERE{  
+  ?ThematicPath ctp:hasPart ?CulturalResource.  
+  ?CulturalResource ctp:hasTime ?TemporalEntity.  
+}  
+LIMIT 10  

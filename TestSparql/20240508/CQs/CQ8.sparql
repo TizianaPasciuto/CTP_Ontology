@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?Agent  
+WHERE{  
+  ?ThematicPath ctp:isInspiredByAgent ?Agent.  
+}  
+LIMIT 10  

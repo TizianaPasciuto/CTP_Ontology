@@ -1,0 +1,9 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?Product ?Type ?rdfs  
+WHERE{  
+  ?ThematicPath ctp:allowsTheSaleOf ?Product.  
+  ?Product ctp:isSelledBy ?rdfs.  
+  ?Product ctp:hasTitle ?rdfs.  
+  ?Product ctp:hasType ?Type.  
+}  
+LIMIT 10  

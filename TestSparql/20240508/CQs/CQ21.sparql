@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT *  
+WHERE{  
+  ?CulturalResource ctp:isPartOf ?ThematicPath.  
+}  
+LIMIT 10  

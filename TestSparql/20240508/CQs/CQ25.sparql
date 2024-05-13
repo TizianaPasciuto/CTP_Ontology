@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?xsd  
+WHERE{  
+  ?ThematicPath ctp:hasCreationDate ?xsd.  
+}  
+LIMIT 10  

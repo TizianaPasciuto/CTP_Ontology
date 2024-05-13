@@ -1,0 +1,8 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?Agent ?Role  
+WHERE{  
+  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
+  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "creator", "i").  
+  ?RelationToAgent ctp:involves ?Agent.  
+}  
+LIMIT 10  

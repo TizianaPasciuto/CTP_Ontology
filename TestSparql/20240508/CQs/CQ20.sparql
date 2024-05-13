@@ -1,0 +1,7 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResource ?ThematicPath ?rdfs   
+WHERE{  
+  ?CulturalResource ctp:isPartOf ?ThematicPath.  
+  ?CulturalResource ctp:linkToResource ?rdfs.  
+}  
+LIMIT 10  

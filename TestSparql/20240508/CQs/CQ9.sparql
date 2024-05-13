@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT *  
+WHERE{  
+  ?CulturalResource ctp:isPartOf ?ThematicPath FILTER regex(?ThematicPath, {2,}, "i").   
+}  
+LIMIT 10 

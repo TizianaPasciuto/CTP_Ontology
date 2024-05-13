@@ -1,0 +1,7 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT *  
+WHERE{  
+  ?ThematicPath ctp:isRealizedIn ?CulturalEvent.  
+  ?CulturalEvent ctp:hasTime ?TemporalEntity.  
+}  
+LIMIT 10  

@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResource ?rdfs  
+WHERE{  
+  ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs.  
+}  
+LIMIT 10  

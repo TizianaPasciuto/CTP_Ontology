@@ -1,0 +1,9 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?CulturalResource ?Agent  
+WHERE{  
+  ?ThematicPath ctp:hasPart ?CulturalResource.  
+  ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
+  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "creator", "i").  
+  ?RelationToAgent ctp:involves ?Agent.  
+}  
+LIMIT 10  

@@ -1,0 +1,8 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT *  
+WHERE{  
+  ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
+  ?OrderedListSlot ctp:hasItem ?CulturalResource.  
+  ?OrderedListSlot ctp:hasIndex ?rdfs.  
+}  
+LIMIT 10  

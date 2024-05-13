@@ -1,0 +1,7 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResource ?Identifier ?Agent  
+WHERE{  
+  ?CulturalResource ctp:hasSecondaryIdentifier ?Idenfier.  
+  ?Identifier ctp:hasCreator ?Agent.  
+}  
+LIMIT 10  

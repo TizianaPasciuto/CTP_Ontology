@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?TemporalEntity  
+WHERE{  
+  ?ThematicPath ctp:refersToTemporalEntity ?TemporalEntity.  
+}  
+LIMIT 10  

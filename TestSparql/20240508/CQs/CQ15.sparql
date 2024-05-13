@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?rdfs  
+WHERE{  
+  ?ThematicPath ctp:conveys ?rdfs.  
+}  
+LIMIT 10  
