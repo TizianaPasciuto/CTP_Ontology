@@ -1,10 +1,19 @@
-PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?CulturalResource ?Agent ?Place  
+# CQ3
+# Where are cultural objects connected to thematic route X usually kept?  
+# Dove sono solitamente conservati gli oggetti culturali connessi al percorso tematico X?  
+
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>   
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?PlaceName
 WHERE{  
   ?ThematicPath ctp:hasPart ?CulturalResource.  
   ?CulturalResource ctp:isPreservedBy ?RelationToAgent.  
-  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "holder", "i").  
+  ?RelationToAgent ctp:hasRole ?Role.  
+  ?Role rdfs:label ?Holder.
   ?RelationToAgent ctp:involves ?Agent.  
   ?Agent ctp:hasPlace ?Place.  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
+  Optional{?Place ctp:hasTitle ?PlaceName}
 }  
-LIMIT 10  
+LIMIT 100  

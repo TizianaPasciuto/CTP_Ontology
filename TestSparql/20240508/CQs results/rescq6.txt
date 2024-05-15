@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| ThematicPathTitle   | CulturalResourceTitle                           | AgentName            | CulturalResourceDate                                  |
+========================================================================================================================================================
+| "Sezione Lavoro"@it | "Luigi Ansaldo e due donne non identificate"@it | "Ansaldo family"     | "1904-09-08"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Work section"@en   | "Luigi Ansaldo e due donne non identificate"@it | "Ansaldo family"     | "1904-09-08"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Sezione Lavoro"@it | "Repetto Mariadiva"@it                          | "Ansaldo Foundation" | "2006-11-30"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Work section"@en   | "Repetto Mariadiva"@it                          | "Ansaldo Foundation" | "2006-11-30"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Sezione Lavoro"@it | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Gerolamo Lazzeri"   | "1915-08-15"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Work section"@en   | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Gerolamo Lazzeri"   | "1915-08-15"^^<http://www.w3.org/2001/XMLSchema#date> |
+--------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+# CQ1
+# What is a Thematic Paths?  
+# Che cosa è un percorso tematico?  
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT * 
+WHERE{  
+  ?ThematicPath rdfs:comment ?rdfs.
+  FILTER (?rdfs = "ctp:ThematicPath")
+}  
+
+LIMIT 100  

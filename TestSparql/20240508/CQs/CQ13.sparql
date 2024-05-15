@@ -1,6 +1,13 @@
+# CQ13
+# Which thematic paths can be identified through the subject "XYZ"?  
+# Quali percorsi tematici sono individuabili attraverso il soggetto "XYZ"? 
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?Subject ?ThematicPath  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?Subject ?ThematicPathTitle  
 WHERE{  
-  ?ThematicPath ctp:hasSubject ?Subject.  
+  ?ThematicPath ctp:hasSubject ?Subject. 
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .  
+  Optional{ ?Subject rdfs:label ?Subject} .    
 }  
-LIMIT 10  
+LIMIT 100  

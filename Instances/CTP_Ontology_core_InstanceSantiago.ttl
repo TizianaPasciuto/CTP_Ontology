@@ -17,63 +17,290 @@
 @base <https://w3id.org/ctp/santiagodecompostela#> .
 
 <https://w3id.org/ctp/santiagodecompostela#> rdf:type owl:Ontology ;
-                                                      dcterms:description: "The following scenario aims to promote the fundamental principles and foundational values of European culture through the establishment of cultural itineraries. These itineraries are not merely physical routes but genuine channels for intercultural dialogue, serving as a means to overcome geographic barriers and historical differences. Cultural itineraries become a vehicle for a deeper understanding of European history, creating a bridge between the past and the present."@en ,
-                                                                           "Il seguente scenario mira a promuovere i principi fondamentali e i valori fondamentali della cultura europea attraverso l'istituzione di itinerari culturali. Questi itinerari non sono semplicemente percorsi fisici, ma veri e propri canali per il dialogo interculturale, servendo come mezzo per superare le barriere geografiche e le differenze storiche. Gli itinerari culturali diventano un veicolo per una comprensione più profonda della storia europea, creando un ponte tra il passato e il presente."@it ;
-                                                      dcterms:created "2024-03-06"^^xsd:date ;
-                                                      dcterms:creator :atizianapasciuto ,
-                                                                      :briccardoalbertoni ,
-                                                                      :crobertamaggi ;
-                                                      dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                                      dcterms:title "Cultural Routes - Camino de Santiago de Compostela"@en ;
-                                                      vann:preferredNamespacePrefix "ctp_sc" ;
-                                                      rdfs:label "Cultural Routes - Camino de Santiago de Compostela"@en ;
-                                                      owl:versionInfo "0.0.1" .
+                                              dcterms:created "2024-03-06"^^xsd:date ;
+                                              dcterms:creator :atizianapasciuto ,
+                                                              :briccardoalbertoni ,
+                                                              :crobertamaggi ;
+                                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                              dcterms:title "Cultural Routes - Camino de Santiago de Compostela"@en ;
+                                              dcterms:description: "Il seguente scenario mira a promuovere i principi fondamentali e i valori fondamentali della cultura europea attraverso l'istituzione di itinerari culturali. Questi itinerari non sono semplicemente percorsi fisici, ma veri e propri canali per il dialogo interculturale, servendo come mezzo per superare le barriere geografiche e le differenze storiche. Gli itinerari culturali diventano un veicolo per una comprensione più profonda della storia europea, creando un ponte tra il passato e il presente."@it ,
+                                                                   "The following scenario aims to promote the fundamental principles and foundational values of European culture through the establishment of cultural itineraries. These itineraries are not merely physical routes but genuine channels for intercultural dialogue, serving as a means to overcome geographic barriers and historical differences. Cultural itineraries become a vehicle for a deeper understanding of European history, creating a bridge between the past and the present."@en ;
+                                              vann:preferredNamespacePrefix "ctp_sc" ;
+                                              rdfs:label "Cultural Routes - Camino de Santiago de Compostela"@en ;
+                                              owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description:
+dcterms:description: rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#memberOf
+org:memberOf rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#conveys
+ctp:conveys rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasBeginning
+ctp:hasBeginning rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasBoundingBox
+ctp:hasBoundingBox rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasCentroid
+ctp:hasCentroid rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasCreationDate
+ctp:hasCreationDate rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasDate
+ctp:hasDate rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasDescription
+ctp:hasDescription rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasEnd
+ctp:hasEnd rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasIndex
+ctp:hasIndex rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasItem
+ctp:hasItem rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasLocation
+ctp:hasLocation rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasMember
+ctp:hasMember rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasName
+ctp:hasName rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasPlace
+ctp:hasPlace rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasPrimaryIdentifier
+ctp:hasPrimaryIdentifier rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasRelationToAgent
+ctp:hasRelationToAgent rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasRole
+ctp:hasRole rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSlot
+ctp:hasSlot rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSubject
+ctp:hasSubject rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTheme
+ctp:hasTheme rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTime
+ctp:hasTime rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTitle
+ctp:hasTitle rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasType
+ctp:hasType rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#involves
+ctp:involves rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#isLocationOf
+ctp:isLocationOf rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#isPartOf
+ctp:isPartOf rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#linkToResource
+ctp:linkToResource rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#memberOf
+ctp:memberOf rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#nextItem
+ctp:nextItem rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#previousItem
+ctp:previousItem rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#refersToPlace
+ctp:refersToPlace rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ctp#CulturalResource
+ctp:CulturalResource rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Group
+ctp:Group rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Interval
+ctp:Interval rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Istant
+ctp:Istant rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#OrderedListSlot
+ctp:OrderedListSlot rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Organization
+ctp:Organization rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Person
+ctp:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Place
+ctp:Place rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#RelationToAgent
+ctp:RelationToAgent rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Role
+ctp:Role rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Subject
+ctp:Subject rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#ThematicPath
+ctp:ThematicPath rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Theme
+ctp:Theme rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Type
+ctp:Type rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
+###  https://orcid.org/0000-0001-5648-2713
+<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs :briccardoalbertoni .
+
+
+###  https://w3id.org/ctp/santiagodecompostela#briccardoalbertoni
+
+###  https://orcid.org/0000-0002-2440-2376
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs :atizianapasciuto .
+
+
+###  https://w3id.org/ctp/santiagodecompostela#atizianapasciuto
 
 ###  https://w3id.org/ctp/santiagodecompostela#Architectural_heritage
 :Architectural_heritage rdf:type owl:NamedIndividual ,
-                                 ctp:Type .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#cnrImati
-:cnrImati rdf:type owl:NamedIndividual ,
-                   ctp:Organization ;
-          ctp:hasMember :CNR_IMATI_Genoa_staff ;
-          ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy> ;
-          rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
-          foaf:homepage "https://imati.cnr.it/" ;
-          foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
+                                 ctp:Type ;
+                        rdfs:label "Architectural heritage"@en .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#CNR_IMATI_Genoa_staff
 :CNR_IMATI_Genoa_staff rdf:type owl:NamedIndividual ,
                                 ctp:Group ;
-                       ctp:hasMember :crobertamaggi ,
-                                     :atizianapasciuto ;
-                       ctp:memberOf :cnrImati ;
-                       ctp:hasName "CNR IMATI Genoa staff" .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#universitaDiGenova
-:universitaDiGenova rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "University of Genoa, Italy"@en ;
-                    foaf:homepage "https://unige.it/" ;
-                    foaf:name "University of Genoa, Italy" .
+                       ctp:hasMember :atizianapasciuto ,
+                                     :crobertamaggi ;
+                       ctp:hasName "CNR IMATI Genoa staff" ;
+                       ctp:memberOf :cnrImati .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela
 :Catedral_de_Santiago_de_Compostela rdf:type owl:NamedIndividual ,
                                              ctp:CulturalResource ;
-                                    ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> ;
-                                    ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1075> ;
-                                    ctp:hasType :Architectural_heritage ;
-                                    ctp:isPartOf :Road_to_Santiago_de_Compostela ;
                                     ctp:hasDescription """La basilica cattedrale di San Giacomo di Compostela (in galiziano e spagnolo: Catedral basílica metropolitana de Santiago de Compostela), o semplicemente la cattedrale di San Giacomo di Compostela, è la chiesa madre dell'arcidiocesi di Santiago de Compostela, una basilica minore e uno dei più grandi santuari cattolici al mondo; all'interno, nella cripta, i fedeli venerano le reliquie dell'apostolo Santiago o Maior/el Mayor (San Giacomo Maggiore), il santo patrono della Spagna. La Cattedrale di Santiago segna la fine del Cammino di Santiago de Compostela, un pellegrinaggio storico di origine medievale.
 Nel 2010 sono stati eseguiti significativi lavori di restauro nella cattedrale in previsione di un afflusso molto più ampio di pellegrini quell'anno.
 Secondo la leggenda, il corpo dell'apostolo San Giacomo Maggiore fu scoperto nel IX secolo nella zona dove ora sorge la cattedrale. Una prima chiesa dedicata a San Giacomo fu costruita qui all'inizio del IX secolo, per ordine di Alfonso II delle Asturie. Successivamente, nel 899, sotto il re Alfonso III, la prima chiesa fu sostituita da una più grande, in stile protoromanico.
@@ -88,19 +315,25 @@ In 997, during the sack of the city of Santiago de Compostela by the Berbers com
 In 1095, Pope Urban II decreed the transfer of the episcopal see from Iria Flavia, present-day Padrón, to Santiago de Compostela.
 The construction of the current cathedral began in 1075. The temple, in Romanesque style, was completed in the 13th century and consecrated in 1211, in the presence of King Alfonso IX of León.
 It is one of the buildings that best represents the type of Romanesque church that marks the Camino de Santiago de Compostela between France and Spain (Sainte-Foy de Conques, Saint-Martial de Limoges, San Martín de Tours, and Saint-Sernin in Toulouse), characterized by the apse with radial chapels and ambulatory. It underwent modifications between the 16th and 18th centuries."""@en ;
+                                    ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> ;
+                                    ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1075> ;
                                     ctp:hasTitle "Catedral de Santiago de Compostela"@es ,
-                                                  "Cattedrale di Santiago de Compostela"@it ,
-                                                  "Santiago de Compostela Cathedral"@en .
+                                                 "Cattedrale di Santiago de Compostela"@it ,
+                                                 "Santiago de Compostela Cathedral"@en ;
+                                    ctp:hasType :Architectural_heritage ;
+                                    ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Certification_body
 :Certification_body rdf:type owl:NamedIndividual ,
-                             ctp:Role .
+                             ctp:Role ;
+                    rdfs:label "Certification body"@en .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Certification_body_1
 :Certification_body_1 rdf:type owl:NamedIndividual ,
                                ctp:RelationToAgent ;
+                      rdfs:label "Certification body"@en ;
                       ctp:hasRole :Certification_body ;
                       ctp:involves :Council_of_Europe .
 
@@ -108,32 +341,34 @@ It is one of the buildings that best represents the type of Romanesque church th
 ###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross
 :Church_of_the_Holy_Cross rdf:type owl:NamedIndividual ,
                                    ctp:CulturalResource ;
-                          ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> ;
-                          ctp:hasTime :XIII_century ;
-                          ctp:hasType :Architectural_heritage ;
-                          ctp:isPartOf :Road_to_Santiago_de_Compostela ;
                           ctp:hasDescription "La piccola chiesa di Santa Croce è originaria della metà del XIII secolo ed è stata modificata nel corso del Seicento. L’impianto è quello di stile romanico, con navata unica e fronte a capanna, qui sormontata da un piccolo campanile a vela di fattura posteriore. Il portale voltato richiama nelle forme quello del muro verso il giardino e presenta una cornice superiore a sesto acuto; la nicchia collocata superiormente è frutto di una recente ricostruzione. Il semplice interno è ritmato da due archi a sesto acuto in laterizio impostati su pilastri in pietra connessi alle murature. Il confronto tra questo edificio e altri esempi simili del territorio, inclusa la chiesa di Santo Stefano ad Assisi, ha messo in luce come la chiesa di Santa Croce appaia singolarmente ridotta nella lunghezza e priva di catino absidale. È ipotizzabile quindi che le proporzioni originarie fossero più allungate e la copertura absidale fosse voltata È datato invece 1643 l’affresco che arricchisce la parete di fondo: attribuito al pittore assisano Gerolamo Marinelli, vi sono raffigurate Sant’Elena e la Vergine in adorazione della nuda Croce. Come ricorda lo storico dell’arte Bruno Toscano, il tema che pone come protagonista il lignum crucis, ossia la croce in sé priva della figura di Cristo, era piuttosto frequente e includeva solitamente Sant’Elena e il figlio Costantino, l’imperatore."@it ,
                                              "The small church of Santa Croce dates back to the mid-13th century and was modified during the seventeenth century. Its layout follows Romanesque style, with a single nave and a gabled facade, topped by a small later-built sail-shaped bell tower. The arched portal resembles that of the garden-facing wall and features an upper pointed arch frame; the niche placed above is a recent reconstruction. The simple interior is punctuated by two pointed brick arches supported by stone pillars connected to the walls. Comparing this building to other similar examples in the area, including the church of Santo Stefano in Assisi, highlights how the church of Santa Croce appears notably shorter in length and lacking an apse. It is therefore hypothesized that the original proportions were more elongated and the apse was vaulted. The fresco adorning the rear wall is dated to 1643: attributed to the Assisi painter Gerolamo Marinelli, it depicts Saint Helena and the Virgin adoring the naked Cross. As art historian Bruno Toscano recalls, the theme featuring the lignum crucis, the cross itself without the figure of Christ, was quite common and typically included Saint Helena and her son Constantine, the emperor."@en ;
+                          ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> ;
+                          ctp:hasTime :XIII_century ;
                           ctp:hasTitle "Chiesa di Santa Croce"@it ,
-                                       "Church of the Holy Cross"@en .
+                                       "Church of the Holy Cross"@en ;
+                          ctp:hasType :Architectural_heritage ;
+                          ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Council_of_Europe
 :Council_of_Europe rdf:type owl:NamedIndividual ,
                             ctp:Organization ;
-                   ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> ;
-                   ctp:hasName "Council of Europe" .
+                   ctp:hasName "Council of Europe" ;
+                   ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Creator
 :Creator rdf:type owl:NamedIndividual ,
                   ctp:Role ;
+         rdfs:label "Creator"@en ;
          ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300386174"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
+           rdfs:label "Creator"@en ;
            ctp:hasRole :Creator ;
            ctp:involves :atizianapasciuto .
 
@@ -141,10 +376,6 @@ It is one of the buildings that best represents the type of Romanesque church th
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas
 :Iglesia_de_San_Salvador_de_Vilar_de_Donas rdf:type owl:NamedIndividual ,
                                                     ctp:CulturalResource ;
-                                           ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> ;
-                                           ctp:hasTime :XII_century ;
-                                           ctp:hasType :Architectural_heritage ;
-                                           ctp:isPartOf :Road_to_Santiago_de_Compostela ;
                                            ctp:hasDescription """La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica.
 Uno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna.
 Dal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo.
@@ -155,60 +386,71 @@ One of the most striking aspects of this church is its historical connection to 
 Architecturally, the Iglesia de San Salvador de Vilar de Donas is a prime example of Romanesque design, characterized by its simple yet elegant aesthetic. The church's stone construction and distinctive features, such as its rectangular apse and sturdy buttresses, showcase the craftsmanship and ingenuity of medieval builders. Inside, visitors are treated to a visual feast of frescoes dating back to the 15th century, offering a glimpse into the artistic mastery of the period and providing insights into religious narratives and symbolism.
 In recent years, preservation efforts have been undertaken to safeguard the Iglesia de San Salvador de Vilar de Donas for future generations. These efforts not only aim to protect the architectural integrity of the church but also seek to honor its rich historical legacy and cultural significance. Through restoration projects and ongoing maintenance, the church continues to stand as a living monument to the enduring spirit of faith, heritage, and tradition in Galicia, Spain.
 Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place of worship—it is a symbol of resilience, perseverance, and the enduring legacy of medieval Spain. As visitors step through its hallowed doors and immerse themselves in its storied past, they are transported back in time to an era of chivalry, piety, and timeless beauty."""@en ;
+                                           ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> ;
+                                           ctp:hasTime :XII_century ;
                                            ctp:hasTitle "Chiesa di San Salvador de Vilar de Donas"@it ,
                                                         "Church of San Salvador de Vilar de Donas"@en ,
-                                                        "Iglesia de San Salvador de Vilar de Donas"@es .
+                                                        "Iglesia de San Salvador de Vilar de Donas"@es ;
+                                           ctp:hasType :Architectural_heritage ;
+                                           ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index01
 :Index01 rdf:type owl:NamedIndividual ,
                   ctp:OrderedListSlot ;
+         ctp:hasIndex 1 ;
          ctp:hasItem :Church_of_the_Holy_Cross ;
-         ctp:nextItem :Index02 ;
-         ctp:hasIndex 1 .
+         ctp:nextItem :Index02 .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index02
 :Index02 rdf:type owl:NamedIndividual ,
-                    ctp:OrderedListSlot ;
-           ctp:hasItem :Strada_Nuova ;
-           ctp:nextItem :Index03 ;
-           ctp:previousItem :Index01 ;
-           ctp:hasIndex 2 .
+                  ctp:OrderedListSlot ;
+         ctp:hasIndex 2 ;
+         ctp:hasItem :Strada_Nuova ;
+         ctp:nextItem :Index03 ;
+         ctp:previousItem :Index01 .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index03
 :Index03 rdf:type owl:NamedIndividual ,
                   ctp:OrderedListSlot ;
+         ctp:hasIndex 3 ;
          ctp:hasItem :Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
          ctp:nextItem :Index04 ;
-         ctp:previousItem :Index02 ;
-         ctp:hasIndex 3 .
+         ctp:previousItem :Index02 .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index04
 :Index04 rdf:type owl:NamedIndividual ,
                   ctp:OrderedListSlot ;
-        ctp:hasItem :Catedral_de_Santiago_de_Compostela ;
-        ctp:previousItem :Index03 ;
-        ctp:hasIndex 4 .
+         ctp:hasIndex 4 ;
+         ctp:hasItem :Catedral_de_Santiago_de_Compostela ;
+         ctp:previousItem :Index03 .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Pilgrim
 :Pilgrim rdf:type owl:NamedIndividual ,
                   ctp:Subject ;
+         rdfs:label "Pilgrim"@en ;
          ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Religion
 :Religion rdf:type owl:NamedIndividual ,
                    ctp:Subject ;
-        ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
+          rdfs:label "Religion"@en ;
+          ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela
 :Road_to_Santiago_de_Compostela rdf:type owl:NamedIndividual ,
                                          ctp:ThematicPath ;
+                                ctp:conveys "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it ,
+                                            "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en ;
+                                ctp:hasCreationDate "2024-02-04"^^xsd:date ;
+                                ctp:hasDescription "Abbracciando la spiritualità e l'unità culturale, il viaggio da Assisi a Santiago de Compostela incanta con la sua bellezza e ispira con il suo spirito di pellegrinaggio. Certificato come \"Cultural Route of the Council of Europe\" nel 1987."@it ,
+                                                   "Embracing spirituality and cultural unity, the journey from Assisi to Santiago de Compostela enchants with its beauty and inspires with its pilgrimage spirit. Certified as \"Cultural Route of the Council of Europe\" in 1987."@en ;
                                 ctp:hasRelationToAgent :Certification_body_1 ,
                                                        :Creator_1 ;
                                 ctp:hasSlot :Index01 ,
@@ -216,24 +458,15 @@ Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place
                                             :Index03 ,
                                             :Index04 ;
                                 ctp:hasTheme :Santiago_de_Compostela_pilgrim_routes ;
-                                ctp:refersToPlace <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> ;
-                                ctp:conveys "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it ,
-                                            "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en ;
-                                ctp:hasCreationDate "2024-02-04"^^xsd:date ;
-                                ctp:hasDescription "Abbracciando la spiritualità e l'unità culturale, il viaggio da Assisi a Santiago de Compostela incanta con la sua bellezza e ispira con il suo spirito di pellegrinaggio. Certificato come \"Cultural Route of the Council of Europe\" nel 1987."@it ,
-                                                   "Embracing spirituality and cultural unity, the journey from Assisi to Santiago de Compostela enchants with its beauty and inspires with its pilgrimage spirit. Certified as \"Cultural Route of the Council of Europe\" in 1987."@en ;
                                 ctp:hasTitle "La strada per Santiago de Compostela"@it ,
                                              "Road to Santiago de Compostela"@en ;
-                                ctp:linkToResource "https://saintjamesway.eu/blog/portfolios/it_itine/"^^rdfs:Literal .
-
+                                ctp:linkToResource "https://saintjamesway.eu/blog/portfolios/it_itine/"^^rdfs:Literal ;
+                                ctp:refersToPlace <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Santiago_de_Compostela_pilgrim_routes
 :Santiago_de_Compostela_pilgrim_routes rdf:type owl:NamedIndividual ,
                                                 ctp:Theme ;
-                                       ctp:hasSubject :Pilgrim ,
-                                                      :Religion ,
-                                                      :Tradition ;
                                        ctp:hasDescription """La leggenda narra che le spoglie di San Giacomo furono trasportate via mare da Gerusalemme fino al nord della Spagna, dove fu sepolto nella città di Santiago de Compostela, oggi.
 Dalla scoperta della presunta tomba del santo nel IX secolo, il Cammino di Santiago divenne una delle più importanti pellegrinaggi cristiani durante il Medioevo, poiché il suo completamento garantiva l'ottenimento di un'indulgenza plenaria.
 Patrimonio - Come risultato di questo pellegrinaggio, si è sviluppato un ricco patrimonio. Il patrimonio tangibile, come luoghi di culto, ospedali, strutture ricettive, ponti, così come il patrimonio non tangibile sotto forma di miti, leggende e canzoni, sono presenti lungo le Vie di Santiago e possono essere apprezzati dai viaggiatori.
@@ -242,6 +475,9 @@ Viaggiare oggi - Ogni anno, centinaia di migliaia di viaggiatori si mettono in v
 Since the discovery of the supposed tomb of the saint in the 9th century, the Way of St. James became one of the most important Christian pilgrimages during the Middle Ages, as its completion guaranteed earning a plenary indulgence.
 Heritage - As a result of this pilgrimage, a rich heritage was formed. Tangible heritage such as places of worship, hospitals, accommodation facilities, bridges, as well as non-tangible heritage in the form of myths, legends and songs are present along the Santiago Routes and can be enjoyed by the traveller.
 Travelling today - Each year, hundreds of thousands of travellers set out to make their way to Santiago de Compostela. As there are endless numbers of branches to the route, it is common to begin the journey literally from one's doorstep. Most travel by foot, some by bicycle, and a few travel on horseback or by donkey, as some of their medieval counterparts did."""@en ;
+                                       ctp:hasSubject :Pilgrim ,
+                                                      :Religion ,
+                                                      :Tradition ;
                                        ctp:hasTitle "Le Vie del pellegrinaggio a Santiago de Compostela"@it ,
                                                     "Santiago de Compostela pilgrim routes"@en .
 
@@ -249,25 +485,41 @@ Travelling today - Each year, hundreds of thousands of travellers set out to mak
 ###  https://w3id.org/ctp/santiagodecompostela#Strada_Nuova
 :Strada_Nuova rdf:type owl:NamedIndividual ,
                        ctp:CulturalResource ;
-              ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street,_Genoa,_Italy> ;
-              ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1550> ;
-              ctp:hasType :Architectural_heritage ;
-              ctp:isPartOf :Road_to_Santiago_de_Compostela ;
               ctp:hasDescription """Via Giuseppe Garibaldi is a street in the historical centre of Genoa, in Northwestern Italy, well known for its ancient palaces. It is one of the Strade Nuove (Italian for \"new streets\") built by the Genoese aristocracy during the Renaissance. Since July 2006 it is inscribed in the list of UNESCO World Heritage Site Genoa: the Strade Nuove and the system of the Palazzi dei Rolli.
 The street, sanctioned in 1550, was built in 1558–1583. Originally named Strada Maggiore or Strada Nuova, in 1882 it was dedicated to Giuseppe Garibaldi. The street is 250 metres long and 7.5 metres wide.
 Between the first half of the 16th century and the first half of the 17th century, the nobility of the Republic of Genoa started a careful town planning to transform the existing medieval city and initiate a sizeable urban expansion to the North. The move to expand the antique palaces and to build new sumptuous ones was driven by the extraordinary wealth that came into the city through prosperous financing activities towards several European powers. In particular, the Genoese aristocracy financed the expensive undertakings of the Spanish Crown, such as the mercenary army that Spain kept in Flanders from 1566 to the peace of Westphalia in 1648. The ruling class of Genoa, mixing nobility of blood with new mercantile wealth, sought to underpin their prestige by the construction of grand city palaces and suburban villas of unusual splendor."""@en ,
                                  """Via Giuseppe Garibaldi è una strada nel centro storico di Genova, nel nord-ovest dell'Italia, ben nota per i suoi antichi palazzi. È una delle Strade Nuove costruite dalla nobiltà genovese durante il Rinascimento. Dal luglio 2006 è iscritta nell'elenco dei siti del patrimonio mondiale dell'UNESCO Genova: le Strade Nuove e il sistema dei Palazzi dei Rolli.
 La strada, approvata nel 1550, fu costruita tra il 1558 e il 1583. Originariamente chiamata Strada Maggiore o Strada Nuova, nel 1882 fu dedicata a Giuseppe Garibaldi. La strada è lunga 250 metri e larga 7,5 metri.
 Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà della Repubblica di Genova avviò una pianificazione urbana attenta per trasformare la città medievale esistente e avviare una considerevole espansione urbana verso nord. La decisione di ampliare i palazzi antichi e costruirne di nuovi sfarzosi fu motivata dalla straordinaria ricchezza che entrò in città attraverso attività finanziarie prosperose verso diverse potenze europee. In particolare, l'aristocrazia genovese finanziò le costose imprese della Corona di Spagna, come l'esercito mercenario che la Spagna manteneva nelle Fiandre dal 1566 alla pace di Westfalia nel 1648. La classe dirigente di Genova, mescolando nobiltà di sangue con la nuova ricchezza mercantile, cercò di sostenere il proprio prestigio attraverso la costruzione di grandi palazzi cittadini e ville suburbane di splendore insolito."""@it ;
+              ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street,_Genoa,_Italy> ;
+              ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1550> ;
               ctp:hasTitle "Strada Nuova"@it ,
-                           "Via Giuseppe Garibaldi"@it .
-
-###  https://orcid.org/0000-0002-2440-2376
-<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :atizianapasciuto .
+                           "Via Giuseppe Garibaldi"@it ;
+              ctp:hasType :Architectural_heritage ;
+              ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela#atizianapasciuto                             
+###  https://w3id.org/ctp/santiagodecompostela#Tradition
+:Tradition rdf:type owl:NamedIndividual ,
+                    ctp:Subject ;
+           rdfs:label "Tradition"@en ;
+           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
+
+
+###  https://w3id.org/ctp/santiagodecompostela#XIII_century
+:XIII_century rdf:type owl:NamedIndividual ,
+                       ctp:Interval ;
+              rdfs:label "XIII century"@en ;
+              ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
+              ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> .
+
+
+###  https://w3id.org/ctp/santiagodecompostela#XII_century
+:XII_century rdf:type owl:NamedIndividual ,
+                      ctp:Interval ;
+             rdfs:label "XII century"@en ;
+             ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
+             ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#atizianapasciuto
@@ -280,14 +532,6 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
                   foaf:name "Tiziana Pasciuto" .
 
 
-###  https://orcid.org/0000-0001-5648-2713
-<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :briccardoalbertoni .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#briccardoalbertoni
-
-
 ###  https://w3id.org/ctp/santiagodecompostela#briccardoalbertoni
 :briccardoalbertoni rdf:type owl:NamedIndividual ,
                              ctp:Person ;
@@ -295,6 +539,16 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
                     org:memberOf :cnrImati ;
                     foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
                     foaf:name "Riccardo Albertoni" .
+
+
+###  https://w3id.org/ctp/santiagodecompostela#cnrImati
+:cnrImati rdf:type owl:NamedIndividual ,
+                   ctp:Organization ;
+          rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
+          foaf:homepage "https://imati.cnr.it/" ;
+          foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" ;
+          ctp:hasMember :CNR_IMATI_Genoa_staff ;
+          ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#crobertamaggi
@@ -305,60 +559,48 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
                foaf:name "Roberta Maggi" .
 
 
-###  https://w3id.org/ctp/santiagodecompostela#Tradition
-:Tradition rdf:type owl:NamedIndividual ,
-                    ctp:Subject ;
-           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#XIII_century
-:XIII_century rdf:type owl:NamedIndividual ,
-                       ctp:Interval ;
-              ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
-              ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#XII_century
-:XII_century rdf:type owl:NamedIndividual ,
-                      ctp:Interval ;
-             ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
-             ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
+###  https://w3id.org/ctp/santiagodecompostela#universitaDiGenova
+:universitaDiGenova rdf:type owl:NamedIndividual ,
+                             ctp:Organization ;
+                    rdfs:label "University of Genoa, Italy"@en ;
+                    foaf:homepage "https://unige.it/" ;
+                    foaf:name "University of Genoa, Italy" .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1075
 <https://w3id.org/ctp/santiagodecompostela#1075> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1075"^^xsd:date .
+                                                 ctp:hasDate "1075"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1101
 <https://w3id.org/ctp/santiagodecompostela#1101> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1101"^^xsd:date .
+                                                 ctp:hasDate "1101"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1200
 <https://w3id.org/ctp/santiagodecompostela#1200> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1200"^^xsd:date .
+                                                 ctp:hasDate "1200"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1201
 <https://w3id.org/ctp/santiagodecompostela#1201> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1201"^^xsd:date .
+                                                 ctp:hasDate "1201"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1300
 <https://w3id.org/ctp/santiagodecompostela#1300> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1300"^^xsd:date .
+                                                 ctp:hasDate "1300"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1550
 <https://w3id.org/ctp/santiagodecompostela#1550> rdf:type owl:NamedIndividual ,
                                                           ctp:Istant ;
-                                                 ctp:hasDate "1550"^^xsd:date .
+                                                 ctp:hasDate "1550"^^xsd:gYear .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France
@@ -373,41 +615,41 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
 ###  https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> rdf:type owl:NamedIndividual ,
                                                                                                ctp:Place ;
-                                                                                      ctp:isLocationOf :Catedral_de_Santiago_de_Compostela ;
                                                                                       ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^rdfs:Literal ;
                                                                                       ctp:hasTitle "Catedral de Santiago de Compostela, España"@es ,
                                                                                                    "Cattedrale di Santiago de Compostela"@it ,
-                                                                                                   "Santiago de Compostela Cathedral, Spain"@en .
+                                                                                                   "Santiago de Compostela Cathedral, Spain"@en ;
+                                                                                      ctp:isLocationOf :Catedral_de_Santiago_de_Compostela .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> rdf:type owl:NamedIndividual ,
                                                                                              ctp:Place ;
-                                                                                    ctp:isLocationOf :Church_of_the_Holy_Cross ;
                                                                                     ctp:hasCentroid "43.082236792101796, 12.615436731593"^^rdfs:Literal ;
                                                                                     ctp:hasTitle "Chiesa della Santa Croce, Assisi, Italia"@it ,
-                                                                                                 "Church of Holy Cross, Assisi, Italy"@en .
+                                                                                                 "Church of Holy Cross, Assisi, Italy"@en ;
+                                                                                    ctp:isLocationOf :Church_of_the_Holy_Cross .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street,_Genoa,_Italy
 <https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street,_Genoa,_Italy> rdf:type owl:NamedIndividual ,
                                                                                              ctp:Place ;
-                                                                                    ctp:isLocationOf :Strada_Nuova ;
                                                                                     ctp:hasBoundingBox """POLYGON ((
 44.4113889 8.931388888888888 , 44.4116667 8.931388888888888
 44.4105556 8.934722222222222 , 44.4108333 , 8.935
 ))"""^^rdfs:Literal ;
                                                                                     ctp:hasTitle "Giuseppe Garibaldi street, Genoa, Italy"@en ,
-                                                                                                 "Via Giuseppe Garibaldi, Genova, Italia"@it .
+                                                                                                 "Via Giuseppe Garibaldi, Genova, Italia"@it ;
+                                                                                    ctp:isLocationOf :Strada_Nuova .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> rdf:type owl:NamedIndividual ,
                                                                                                                     ctp:Place ;
-                                                                                                           ctp:isLocationOf :Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
                                                                                                            ctp:hasCentroid "42.89254902812202, -7.807993849231925"^^rdfs:Literal ;
                                                                                                            ctp:hasTitle "Church of San Salvador de Vilar de Donas, Palas de Rei, Spain"@en ,
-                                                                                                                        "Iglesia de San Salvador de Vilar de Donas, Palais de Rei, España"@es .
+                                                                                                                        "Iglesia de San Salvador de Vilar de Donas, Palais de Rei, España"@es ;
+                                                                                                           ctp:isLocationOf :Iglesia_de_San_Salvador_de_Vilar_de_Donas .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy
@@ -416,5 +658,6 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
                                                                               ctp:hasCentroid "44.40872901586253, 8.901019601274273"^^rdfs:Literal ;
                                                                               ctp:hasTitle "Via de Marini, 6, Genova, Italia"@it ,
                                                                                            "de Marini street, 6, Genoa, Italy"@en .
+
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

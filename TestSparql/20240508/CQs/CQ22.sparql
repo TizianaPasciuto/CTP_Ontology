@@ -1,9 +1,17 @@
+# CQ22
+# Where is it possible to buy products related to the thematic path X?  
+# Dove è possibile acquistare prodotti relativi al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?Product ?Type ?rdfs  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?ThematicPathTitle ?ProductTitle ?ProductType ?Link  
 WHERE{  
   ?ThematicPath ctp:allowsTheSaleOf ?Product.  
-  ?Product ctp:isSelledBy ?rdfs.  
+  ?Product ctp:isSelledBy ?Link.  
   ?Product ctp:hasTitle ?rdfs.  
   ?Product ctp:hasType ?Type.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?Product ctp:hasTitle ?ProductTitle} . 
+  Optional{ ?Type rdfs:label ?ProductType} .  
 }  
 LIMIT 10  

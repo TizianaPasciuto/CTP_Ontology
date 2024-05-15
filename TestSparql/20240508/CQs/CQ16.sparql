@@ -1,3 +1,7 @@
+# CQ16
+# Which sorting is used to arrange the cultural objects in the thematic path X?  
+# In che ordine sono disposti gli oggetti culturali nel percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT *  
 WHERE{  

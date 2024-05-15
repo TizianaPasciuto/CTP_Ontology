@@ -1,3 +1,7 @@
+# CQ10
+# Which thematic paths have been created by the same agent?  
+# Quali percorsi tematici sono stati realizzati dallo stesso agente?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPath ?Agent ?Role  
 WHERE{  
@@ -6,3 +10,4 @@ WHERE{
   ?RelationToAgent ctp:involves ?Agent.  
 }  
 LIMIT 10  
+

@@ -18,16 +18,16 @@
 <https://w3id.org/ctp> rdf:type owl:Ontology ;
                         dcterms:abstract """This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>
 In this module the following Ontology Design Patterns have been used:<br><ul>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/list.owl">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/partof.owl">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
 This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
 <!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"""^^rdf:HTML ,
                                          """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>
 In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/list.owl">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/partof.owl">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
-<li> <a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
+<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
 Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
 <!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"""@it ;
                         dcterms:created "2024-03-06"^^xsd:date ;
@@ -1020,8 +1020,8 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 ###  https://w3id.org/ctp#Theme
 ctp:Theme rdf:type owl:Class ;
-          rdfs:comment "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ,
-                       "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ;
+          rdfs:comment "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ,
+                       "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ;
           rdfs:label "Theme"@en .
 
 
@@ -1075,18 +1075,18 @@ ctp:briccardoalbertoni rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/ctp#cnrImati
 ctp:cnrImati rdf:type owl:NamedIndividual ,
-                       ctp:Organization ;
-              rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
-              foaf:homepage "https://imati.cnr.it/" ;
-              foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
+                      ctp:Organization ;
+             rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
+             foaf:homepage "https://imati.cnr.it/" ;
+             foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" .
 
 
 ###  https://w3id.org/ctp#crobertamaggi
 ctp:crobertamaggi rdf:type owl:NamedIndividual ,
-                      ctp:Person ;
-             rdfs:label "Roberta Maggi"@en ;
-             org:memberOf ctp:cnrImati ;
-             foaf:name "Roberta Maggi" .
+                           ctp:Person ;
+                  rdfs:label "Roberta Maggi"@en ;
+                  org:memberOf ctp:cnrImati ;
+                  foaf:name "Roberta Maggi" .
 
 
 ###  https://w3id.org/ctp#universitaDiGenova

@@ -1,3 +1,6 @@
+# CQ9
+# Which cultural resources are part of more than one thematic path?  
+# Quali risorse culturali sono parte di più percorsi tematici?  
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT *  
 WHERE{  

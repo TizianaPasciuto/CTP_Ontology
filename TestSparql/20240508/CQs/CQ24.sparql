@@ -1,6 +1,10 @@
+# CQ24
+# Which is the internal identifier of the resource X in the XY catalog?  
+# Qual è l'identificativo interno della risorsa X nel catalogo XY?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?CulturalResource ?rdfs  
 WHERE{  
   ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs.  
 }  
-LIMIT 10  
+LIMIT 100  

@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ThematicPathTitle                         | rdfs                                                                                                                                                |
+===================================================================================================================================================================================================
+| "Road to Santiago de Compostela"@en       | "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en |
+| "La strada per Santiago de Compostela"@it | "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en |
+| "Road to Santiago de Compostela"@en       | "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it      |
+| "La strada per Santiago de Compostela"@it | "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it      |
+| "Transizioni"@it                          | "Promotion and enjoyment of the cultural heritage of the Ansaldo Foundation"@en                                                                     |
+| "Transitions"@en                          | "Promotion and enjoyment of the cultural heritage of the Ansaldo Foundation"@en                                                                     |
+| "Transizioni"@it                          | "Promozione e valorizzazione del patrimonio culturale della Fondazione Ansaldo."@it                                                                 |
+| "Transitions"@en                          | "Promozione e valorizzazione del patrimonio culturale della Fondazione Ansaldo."@it                                                                 |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+------------------------------------------------------------------------------------------------
+| ThematicPathTitle   | CulturalResourceTitle                           | AgentName            |
+================================================================================================
+| "Sezione Lavoro"@it | "Luigi Ansaldo e due donne non identificate"@it | "Ansaldo family"     |
+| "Work section"@en   | "Luigi Ansaldo e due donne non identificate"@it | "Ansaldo family"     |
+| "Sezione Lavoro"@it | "Repetto Mariadiva"@it                          | "Ansaldo Foundation" |
+| "Work section"@en   | "Repetto Mariadiva"@it                          | "Ansaldo Foundation" |
+| "Sezione Lavoro"@it | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Gerolamo Lazzeri"   |
+| "Work section"@en   | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Gerolamo Lazzeri"   |
+------------------------------------------------------------------------------------------------

@@ -1,14 +1,23 @@
+# CQ6
+# By whom and when were the objects belonging to the thematic path X made?  
+# Da chi e quando sono stati realizzati gli oggetti appartenenti al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?CulturalResource ?Agent  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?CulturalResourceDate
 WHERE{  
-{ ?ThematicPath ctp:hasPart ?CulturalResource.  
+  ?ThematicPath ctp:hasPart ?CulturalResource.  
   ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
-  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "creator", "i").  
-  ?RelationToAgent ctp:involves ?Agent.}  
-
-UNION  
-
-{ ?ThematicPath ctp:hasPart ?CulturalResource.  
-  ?CulturalResource ctp:hasTime ?TemporalEntity.}  
+  ?RelationToAgent ctp:hasRole ?Role. 
+  ?Role rdfs:label ?Creator.
+  ?RelationToAgent ctp:involves ?Agent.  
+  ?CulturalResource ctp:hasTime ?TemporalEntity. 
+  ?TemporalEntity ctp:hasDate  ?date.
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
+  Optional{?Agent ctp:hasName ?AgentName}.
+  Optional{ ?TemporalEntity ctp:hasDate ?CulturalResourceDate} . 
 }  
-LIMIT 10  
+ 
+LIMIT 100  
+

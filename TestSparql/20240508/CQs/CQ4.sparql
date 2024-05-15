@@ -1,6 +1,15 @@
+# CQ4
+# To which historical period does thematic path X refer?  
+# A quale periodo storico fa riferimento il percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?TemporalEntity  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?ThematicPathTitle ?TemporalEntityLabel  
 WHERE{  
   ?ThematicPath ctp:refersToTemporalEntity ?TemporalEntity.  
-}  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.
+  Optional{ ?TemporalEntity rdfs:label ?TemporalEntityLabel} .
+  FILTER(
+    LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?TemporalEntityLabel),'en'))
+}
 LIMIT 10  

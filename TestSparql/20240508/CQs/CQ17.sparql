@@ -1,7 +1,15 @@
+# CQ17
+# The thematic path X is realized in one or more events (i.e. virtual or physical exhibition)? Which one/s?  
+# Il percorso tematico X è legato a uno o più eventi (per esempio mostra virtuale, mostra fisica)? Quale/i?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT *  
+SELECT ?ThematicPathTitle ?CulturalEventTitle  ?CulturalEventDate
 WHERE{  
   ?ThematicPath ctp:isRealizedIn ?CulturalEvent.  
   ?CulturalEvent ctp:hasTime ?TemporalEntity.  
+  ?TemporalEntity ctp:hasDate ?date.
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?CulturalEvent ctp:hasTitle ?CulturalEventTitle} .
+  Optional{ ?TemporalEntity ctp:hasDate ?CulturalEventDate} . 
 }  
 LIMIT 10  

@@ -1,6 +1,12 @@
+# CQ18
+# The thematic path X is composed by one or more sub-thematic paths (i.e. exhibitions' sub-paths)?  
+# Il percorso tematico X è composto da uno o più sotto percorsi tematici (per esempio sottofiloni tematici di una mostra)?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?ThematicPath  
+SELECT ?ThematicPathTitle ?ThematicPathIncludedTitle  
 WHERE{  
   ?ThematicPath ctp:includes ?ThematicPath.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathIncludedTitle} .
 }  
-LIMIT 10  
+LIMIT 100  

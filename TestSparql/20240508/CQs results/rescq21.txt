@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+| CulturalResourceTitle                                                                     | ThematicPathTitle                         |
+=========================================================================================================================================
+| "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it | "Anatomy"@en                              |
+| "Dei moti dell'iride"@it                                                                  | "Anatomy"@en                              |
+| "Iglesia de San Salvador de Vilar de Donas"@es                                            | "Road to Santiago de Compostela"@en       |
+| "Chiesa di San Salvador de Vilar de Donas"@it                                             | "Road to Santiago de Compostela"@en       |
+| "Church of San Salvador de Vilar de Donas"@en                                             | "Road to Santiago de Compostela"@en       |
+| "Iglesia de San Salvador de Vilar de Donas"@es                                            | "La strada per Santiago de Compostela"@it |
+| "Chiesa di San Salvador de Vilar de Donas"@it                                             | "La strada per Santiago de Compostela"@it |
+| "Church of San Salvador de Vilar de Donas"@en                                             | "La strada per Santiago de Compostela"@it |
+| "Cattedrale di Santiago de Compostela"@it                                                 | "Road to Santiago de Compostela"@en       |
+| "Catedral de Santiago de Compostela"@es                                                   | "Road to Santiago de Compostela"@en       |
+| "Santiago de Compostela Cathedral"@en                                                     | "Road to Santiago de Compostela"@en       |
+| "Cattedrale di Santiago de Compostela"@it                                                 | "La strada per Santiago de Compostela"@it |
+| "Catedral de Santiago de Compostela"@es                                                   | "La strada per Santiago de Compostela"@it |
+| "Santiago de Compostela Cathedral"@en                                                     | "La strada per Santiago de Compostela"@it |
+| "Church of the Holy Cross"@en                                                             | "Road to Santiago de Compostela"@en       |
+| "Chiesa di Santa Croce"@it                                                                | "Road to Santiago de Compostela"@en       |
+| "Church of the Holy Cross"@en                                                             | "La strada per Santiago de Compostela"@it |
+| "Chiesa di Santa Croce"@it                                                                | "La strada per Santiago de Compostela"@it |
+| "Via Giuseppe Garibaldi"@it                                                               | "Road to Santiago de Compostela"@en       |
+| "Strada Nuova"@it                                                                         | "Road to Santiago de Compostela"@en       |
+| "Via Giuseppe Garibaldi"@it                                                               | "La strada per Santiago de Compostela"@it |
+| "Strada Nuova"@it                                                                         | "La strada per Santiago de Compostela"@it |
+| "Luigi Ansaldo e due donne non identificate"@it                                           | "Sezione Lavoro"@it                       |
+| "Luigi Ansaldo e due donne non identificate"@it                                           | "Work section"@en                         |
+| "Repetto Mariadiva"@it                                                                    | "Sezione Lavoro"@it                       |
+| "Repetto Mariadiva"@it                                                                    | "Work section"@en                         |
+| "Bianco Rosso e Verde, n. 3, 1915"@it                                                     | "Sezione Lavoro"@it                       |
+| "Bianco Rosso e Verde, n. 3, 1915"@it                                                     | "Work section"@en                         |
+| "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it | "Novum Corpus Fontanianum"@la             |
+| "Dei moti dell'iride"@it                                                                  | "Novum Corpus Fontanianum"@la             |
+| "Barometro doppio"@it                                                                     | "Novum Corpus Fontanianum"@la             |
+| "Double barometer"@en                                                                     | "Novum Corpus Fontanianum"@la             |
+| "Lettera di Felice Fontana a Leopoldo Marcantonio Caldani, febbraio–marzo 1772"@it        | "Novum Corpus Fontanianum"@la             |
+| "Lettre de M. l'Abbé Fontana à M. le Duc de Chaulnes"@fr                                  | "Novum Corpus Fontanianum"@la             |
+-----------------------------------------------------------------------------------------------------------------------------------------

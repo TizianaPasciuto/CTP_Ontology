@@ -1,7 +1,15 @@
+# CQ7
+# When were the objects linked to the thematic path X made?  
+# Quando sono stati realizzati gli oggetti collegati al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?CulturalResource ?TemporalEntity  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate
 WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource.  
-  ?CulturalResource ctp:hasTime ?TemporalEntity.  
+  ?ThematicPath ctp:hasPart ?CulturalResource . 
+  ?CulturalResource ctp:hasTime ?TemporalEntity. 
+  ?TemporalEntity ctp:hasDate  ?date.
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} . 
+  Optional{ ?TemporalEntity ctp:hasDate ?CulturalResourceDate} . 
 }  
-LIMIT 10  
+LIMIT 100  

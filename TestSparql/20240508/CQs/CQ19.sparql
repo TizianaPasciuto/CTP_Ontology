@@ -1,6 +1,11 @@
+# CQ19
+# How is it possible to access the thematic path X?  
+# Come è possibile accedere al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?rdfs   
+SELECT ?ThematicPathTitle ?link    
 WHERE{  
-  ?ThematicPath ctp:linkToResource ?rdfs  
+  ?ThematicPath ctp:linkToResource ?link  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
 }  
-LIMIT 10  
+LIMIT 100  

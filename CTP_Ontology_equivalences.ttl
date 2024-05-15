@@ -24,7 +24,7 @@
 
 <https://w3id.org/ctp/equivalences#> rdf:type owl:Ontology ;
                                               dcterms:description "This document contains the collection of classes and properties equivalent to those in the Cultural Thematic Path (CTP) Ontology."@en ,
-                                                                  "Questo documento raccoglie le classi e le proprietà equivalenti a quelle presenti nell'ontologia Cultural Thematic Path (CTP)".@it ;
+                                                                  "Questo documento raccoglie le classi e le proprietà equivalenti a quelle presenti nell'ontologia Cultural Thematic Path (CTP)."@it ;
                                               dcterms:created "2024-03-06"^^xsd:date ;
                                               dcterms:creator ctp:atizianapasciuto ,
                                                               ctp:briccardoalbertoni ,

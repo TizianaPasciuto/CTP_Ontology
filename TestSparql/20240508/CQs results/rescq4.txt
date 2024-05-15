@@ -1,0 +1,8 @@
+----------------------------------------------------
+| ThematicPathTitle | TemporalEntityLabel          |
+====================================================
+| "Transizioni"@it  | "Rivoluzione industriale"@it |
+| "Transizioni"@it  | "Industrial revolution"@en   |
+| "Transitions"@en  | "Rivoluzione industriale"@it |
+| "Transitions"@en  | "Industrial revolution"@en   |
+----------------------------------------------------

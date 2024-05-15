@@ -1,6 +1,13 @@
+# CQ14
+# Which are the places related to the thematic path X?  
+# Quali sono i luoghi legati al percorso tematico X?  
+
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?Place  
+SELECT ?ThematicPathTitle ?PlaceName  
 WHERE{  
   ?ThematicPath ctp:refersToPlace ?Place.  
+  Optional{ ?Place ctp:hasTitle ?PlaceName} .
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
 }  
 LIMIT 10  

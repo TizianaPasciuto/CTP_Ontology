@@ -1,3 +1,7 @@
+# CQ11
+# Which thematic paths have been funded by the same agent?  
+# Quali percorsi tematici sono stati finanziati dallo stesso agente?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPath ?Agent ?Role  
 WHERE{  
@@ -6,3 +10,16 @@ WHERE{
   ?RelationToAgent ctp:involves ?Agent.  
 }  
 LIMIT 10  
+
+
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName  
+WHERE{  
+  ?ThematicPath ctp:hasPart ?CulturalResource.  
+  ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
+  ?RelationToAgent ctp:hasRole ?Role. 
+  ?Role rdfs:label ?Creator.
+  ?RelationToAgent ctp:involves ?Agent.  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
+  Optional{?Agent ctp:hasName ?AgentName}
+}  

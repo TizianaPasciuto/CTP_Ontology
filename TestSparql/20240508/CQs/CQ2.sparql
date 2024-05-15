@@ -1,6 +1,18 @@
+# CQ2
+#What is the theme/What are the themes of the path X?  
+#Quale è la tematica/Quali sono le tematiche del percorso X?  
+
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?Theme  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?ThemeTitle ?ThemeDescription 
 WHERE{  
   ?ThematicPath ctp:hasTheme ?Theme.  
+  ?Theme ctp:hasDescription ?rdfs 
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.
+  Optional{?Theme ctp:hasTitle ?ThemeTitle} .
+  Optional{?Theme ctp:hasDescription ?ThemeDescription} .
+  FILTER(
+    LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?ThemeTitle),'en') && LANGMATCHES(LANG(?ThemeDescription), 'en'))  
 }  
-LIMIT 10  
+LIMIT 100  

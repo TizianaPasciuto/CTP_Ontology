@@ -1,9 +1,19 @@
+# CQ5
+# By whom were the objects of the thematic path X made?  
+# Da chi sono stati realizzati gli oggetti del percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?CulturalResource ?Agent  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName  
 WHERE{  
   ?ThematicPath ctp:hasPart ?CulturalResource.  
   ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
-  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "creator", "i").  
+  ?RelationToAgent ctp:hasRole ?Role. 
+  ?Role rdfs:label ?Creator.
   ?RelationToAgent ctp:involves ?Agent.  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
+  Optional{?Agent ctp:hasName ?AgentName}
 }  
 LIMIT 10  
+  

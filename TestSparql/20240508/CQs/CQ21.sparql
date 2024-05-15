@@ -1,6 +1,12 @@
+# CQ21
+# Which cultural resources are linked to the thematic path X?  
+# Quali risorse culturali sono collegate al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT *  
+SELECT ?CulturalResourceTitle ?ThematicPathTitle  
 WHERE{  
-  ?CulturalResource ctp:isPartOf ?ThematicPath.  
+  ?CulturalResource ctp:isPartOf ?ThematicPath. 
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .   
 }  
-LIMIT 10  
+LIMIT 100 

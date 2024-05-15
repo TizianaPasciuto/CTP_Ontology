@@ -1,7 +1,13 @@
+# CQ20
+# Where can cultural resources related to the thematic path X be viewed?
+# Dove sono visualizzabili gli oggetti legati al percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?CulturalResource ?ThematicPath ?rdfs   
+SELECT ?CulturalResourceTitle ?ThematicPathTitle ?rdfs   
 WHERE{  
   ?CulturalResource ctp:isPartOf ?ThematicPath.  
   ?CulturalResource ctp:linkToResource ?rdfs.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
 }  
-LIMIT 10  
+LIMIT 100  

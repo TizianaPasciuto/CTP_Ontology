@@ -1,6 +1,12 @@
+# CQ8
+# To which agent is the thematic path X inspired by?  
+# A quale agente è ispirato il percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?Agent  
+SELECT ?ThematicPathTitle ?AgentName  
 WHERE{  
   ?ThematicPath ctp:isInspiredByAgent ?Agent.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?Agent ctp:hasName ?AgentName} .  
 }  
 LIMIT 10  

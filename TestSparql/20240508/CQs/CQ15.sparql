@@ -1,6 +1,12 @@
+# CQ15
+# Which cultural, ethical and social values does the thematic path X want to convey?  
+# Quali valori culturali, etici e sociali vuole trasmettere il percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?rdfs  
+SELECT ?ThematicPathTitle ?rdfs  
 WHERE{  
   ?ThematicPath ctp:conveys ?rdfs.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
 }  
-LIMIT 10  
+LIMIT 100
+  

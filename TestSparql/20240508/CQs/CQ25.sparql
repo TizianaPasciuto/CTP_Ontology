@@ -1,6 +1,17 @@
+# CQ25
+# Which thematic routes have been created in the year XX?  
+# Quali percorsi tematici sono stati creati nell'anno XX?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?xsd  
+SELECT ?ThematicPathTitle ?date  
 WHERE{  
   ?ThematicPath ctp:hasCreationDate ?xsd.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} . 
+  Optional{ ?ThematicPath ctp:hasCreationDate ?date} . 
+  
 }  
-LIMIT 10  
+LIMIT 100  
+
+
+
+# FILTER (?date > "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> && "2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>)

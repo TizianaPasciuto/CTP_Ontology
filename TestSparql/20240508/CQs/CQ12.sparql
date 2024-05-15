@@ -1,7 +1,15 @@
+# CQ12
+# Which types of cultural heritage are present in the thematic path X?  
+# Quali tipologie di beni culturali sono presenti in un percorso tematico X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT *  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceType 
 WHERE{  
   ?ThematicPath ctp:hasPart ?CulturalResource.  
   ?CulturalResource ctp:hasType ?Type.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .  
+  Optional{ ?Type rdfs:label ?CulturalResourceType} .  
 }  
 LIMIT 10  

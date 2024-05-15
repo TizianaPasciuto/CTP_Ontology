@@ -1,7 +1,16 @@
+# CQ23
+# Which is the identification code associated with the cultural resource X by holder X ?  
+# Qual è il codice identificativo associato alla risorsa culturale X dall'agente X?  
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?CulturalResource ?Identifier ?Agent  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?CulturalResourceTitle ?IdentifierNumber ?AgentName  
 WHERE{  
-  ?CulturalResource ctp:hasSecondaryIdentifier ?Idenfier.  
-  ?Identifier ctp:hasCreator ?Agent.  
+  ?CulturalResource ctp:hasSecondaryIdentifier ?Idenfier. 
+  ?Identifier ctp:hasNotation ?rdfs. 
+  ?Identifier ctp:hasCreator ?Organization.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
+  Optional{ ?Identifier ctp:hasNotation ?IdentifierNumber} .
+  Optional{ ?Organization rdfs:label ?AgentName } .
 }  
-LIMIT 10  
+LIMIT 100  

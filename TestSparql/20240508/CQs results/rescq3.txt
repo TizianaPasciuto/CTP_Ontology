@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------------------------------------------------
+| ThematicPathTitle   | CulturalResourceTitle                           | PlaceName                                     |
+=========================================================================================================================
+| "Sezione Lavoro"@it | "Luigi Ansaldo e due donne non identificate"@it | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Sezione Lavoro"@it | "Luigi Ansaldo e due donne non identificate"@it | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+| "Work section"@en   | "Luigi Ansaldo e due donne non identificate"@it | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Work section"@en   | "Luigi Ansaldo e due donne non identificate"@it | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+| "Sezione Lavoro"@it | "Repetto Mariadiva"@it                          | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Sezione Lavoro"@it | "Repetto Mariadiva"@it                          | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+| "Work section"@en   | "Repetto Mariadiva"@it                          | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Work section"@en   | "Repetto Mariadiva"@it                          | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+| "Sezione Lavoro"@it | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Sezione Lavoro"@it | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+| "Work section"@en   | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Villa Cattaneo dell'Olmo, Genova, Italia"@it |
+| "Work section"@en   | "Bianco Rosso e Verde, n. 3, 1915"@it           | "Villa Cattaneo dell'Olmo, Genoa, Italy"@en   |
+-------------------------------------------------------------------------------------------------------------------------
