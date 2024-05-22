@@ -617,7 +617,7 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
                                                                                                ctp:Place ;
                                                                                       ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^rdfs:Literal ;
                                                                                       ctp:hasTitle "Catedral de Santiago de Compostela, España"@es ,
-                                                                                                   "Cattedrale di Santiago de Compostela"@it ,
+                                                                                                   "Cattedrale di Santiago de Compostela, Italia"@it ,
                                                                                                    "Santiago de Compostela Cathedral, Spain"@en ;
                                                                                       ctp:isLocationOf :Catedral_de_Santiago_de_Compostela .
 

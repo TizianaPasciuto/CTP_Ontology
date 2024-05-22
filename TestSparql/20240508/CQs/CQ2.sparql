@@ -1,7 +1,8 @@
 # CQ2
-#What is the theme/What are the themes of the path X?  
-#Quale è la tematica/Quali sono le tematiche del percorso X?  
+# What is the theme/What are the themes of the path X?  
+# Quale è la tematica/Quali sono le tematiche del percorso X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 18, column 33, and choose the language (after @)
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
@@ -13,6 +14,7 @@ WHERE{
   Optional{?Theme ctp:hasTitle ?ThemeTitle} .
   Optional{?Theme ctp:hasDescription ?ThemeDescription} .
   FILTER(
-    LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?ThemeTitle),'en') && LANGMATCHES(LANG(?ThemeDescription), 'en'))  
+    LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?ThemeTitle),'en') && LANGMATCHES(LANG(?ThemeDescription), 'en')).
+  #FILTER(?ThematicPathTitle = "X"@en).
 }  
 LIMIT 100  

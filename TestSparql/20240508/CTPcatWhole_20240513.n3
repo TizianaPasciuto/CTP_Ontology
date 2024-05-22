@@ -154,11 +154,11 @@
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPartOf> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
-_:Bd289c35b2d0868cbc17ac2a2870f5b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
-_:Bd289c35b2d0868cbc17ac2a2870f5b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B5ccecb2c26bd1ee041c7c7ff79f9dc31 .
-_:B5ccecb2c26bd1ee041c7c7ff79f9dc31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
-_:B5ccecb2c26bd1ee041c7c7ff79f9dc31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Bd289c35b2d0868cbc17ac2a2870f5b24 .
+_:B4916e21965fcbf718583854ccca56fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
+_:B4916e21965fcbf718583854ccca56fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B7cc59a14c45914b3d093b8e7752591de .
+_:B7cc59a14c45914b3d093b8e7752591de <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
+_:B7cc59a14c45914b3d093b8e7752591de <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B4916e21965fcbf718583854ccca56fdf .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
@@ -615,13 +615,13 @@ _:B5ccecb2c26bd1ee041c7c7ff79f9dc31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:B4ed6b608dfbbccc9eef23340f228fba9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Be2af020f7cf84e899519fbd38f352295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:Be2af020f7cf84e899519fbd38f352295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B6a445aa31e8dbe26b3e54607cc083317 .
-_:B6a445aa31e8dbe26b3e54607cc083317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:B6a445aa31e8dbe26b3e54607cc083317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:B4ed6b608dfbbccc9eef23340f228fba9 <http://www.w3.org/2002/07/owl#unionOf> _:Be2af020f7cf84e899519fbd38f352295 .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:B4ed6b608dfbbccc9eef23340f228fba9 .
+_:B50ef23c2a9556a6da47b0330036c8321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B920fdbe2789e7e619c1b15293cca0331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:B920fdbe2789e7e619c1b15293cca0331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Bf3557349873a97c18d3edb0b348fd04c .
+_:Bf3557349873a97c18d3edb0b348fd04c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:Bf3557349873a97c18d3edb0b348fd04c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B50ef23c2a9556a6da47b0330036c8321 <http://www.w3.org/2002/07/owl#unionOf> _:B920fdbe2789e7e619c1b15293cca0331 .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:B50ef23c2a9556a6da47b0330036c8321 .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -845,12 +845,12 @@ _:B4ed6b608dfbbccc9eef23340f228fba9 <http://www.w3.org/2002/07/owl#unionOf> _:Be
 <https://w3id.org/ctp/ncf#Creator> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://vocab.getty.edu/page/aat/300386174"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
-<https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "RTA_Creator"@en .
 <https://w3id.org/ctp/ncf#Creator_1> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/ncf#Creator> .
 <https://w3id.org/ctp/ncf#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/ncf#atizianapasciuto> .
 <https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
-<https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/2000/01/rdf-schema#label> "RTA_Creator"@en .
 <https://w3id.org/ctp/ncf#Creator_2> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/ncf#Creator> .
 <https://w3id.org/ctp/ncf#Creator_2> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/ncf#Felice_Fontana> .
 <https://w3id.org/ctp/ncf#Dei_moti_dell_iride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1499,7 +1499,7 @@ _:B4ed6b608dfbbccc9eef23340f228fba9 <http://www.w3.org/2002/07/owl#unionOf> _:Be
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#hasCentroid> "42.88086088375868, -8.543676555620761"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#hasTitle> "Catedral de Santiago de Compostela, España"@es .
-<https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#hasTitle> "Cattedrale di Santiago de Compostela"@it .
+<https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#hasTitle> "Cattedrale di Santiago de Compostela, Italia"@it .
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#hasTitle> "Santiago de Compostela Cathedral, Spain"@en .
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> <https://w3id.org/ctp#isLocationOf> <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -2,6 +2,8 @@
 # By whom and when were the objects belonging to the thematic path X made?  
 # Da chi e quando sono stati realizzati gli oggetti appartenenti al percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 22, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?CulturalResourceDate
@@ -17,6 +19,7 @@ WHERE{
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
   Optional{?Agent ctp:hasName ?AgentName}.
   Optional{ ?TemporalEntity ctp:hasDate ?CulturalResourceDate} . 
+  #FILTER(?ThematicPathTitle = "X"@lang).
 }  
  
 LIMIT 100  

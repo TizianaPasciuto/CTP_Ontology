@@ -2,6 +2,8 @@
 # Where are cultural objects connected to thematic route X usually kept?  
 # Dove sono solitamente conservati gli oggetti culturali connessi al percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 20, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>   
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?PlaceName
@@ -14,6 +16,7 @@ WHERE{
   ?Agent ctp:hasPlace ?Place.  
   Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
-  Optional{?Place ctp:hasTitle ?PlaceName}
+  Optional{?Place ctp:hasTitle ?PlaceName}.
+  #FILTER(?ThematicPathTitle = "X"@lang).
 }  
 LIMIT 100  

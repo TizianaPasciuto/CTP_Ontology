@@ -2,6 +2,8 @@
 # When were the objects linked to the thematic path X made?  
 # Quando sono stati realizzati gli oggetti collegati al percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 16, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate
 WHERE{  
@@ -11,5 +13,6 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} . 
   Optional{ ?TemporalEntity ctp:hasDate ?CulturalResourceDate} . 
+  #FILTER(?ThematicPathTitle = "X"@lang).
 }  
 LIMIT 100  

@@ -2,6 +2,8 @@
 # Where is it possible to buy products related to the thematic path X?  
 # Dove è possibile acquistare prodotti relativi al percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 18, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 SELECT ?ThematicPathTitle ?ProductTitle ?ProductType ?Link  
@@ -13,5 +15,6 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?Product ctp:hasTitle ?ProductTitle} . 
   Optional{ ?Type rdfs:label ?ProductType} .  
+  #FILTER(?ThematicPathTitle = "X"@lang).  
 }  
 LIMIT 10  

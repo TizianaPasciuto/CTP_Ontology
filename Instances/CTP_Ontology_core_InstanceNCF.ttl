@@ -465,7 +465,7 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 ###  https://w3id.org/ctp/ncf#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
-           rdfs:label "Creator"@en ;
+           rdfs:label "RTA_Creator"@en ;
            ctp:hasRole :Creator ;
            ctp:involves :atizianapasciuto .
 
@@ -473,7 +473,7 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 ###  https://w3id.org/ctp/ncf#Creator_2
 :Creator_2 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
-           rdfs:label "Creator"@en ;
+           rdfs:label "RTA_Creator"@en ;
            ctp:hasRole :Creator ;
            ctp:involves :Felice_Fontana .
 

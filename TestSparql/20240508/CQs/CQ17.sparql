@@ -2,6 +2,8 @@
 # The thematic path X is realized in one or more events (i.e. virtual or physical exhibition)? Which one/s?  
 # Il percorso tematico X è legato a uno o più eventi (per esempio mostra virtuale, mostra fisica)? Quale/i?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 16, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?CulturalEventTitle  ?CulturalEventDate
 WHERE{  
@@ -11,5 +13,6 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalEvent ctp:hasTitle ?CulturalEventTitle} .
   Optional{ ?TemporalEntity ctp:hasDate ?CulturalEventDate} . 
+  #FILTER(?ThematicPathTitle = "X"@lang).
 }  
 LIMIT 10  

@@ -1,17 +1,8 @@
 -----------------------------------------------------------------------------------------------------
 | ThematicPathTitle                         | date                                                  |
 =====================================================================================================
-| "Poisons"@en                              | "2023-01-31"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Anatomy"@en                              | "2023-01-31"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Novum Corpus Fontanianum"@la             | "2023-01-31"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Road to Santiago de Compostela"@en       | "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> |
 | "La strada per Santiago de Compostela"@it | "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Sezione Società"@it                      | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Society section"@en                      | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Enterprise section"@en                   | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Sezione Impresa"@it                      | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Sezione Lavoro"@it                       | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Work section"@en                         | "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> |
-| "Transizioni"@it                          | "2024-02-06"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Road to Santiago de Compostela"@en       | "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> |
 | "Transitions"@en                          | "2024-02-06"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Transizioni"@it                          | "2024-02-06"^^<http://www.w3.org/2001/XMLSchema#date> |
 -----------------------------------------------------------------------------------------------------

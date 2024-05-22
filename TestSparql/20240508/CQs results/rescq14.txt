@@ -1,10 +1,10 @@
------------------------------------------------------------------------------------------------
-| ThematicPathTitle                         | PlaceName                                       |
-===============================================================================================
-| "Road to Santiago de Compostela"@en       | "Catedral de Santiago de Compostela, España"@es |
-| "La strada per Santiago de Compostela"@it | "Catedral de Santiago de Compostela, España"@es |
-| "Road to Santiago de Compostela"@en       | "Santiago de Compostela Cathedral, Spain"@en    |
-| "La strada per Santiago de Compostela"@it | "Santiago de Compostela Cathedral, Spain"@en    |
-| "Road to Santiago de Compostela"@en       | "Cattedrale di Santiago de Compostela"@it       |
-| "La strada per Santiago de Compostela"@it | "Cattedrale di Santiago de Compostela"@it       |
------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+| ThematicPathTitle                         | PlaceName                                         |
+=================================================================================================
+| "Road to Santiago de Compostela"@en       | "Cattedrale di Santiago de Compostela, Italia"@it |
+| "La strada per Santiago de Compostela"@it | "Cattedrale di Santiago de Compostela, Italia"@it |
+| "Road to Santiago de Compostela"@en       | "Catedral de Santiago de Compostela, España"@es   |
+| "La strada per Santiago de Compostela"@it | "Catedral de Santiago de Compostela, España"@es   |
+| "Road to Santiago de Compostela"@en       | "Santiago de Compostela Cathedral, Spain"@en      |
+| "La strada per Santiago de Compostela"@it | "Santiago de Compostela Cathedral, Spain"@en      |
+-------------------------------------------------------------------------------------------------

@@ -2,10 +2,13 @@
 # How is it possible to access the thematic path X?  
 # Come è possibile accedere al percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 12, column 33 (e.g. Novum Corpus Fontanianum) and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPathTitle ?link    
+SELECT ?ThematicPathTitle ?Link    
 WHERE{  
-  ?ThematicPath ctp:linkToResource ?link  
+  ?ThematicPath ctp:linkToResource ?Link  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
+  FILTER(?ThematicPathTitle = "Novum Corpus Fontanianum"@la).
 }  
 LIMIT 100  

@@ -1,54 +1,6 @@
--------------------------------------------------------------------------------------------------------------------
-| Subject                                               | ThematicPathTitle                                       |
-===================================================================================================================
-| <https://w3id.org/ctp/transitions#Industry>           | "Società"@it                                            |
-| <https://w3id.org/ctp/transitions#Industry>           | "Society"@en                                            |
-| <https://w3id.org/ctp/transitions#WorkEthic>          | "Lavoro"@it                                             |
-| <https://w3id.org/ctp/transitions#WorkEthic>          | "Work"@en                                               |
-| <https://w3id.org/ctp/transitions#Industrial_energy>  | "Enterprise"@en                                         |
-| <https://w3id.org/ctp/transitions#Industrial_energy>  | "Impresa"@it                                            |
-| <https://w3id.org/ctp/ncf#Veterinary_Anatomy>         | "Fisica animale"@it                                     |
-| <https://w3id.org/ctp/ncf#Veterinary_Anatomy>         | "Animal physics"@en                                     |
-| <https://w3id.org/ctp/ncf#Red_corpuscles>             | "Anatomy"@en                                            |
-| <https://w3id.org/ctp/ncf#Red_corpuscles>             | "Anatomia"@it                                           |
-| <https://w3id.org/ctp/santiagodecompostela#Religion>  | "Le Vie del pellegrinaggio a Santiago de Compostela"@it |
-| <https://w3id.org/ctp/santiagodecompostela#Religion>  | "Santiago de Compostela pilgrim routes"@en              |
-| <https://w3id.org/ctp/santiagodecompostela#Pilgrim>   | "Le Vie del pellegrinaggio a Santiago de Compostela"@it |
-| <https://w3id.org/ctp/santiagodecompostela#Pilgrim>   | "Santiago de Compostela pilgrim routes"@en              |
-| <https://w3id.org/ctp/transitions#Energy>             | "Enterprise"@en                                         |
-| <https://w3id.org/ctp/transitions#Energy>             | "Impresa"@it                                            |
-| <https://w3id.org/ctp/ncf#Cherry-Laurel>              | "Poisons"@en                                            |
-| <https://w3id.org/ctp/ncf#Cherry-Laurel>              | "Veleni"@it                                             |
-| <https://w3id.org/ctp/ncf#Nerves>                     | "Anatomy"@en                                            |
-| <https://w3id.org/ctp/ncf#Nerves>                     | "Anatomia"@it                                           |
-| <https://w3id.org/ctp/transitions#Work>               | "Transizioni"@it                                        |
-| <https://w3id.org/ctp/transitions#Work>               | "Transitions"@en                                        |
-| <https://w3id.org/ctp/transitions#Work>               | "Lavoro"@it                                             |
-| <https://w3id.org/ctp/transitions#Work>               | "Work"@en                                               |
-| <https://w3id.org/ctp/santiagodecompostela#Tradition> | "Le Vie del pellegrinaggio a Santiago de Compostela"@it |
-| <https://w3id.org/ctp/santiagodecompostela#Tradition> | "Santiago de Compostela pilgrim routes"@en              |
-| <https://w3id.org/ctp/transitions#Society>            | "Transizioni"@it                                        |
-| <https://w3id.org/ctp/transitions#Society>            | "Transitions"@en                                        |
-| <https://w3id.org/ctp/transitions#Society>            | "Società"@it                                            |
-| <https://w3id.org/ctp/transitions#Society>            | "Society"@en                                            |
-| <https://w3id.org/ctp/ncf#Eye>                        | "Anatomy"@en                                            |
-| <https://w3id.org/ctp/ncf#Eye>                        | "Anatomia"@it                                           |
-| <https://w3id.org/ctp/transitions#Enterprise>         | "Transizioni"@it                                        |
-| <https://w3id.org/ctp/transitions#Enterprise>         | "Transitions"@en                                        |
-| <https://w3id.org/ctp/ncf#Anatomy>                    | "Anatomy"@en                                            |
-| <https://w3id.org/ctp/ncf#Anatomy>                    | "Anatomia"@it                                           |
-| <https://w3id.org/ctp/ncf#Anatomy>                    | "Anatomy"^^rdfs:Literal                                 |
-| <https://w3id.org/ctp/ncf#Viper>                      | "Poisons"@en                                            |
-| <https://w3id.org/ctp/ncf#Viper>                      | "Veleni"@it                                             |
-| <https://w3id.org/ctp/ncf#Iris>                       | "Fisica animale"@it                                     |
-| <https://w3id.org/ctp/ncf#Iris>                       | "Animal physics"@en                                     |
-| <https://w3id.org/ctp/ncf#Breathing>                  | "Fisica animale"@it                                     |
-| <https://w3id.org/ctp/ncf#Breathing>                  | "Animal physics"@en                                     |
-| <https://w3id.org/ctp/ncf#Ticunas>                    | "Poisons"@en                                            |
-| <https://w3id.org/ctp/ncf#Ticunas>                    | "Veleni"@it                                             |
-| <https://w3id.org/ctp/ncf#Poisons>                    | "Poisons"@en                                            |
-| <https://w3id.org/ctp/ncf#Poisons>                    | "Poisons"@en                                            |
-| <https://w3id.org/ctp/ncf#Poisons>                    | "Veleni"@it                                             |
-| <https://w3id.org/ctp/ncf#Irritability>               | "Fisica animale"@it                                     |
-| <https://w3id.org/ctp/ncf#Irritability>               | "Animal physics"@en                                     |
--------------------------------------------------------------------------------------------------------------------
+------------------------------------
+| SubjectLabel | ThematicPathTitle |
+====================================
+| "Energy"@en  | "Impresa"@it      |
+| "Energy"@en  | "Enterprise"@en   |
+------------------------------------

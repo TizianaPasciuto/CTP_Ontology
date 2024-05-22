@@ -2,6 +2,8 @@
 # Which types of cultural heritage are present in the thematic path X?  
 # Quali tipologie di beni culturali sono presenti in un percorso tematico X?  
 
+# PS. Replace the ThematicPathTitle to be searched in row 16, column 33, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceType 
@@ -11,5 +13,6 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .  
   Optional{ ?Type rdfs:label ?CulturalResourceType} .  
+  #FILTER(?ThematicPathTitle = "X"@lang).
 }  
-LIMIT 10  
+LIMIT 100  

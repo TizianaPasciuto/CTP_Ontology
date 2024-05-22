@@ -2,9 +2,13 @@
 # Which is the internal identifier of the resource X in the XY catalog?  
 # Qual è l'identificativo interno della risorsa X nel catalogo XY?  
 
+# PS. Replace the CulturalResourceTitle and CatalogueTitle to be searched in row XX, column XX, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?CulturalResource ?rdfs  
 WHERE{  
   ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs.  
+  #FILTER(?CulturalResourceTitle = "X"@lang).  
+  #FILTER(?CatalogueTitle = "X"@lang).  
 }  
 LIMIT 100  

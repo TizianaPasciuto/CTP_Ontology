@@ -11,15 +11,3 @@ WHERE{
 }  
 LIMIT 10  
 
-
-SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName  
-WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource.  
-  ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
-  ?RelationToAgent ctp:hasRole ?Role. 
-  ?Role rdfs:label ?Creator.
-  ?RelationToAgent ctp:involves ?Agent.  
-  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
-  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
-  Optional{?Agent ctp:hasName ?AgentName}
-}  

@@ -2,6 +2,8 @@
 # Which is the identification code associated with the cultural resource X by holder X ?  
 # Qual è il codice identificativo associato alla risorsa culturale X dall'agente X?  
 
+# PS. Replace the CulturalResourceTitle and AgentName to be searched in row XX, column XX, and choose the language (after @)
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 SELECT ?CulturalResourceTitle ?IdentifierNumber ?AgentName  
@@ -12,5 +14,7 @@ WHERE{
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
   Optional{ ?Identifier ctp:hasNotation ?IdentifierNumber} .
   Optional{ ?Organization rdfs:label ?AgentName } .
+  #FILTER(?CulturalResourceTitle = "X"@lang).  
+  #FILTER(?AgentName = "X"@lang).  
 }  
 LIMIT 100  
