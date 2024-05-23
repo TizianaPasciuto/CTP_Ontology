@@ -2,13 +2,17 @@
 # Which is the internal identifier of the resource X in the XY catalog?  
 # Qual è l'identificativo interno della risorsa X nel catalogo XY?  
 
-# PS. Replace the CulturalResourceTitle and CatalogueTitle to be searched in row XX, column XX, and choose the language (after @)
+# PS. Replace the CulturalResourceTitle to be searched in row 12, column 35, and choose the language (after @)
 
-PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?CulturalResource ?rdfs  
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+SELECT ?IdentifierNumber  
 WHERE{  
-  ?CulturalResource ctp:hasPrimaryIdentifier ?rdfs.  
-  #FILTER(?CulturalResourceTitle = "X"@lang).  
-  #FILTER(?CatalogueTitle = "X"@lang).  
+  ?CulturalResource rdf:type ctp:CulturalResource.
+  ?CulturalResource ctp:hasTitle "Repetto Mariadiva"@it.  
+  ?CulturalResource ctp:hasPrimaryIdentifier ?IdentifierNumber.  
 }  
 LIMIT 100  
+
+
+#PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  

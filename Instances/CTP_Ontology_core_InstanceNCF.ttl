@@ -413,6 +413,7 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 ###  https://w3id.org/ctp/ncf#Caritro_Foundation
 :Caritro_Foundation rdf:type owl:NamedIndividual ,
                              ctp:Organization ;
+                    rdfs:label "Caritro Foundation, Cassa di risparmio di Trento e Rovereto"@en ;
                     ctp:hasName "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" ;
                     ctp:hasPlace <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> ;
                     ctp:hasPrimaryIdentifier "http://viaf.org/viaf/122717139"^^rdfs:Literal .
@@ -465,15 +466,15 @@ Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis,
 ###  https://w3id.org/ctp/ncf#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
-           rdfs:label "RTA_Creator"@en ;
+           rdfs:label "Creator"@en ;
            ctp:hasRole :Creator ;
-           ctp:involves :atizianapasciuto .
+           ctp:involves :Tiziana_Pasciuto .
 
 
 ###  https://w3id.org/ctp/ncf#Creator_2
 :Creator_2 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
-           rdfs:label "RTA_Creator"@en ;
+           rdfs:label "Creator"@en ;
            ctp:hasRole :Creator ;
            ctp:involves :Felice_Fontana .
 
@@ -793,6 +794,13 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
          ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85138478"^^rdfs:Literal .
 
 
+###  https://w3id.org/ctp/ncf#Tiziana_Pasciuto
+:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
+                           ctp:Person ;
+                  rdfs:label "Tiziana Pasciuto" ;
+                  ctp:hasName "Tiziana Pasciuto" .
+
+
 ###  https://w3id.org/ctp/ncf#Unknown
 :Unknown rdf:type owl:NamedIndividual ,
                   ctp:Person .
@@ -883,6 +891,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1751/1800> rdf:type owl:NamedIndividual ,
                                               ctp:Interval ;
                                      ctp:hasBeginning <https://w3id.org/ctp/ncf#1751> ;
+                                     ctp:hasDate "1751/1800" ;
                                      ctp:hasEnd <https://w3id.org/ctp/ncf#1800> .
 
 
@@ -902,6 +911,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1770/1801> rdf:type owl:NamedIndividual ,
                                               ctp:Interval ;
                                      ctp:hasBeginning <https://w3id.org/ctp/ncf#1770> ;
+                                     ctp:hasDate "1770/1801" ;
                                      ctp:hasEnd <https://w3id.org/ctp/ncf#1801> .
 
 
@@ -915,6 +925,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1772-02/1772-03> rdf:type owl:NamedIndividual ,
                                                     ctp:Interval ;
                                            ctp:hasBeginning <https://w3id.org/ctp/ncf#1772-02> ;
+                                           ctp:hasDate "1772-02/1772-03" ;
                                            ctp:hasEnd <https://w3id.org/ctp/ncf#1772-03> .
 
 
@@ -945,6 +956,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> rdf:type owl:NamedIndividual ,
                                                                             ctp:Organization ;
+                                                                   rdfs:label "Bibliothèque Nationale de France, Paris"@fr ;
                                                                    ctp:hasName "Bibliothèque Nationale de France, Paris" ;
                                                                    ctp:hasPlace <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> ;
                                                                    ctp:hasPrimaryIdentifier "http://viaf.org/viaf/137156173"^^rdfs:Literal .
@@ -953,6 +965,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> rdf:type owl:NamedIndividual ,
                                                                                     ctp:Place ;
+                                                                           rdfs:label "French National Library, Paris, France"@en ;
                                                                            ctp:hasCentroid "48.83486238506279, 2.376380044072828"^^rdfs:Literal ;
                                                                            ctp:hasTitle "Bibliothèque Nationale de France, Paris, France"@fr ,
                                                                                         "French National Library, Paris, France"@en .
@@ -961,6 +974,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Galileo_Museum,_Florence
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> rdf:type owl:NamedIndividual ,
                                                              ctp:Organization ;
+                                                    rdfs:label "Galileo Museum, Florence"@en ;
                                                     ctp:hasName "Galileo Museum, Florence" ;
                                                     ctp:hasPlace <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> ;
                                                     ctp:hasPrimaryIdentifier "http://viaf.org/viaf/154305136"^^rdfs:Literal .
@@ -969,6 +983,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> rdf:type owl:NamedIndividual ,
                                                                     ctp:Place ;
+                                                           rdfs:label "Galileo Museum, Florence, Italy"@en ;
                                                            ctp:hasCentroid "43.767681, 11.256023"^^rdfs:Literal ;
                                                            ctp:hasTitle "Galileo Museum, Florence, Italy"@en ,
                                                                         "Museo Galileo, Firenze, Italia"@it .
@@ -1047,6 +1062,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Municipal_Library,_Trento
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> rdf:type owl:NamedIndividual ,
                                                               ctp:Organization ;
+                                                     rdfs:label "Municipal Library, Trento"@en ;
                                                      ctp:hasName "Municipal Library, Trento" ;
                                                      ctp:hasPlace <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> ;
                                                      ctp:hasPrimaryIdentifier "http://viaf.org/viaf/134954430"^^rdfs:Literal .
@@ -1055,6 +1071,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> rdf:type owl:NamedIndividual ,
                                                                      ctp:Place ;
+                                                            rdfs:label "Municipal Library, Trento, Italy"@en ;
                                                             ctp:hasCentroid "46.06989050592277, 11.12094077734737"^^rdfs:Literal ;
                                                             ctp:hasTitle "Biblioteca Comunale, Trento, Italia"@it ,
                                                                          "Municipal Library, Trento, Italy"@en .
@@ -1063,6 +1080,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> rdf:type owl:NamedIndividual ,
                                                                       ctp:Place ;
+                                                             rdfs:label "de Marini street, 6, Genoa, Italy"@en ;
                                                              ctp:hasCentroid "44.40872901586253, 8.901019601274273"^^rdfs:Literal ;
                                                              ctp:hasTitle "Via de Marini, 6, Genova, Italia"@it ,
                                                                           "de Marini street, 6, Genoa, Italy"@en .
@@ -1071,6 +1089,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> rdf:type owl:NamedIndividual ,
                                                                     ctp:Place ;
+                                                           rdfs:label "del Ben Palace, Rovereto, Italy"@en ;
                                                            ctp:hasCentroid "45.89093124502353, 11.043967838719587"^^rdfs:Literal ;
                                                            ctp:hasTitle "Palazzo del Ben, Rovereto, Italia"@it ,
                                                                         "del Ben Palace, Rovereto, Italy"@en .

@@ -7,8 +7,15 @@
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceType 
-WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource.  
+WHERE{
+  {
+    ?ThematicPath ctp:hasPart ?CulturalResource.
+  }
+  UNION
+  {
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.
+  }    
   ?CulturalResource ctp:hasType ?Type.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .  

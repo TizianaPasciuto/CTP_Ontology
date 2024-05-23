@@ -7,9 +7,16 @@
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?CulturalResourceTitle ?ThematicPathTitle  
 WHERE{  
-  ?CulturalResource ctp:isPartOf ?ThematicPath. 
+ {
+    ?ThematicPath ctp:hasPart ?CulturalResource.
+  }
+  UNION
+  {
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.
+  }    
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .   
-  #FILTER(?ThematicPathTitle = "X"@lang).
+  FILTER(?ThematicPathTitle = "Sezione Lavoro"@it).
 }  
 LIMIT 100 

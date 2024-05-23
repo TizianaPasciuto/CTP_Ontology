@@ -1,20 +1,21 @@
 # CQ23
-# Which is the identification code associated with the cultural resource X by holder X ?  
-# Qual è il codice identificativo associato alla risorsa culturale X dall'agente X?  
+# Which is the identification code associated with the cultural resource X by holder Y ?  
+# Qual è il codice identificativo associato alla risorsa culturale X dall'agente Y?  
 
-# PS. Replace the CulturalResourceTitle and AgentName to be searched in row XX, column XX, and choose the language (after @)
+# PS. Replace the CulturalResourceTitle in row 13, column 35, and AgentName in row 18, column 24, and for both choose the language (after @)
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?CulturalResourceTitle ?IdentifierNumber ?AgentName  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?IdentifierNumber ?CulturalResourceTitle ?AgentName  
 WHERE{  
-  ?CulturalResource ctp:hasSecondaryIdentifier ?Idenfier. 
-  ?Identifier ctp:hasNotation ?rdfs. 
-  ?Identifier ctp:hasCreator ?Organization.  
+  ?CulturalResource rdf:type ctp:CulturalResource.
+  ?CulturalResource ctp:hasTitle "Repetto Mariadiva"@it.  
+  ?CulturalResource ctp:hasSecondaryIdentifier ?Identifier. 
+  ?Identifier ctp:hasNotation ?IdentifierNumber.
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
-  Optional{ ?Identifier ctp:hasNotation ?IdentifierNumber} .
   Optional{ ?Organization rdfs:label ?AgentName } .
-  #FILTER(?CulturalResourceTitle = "X"@lang).  
-  #FILTER(?AgentName = "X"@lang).  
+  FILTER(?AgentName = "Ansaldo Foundation"@en).  
 }  
+GROUP BY ?IdentifierNumber ?CulturalResourceTitle ?AgentName
 LIMIT 100  

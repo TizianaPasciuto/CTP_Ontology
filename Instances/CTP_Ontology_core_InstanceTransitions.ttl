@@ -321,6 +321,7 @@ ctp:Type rdf:type owl:Class .
 ###  https://w3id.org/ctp/transitions#Ansaldo_Foundation
 :Ansaldo_Foundation rdf:type owl:NamedIndividual ,
                              ctp:Organization ;
+                    rdfs:label "Ansaldo Foundation"@en ;
                     ctp:hasMember :Ansaldo_Foundation_staff ;
                     ctp:hasName "Ansaldo Foundation" ;
                     ctp:hasPlace <https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo,_Genoa,_Italy> ;
@@ -408,7 +409,7 @@ ctp:Type rdf:type owl:Class .
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
            ctp:hasRole :Creator ;
-           ctp:involves :atizianapasciuto .
+           ctp:involves :Tiziana_Pasciuto .
 
 
 ###  https://w3id.org/ctp/transitions#Creator_2
@@ -637,6 +638,13 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
                             "Società"@it .
 
 
+###  https://w3id.org/ctp/transitions#Tiziana_Pasciuto
+:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
+                           ctp:Person ;
+                  rdfs:label "Tiziana Pasciuto" ;
+                  ctp:hasName "Tiziana Pasciuto" .
+
+
 ###  https://w3id.org/ctp/transitions#Transitions
 :Transitions rdf:type owl:NamedIndividual ,
                       ctp:ThematicPath ;
@@ -689,7 +697,8 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 ###  https://w3id.org/ctp/transitions#Transitions_theme
 :Transitions_theme rdf:type owl:NamedIndividual ,
                             ctp:Theme ;
-                   ctp:hasDescription "Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."^^rdfs:Literal ;
+                   ctp:hasDescription "Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."@en ,
+                                      "Testo di approfondimento - Riflessione sul tema delle transizioni del XX secolo che coinvolgono imprese, lavoro e società come motori del cambiamento."@it ;
                    ctp:hasSubject :Enterprise ,
                                   :Society ,
                                   :Work ;
@@ -793,6 +802,7 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
                                              rdfs:label "Industrial revolution"@en ,
                                                         "Rivoluzione industriale"@it ;
                                              ctp:hasBeginning <https://w3id.org/ctp/transitions#1850> ;
+                                             ctp:hasDate "1850/2023" ;
                                              ctp:hasEnd <https://w3id.org/ctp/transitions#2023> .
 
 

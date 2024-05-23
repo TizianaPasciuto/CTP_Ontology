@@ -4,10 +4,10 @@
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-SELECT * 
+SELECT ?Definition 
 WHERE{  
-  ?ThematicPath rdfs:comment ?rdfs.
-  FILTER (?rdfs = "ctp:ThematicPath")
+  ctp:ThematicPath rdfs:comment ?Definition.
+  #FILTER(LANG(?Definition) ="en").
 }  
 
 LIMIT 100  

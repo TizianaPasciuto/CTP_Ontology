@@ -2,12 +2,19 @@
 # Which thematic paths have been funded by the same agent?  
 # Quali percorsi tematici sono stati finanziati dallo stesso agente?  
 
-PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPath ?Agent ?Role  
-WHERE{  
-  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
-  ?RelationToAgent ctp:hasRole ?Role FILTER regex(?Role, "funder", "i").  
-  ?RelationToAgent ctp:involves ?Agent.  
-}  
-LIMIT 10  
+PREFIX ctp: <https://w3id.org/ctp#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?ThematicPathTitle ?AgentName ?RoleLabel
+WHERE {  
+  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.
+  ?RelationToAgent ctp:hasRole ?Role .
+  ?RelationToAgent ctp:involves ?Agent.
+  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle }.
+  OPTIONAL { ?Role rdfs:label ?RoleLabel }.
+  OPTIONAL { ?Agent ctp:hasName ?AgentName }.
+  FILTER regex(?RoleLabel, "funder", "i").
+}
+LIMIT 10
+
 

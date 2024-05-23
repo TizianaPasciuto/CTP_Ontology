@@ -2,13 +2,20 @@
 # By whom were the objects of the thematic path X made?  
 # Da chi sono stati realizzati gli oggetti del percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 19, column 33, and choose the language (after @)
+# PS. Replace the ThematicPathTitle to be searched in row 26, column 33, and choose the language (after @)
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName  
 WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource.  
+  {
+    ?ThematicPath ctp:hasPart ?CulturalResource.
+  }
+  UNION
+  {
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.
+  }
   ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role. 
   ?Role rdfs:label ?Creator.
@@ -17,6 +24,6 @@ WHERE{
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
   Optional{?Agent ctp:hasName ?AgentName}. 
   #FILTER(?ThematicPathTitle = "X"@lang).
-}  
-LIMIT 10  
+}
+LIMIT 100
   

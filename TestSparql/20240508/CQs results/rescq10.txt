@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------
+| ThematicPathTitle                         | AgentName          | RoleLabel    |
+=================================================================================
+| "La strada per Santiago de Compostela"@it | "Tiziana Pasciuto" | "Creator"@en |
+| "Transizioni"@it                          | "Tiziana Pasciuto" | "Creator"@en |
+| "Anatomy"@en                              | "Tiziana Pasciuto" | "Creator"@en |
+| "Poisons"@en                              | "Tiziana Pasciuto" | "Creator"@en |
+| "Road to Santiago de Compostela"@en       | "Tiziana Pasciuto" | "Creator"@en |
+| "Transitions"@en                          | "Tiziana Pasciuto" | "Creator"@en |
+| "Novum Corpus Fontanianum"@la             | "Tiziana Pasciuto" | "Creator"@en |
+---------------------------------------------------------------------------------

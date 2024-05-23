@@ -7,12 +7,19 @@
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate
 WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource . 
+   {
+    ?ThematicPath ctp:hasPart ?CulturalResource.
+  }
+  UNION
+  {
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.
+  }
   ?CulturalResource ctp:hasTime ?TemporalEntity. 
-  ?TemporalEntity ctp:hasDate  ?date.
+  ?TemporalEntity ctp:hasDate  ?CulturalResourceDate.
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} . 
-  Optional{ ?TemporalEntity ctp:hasDate ?CulturalResourceDate} . 
   #FILTER(?ThematicPathTitle = "X"@lang).
 }  
+GROUP BY ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate
 LIMIT 100  

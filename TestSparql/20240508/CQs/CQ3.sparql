@@ -8,7 +8,14 @@ PREFIX ctp: <https://w3id.org/ctp#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>   
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?PlaceName
 WHERE{  
-  ?ThematicPath ctp:hasPart ?CulturalResource.  
+  {
+    ?ThematicPath ctp:hasPart ?CulturalResource.
+  }
+  UNION
+  {
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.
+  }
   ?CulturalResource ctp:isPreservedBy ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role.  
   ?Role rdfs:label ?Holder.
@@ -19,4 +26,5 @@ WHERE{
   Optional{?Place ctp:hasTitle ?PlaceName}.
   #FILTER(?ThematicPathTitle = "X"@lang).
 }  
+GROUP BY ?ThematicPathTitle ?CulturalResourceTitle ?PlaceName  
 LIMIT 100  

@@ -2,21 +2,20 @@
 # Which thematic paths have been created by the same agent?  
 # Quali percorsi tematici sono stati realizzati dallo stesso agente?  
 
-PREFIX ctp: <https://w3id.org/ctp#>  
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX ctp: <https://w3id.org/ctp#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-SELECT ?ThematicPathTitle ?RoleLabel ?AgentName
-WHERE{
-  ?ThematicPath rdf:type ctp:ThematicPath.
-  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
-  #?RelationToAgent ctp:hasRole ?Role. 
-  ?RelationToAgent ctp:involves ?Agent.   
-     Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
-     Optional{?Role rdfs:label ?RoleLabel}.
-     Optional{?Agent ctp:hasName ?AgentName}.
-     Optional{?Role rdfs:label ?RoleType}.
-  FILTER(?RoleType = "RTA_Creator"@en).
-}
-  
-LIMIT 100  
+
+SELECT ?ThematicPathTitle ?AgentName ?RoleLabel
+WHERE {
+  ?ThematicPath rdf:type ctp:ThematicPath .
+  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.
+  ?RelationToAgent ctp:hasRole ?Role.
+  ?RelationToAgent ctp:involves ?Agent.
+  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle }.
+  OPTIONAL { ?Role rdfs:label ?RoleLabel }.
+  OPTIONAL { ?Agent ctp:hasName ?AgentName }.
+  FILTER regex(?RoleLabel, "creator", "i").
+  }
+GROUP BY ?ThematicPathTitle ?AgentName ?RoleLabel
+LIMIT 100

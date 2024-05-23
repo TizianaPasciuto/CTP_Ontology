@@ -1,9 +1,13 @@
 # CQ9
 # Which cultural resources are part of more than one thematic path?  
 # Quali risorse culturali sono parte di più percorsi tematici?  
-PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT *  
+
+PREFIX ctp: <https://w3id.org/ctp#>
+SELECT ?CulturalResourceTitle (COUNT(?ThematicPath) AS ?PathCount)
 WHERE{  
-  ?CulturalResource ctp:isPartOf ?ThematicPath FILTER regex(?ThematicPath, {2,}, "i").   
-}  
-LIMIT 10 
+  ?CulturalResource ctp:isPartOf ?ThematicPath .
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} . 
+}
+GROUP BY ?CulturalResourceTitle
+HAVING (?PathCount > 1)
+LIMIT 100

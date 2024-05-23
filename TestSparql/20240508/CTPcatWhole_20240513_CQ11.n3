@@ -154,11 +154,11 @@
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPartOf> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
-_:Bc46370ceb5d6b780f672acd1ebcce04f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
-_:Bc46370ceb5d6b780f672acd1ebcce04f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B39cdc726d091986e755de29044daa436 .
-_:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
-_:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Bc46370ceb5d6b780f672acd1ebcce04f .
+_:Bb0a07c60f399b2c3bf99134690f3d317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
+_:Bb0a07c60f399b2c3bf99134690f3d317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B59afc0c033f6175f52f69382b6fd05ca .
+_:B59afc0c033f6175f52f69382b6fd05ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
+_:B59afc0c033f6175f52f69382b6fd05ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Bb0a07c60f399b2c3bf99134690f3d317 .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
@@ -615,13 +615,13 @@ _:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Bf31792cc6421ad6cd71fe8058a942ae6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:Bf31792cc6421ad6cd71fe8058a942ae6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B4a74f818b1261a9b11f2db4680551d4e .
-_:B4a74f818b1261a9b11f2db4680551d4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:B4a74f818b1261a9b11f2db4680551d4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf31792cc6421ad6cd71fe8058a942ae6 .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:Ba9de06fdad7fd5d998f75a3143bc9753 .
+_:B7a661e5e6a57b9ccf7227779aee8488e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B4449e105e550d1da1c825e2fd54941d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:B4449e105e550d1da1c825e2fd54941d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B90c76650ffb4038f16ceddc0f033ee82 .
+_:B90c76650ffb4038f16ceddc0f033ee82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:B90c76650ffb4038f16ceddc0f033ee82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B7a661e5e6a57b9ccf7227779aee8488e <http://www.w3.org/2002/07/owl#unionOf> _:B4449e105e550d1da1c825e2fd54941d1 .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:B7a661e5e6a57b9ccf7227779aee8488e .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -814,7 +814,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#CNR_IMATI_Genoa_staff> <https://w3id.org/ctp#memberOf> <https://w3id.org/ctp/ncf#cnrImati> .
 <https://w3id.org/ctp/ncf#Caritro_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Caritro_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/ncf#Caritro_Foundation> <http://www.w3.org/2000/01/rdf-schema#label> "Caritro Foundation, Cassa di risparmio di Trento e Rovereto"@en .
 <https://w3id.org/ctp/ncf#Caritro_Foundation> <https://w3id.org/ctp#hasName> "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" .
 <https://w3id.org/ctp/ncf#Caritro_Foundation> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> .
 <https://w3id.org/ctp/ncf#Caritro_Foundation> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/122717139"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
@@ -846,12 +845,12 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#Creator> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://vocab.getty.edu/page/aat/300386174"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
-<https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<https://w3id.org/ctp/ncf#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "RTA_Creator"@en .
 <https://w3id.org/ctp/ncf#Creator_1> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/ncf#Creator> .
-<https://w3id.org/ctp/ncf#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/ncf#Tiziana_Pasciuto> .
+<https://w3id.org/ctp/ncf#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/ncf#atizianapasciuto> .
 <https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
-<https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<https://w3id.org/ctp/ncf#Creator_2> <http://www.w3.org/2000/01/rdf-schema#label> "RTA_Creator"@en .
 <https://w3id.org/ctp/ncf#Creator_2> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/ncf#Creator> .
 <https://w3id.org/ctp/ncf#Creator_2> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/ncf#Felice_Fontana> .
 <https://w3id.org/ctp/ncf#Dei_moti_dell_iride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1055,10 +1054,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#Ticunas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Subject> .
 <https://w3id.org/ctp/ncf#Ticunas> <http://www.w3.org/2000/01/rdf-schema#label> "Ticunas"@en .
 <https://w3id.org/ctp/ncf#Ticunas> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://id.loc.gov/authorities/subjects/sh85138478"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/ctp/ncf#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp/ncf#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp/ncf#Tiziana_Pasciuto> <http://www.w3.org/2000/01/rdf-schema#label> "Tiziana Pasciuto" .
-<https://w3id.org/ctp/ncf#Tiziana_Pasciuto> <https://w3id.org/ctp#hasName> "Tiziana Pasciuto" .
 <https://w3id.org/ctp/ncf#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
 <https://w3id.org/ctp/ncf#Veterinary_Anatomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1118,7 +1113,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#1751/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1751/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1751> .
-<https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasDate> "1751/1800" .
 <https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1800> .
 <https://w3id.org/ctp/ncf#1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1129,7 +1123,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#1770/1801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1770/1801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1770> .
-<https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasDate> "1770/1801" .
 <https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1801> .
 <https://w3id.org/ctp/ncf#1772-02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1137,7 +1130,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1772-02> .
-<https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasDate> "1772-02/1772-03" .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1772-03> .
 <https://w3id.org/ctp/ncf#1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1153,25 +1145,21 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#1801> <https://w3id.org/ctp#hasDate> "1801"^^<http://www.w3.org/2001/XMLSchema#gYear> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliothèque Nationale de France, Paris"@fr .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasName> "Bibliothèque Nationale de France, Paris" .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/137156173"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
-<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <http://www.w3.org/2000/01/rdf-schema#label> "French National Library, Paris, France"@en .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <https://w3id.org/ctp#hasCentroid> "48.83486238506279, 2.376380044072828"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <https://w3id.org/ctp#hasTitle> "Bibliothèque Nationale de France, Paris, France"@fr .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <https://w3id.org/ctp#hasTitle> "French National Library, Paris, France"@en .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Museum, Florence"@en .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <https://w3id.org/ctp#hasName> "Galileo Museum, Florence" .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/154305136"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
-<https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <http://www.w3.org/2000/01/rdf-schema#label> "Galileo Museum, Florence, Italy"@en .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <https://w3id.org/ctp#hasCentroid> "43.767681, 11.256023"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <https://w3id.org/ctp#hasTitle> "Galileo Museum, Florence, Italy"@en .
 <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> <https://w3id.org/ctp#hasTitle> "Museo Galileo, Firenze, Italia"@it .
@@ -1220,25 +1208,21 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#linkToResource> "https://geca.imati.cnr.it/detail_pages.php?view=BAU&voice_code=LST-BAU&fcode=SHOW&ref_idk=IT/ItRC/BAU/00000474"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <http://www.w3.org/2000/01/rdf-schema#label> "Municipal Library, Trento"@en .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <https://w3id.org/ctp#hasName> "Municipal Library, Trento" .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/134954430"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
-<https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <http://www.w3.org/2000/01/rdf-schema#label> "Municipal Library, Trento, Italy"@en .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <https://w3id.org/ctp#hasCentroid> "46.06989050592277, 11.12094077734737"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <https://w3id.org/ctp#hasTitle> "Biblioteca Comunale, Trento, Italia"@it .
 <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> <https://w3id.org/ctp#hasTitle> "Municipal Library, Trento, Italy"@en .
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
-<https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <http://www.w3.org/2000/01/rdf-schema#label> "de Marini street, 6, Genoa, Italy"@en .
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <https://w3id.org/ctp#hasCentroid> "44.40872901586253, 8.901019601274273"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <https://w3id.org/ctp#hasTitle> "Via de Marini, 6, Genova, Italia"@it .
 <https://w3id.org/ctp/ncf#de_Marini_street,_6,_Genoa,_Italy> <https://w3id.org/ctp#hasTitle> "de Marini street, 6, Genoa, Italy"@en .
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Place> .
-<https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <http://www.w3.org/2000/01/rdf-schema#label> "del Ben Palace, Rovereto, Italy"@en .
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <https://w3id.org/ctp#hasCentroid> "45.89093124502353, 11.043967838719587"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <https://w3id.org/ctp#hasTitle> "Palazzo del Ben, Rovereto, Italia"@it .
 <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> <https://w3id.org/ctp#hasTitle> "del Ben Palace, Rovereto, Italy"@en .
@@ -1354,7 +1338,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#isPartOf> <https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela> .
 <https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> <http://www.w3.org/2000/01/rdf-schema#label> "Council of Europe"@en .
 <https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> <https://w3id.org/ctp#hasName> "Council of Europe" .
 <https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> .
 <https://w3id.org/ctp/santiagodecompostela#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1365,7 +1348,7 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/santiagodecompostela#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp/santiagodecompostela#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
 <https://w3id.org/ctp/santiagodecompostela#Creator_1> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/santiagodecompostela#Creator> .
-<https://w3id.org/ctp/santiagodecompostela#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> .
+<https://w3id.org/ctp/santiagodecompostela#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/santiagodecompostela#atizianapasciuto> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasDescription> "La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica.\nUno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna.\nDal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo.\nNegli ultimi anni sono stati compiuti sforzi di conservazione per salvaguardare la Iglesia de San Salvador de Vilar de Donas per le generazioni future. Questi sforzi mirano non solo a proteggere l'integrità architettonica della chiesa, ma anche a onorare il suo ricco lascito storico e significato culturale. Attraverso progetti di restauro e manutenzione continua, la chiesa continua a ergersi come un monumento vivente allo spirito duraturo di fede, patrimonio e tradizione in Galizia, Spagna.\nNel complesso, la Iglesia de San Salvador de Vilar de Donas è più di un luogo di culto: è un simbolo di resilienza, perseveranza e del duraturo lascito della Spagna medievale. Mentre i visitatori varcano le sue sacre porte e si immergono nel suo passato ricco di storia, vengono trasportati indietro nel tempo a un'epoca di cavalleria, pietà e bellezza senza tempo."@it .
@@ -1444,23 +1427,19 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/santiagodecompostela#Strada_Nuova> <https://w3id.org/ctp#hasTitle> "Via Giuseppe Garibaldi"@it .
 <https://w3id.org/ctp/santiagodecompostela#Strada_Nuova> <https://w3id.org/ctp#hasType> <https://w3id.org/ctp/santiagodecompostela#Architectural_heritage> .
 <https://w3id.org/ctp/santiagodecompostela#Strada_Nuova> <https://w3id.org/ctp#isPartOf> <https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela> .
-<https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> <http://www.w3.org/2000/01/rdf-schema#label> "Tiziana Pasciuto" .
-<https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> <https://w3id.org/ctp#hasName> "Tiziana Pasciuto" .
 <https://w3id.org/ctp/santiagodecompostela#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Subject> .
 <https://w3id.org/ctp/santiagodecompostela#Tradition> <http://www.w3.org/2000/01/rdf-schema#label> "Tradition"@en .
 <https://w3id.org/ctp/santiagodecompostela#Tradition> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://id.loc.gov/authorities/subjects/sh85136755"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
+<https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/2000/01/rdf-schema#label> "XIII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1201> .
-<https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasDate> "XIII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1300> .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
+<https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/2000/01/rdf-schema#label> "XII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1101> .
-<https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasDate> "XII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1200> .
 <https://w3id.org/ctp/santiagodecompostela#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
@@ -1631,7 +1610,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Ansaldo_Family> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/211013856"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/transitions#Ansaldo_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Ansaldo_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/transitions#Ansaldo_Foundation> <http://www.w3.org/2000/01/rdf-schema#label> "Ansaldo Foundation"@en .
 <https://w3id.org/ctp/transitions#Ansaldo_Foundation> <https://w3id.org/ctp#hasMember> <https://w3id.org/ctp/transitions#Ansaldo_Foundation_staff> .
 <https://w3id.org/ctp/transitions#Ansaldo_Foundation> <https://w3id.org/ctp#hasName> "Ansaldo Foundation" .
 <https://w3id.org/ctp/transitions#Ansaldo_Foundation> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo,_Genoa,_Italy> .
@@ -1672,6 +1650,9 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#CNR_IMATI_Genoa_staff> <https://w3id.org/ctp#hasMember> <https://w3id.org/ctp/transitions#crobertamaggi> .
 <https://w3id.org/ctp/transitions#CNR_IMATI_Genoa_staff> <https://w3id.org/ctp#hasName> "CNR IMATI Genoa staff" .
 <https://w3id.org/ctp/transitions#CNR_IMATI_Genoa_staff> <https://w3id.org/ctp#memberOf> <https://w3id.org/ctp/transitions#cnrImati> .
+<https://w3id.org/ctp/transitions#Caritro_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ctp/transitions#Caritro_Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
+<https://w3id.org/ctp/transitions#Caritro_Foundation> <https://w3id.org/ctp#hasName> "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" .
 <https://w3id.org/ctp/transitions#Catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Type> .
 <https://w3id.org/ctp/transitions#Catalogue> <http://www.w3.org/2000/01/rdf-schema#label> "Catalogue"@en .
@@ -1686,7 +1667,7 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Creator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp/transitions#Creator_1> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
 <https://w3id.org/ctp/transitions#Creator_1> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/transitions#Creator> .
-<https://w3id.org/ctp/transitions#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/transitions#Tiziana_Pasciuto> .
+<https://w3id.org/ctp/transitions#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/transitions#atizianapasciuto> .
 <https://w3id.org/ctp/transitions#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Creator_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
 <https://w3id.org/ctp/transitions#Creator_2> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
@@ -1732,6 +1713,14 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Enterprise_theme> <https://w3id.org/ctp#hasSubject> <https://w3id.org/ctp/transitions#Industrial_energy> .
 <https://w3id.org/ctp/transitions#Enterprise_theme> <https://w3id.org/ctp#hasTitle> "Enterprise"@en .
 <https://w3id.org/ctp/transitions#Enterprise_theme> <https://w3id.org/ctp#hasTitle> "Impresa"@it .
+<https://w3id.org/ctp/transitions#Funder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ctp/transitions#Funder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Role> .
+<https://w3id.org/ctp/transitions#Funder> <http://www.w3.org/2000/01/rdf-schema#label> "Funder"@en .
+<https://w3id.org/ctp/transitions#Funder_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ctp/transitions#Funder_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#RelationToAgent> .
+<https://w3id.org/ctp/transitions#Funder_1> <http://www.w3.org/2000/01/rdf-schema#label> "Funder"@en .
+<https://w3id.org/ctp/transitions#Funder_1> <https://w3id.org/ctp#hasRole> <https://w3id.org/ctp/transitions#Funder> .
+<https://w3id.org/ctp/transitions#Funder_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/transitions#Caritro_Foundation> .
 <https://w3id.org/ctp/transitions#GBA.000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#GBA.000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Identifier> .
 <https://w3id.org/ctp/transitions#GBA.000028> <https://w3id.org/ctp#hasCreator> <https://w3id.org/ctp/transitions#Ansaldo_Foundation> .
@@ -1825,10 +1814,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Society_theme> <https://w3id.org/ctp#hasSubject> <https://w3id.org/ctp/transitions#Society> .
 <https://w3id.org/ctp/transitions#Society_theme> <https://w3id.org/ctp#hasTitle> "Society"@en .
 <https://w3id.org/ctp/transitions#Society_theme> <https://w3id.org/ctp#hasTitle> "Società"@it .
-<https://w3id.org/ctp/transitions#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/ctp/transitions#Tiziana_Pasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
-<https://w3id.org/ctp/transitions#Tiziana_Pasciuto> <http://www.w3.org/2000/01/rdf-schema#label> "Tiziana Pasciuto" .
-<https://w3id.org/ctp/transitions#Tiziana_Pasciuto> <https://w3id.org/ctp#hasName> "Tiziana Pasciuto" .
 <https://w3id.org/ctp/transitions#Transitions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Transitions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#allowsTheSaleOf> <https://w3id.org/ctp/transitions#Transitions_catalogue> .
@@ -1840,6 +1825,7 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasPrimaryIdentifier> "cod123450670rrrroas"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/transitions#Creator_1> .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/transitions#Curator_1> .
+<https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/transitions#Funder_1> .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasTheme> <https://w3id.org/ctp/transitions#Transitions_theme> .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasTitle> "Transitions"@en .
 <https://w3id.org/ctp/transitions#Transitions> <https://w3id.org/ctp#hasTitle> "Transizioni"@it .
@@ -1866,8 +1852,7 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#takesPlaceIn> <https://w3id.org/ctp/transitions#Falcone_Theater,_Royal_Palace,_Genoa,_Italy> .
 <https://w3id.org/ctp/transitions#Transitions_theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Transitions_theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Theme> .
-<https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasDescription> "Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."@en .
-<https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasDescription> "Testo di approfondimento - Riflessione sul tema delle transizioni del XX secolo che coinvolgono imprese, lavoro e società come motori del cambiamento."@it .
+<https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasDescription> "Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasSubject> <https://w3id.org/ctp/transitions#Enterprise> .
 <https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasSubject> <https://w3id.org/ctp/transitions#Society> .
 <https://w3id.org/ctp/transitions#Transitions_theme> <https://w3id.org/ctp#hasSubject> <https://w3id.org/ctp/transitions#Work> .
@@ -1938,7 +1923,6 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/transitions#1850/2023> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial revolution"@en .
 <https://w3id.org/ctp/transitions#1850/2023> <http://www.w3.org/2000/01/rdf-schema#label> "Rivoluzione industriale"@it .
 <https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/transitions#1850> .
-<https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasDate> "1850/2023" .
 <https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/transitions#2023> .
 <https://w3id.org/ctp/transitions#1904-09-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#1904-09-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .

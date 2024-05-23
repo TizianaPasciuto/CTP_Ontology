@@ -354,6 +354,7 @@ It is one of the buildings that best represents the type of Romanesque church th
 ###  https://w3id.org/ctp/santiagodecompostela#Council_of_Europe
 :Council_of_Europe rdf:type owl:NamedIndividual ,
                             ctp:Organization ;
+                   rdfs:label "Council of Europe"@en ;
                    ctp:hasName "Council of Europe" ;
                    ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> .
 
@@ -370,7 +371,7 @@ It is one of the buildings that best represents the type of Romanesque church th
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
            ctp:hasRole :Creator ;
-           ctp:involves :atizianapasciuto .
+           ctp:involves :Tiziana_Pasciuto .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas
@@ -499,6 +500,13 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
               ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
+###  https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto
+:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
+                           ctp:Person ;
+                  rdfs:label "Tiziana Pasciuto" ;
+                  ctp:hasName "Tiziana Pasciuto" .
+
+
 ###  https://w3id.org/ctp/santiagodecompostela#Tradition
 :Tradition rdf:type owl:NamedIndividual ,
                     ctp:Subject ;
@@ -509,16 +517,16 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
 ###  https://w3id.org/ctp/santiagodecompostela#XIII_century
 :XIII_century rdf:type owl:NamedIndividual ,
                        ctp:Interval ;
-              rdfs:label "XIII century"@en ;
               ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
+              ctp:hasDate "XIII century"@en ;
               ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#XII_century
 :XII_century rdf:type owl:NamedIndividual ,
                       ctp:Interval ;
-             rdfs:label "XII century"@en ;
              ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
+             ctp:hasDate "XII century"@en ;
              ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
 
 

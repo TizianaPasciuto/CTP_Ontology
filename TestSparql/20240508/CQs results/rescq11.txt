@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------------------
+| ThematicPathTitle             | AgentName                                                     | RoleLabel   |
+===============================================================================================================
+| "Novum Corpus Fontanianum"@la | "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" | "Funder"@en |
+| "Transizioni"@it              | "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" | "Funder"@en |
+| "Transitions"@en              | "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" | "Funder"@en |
+---------------------------------------------------------------------------------------------------------------
