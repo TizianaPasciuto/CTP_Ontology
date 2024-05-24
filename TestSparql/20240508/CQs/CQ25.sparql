@@ -5,11 +5,10 @@
 # example with year 2024
 
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPathTitle ?date  
+SELECT ?ThematicPathTitle ?Date  
 WHERE{  
-  ?ThematicPath ctp:hasCreationDate ?xsd.  
-  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} . 
-  Optional{ ?ThematicPath ctp:hasCreationDate ?date} . 
-  FILTER (?date >= "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> && ?date <="2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>)
+  ?ThematicPath ctp:hasCreationDate ?Date.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  FILTER (?Date >= "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> && ?Date <="2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>)  
 }  
 LIMIT 100  

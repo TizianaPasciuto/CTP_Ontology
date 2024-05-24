@@ -2,14 +2,14 @@
 # To which agent is the thematic path X inspired by?  
 # A quale agente è ispirato il percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 13, column 33, and choose the language (after @)
+# PS. Replace the ThematicPathTitle to be searched in row 13, column 32, and choose the language after @.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?AgentName  
 WHERE{  
   ?ThematicPath ctp:isInspiredByAgent ?Agent.  
-  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
-  Optional{ ?Agent ctp:hasName ?AgentName} .  
-  #FILTER(?ThematicPathTitle = "X"@lang).
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}. 
+  Optional{ ?Agent ctp:hasName ?AgentName}.  
+  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
 }  
-LIMIT 10   
+LIMIT 100   

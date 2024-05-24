@@ -2,12 +2,12 @@
 # Which cultural resources are part of more than one thematic path?  
 # Quali risorse culturali sono parte di più percorsi tematici?  
 
-PREFIX ctp: <https://w3id.org/ctp#>
-SELECT ?CulturalResourceTitle (COUNT(?ThematicPath) AS ?PathCount)
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?CulturalResourceTitle (COUNT(?ThematicPath) AS ?PathCount)  
 WHERE{  
-  ?CulturalResource ctp:isPartOf ?ThematicPath .
-  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} . 
-}
-GROUP BY ?CulturalResourceTitle
-HAVING (?PathCount > 1)
-LIMIT 100
+  ?CulturalResource ctp:isPartOf ?ThematicPath.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+}  
+GROUP BY ?CulturalResourceTitle  
+HAVING (?PathCount > 1)  
+LIMIT 100  

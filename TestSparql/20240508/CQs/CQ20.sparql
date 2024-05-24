@@ -2,16 +2,15 @@
 # Where can cultural resources related to the thematic path X be viewed?
 # Dove sono visualizzabili gli oggetti legati al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 14, column 33, and choose the language (after @)
+# PS. Replace the ThematicPathTitle to be searched in row 14, column 32, and choose the language after @.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?CulturalResourceTitle ?ThematicPathTitle ?Link   
+SELECT ?CulturalResourceTitle ?ThematicPathTitle ?Link  
 WHERE{  
   ?CulturalResource ctp:isPartOf ?ThematicPath.  
   ?CulturalResource ctp:linkToResource ?Link.  
-  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .  
-  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle} .
-  #FILTER(?ThematicPathTitle = "X"@lang).
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
 }  
-
 LIMIT 100  

@@ -2,14 +2,14 @@
 # Which are the places related to the thematic path X?  
 # Quali sono i luoghi legati al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 13, column 33, and choose the language (after @)
+# PS. Replace the ThematicPathTitle to be searched in row 13, column 32, and choose the language, after @.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?PlaceName  
 WHERE{  
   ?ThematicPath ctp:refersToPlace ?Place.  
-  Optional{ ?Place ctp:hasTitle ?PlaceName} .
-  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle} .
-  #FILTER(?ThematicPathTitle = "X"@lang).
+  Optional{ ?Place ctp:hasTitle ?PlaceName}.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
 }  
-LIMIT 10  
+LIMIT 100  

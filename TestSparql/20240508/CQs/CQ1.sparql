@@ -3,11 +3,10 @@
 # Che cosa è un percorso tematico?  
 
 PREFIX ctp: <https://w3id.org/ctp#>  
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-SELECT ?Definition 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?Definition  
 WHERE{  
-  ctp:ThematicPath rdfs:comment ?Definition.
-  #FILTER(LANG(?Definition) ="en").
+  ctp:ThematicPath rdfs:comment ?Definition.  
+  #FILTER(LANG(?Definition) ="en").  
 }  
-
-LIMIT 100  
+LIMIT 10  

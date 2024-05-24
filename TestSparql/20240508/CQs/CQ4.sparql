@@ -2,17 +2,17 @@
 # To which historical period does thematic path X refer?  
 # A quale periodo storico fa riferimento il percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 16, column 33, and choose the language (after @)
+# PS. Replace the ThematicPathTitle to be searched in row 14, column 32, and choose the language after @.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 SELECT ?ThematicPathTitle ?TemporalEntityLabel  
 WHERE{  
   ?ThematicPath ctp:refersToTemporalEntity ?TemporalEntity.  
-  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.
-  Optional{ ?TemporalEntity rdfs:label ?TemporalEntityLabel} .
-  FILTER(
-    LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?TemporalEntityLabel),'en'))
-  #FILTER(?ThematicPathTitle = "X"@lang).
-}
-LIMIT 10  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{ ?TemporalEntity rdfs:label ?TemporalEntityLabel}.  
+  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
+  #FILTER(  
+    #LANGMATCHES(LANG(?ThematicPathTitle),'en') && LANGMATCHES(LANG(?TemporalEntityLabel),'en'))  
+}  
+LIMIT 100  

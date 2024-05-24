@@ -154,11 +154,11 @@
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPartOf> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
-_:Bc46370ceb5d6b780f672acd1ebcce04f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
-_:Bc46370ceb5d6b780f672acd1ebcce04f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B39cdc726d091986e755de29044daa436 .
-_:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
-_:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Bc46370ceb5d6b780f672acd1ebcce04f .
+_:B8affcc15a7a282636d72189971e77387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
+_:B8affcc15a7a282636d72189971e77387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B7019601dd73e11470bd8bf955a1ca5aa .
+_:B7019601dd73e11470bd8bf955a1ca5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
+_:B7019601dd73e11470bd8bf955a1ca5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B8affcc15a7a282636d72189971e77387 .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
@@ -615,13 +615,13 @@ _:B39cdc726d091986e755de29044daa436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Bf31792cc6421ad6cd71fe8058a942ae6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:Bf31792cc6421ad6cd71fe8058a942ae6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B4a74f818b1261a9b11f2db4680551d4e .
-_:B4a74f818b1261a9b11f2db4680551d4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:B4a74f818b1261a9b11f2db4680551d4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf31792cc6421ad6cd71fe8058a942ae6 .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:Ba9de06fdad7fd5d998f75a3143bc9753 .
+_:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B40ed6b6260ef0bf2da47d6f7b50232ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:B40ed6b6260ef0bf2da47d6f7b50232ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B588c17432b86a6f0a98aea62904d9cd7 .
+_:B588c17432b86a6f0a98aea62904d9cd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:B588c17432b86a6f0a98aea62904d9cd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B40ed6b6260ef0bf2da47d6f7b50232ba .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:Bca3224d513385655b912c82adffdd228 .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -1105,7 +1105,7 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#hasTitle> "Lettre de M. l'Abbé Fontana à M. le Duc de Chaulnes"@fr .
 <https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#hasType> <https://w3id.org/ctp/ncf#Article> .
 <https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#isPartOf> <https://w3id.org/ctp/ncf#Novum_Corpus_Fontanianum> .
-<https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#isPreservedBy> <https://w3id.org/ctp/ncf#Holder_3> .
+<https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#isPreservedBy> <https://w3id.org/ctp/ncf#Holder_2> .
 <https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes> <https://w3id.org/ctp#linkToResource> "https://geca.imati.cnr.it/detail_pages.php?view=SPO&voice_code=LST-SPO&fcode=SHOW&ref_idk=IT/ItRC/SP/00038967"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#universitaDiGenova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
@@ -1153,8 +1153,8 @@ _:Ba9de06fdad7fd5d998f75a3143bc9753 <http://www.w3.org/2002/07/owl#unionOf> _:Bf
 <https://w3id.org/ctp/ncf#1801> <https://w3id.org/ctp#hasDate> "1801"^^<http://www.w3.org/2001/XMLSchema#gYear> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
-<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliothèque Nationale de France, Paris"@fr .
-<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasName> "Bibliothèque Nationale de France, Paris" .
+<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <http://www.w3.org/2000/01/rdf-schema#label> "French National Library, Paris"@en .
+<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasName> "Bibliothèque Nationale de France" .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasPlace> <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://viaf.org/viaf/137156173"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

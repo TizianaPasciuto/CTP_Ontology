@@ -869,7 +869,7 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
                                                     ctp:hasTitle "Lettre de M. l'Abbé Fontana à M. le Duc de Chaulnes"@fr ;
                                                     ctp:hasType :Article ;
                                                     ctp:isPartOf :Novum_Corpus_Fontanianum ;
-                                                    ctp:isPreservedBy :Holder_3 ;
+                                                    ctp:isPreservedBy :Holder_2 ;
                                                     ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=SPO&voice_code=LST-SPO&fcode=SHOW&ref_idk=IT/ItRC/SP/00038967"^^rdfs:Literal .
 
 
@@ -956,8 +956,8 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> rdf:type owl:NamedIndividual ,
                                                                             ctp:Organization ;
-                                                                   rdfs:label "Bibliothèque Nationale de France, Paris"@fr ;
-                                                                   ctp:hasName "Bibliothèque Nationale de France, Paris" ;
+                                                                   rdfs:label "French National Library, Paris"@en ;
+                                                                   ctp:hasName "Bibliothèque Nationale de France" ;
                                                                    ctp:hasPlace <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> ;
                                                                    ctp:hasPrimaryIdentifier "http://viaf.org/viaf/137156173"^^rdfs:Literal .
 
