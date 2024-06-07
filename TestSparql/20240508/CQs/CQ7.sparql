@@ -2,24 +2,42 @@
 # When were the objects linked to the thematic path X made?  
 # Quando sono stati realizzati gli oggetti collegati al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 22, column 32, and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 37, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
-SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate  
-WHERE{  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?BeginningDate ?EndDate
+WHERE{ 
+  { 
    {  
     ?ThematicPath ctp:hasPart ?CulturalResource.  
-  }  
+    }  
   UNION  
-  {  
+    {  
     ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
     ?OrderedListSlot ctp:hasItem ?CulturalResource.  
+    }
   }  
-  ?CulturalResource ctp:hasTime ?TemporalEntity.  
-  ?TemporalEntity ctp:hasDate  ?CulturalResourceDate.  
+  {
+    {
+      ?CulturalResource ctp:hasTime ?TemporalEntity.  
+      ?TemporalEntity ctp:hasDate  ?BeginningDate.  
+    } 
+  UNION
+    {  
+      ?CulturalResource ctp:hasBeginning ?BDate.
+      ?BDate ctp:hasDate ?BeginningDate.
+      ?CulturalResource ctp:hasEnd ?EDate.
+      ?EDate ctp:hasDate ?EndDate.  
+    }
+  }
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
-  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
-}  
-GROUP BY ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceDate  
+  ?ThematicPath ctp:hasTitle ?p.  
+  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}
+#GROUP BY ?ThematicPathTitle ?CulturalResourceTitle ?Date  
 LIMIT 100  
+
+
+

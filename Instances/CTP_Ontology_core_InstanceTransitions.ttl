@@ -680,12 +680,14 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
 ###  https://w3id.org/ctp/transitions#Transitions_exhibition
 :Transitions_exhibition rdf:type owl:NamedIndividual ,
                                  ctp:CulturalEvent ;
+                        ctp:hasBeginning <https://w3id.org/ctp/transitions#2023-02-22> ;
                         ctp:hasDescription """Mostra TRANSIZIONI Ι impresa – lavoro – società Una mostra che invita a riflettere sui grandi cambiamenti del Novecento attraverso fotografie, filmati e opere d’arte.
 Palazzo Reale, Teatro del Falcone dal 22 febbraio al 10 aprile 2023 – PROROGATA AL 25 APRILE 2023
 Palazzo Reale di Genova, ospita nella sua sede espositiva del Teatro del Falcone, fino al 25 aprile 2023 la mostra a cura della Fondazione Ansaldo TRANSIZIONI Ι impresa – lavoro – società. Le grandi transizioni del Novecento sono i temi attorno ai quali si snoda il percorso espositivo, suddiviso in tre macroaree: Impresa, Lavoro e Società. Il ricco corredo fotografico e audiovisivo proveniente dagli archivi della Fondazione è ulteriormente impreziosito da una nutrita selezione di opere d’arte provenienti da musei pubblici e collezioni private che hanno lo scopo di illustrare il rapporto arte-industria. Infine, ampio spazio è dato alla Street art, forma di arte contemporanea e urbana per eccellenza, simbolo delle nevrosi, dei bisogni, della rabbia e dei desideri delle nuove generazioni.
 Approfondimento alla pagina della Fondazione Ansaldo
 Ingresso gratuito
 Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orari e biglietti"""@it ;
+                        ctp:hasEnd <https://w3id.org/ctp/transitions#2023-04-25> ;
                         ctp:hasRelationToAgent :Curator_1 ;
                         ctp:hasTime <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> ;
                         ctp:hasTitle "Mostra Transizioni"@it ,
@@ -802,7 +804,6 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
                                              rdfs:label "Industrial revolution"@en ,
                                                         "Rivoluzione industriale"@it ;
                                              ctp:hasBeginning <https://w3id.org/ctp/transitions#1850> ;
-                                             ctp:hasDate "1850/2023" ;
                                              ctp:hasEnd <https://w3id.org/ctp/transitions#2023> .
 
 
@@ -839,8 +840,8 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 ###  https://w3id.org/ctp/transitions#2023-02-22/2023-04-25
 <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> rdf:type owl:NamedIndividual ,
                                                                   ctp:Interval ;
+                                                         rdfs:label "2023-02-22/2023-04-24" ;
                                                          ctp:hasBeginning <https://w3id.org/ctp/transitions#2023-02-22> ;
-                                                         ctp:hasDate "2023-02-22/2023-04-24" ;
                                                          ctp:hasEnd <https://w3id.org/ctp/transitions#2023-04-25> .
 
 

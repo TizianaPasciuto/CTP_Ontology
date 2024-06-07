@@ -2,7 +2,7 @@
 # By whom were the objects of the thematic path X made?  
 # Da chi sono stati realizzati gli oggetti del percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 26, column 32, and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 27, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
@@ -23,7 +23,8 @@ WHERE{
   Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
   Optional{?Agent ctp:hasName ?AgentName}.  
-  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
+  ?ThematicPath ctp:hasTitle ?p.  
+  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
   FILTER(BOUND(?AgentName))  
 }  
 LIMIT 100  

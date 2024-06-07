@@ -154,11 +154,11 @@
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPartOf> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
-_:B8affcc15a7a282636d72189971e77387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
-_:B8affcc15a7a282636d72189971e77387 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B7019601dd73e11470bd8bf955a1ca5aa .
-_:B7019601dd73e11470bd8bf955a1ca5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
-_:B7019601dd73e11470bd8bf955a1ca5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B8affcc15a7a282636d72189971e77387 .
+_:B517286f53397c3ac6cee3a1031dd0ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
+_:B517286f53397c3ac6cee3a1031dd0ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B42a767a4eb30b293d3229caeb66d58e0 .
+_:B42a767a4eb30b293d3229caeb66d58e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
+_:B42a767a4eb30b293d3229caeb66d58e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B517286f53397c3ac6cee3a1031dd0ab2 .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
@@ -615,13 +615,13 @@ _:B7019601dd73e11470bd8bf955a1ca5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:B40ed6b6260ef0bf2da47d6f7b50232ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:B40ed6b6260ef0bf2da47d6f7b50232ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B588c17432b86a6f0a98aea62904d9cd7 .
-_:B588c17432b86a6f0a98aea62904d9cd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:B588c17432b86a6f0a98aea62904d9cd7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B40ed6b6260ef0bf2da47d6f7b50232ba .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:Bca3224d513385655b912c82adffdd228 .
+_:B4895a0d4efc91a33f3347556396e4800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B63fdaf84ec98e675154449096e166420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:B63fdaf84ec98e675154449096e166420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B113be4dbcc902a18301714568682bd63 .
+_:B113be4dbcc902a18301714568682bd63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:B113be4dbcc902a18301714568682bd63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B4895a0d4efc91a33f3347556396e4800 <http://www.w3.org/2002/07/owl#unionOf> _:B63fdaf84ec98e675154449096e166420 .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:B4895a0d4efc91a33f3347556396e4800 .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -869,12 +869,14 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#Dei_moti_dell_iride> <https://w3id.org/ctp#linkToResource> "https://geca.imati.cnr.it/detail_pages.php?view=RBI&voice_code=LST-RBI&fcode=SHOW&ref_idk=IT/ItRC/00585214"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Double_barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Double_barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1751> .
+<https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasDate> <https://w3id.org/ctp/ncf#1751/1800> .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasDescription> "Questo barometro doppio, montato su un supporto di legno e ottone, è formato da due tubi collegati tra loro, uno terminante a forma di ampolla e l'altro con uno spinotto d'avorio, inseriti in un unico contenitore di ferro. Un rubinetto consente di porre i tubi in comunicazione; due manopole a vite, comprimendo delle membrane di cuoio, permettono di regolare l'altezza del mercurio nei tubi. Le scale barometriche, divise in pollici parigini, sono munite di nonii scorrevoli. Si tratta probabilmente di uno strumento utilizzato per esperienze da laboratorio, la cui ideazione è attribuita a Felice Fontana."@it .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasDescription> "This double barometer, mounted on a wooden and brass support, consists of two tubes connected to each other, one terminating in a bulb shape and the other with an ivory plug, inserted into a single iron container. A tap allows the tubes to be put in communication; two screw knobs, compressing leather membranes, allow the height of the mercury in the tubes to be adjusted. The barometric scales, divided into Parisian inches, are equipped with sliding verniers. It is probably an instrument used for laboratory experiments, whose design is attributed to Felice Fontana."@en .
+<https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1800> .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/ncf#Costructor_1> .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/ncf#Creator_2> .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasSecondaryIdentifier> <https://w3id.org/ctp/ncf#IT/ItRC/PST/00000001> .
-<https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasTime> <https://w3id.org/ctp/ncf#1751/1800> .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasTitle> "Barometro doppio"@it .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasTitle> "Double barometer"@en .
 <https://w3id.org/ctp/ncf#Double_barometer> <https://w3id.org/ctp#hasType> <https://w3id.org/ctp/ncf#Barometer> .
@@ -887,6 +889,8 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#Eye> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://id.loc.gov/authorities/subjects/sh85046642"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1770> .
+<https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1801> .
 <https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <https://w3id.org/ctp#hasSecondaryIdentifier> <https://w3id.org/ctp/ncf#IT/ItRC/BAL/00000006> .
 <https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <https://w3id.org/ctp#hasTime> <https://w3id.org/ctp/ncf#1770/1801> .
 <https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770> <https://w3id.org/ctp#hasTitle> "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it .
@@ -1118,7 +1122,6 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#1751/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1751/1800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1751> .
-<https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasDate> "1751/1800" .
 <https://w3id.org/ctp/ncf#1751/1800> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1800> .
 <https://w3id.org/ctp/ncf#1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1129,7 +1132,6 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#1770/1801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1770/1801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1770> .
-<https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasDate> "1770/1801" .
 <https://w3id.org/ctp/ncf#1770/1801> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1801> .
 <https://w3id.org/ctp/ncf#1772-02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1137,7 +1139,6 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1772-02> .
-<https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasDate> "1772-02/1772-03" .
 <https://w3id.org/ctp/ncf#1772-02/1772-03> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1772-03> .
 <https://w3id.org/ctp/ncf#1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#1772-03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1209,6 +1210,8 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/ncf#IT/ItRC/SP/00038967> <https://w3id.org/ctp#hasNotation> "IT/ItRC/SP/00038967"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/ncf#1772-02> .
+<https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/ncf#1772-03> .
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/ncf#Recipient_1> .
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/ncf#Sender_1> .
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> <https://w3id.org/ctp#hasSecondaryIdentifier> <https://w3id.org/ctp/ncf#IT/ItRC/BAU/00000474> .
@@ -1344,8 +1347,10 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/santiagodecompostela#Certification_body_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/santiagodecompostela#Council_of_Europe> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1201> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasDescription> "La piccola chiesa di Santa Croce è originaria della metà del XIII secolo ed è stata modificata nel corso del Seicento. L’impianto è quello di stile romanico, con navata unica e fronte a capanna, qui sormontata da un piccolo campanile a vela di fattura posteriore. Il portale voltato richiama nelle forme quello del muro verso il giardino e presenta una cornice superiore a sesto acuto; la nicchia collocata superiormente è frutto di una recente ricostruzione. Il semplice interno è ritmato da due archi a sesto acuto in laterizio impostati su pilastri in pietra connessi alle murature. Il confronto tra questo edificio e altri esempi simili del territorio, inclusa la chiesa di Santo Stefano ad Assisi, ha messo in luce come la chiesa di Santa Croce appaia singolarmente ridotta nella lunghezza e priva di catino absidale. È ipotizzabile quindi che le proporzioni originarie fossero più allungate e la copertura absidale fosse voltata È datato invece 1643 l’affresco che arricchisce la parete di fondo: attribuito al pittore assisano Gerolamo Marinelli, vi sono raffigurate Sant’Elena e la Vergine in adorazione della nuda Croce. Come ricorda lo storico dell’arte Bruno Toscano, il tema che pone come protagonista il lignum crucis, ossia la croce in sé priva della figura di Cristo, era piuttosto frequente e includeva solitamente Sant’Elena e il figlio Costantino, l’imperatore."@it .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasDescription> "The small church of Santa Croce dates back to the mid-13th century and was modified during the seventeenth century. Its layout follows Romanesque style, with a single nave and a gabled facade, topped by a small later-built sail-shaped bell tower. The arched portal resembles that of the garden-facing wall and features an upper pointed arch frame; the niche placed above is a recent reconstruction. The simple interior is punctuated by two pointed brick arches supported by stone pillars connected to the walls. Comparing this building to other similar examples in the area, including the church of Santo Stefano in Assisi, highlights how the church of Santa Croce appears notably shorter in length and lacking an apse. It is therefore hypothesized that the original proportions were more elongated and the apse was vaulted. The fresco adorning the rear wall is dated to 1643: attributed to the Assisi painter Gerolamo Marinelli, it depicts Saint Helena and the Virgin adoring the naked Cross. As art historian Bruno Toscano recalls, the theme featuring the lignum crucis, the cross itself without the figure of Christ, was quite common and typically included Saint Helena and her son Constantine, the emperor."@en .
+<https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1300> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasLocation> <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasTime> <https://w3id.org/ctp/santiagodecompostela#XIII_century> .
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross> <https://w3id.org/ctp#hasTitle> "Chiesa di Santa Croce"@it .
@@ -1368,8 +1373,10 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/santiagodecompostela#Creator_1> <https://w3id.org/ctp#involves> <https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalResource> .
+<https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1101> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasDescription> "La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica.\nUno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna.\nDal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo.\nNegli ultimi anni sono stati compiuti sforzi di conservazione per salvaguardare la Iglesia de San Salvador de Vilar de Donas per le generazioni future. Questi sforzi mirano non solo a proteggere l'integrità architettonica della chiesa, ma anche a onorare il suo ricco lascito storico e significato culturale. Attraverso progetti di restauro e manutenzione continua, la chiesa continua a ergersi come un monumento vivente allo spirito duraturo di fede, patrimonio e tradizione in Galizia, Spagna.\nNel complesso, la Iglesia de San Salvador de Vilar de Donas è più di un luogo di culto: è un simbolo di resilienza, perseveranza e del duraturo lascito della Spagna medievale. Mentre i visitatori varcano le sue sacre porte e si immergono nel suo passato ricco di storia, vengono trasportati indietro nel tempo a un'epoca di cavalleria, pietà e bellezza senza tempo."@it .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasDescription> "The Iglesia de San Salvador de Vilar de Donas stands as a testament to both the religious and military history of medieval Spain. Nestled in the picturesque village of Vilar de Donas in the province of Lugo, this Romanesque church embodies centuries of cultural significance and architectural beauty.\nOne of the most striking aspects of this church is its historical connection to the Order of Santiago, a prominent military order established during the Reconquista period in Spain. The church served as a focal point for the activities of the order, functioning not only as a place of worship but also as a headquarters and burial site for its members. This association with the Order of Santiago lends a unique and compelling dimension to the church's history, reflecting the intertwining of religious devotion and military valor during this tumultuous period in Spain's past.\nArchitecturally, the Iglesia de San Salvador de Vilar de Donas is a prime example of Romanesque design, characterized by its simple yet elegant aesthetic. The church's stone construction and distinctive features, such as its rectangular apse and sturdy buttresses, showcase the craftsmanship and ingenuity of medieval builders. Inside, visitors are treated to a visual feast of frescoes dating back to the 15th century, offering a glimpse into the artistic mastery of the period and providing insights into religious narratives and symbolism.\nIn recent years, preservation efforts have been undertaken to safeguard the Iglesia de San Salvador de Vilar de Donas for future generations. These efforts not only aim to protect the architectural integrity of the church but also seek to honor its rich historical legacy and cultural significance. Through restoration projects and ongoing maintenance, the church continues to stand as a living monument to the enduring spirit of faith, heritage, and tradition in Galicia, Spain.\nOverall, the Iglesia de San Salvador de Vilar de Donas is more than just a place of worship—it is a symbol of resilience, perseverance, and the enduring legacy of medieval Spain. As visitors step through its hallowed doors and immerse themselves in its storied past, they are transported back in time to an era of chivalry, piety, and timeless beauty."@en .
+<https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1200> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasLocation> <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasTime> <https://w3id.org/ctp/santiagodecompostela#XII_century> .
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas> <https://w3id.org/ctp#hasTitle> "Chiesa di San Salvador de Vilar de Donas"@it .
@@ -1454,13 +1461,13 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/santiagodecompostela#Tradition> <https://w3id.org/ctp#hasPrimaryIdentifier> "http://id.loc.gov/authorities/subjects/sh85136755"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
+<https://w3id.org/ctp/santiagodecompostela#XIII_century> <http://www.w3.org/2000/01/rdf-schema#label> "XIII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1201> .
-<https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasDate> "XIII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XIII_century> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1300> .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
+<https://w3id.org/ctp/santiagodecompostela#XII_century> <http://www.w3.org/2000/01/rdf-schema#label> "XII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/santiagodecompostela#1101> .
-<https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasDate> "XII century"@en .
 <https://w3id.org/ctp/santiagodecompostela#XII_century> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/santiagodecompostela#1200> .
 <https://w3id.org/ctp/santiagodecompostela#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/santiagodecompostela#atizianapasciuto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
@@ -1857,7 +1864,9 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/transitions#Transitions_catalogue> <https://w3id.org/ctp#isSelledBy> "https://erga.it/catalogo/transizioni-transitions-impresa-lavoro-societa-industry-work-society/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#CulturalEvent> .
+<https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/transitions#2023-02-22> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasDescription> "Mostra TRANSIZIONI Ι impresa – lavoro – società Una mostra che invita a riflettere sui grandi cambiamenti del Novecento attraverso fotografie, filmati e opere d’arte.\nPalazzo Reale, Teatro del Falcone dal 22 febbraio al 10 aprile 2023 – PROROGATA AL 25 APRILE 2023\nPalazzo Reale di Genova, ospita nella sua sede espositiva del Teatro del Falcone, fino al 25 aprile 2023 la mostra a cura della Fondazione Ansaldo TRANSIZIONI Ι impresa – lavoro – società. Le grandi transizioni del Novecento sono i temi attorno ai quali si snoda il percorso espositivo, suddiviso in tre macroaree: Impresa, Lavoro e Società. Il ricco corredo fotografico e audiovisivo proveniente dagli archivi della Fondazione è ulteriormente impreziosito da una nutrita selezione di opere d’arte provenienti da musei pubblici e collezioni private che hanno lo scopo di illustrare il rapporto arte-industria. Infine, ampio spazio è dato alla Street art, forma di arte contemporanea e urbana per eccellenza, simbolo delle nevrosi, dei bisogni, della rabbia e dei desideri delle nuove generazioni.\nApprofondimento alla pagina della Fondazione Ansaldo\nIngresso gratuito\nOrari di apertura coincidenti con quelli del Museo consultabili alla pagina Orari e biglietti"@it .
+<https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/transitions#2023-04-25> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasRelationToAgent> <https://w3id.org/ctp/transitions#Curator_1> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasTime> <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> .
 <https://w3id.org/ctp/transitions#Transitions_exhibition> <https://w3id.org/ctp#hasTitle> "Mostra Transizioni"@it .
@@ -1938,7 +1947,6 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/transitions#1850/2023> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial revolution"@en .
 <https://w3id.org/ctp/transitions#1850/2023> <http://www.w3.org/2000/01/rdf-schema#label> "Rivoluzione industriale"@it .
 <https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/transitions#1850> .
-<https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasDate> "1850/2023" .
 <https://w3id.org/ctp/transitions#1850/2023> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/transitions#2023> .
 <https://w3id.org/ctp/transitions#1904-09-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#1904-09-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .
@@ -1957,8 +1965,8 @@ _:Bca3224d513385655b912c82adffdd228 <http://www.w3.org/2002/07/owl#unionOf> _:B4
 <https://w3id.org/ctp/transitions#2023-02-22> <https://w3id.org/ctp#hasDate> "2023-02-22"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Interval> .
+<https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <http://www.w3.org/2000/01/rdf-schema#label> "2023-02-22/2023-04-24" .
 <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <https://w3id.org/ctp#hasBeginning> <https://w3id.org/ctp/transitions#2023-02-22> .
-<https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <https://w3id.org/ctp#hasDate> "2023-02-22/2023-04-24" .
 <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> <https://w3id.org/ctp#hasEnd> <https://w3id.org/ctp/transitions#2023-04-25> .
 <https://w3id.org/ctp/transitions#2023-04-25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/transitions#2023-04-25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Istant> .

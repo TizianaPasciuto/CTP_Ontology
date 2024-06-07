@@ -341,8 +341,10 @@ It is one of the buildings that best represents the type of Romanesque church th
 ###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross
 :Church_of_the_Holy_Cross rdf:type owl:NamedIndividual ,
                                    ctp:CulturalResource ;
+                          ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
                           ctp:hasDescription "La piccola chiesa di Santa Croce è originaria della metà del XIII secolo ed è stata modificata nel corso del Seicento. L’impianto è quello di stile romanico, con navata unica e fronte a capanna, qui sormontata da un piccolo campanile a vela di fattura posteriore. Il portale voltato richiama nelle forme quello del muro verso il giardino e presenta una cornice superiore a sesto acuto; la nicchia collocata superiormente è frutto di una recente ricostruzione. Il semplice interno è ritmato da due archi a sesto acuto in laterizio impostati su pilastri in pietra connessi alle murature. Il confronto tra questo edificio e altri esempi simili del territorio, inclusa la chiesa di Santo Stefano ad Assisi, ha messo in luce come la chiesa di Santa Croce appaia singolarmente ridotta nella lunghezza e priva di catino absidale. È ipotizzabile quindi che le proporzioni originarie fossero più allungate e la copertura absidale fosse voltata È datato invece 1643 l’affresco che arricchisce la parete di fondo: attribuito al pittore assisano Gerolamo Marinelli, vi sono raffigurate Sant’Elena e la Vergine in adorazione della nuda Croce. Come ricorda lo storico dell’arte Bruno Toscano, il tema che pone come protagonista il lignum crucis, ossia la croce in sé priva della figura di Cristo, era piuttosto frequente e includeva solitamente Sant’Elena e il figlio Costantino, l’imperatore."@it ,
                                              "The small church of Santa Croce dates back to the mid-13th century and was modified during the seventeenth century. Its layout follows Romanesque style, with a single nave and a gabled facade, topped by a small later-built sail-shaped bell tower. The arched portal resembles that of the garden-facing wall and features an upper pointed arch frame; the niche placed above is a recent reconstruction. The simple interior is punctuated by two pointed brick arches supported by stone pillars connected to the walls. Comparing this building to other similar examples in the area, including the church of Santo Stefano in Assisi, highlights how the church of Santa Croce appears notably shorter in length and lacking an apse. It is therefore hypothesized that the original proportions were more elongated and the apse was vaulted. The fresco adorning the rear wall is dated to 1643: attributed to the Assisi painter Gerolamo Marinelli, it depicts Saint Helena and the Virgin adoring the naked Cross. As art historian Bruno Toscano recalls, the theme featuring the lignum crucis, the cross itself without the figure of Christ, was quite common and typically included Saint Helena and her son Constantine, the emperor."@en ;
+                          ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> ;
                           ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross,_Assisi,_Italy> ;
                           ctp:hasTime :XIII_century ;
                           ctp:hasTitle "Chiesa di Santa Croce"@it ,
@@ -377,6 +379,7 @@ It is one of the buildings that best represents the type of Romanesque church th
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas
 :Iglesia_de_San_Salvador_de_Vilar_de_Donas rdf:type owl:NamedIndividual ,
                                                     ctp:CulturalResource ;
+                                           ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
                                            ctp:hasDescription """La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica.
 Uno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna.
 Dal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo.
@@ -387,6 +390,7 @@ One of the most striking aspects of this church is its historical connection to 
 Architecturally, the Iglesia de San Salvador de Vilar de Donas is a prime example of Romanesque design, characterized by its simple yet elegant aesthetic. The church's stone construction and distinctive features, such as its rectangular apse and sturdy buttresses, showcase the craftsmanship and ingenuity of medieval builders. Inside, visitors are treated to a visual feast of frescoes dating back to the 15th century, offering a glimpse into the artistic mastery of the period and providing insights into religious narratives and symbolism.
 In recent years, preservation efforts have been undertaken to safeguard the Iglesia de San Salvador de Vilar de Donas for future generations. These efforts not only aim to protect the architectural integrity of the church but also seek to honor its rich historical legacy and cultural significance. Through restoration projects and ongoing maintenance, the church continues to stand as a living monument to the enduring spirit of faith, heritage, and tradition in Galicia, Spain.
 Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place of worship—it is a symbol of resilience, perseverance, and the enduring legacy of medieval Spain. As visitors step through its hallowed doors and immerse themselves in its storied past, they are transported back in time to an era of chivalry, piety, and timeless beauty."""@en ;
+                                           ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> ;
                                            ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas,_Palas_de_Rei,_Spain> ;
                                            ctp:hasTime :XII_century ;
                                            ctp:hasTitle "Chiesa di San Salvador de Vilar de Donas"@it ,
@@ -517,16 +521,16 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
 ###  https://w3id.org/ctp/santiagodecompostela#XIII_century
 :XIII_century rdf:type owl:NamedIndividual ,
                        ctp:Interval ;
+              rdfs:label "XIII century"@en ;
               ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
-              ctp:hasDate "XIII century"@en ;
               ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#XII_century
 :XII_century rdf:type owl:NamedIndividual ,
                       ctp:Interval ;
+             rdfs:label "XII century"@en ;
              ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
-             ctp:hasDate "XII century"@en ;
              ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
 
 

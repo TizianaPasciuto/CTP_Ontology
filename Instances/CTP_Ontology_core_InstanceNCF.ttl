@@ -499,12 +499,14 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
 ###  https://w3id.org/ctp/ncf#Double_barometer
 :Double_barometer rdf:type owl:NamedIndividual ,
                            ctp:CulturalResource ;
+                  ctp:hasBeginning <https://w3id.org/ctp/ncf#1751> ;
+                  ctp:hasDate <https://w3id.org/ctp/ncf#1751/1800> ;
                   ctp:hasDescription "Questo barometro doppio, montato su un supporto di legno e ottone, è formato da due tubi collegati tra loro, uno terminante a forma di ampolla e l'altro con uno spinotto d'avorio, inseriti in un unico contenitore di ferro. Un rubinetto consente di porre i tubi in comunicazione; due manopole a vite, comprimendo delle membrane di cuoio, permettono di regolare l'altezza del mercurio nei tubi. Le scale barometriche, divise in pollici parigini, sono munite di nonii scorrevoli. Si tratta probabilmente di uno strumento utilizzato per esperienze da laboratorio, la cui ideazione è attribuita a Felice Fontana."@it ,
                                      "This double barometer, mounted on a wooden and brass support, consists of two tubes connected to each other, one terminating in a bulb shape and the other with an ivory plug, inserted into a single iron container. A tap allows the tubes to be put in communication; two screw knobs, compressing leather membranes, allow the height of the mercury in the tubes to be adjusted. The barometric scales, divided into Parisian inches, are equipped with sliding verniers. It is probably an instrument used for laboratory experiments, whose design is attributed to Felice Fontana."@en ;
+                  ctp:hasEnd <https://w3id.org/ctp/ncf#1800> ;
                   ctp:hasRelationToAgent :Costructor_1 ,
                                          :Creator_2 ;
                   ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/PST/00000001> ;
-                  ctp:hasTime <https://w3id.org/ctp/ncf#1751/1800> ;
                   ctp:hasTitle "Barometro doppio"@it ,
                                "Double barometer"@en ;
                   ctp:hasType :Barometer ;
@@ -523,6 +525,8 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
 ###  https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770
 :Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770 rdf:type owl:NamedIndividual ,
                                                                                      ctp:CulturalResource ;
+                                                                            ctp:hasBeginning <https://w3id.org/ctp/ncf#1770> ;
+                                                                            ctp:hasEnd <https://w3id.org/ctp/ncf#1801> ;
                                                                             ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/BAL/00000006> ;
                                                                             ctp:hasTime <https://w3id.org/ctp/ncf#1770/1801> ;
                                                                             ctp:hasTitle "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it ;
@@ -891,7 +895,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1751/1800> rdf:type owl:NamedIndividual ,
                                               ctp:Interval ;
                                      ctp:hasBeginning <https://w3id.org/ctp/ncf#1751> ;
-                                     ctp:hasDate "1751/1800" ;
                                      ctp:hasEnd <https://w3id.org/ctp/ncf#1800> .
 
 
@@ -911,7 +914,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1770/1801> rdf:type owl:NamedIndividual ,
                                               ctp:Interval ;
                                      ctp:hasBeginning <https://w3id.org/ctp/ncf#1770> ;
-                                     ctp:hasDate "1770/1801" ;
                                      ctp:hasEnd <https://w3id.org/ctp/ncf#1801> .
 
 
@@ -925,7 +927,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 <https://w3id.org/ctp/ncf#1772-02/1772-03> rdf:type owl:NamedIndividual ,
                                                     ctp:Interval ;
                                            ctp:hasBeginning <https://w3id.org/ctp/ncf#1772-02> ;
-                                           ctp:hasDate "1772-02/1772-03" ;
                                            ctp:hasEnd <https://w3id.org/ctp/ncf#1772-03> .
 
 
@@ -1048,6 +1049,8 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772
 <https://w3id.org/ctp/ncf#Lettera_di_Fontana_a_Caldani,_febbraio-marzo1772> rdf:type owl:NamedIndividual ,
                                                                                      ctp:CulturalResource ;
+                                                                            ctp:hasBeginning <https://w3id.org/ctp/ncf#1772-02> ;
+                                                                            ctp:hasEnd <https://w3id.org/ctp/ncf#1772-03> ;
                                                                             ctp:hasRelationToAgent :Recipient_1 ,
                                                                                                    :Sender_1 ;
                                                                             ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/BAU/00000474> ;

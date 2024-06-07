@@ -2,11 +2,11 @@
 # By whom and when were the objects belonging to the thematic path X made?  
 # Da chi e quando sono stati realizzati gli oggetti appartenenti al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 37, column 32, and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 31, column 25.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?CulturalResourceDate  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?BeginningDate ?EndDate  
 WHERE{  
   {  
     {  
@@ -26,15 +26,26 @@ WHERE{
       ?RelationToAgent ctp:hasRole ?Role.  
       ?Role rdfs:label ?Creator.  
       ?RelationToAgent ctp:involves ?Agent.  
-      Optional{?Agent ctp:hasName ?AgentName}.  
+      Optional{?Agent ctp:hasName ?AgentName}. 
+      ?ThematicPath ctp:hasTitle ?p.  
+      FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
     }  
     UNION  
-    {  
-      ?CulturalResource ctp:hasTime ?TemporalEntity.  
-      ?TemporalEntity ctp:hasDate  ?CulturalResourceDate.  
+    {
+      {
+        ?CulturalResource ctp:hasTime ?TemporalEntity.  
+        ?TemporalEntity ctp:hasDate  ?BeginningDate.  
+      } 
+    UNION
+      {  
+        ?CulturalResource ctp:hasBeginning ?BDate.
+        ?BDate ctp:hasDate ?BeginningDate.
+        ?CulturalResource ctp:hasEnd ?EDate.
+        ?EDate ctp:hasDate ?EndDate.  
+      }
     }  
   }  
-  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
+  #FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG). 
 }  
 LIMIT 100  
 

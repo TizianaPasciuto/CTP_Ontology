@@ -2,13 +2,15 @@
 # How is it possible to access the thematic path X?  
 # Come è possibile accedere al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 12, column 32 and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 14, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?Link  
 WHERE{  
+  ?ThematicPath a ctp:ThematicPath.
   ?ThematicPath ctp:linkToResource ?Link  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
-  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
+  ?ThematicPath ctp:hasTitle ?p.  
+  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
 }  
 LIMIT 100  

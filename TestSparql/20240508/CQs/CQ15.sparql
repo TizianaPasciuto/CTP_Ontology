@@ -2,13 +2,14 @@
 # Which cultural, ethical and social values does the thematic path X want to convey?  
 # Quali valori culturali, etici e sociali vuole trasmettere il percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 12, column 32, and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 13, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?ThematicPathTitle ?Message  
 WHERE{  
   ?ThematicPath ctp:conveys ?Message.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
-  FILTER(?ThematicPathTitle = "InsertTitleHere"@LANG).  
+  ?ThematicPath ctp:hasTitle ?p.  
+  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
 }  
 LIMIT 100  

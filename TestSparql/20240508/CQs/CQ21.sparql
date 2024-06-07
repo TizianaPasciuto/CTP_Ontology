@@ -2,7 +2,7 @@
 # Which cultural resources are linked to the thematic path X?  
 # Quali risorse culturali sono collegate al percorso tematico X?  
 
-# PS. Replace the ThematicPathTitle to be searched in row 20, column 32, and choose the language after @.
+# P.S. Replace the ThematicPathTitle to be searched in row 21, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 SELECT ?CulturalResourceTitle ?ThematicPathTitle  
@@ -17,6 +17,7 @@ WHERE{
   }  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.   
-  FILTER(?ThematicPathTitle = "InserTitleHere"@LANG).  
+  ?ThematicPath ctp:hasTitle ?p.  
+  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
 }  
 LIMIT 100  
