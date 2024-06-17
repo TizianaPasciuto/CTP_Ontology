@@ -18,9 +18,6 @@
 
 <https://w3id.org/ctp/santiagodecompostela#> rdf:type owl:Ontology ;
                                               dcterms:created "2024-03-06"^^xsd:date ;
-                                              dcterms:creator :atizianapasciuto ,
-                                                              :briccardoalbertoni ,
-                                                              :crobertamaggi ;
                                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                               dcterms:title "Cultural Routes - Camino de Santiago de Compostela"@en ;
                                               dcterms:description: "Il seguente scenario mira a promuovere i principi fondamentali e i valori fondamentali della cultura europea attraverso l'istituzione di itinerari culturali. Questi itinerari non sono semplicemente percorsi fisici, ma veri e propri canali per il dialogo interculturale, servendo come mezzo per superare le barriere geografiche e le differenze storiche. Gli itinerari culturali diventano un veicolo per una comprensione più profonda della storia europea, creando un ponte tra il passato e il presente."@it ,
@@ -269,31 +266,70 @@ ctp:Type rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://orcid.org/0000-0001-5648-2713
-<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :briccardoalbertoni .
+###  http://id.loc.gov/authorities/subjects/sh85102131
+<http://id.loc.gov/authorities/subjects/sh85102131> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Pilgrim"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/santiagodecompostela#briccardoalbertoni
+###  http://id.loc.gov/authorities/subjects/sh85112549
+<http://id.loc.gov/authorities/subjects/sh85112549> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Religion"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85136755
+<http://id.loc.gov/authorities/subjects/sh85136755> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Tradition"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/153107650
+<http://viaf.org/viaf/153107650> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "Council of Europe"@en ;
+                                 ctp:hasName "Council of Europe" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/153107650"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300188572
+<http://vocab.getty.edu/aat/300188572> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Certification body"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300188572"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300386174
+<http://vocab.getty.edu/aat/300386174> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Creator"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174" .
+
+
+###  http://vocab.getty.edu/aat/300417850
+<http://vocab.getty.edu/aat/300417850> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Architectural heritage"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300417850"^^rdfs:Literal .
+
 
 ###  https://orcid.org/0000-0002-2440-2376
-<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :atizianapasciuto .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#atizianapasciuto
-
-###  https://w3id.org/ctp/santiagodecompostela#Architectural_heritage
-:Architectural_heritage rdf:type owl:NamedIndividual ,
-                                 ctp:Type ;
-                        rdfs:label "Architectural heritage"@en .
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ,
+                                                 ctp:Person ;
+                                        foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
+                                        ctp:hasName "Tiziana Pasciuto" ;
+                                        ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#CNR_IMATI_Genoa_staff
 :CNR_IMATI_Genoa_staff rdf:type owl:NamedIndividual ,
                                 ctp:Group ;
-                       ctp:hasMember :atizianapasciuto ,
-                                     :crobertamaggi ;
+                       ctp:hasMember <https://orcid.org/0000-0002-2440-2376> ,
+                                     :Roberta_Maggi ;
                        ctp:hasName "CNR IMATI Genoa staff" ;
                        ctp:memberOf :cnrImati .
 
@@ -320,22 +356,16 @@ It is one of the buildings that best represents the type of Romanesque church th
                                     ctp:hasTitle "Catedral de Santiago de Compostela"@es ,
                                                  "Cattedrale di Santiago de Compostela"@it ,
                                                  "Santiago de Compostela Cathedral"@en ;
-                                    ctp:hasType :Architectural_heritage ;
+                                    ctp:hasType <http://vocab.getty.edu/aat/300417850> ;
                                     ctp:isPartOf :Road_to_Santiago_de_Compostela .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Certification_body
-:Certification_body rdf:type owl:NamedIndividual ,
-                             ctp:Role ;
-                    rdfs:label "Certification body"@en .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Certification_body_1
 :Certification_body_1 rdf:type owl:NamedIndividual ,
                                ctp:RelationToAgent ;
                       rdfs:label "Certification body"@en ;
-                      ctp:hasRole :Certification_body ;
-                      ctp:involves :Council_of_Europe .
+                      ctp:hasRole <http://vocab.getty.edu/aat/300188572> ;
+                      ctp:involves <http://viaf.org/viaf/153107650> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross
@@ -349,31 +379,16 @@ It is one of the buildings that best represents the type of Romanesque church th
                           ctp:hasTime :XIII_century ;
                           ctp:hasTitle "Chiesa di Santa Croce"@it ,
                                        "Church of the Holy Cross"@en ;
-                          ctp:hasType :Architectural_heritage ;
+                          ctp:hasType <http://vocab.getty.edu/aat/300417850> ;
                           ctp:isPartOf :Road_to_Santiago_de_Compostela .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Council_of_Europe
-:Council_of_Europe rdf:type owl:NamedIndividual ,
-                            ctp:Organization ;
-                   rdfs:label "Council of Europe"@en ;
-                   ctp:hasName "Council of Europe" ;
-                   ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Creator
-:Creator rdf:type owl:NamedIndividual ,
-                  ctp:Role ;
-         rdfs:label "Creator"@en ;
-         ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300386174"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Tiziana_Pasciuto .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <https://orcid.org/0000-0002-2440-2376> .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas
@@ -396,7 +411,7 @@ Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place
                                            ctp:hasTitle "Chiesa di San Salvador de Vilar de Donas"@it ,
                                                         "Church of San Salvador de Vilar de Donas"@en ,
                                                         "Iglesia de San Salvador de Vilar de Donas"@es ;
-                                           ctp:hasType :Architectural_heritage ;
+                                           ctp:hasType <http://vocab.getty.edu/aat/300417850> ;
                                            ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
@@ -434,20 +449,6 @@ Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place
          ctp:previousItem :Index03 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela#Pilgrim
-:Pilgrim rdf:type owl:NamedIndividual ,
-                  ctp:Subject ;
-         rdfs:label "Pilgrim"@en ;
-         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Religion
-:Religion rdf:type owl:NamedIndividual ,
-                   ctp:Subject ;
-          rdfs:label "Religion"@en ;
-          ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
-
-
 ###  https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela
 :Road_to_Santiago_de_Compostela rdf:type owl:NamedIndividual ,
                                          ctp:ThematicPath ;
@@ -469,6 +470,13 @@ Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place
                                 ctp:refersToPlace <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela,_Spain> .
 
 
+###  https://w3id.org/ctp/santiagodecompostela#Roberta_Maggi
+:Roberta_Maggi rdf:type owl:NamedIndividual ,
+                        ctp:Person ;
+               ctp:hasName "Roberta Maggi" ;
+               ctp:memberOf :CNR_IMATI_Genoa_staff .
+
+
 ###  https://w3id.org/ctp/santiagodecompostela#Santiago_de_Compostela_pilgrim_routes
 :Santiago_de_Compostela_pilgrim_routes rdf:type owl:NamedIndividual ,
                                                 ctp:Theme ;
@@ -480,9 +488,9 @@ Viaggiare oggi - Ogni anno, centinaia di migliaia di viaggiatori si mettono in v
 Since the discovery of the supposed tomb of the saint in the 9th century, the Way of St. James became one of the most important Christian pilgrimages during the Middle Ages, as its completion guaranteed earning a plenary indulgence.
 Heritage - As a result of this pilgrimage, a rich heritage was formed. Tangible heritage such as places of worship, hospitals, accommodation facilities, bridges, as well as non-tangible heritage in the form of myths, legends and songs are present along the Santiago Routes and can be enjoyed by the traveller.
 Travelling today - Each year, hundreds of thousands of travellers set out to make their way to Santiago de Compostela. As there are endless numbers of branches to the route, it is common to begin the journey literally from one's doorstep. Most travel by foot, some by bicycle, and a few travel on horseback or by donkey, as some of their medieval counterparts did."""@en ;
-                                       ctp:hasSubject :Pilgrim ,
-                                                      :Religion ,
-                                                      :Tradition ;
+                                       ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85102131> ,
+                                                      <http://id.loc.gov/authorities/subjects/sh85112549> ,
+                                                      <http://id.loc.gov/authorities/subjects/sh85136755> ;
                                        ctp:hasTitle "Le Vie del pellegrinaggio a Santiago de Compostela"@it ,
                                                     "Santiago de Compostela pilgrim routes"@en .
 
@@ -500,22 +508,8 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
               ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1550> ;
               ctp:hasTitle "Strada Nuova"@it ,
                            "Via Giuseppe Garibaldi"@it ;
-              ctp:hasType :Architectural_heritage ;
+              ctp:hasType <http://vocab.getty.edu/aat/300417850> ;
               ctp:isPartOf :Road_to_Santiago_de_Compostela .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Tiziana_Pasciuto
-:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto" ;
-                  ctp:hasName "Tiziana Pasciuto" .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#Tradition
-:Tradition rdf:type owl:NamedIndividual ,
-                    ctp:Subject ;
-           rdfs:label "Tradition"@en ;
-           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#XIII_century
@@ -534,25 +528,6 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
              ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
 
 
-###  https://w3id.org/ctp/santiagodecompostela#atizianapasciuto
-:atizianapasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto"@en ;
-                  org:memberOf :cnrImati ,
-                               :universitaDiGenova ;
-                  foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
-                  foaf:name "Tiziana Pasciuto" .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#briccardoalbertoni
-:briccardoalbertoni rdf:type owl:NamedIndividual ,
-                             ctp:Person ;
-                    rdfs:label "Riccardo Albertoni"@en ;
-                    org:memberOf :cnrImati ;
-                    foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
-                    foaf:name "Riccardo Albertoni" .
-
-
 ###  https://w3id.org/ctp/santiagodecompostela#cnrImati
 :cnrImati rdf:type owl:NamedIndividual ,
                    ctp:Organization ;
@@ -561,22 +536,6 @@ Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà 
           foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" ;
           ctp:hasMember :CNR_IMATI_Genoa_staff ;
           ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy> .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#crobertamaggi
-:crobertamaggi rdf:type owl:NamedIndividual ,
-                        ctp:Person ;
-               rdfs:label "Roberta Maggi"@en ;
-               org:memberOf :cnrImati ;
-               foaf:name "Roberta Maggi" .
-
-
-###  https://w3id.org/ctp/santiagodecompostela#universitaDiGenova
-:universitaDiGenova rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "University of Genoa, Italy"@en ;
-                    foaf:homepage "https://unige.it/" ;
-                    foaf:name "University of Genoa, Italy" .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#1075

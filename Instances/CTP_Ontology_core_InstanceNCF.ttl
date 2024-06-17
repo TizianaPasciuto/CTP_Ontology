@@ -18,9 +18,6 @@
 
 <https://w3id.org/ctp/ncf#> rdf:type owl:Ontology ;
                              dcterms:created "2024-03-06"^^xsd:date ;
-                             dcterms:creator :atizianapasciuto ,
-                                             :briccardoalbertoni ,
-                                             :crobertamaggi ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "DigitXL - Novum Corpus Fontanianum"@en ;
                              dcterms:description: "Questo scenario mira a celebrare il lascito dello scienziato Felice Fontana compilando i suoi lavori professionali in un'opera omnia completa disponibile sia alla comunità scientifica che al pubblico in generale. Come figura di spicco nella comunità della ricerca scientifica italiana ed europea durante i secoli XVIII e XIX, Fontana ha condotto studi in vari campi delle scienze naturali, pionieristici nei metodi all'avanguardia, nei modelli e negli strumenti analitici."@it ,
@@ -285,25 +282,244 @@ ctp:Type rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://orcid.org/0000-0001-5648-2713
-<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :briccardoalbertoni .
+###  http://id.loc.gov/authorities/subjects/sh85004835
+<http://id.loc.gov/authorities/subjects/sh85004835> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Anatomy"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85004835"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/ncf#briccardoalbertoni
+###  http://id.loc.gov/authorities/subjects/sh85014968
+<http://id.loc.gov/authorities/subjects/sh85014968> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Red corpuscoles"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85014968"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85046642
+<http://id.loc.gov/authorities/subjects/sh85046642> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Eye"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85046642"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85068076
+<http://id.loc.gov/authorities/subjects/sh85068076> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Iris"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068076"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85068313
+<http://id.loc.gov/authorities/subjects/sh85068313> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Irritability"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068313"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85090899
+<http://id.loc.gov/authorities/subjects/sh85090899> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Nerves"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85090899"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85103951
+<http://id.loc.gov/authorities/subjects/sh85103951> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Poisons"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85103951"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85108043
+<http://id.loc.gov/authorities/subjects/sh85108043> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Cherry-Laurel"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85108043"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85113178
+<http://id.loc.gov/authorities/subjects/sh85113178> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Breathing"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85113178"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85138478
+<http://id.loc.gov/authorities/subjects/sh85138478> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Ticunas"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85138478"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85143003
+<http://id.loc.gov/authorities/subjects/sh85143003> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Veterinary anatomy"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143003"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85143723
+<http://id.loc.gov/authorities/subjects/sh85143723> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Viper"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143723"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/122717139
+<http://viaf.org/viaf/122717139> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "Caritro Foundation, Cassa di risparmio di Trento e Rovereto"@en ;
+                                 ctp:hasName "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/122717139"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/134954430
+<http://viaf.org/viaf/134954430> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "Municipal Library, Trento"@en ;
+                                 ctp:hasName "Municipal Library, Trento" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/134954430"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/137156173
+<http://viaf.org/viaf/137156173> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "French National Library, Paris"@en ;
+                                 ctp:hasName "Bibliothèque Nationale de France" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/137156173"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/154305136
+<http://viaf.org/viaf/154305136> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "Galileo Museum, Florence"@en ;
+                                 ctp:hasName "Galileo Museum, Florence" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/154305136"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/46775522
+<http://viaf.org/viaf/46775522> rdf:type owl:NamedIndividual ,
+                                         ctp:Person ;
+                                ctp:hasName "Leopoldo Marco Antonio Caldani" ;
+                                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/46775522"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/46818873
+<http://viaf.org/viaf/46818873> rdf:type owl:NamedIndividual ,
+                                         ctp:Person ;
+                                ctp:hasName "Felice Fontana" ;
+                                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/46818873"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/75295027
+<http://viaf.org/viaf/75295027> rdf:type owl:NamedIndividual ,
+                                         ctp:Person ;
+                                ctp:hasName "Louis Joseph d_Albert d_Ailly" ;
+                                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/75295027"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300025007
+<http://vocab.getty.edu/aat/300025007> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Costructor"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025007"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300025224
+<http://vocab.getty.edu/aat/300025224> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Funder"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025224"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300025492
+<http://vocab.getty.edu/aat/300025492> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Author"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025492"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300026879
+<http://vocab.getty.edu/aat/300026879> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Letter"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026879"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300027349
+<http://vocab.getty.edu/aat/300027349> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Serie"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300027349"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300028051
+<http://vocab.getty.edu/aat/300028051> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Book"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300028051"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300048715
+<http://vocab.getty.edu/aat/300048715> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Article"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300048715"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300160390
+<http://vocab.getty.edu/aat/300160390> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Holder"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300160390"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300195808
+<http://vocab.getty.edu/aat/300195808> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Barometer"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300195808"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300386174
+<http://vocab.getty.edu/aat/300386174> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Creator"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300403974
+<http://vocab.getty.edu/aat/300403974> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Contributor"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300403974"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300417627
+<http://vocab.getty.edu/aat/300417627> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Sender"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300417627"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300443565
+<http://vocab.getty.edu/aat/300443565> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Recipient"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300443565"^^rdfs:Literal .
+
 
 ###  https://orcid.org/0000-0002-2440-2376
-<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :atizianapasciuto .
-
-
-###  https://w3id.org/ctp/ncf#atizianapasciuto
-
-###  https://w3id.org/ctp/ncf#Anatomy
-:Anatomy rdf:type owl:NamedIndividual ,
-                  ctp:Subject ;
-         rdfs:label "Anatomy"@en ;
-         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85004835"^^rdfs:Literal .
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ,
+                                                 ctp:Person ;
+                                        foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
+                                        ctp:hasName "Tiziana Pasciuto" ;
+                                        ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
 ###  https://w3id.org/ctp/ncf#Anatomy_theme
@@ -318,10 +534,10 @@ Fra tutti i tessuti umani, il sangue è stato indubbiamente quello più indagato
 Bibliografia: Fontana, Felice, Nuove osservazioni sopra i globetti rossi del sangue, Lucca, Giusti, 1766. Fontana, Felice, Trattato del veleno della vipera, de' veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d'un nuovo canale dell'occhio , Napoli, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984."""@it ,
                                   """From Fontana's own words it is possible to discover that his knowledge of anatomy was presumably acquired in Padua, the home of many great anatomists. His first recorded anatomical research was that concerning the study of the inner ear, testified by his correspondence with Cotugno and Caldani. Instead, the first publication appeared in 1767 and focused on the study of the human testicle: even according to modern opinions it is an excellent description of the epididymis. The Fountain also focused its studies on intercostal nerves: he wrote that the intercostal nerves so nota rise form the sixth pair of cranial nerves but running togheter with them in a common sheath with no interconnections, between cavernous sinus and the orbit. Fontana's efforts convinced the Italian anatomists, they dispelled the confusion of centuries which had arisen partly from differences in the numbering of the cranial nerves. There were numerous studies on nerves in general and on their reproduction. One of Fontana's best–known works in anatomy was his description of a canal in the eye of the ox: his study will lead to the definition of a structure in the human eye. Many important studies with the microscope were made by Fontana: the first published was about the red globules of the blood. Of all the human tissues at which the microscope has been directed, blood has undoubtedly been the most frequently examined, since it is readily available in a fresh state and requires no complicated handling. Fontana discovered that the red blood cells have a spheroid shape, more swollen along the external surface: instead the previous studies, operated by the Neapolitan histologist Giovanni Maria Della Torre, claimed that the corpuscles were ring–shaped or \"doughnuts\". Fontana conducted the same observations as Della Torre, with the same type of lenses and microscope but, by varying the illumination, discovered the true shape of the blood corpuscles. 
 Bibliography: Fontana, Felice, Nuove osservazioni sopra i globetti rossi del sangue, Lucca, Giusti, 1766. Fontana, Felice, Trattato del veleno della vipera, de' veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d'un nuovo canale dell'occhio, Napoli, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984"""@en ;
-               ctp:hasSubject :Anatomy ,
-                              :Eye ,
-                              :Nerves ,
-                              :Red_corpuscles ;
+               ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85004835> ,
+                              <http://id.loc.gov/authorities/subjects/sh85014968> ,
+                              <http://id.loc.gov/authorities/subjects/sh85046642> ,
+                              <http://id.loc.gov/authorities/subjects/sh85090899> ;
                ctp:hasTitle "Anatomia"@it ,
                             "Anatomy"@en .
 
@@ -334,7 +550,7 @@ Bibliography: Fontana, Felice, Nuove osservazioni sopra i globetti rossi del san
             ctp:hasRelationToAgent :Creator_1 ;
             ctp:hasSlot :Index06 ,
                         :Index07 ;
-            ctp:hasSubject :Anatomy ;
+            ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85004835> ;
             ctp:hasTheme :Anatomy_theme ,
                          :Animal_physics_theme ;
             ctp:hasTitle "Anatomy"@en ;
@@ -352,131 +568,61 @@ Nel 1765 Fontana pubblicò due lavori dal titolo “Le leggi dell'irritabilità�
 Lo scienziato si occupò anche della respirazione animale, unendo le osservazioni in fisiologia, quelle in farmacologia e il suo interesse per le arie. Egli, partendo dalla verità accettata come dimostrabile che l'aria atmosferica era una necessità indispensabile per la vita animale, mise in evidenza che vi erano due differenti tipi di aria oltre a quella atmosferica. Una tipologia riguarda sia l'aria infiammabile che l'aria flogisticata, ovvero rispettivamente l'idrogeno e l'azoto: queste arie non sostengono la vita, ma sono di per sé prive di qualsiasi principio dannoso. Invece, l'altra tipologia di aria includeva, fra le altre, l'aria fissa, ovvero l'anidride carbonica: esse risultarono essere dannose per l'organismo perché attaccano e nuocciono agli organi vitali.
 Uno dei lavori più importanti di Fontana riguarda i movimenti dell'iride: il punto di partenza di questo lavoro fu l'esistenza dell'iride, ovvero un corpo che si muoveva rispondendo alla luce ma non all'irritazione. Il comportamento dell'iride si discostava quindi totalmente da quello sviluppato dal muscolo scheletrico.
 Bibliografia: Fontana, Felice, De irritabilitatis legibus, nunc primum sancitis, et de spirituum animalium in movendis musculis inefficacia , Lucca, Riccomini, 1767. Fontana, Felice, Dei moti dell'iride, Lucca, Giusti, 1765. Knoefel P.K., Felice Fontana life and works, Trento, 1984."""@it ;
-                      ctp:hasSubject :Breathing ,
-                                     :Iris ,
-                                     :Irritability ,
-                                     :Veterinary_Anatomy ;
+                      ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85068076> ,
+                                     <http://id.loc.gov/authorities/subjects/sh85068313> ,
+                                     <http://id.loc.gov/authorities/subjects/sh85113178> ,
+                                     <http://id.loc.gov/authorities/subjects/sh85143003> ;
                       ctp:hasTitle "Animal physics"@en ,
                                    "Fisica animale"@it .
-
-
-###  https://w3id.org/ctp/ncf#Article
-:Article rdf:type owl:NamedIndividual ,
-                  ctp:Type ;
-         rdfs:label "Article"@en .
-
-
-###  https://w3id.org/ctp/ncf#Author
-:Author rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Author"@en .
 
 
 ###  https://w3id.org/ctp/ncf#Author_1
 :Author_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Author"@en ;
-          ctp:hasRole :Author ;
-          ctp:involves :Felice_Fontana .
-
-
-###  https://w3id.org/ctp/ncf#Barometer
-:Barometer rdf:type owl:NamedIndividual ,
-                    ctp:Type ;
-           rdfs:label "Barometer"@en ;
-           ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/tgn/1103873"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Book
-:Book rdf:type owl:NamedIndividual ,
-               ctp:Type ;
-      rdfs:label "Book"@en ;
-      ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300028051"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Breathing
-:Breathing rdf:type owl:NamedIndividual ,
-                    ctp:Subject ;
-           rdfs:label "Breathing"@en ;
-           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85113178"^^rdfs:Literal .
+          ctp:hasRole <http://vocab.getty.edu/aat/300025492> ;
+          ctp:involves <http://viaf.org/viaf/46818873> .
 
 
 ###  https://w3id.org/ctp/ncf#CNR_IMATI_Genoa_staff
 :CNR_IMATI_Genoa_staff rdf:type owl:NamedIndividual ,
                                 ctp:Group ;
-                       ctp:hasMember :atizianapasciuto ,
-                                     :crobertamaggi ;
+                       ctp:hasMember <https://orcid.org/0000-0002-2440-2376> ,
+                                     :Roberta_Maggi ;
                        ctp:hasName "CNR IMATI Genoa staff" ;
                        ctp:memberOf :cnrImati .
-
-
-###  https://w3id.org/ctp/ncf#Caritro_Foundation
-:Caritro_Foundation rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "Caritro Foundation, Cassa di risparmio di Trento e Rovereto"@en ;
-                    ctp:hasName "Caritro Foundation, Cassa di risparmio di Trento e Rovereto" ;
-                    ctp:hasPlace <https://w3id.org/ctp/ncf#del_Ben_Palace,_Rovereto,_Italy> ;
-                    ctp:hasPrimaryIdentifier "http://viaf.org/viaf/122717139"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Cherry-Laurel
-:Cherry-Laurel rdf:type owl:NamedIndividual ,
-                        ctp:Subject ;
-               rdfs:label "Cherry-Laurel"@en ;
-               ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85108043"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Contributor
-:Contributor rdf:type owl:NamedIndividual ,
-                      ctp:Role ;
-             rdfs:label "Contributor"@en ;
-             ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300403974"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Contributor_1
 :Contributor_1 rdf:type owl:NamedIndividual ,
                         ctp:RelationToAgent ;
                rdfs:label "Contributor"@en ;
-               ctp:hasRole :Contributor ;
-               ctp:involves :Louis_Joseph_d_Albert_d_Ailly .
-
-
-###  https://w3id.org/ctp/ncf#Costructor
-:Costructor rdf:type owl:NamedIndividual ,
-                     ctp:Role ;
-            rdfs:label "Costructor"@en ;
-            ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300025007"^^rdfs:Literal .
+               ctp:hasRole <http://vocab.getty.edu/aat/300403974> ;
+               ctp:involves <http://viaf.org/viaf/75295027> .
 
 
 ###  https://w3id.org/ctp/ncf#Costructor_1
 :Costructor_1 rdf:type owl:NamedIndividual ,
                        ctp:RelationToAgent ;
               rdfs:label "Costructor"@en ;
-              ctp:hasRole :Costructor ;
+              ctp:hasRole <http://vocab.getty.edu/aat/300025007> ;
               ctp:involves :Unknown .
-
-
-###  https://w3id.org/ctp/ncf#Creator
-:Creator rdf:type owl:NamedIndividual ,
-                  ctp:Role ;
-         rdfs:label "Creator"@en ;
-         ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300386174"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Tiziana_Pasciuto .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <https://orcid.org/0000-0002-2440-2376> .
 
 
 ###  https://w3id.org/ctp/ncf#Creator_2
 :Creator_2 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Felice_Fontana .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <http://viaf.org/viaf/46818873> .
 
 
 ###  https://w3id.org/ctp/ncf#Dei_moti_dell_iride
@@ -489,7 +635,7 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
                      ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/00585214> ;
                      ctp:hasTime <https://w3id.org/ctp/ncf#1765> ;
                      ctp:hasTitle "Dei moti dell'iride"@it ;
-                     ctp:hasType :Book ;
+                     ctp:hasType <http://vocab.getty.edu/aat/300028051> ;
                      ctp:isPartOf :Anatomy_tp ,
                                   :Novum_Corpus_Fontanianum ;
                      ctp:isPreservedBy :Holder_3 ;
@@ -509,17 +655,10 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
                   ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/PST/00000001> ;
                   ctp:hasTitle "Barometro doppio"@it ,
                                "Double barometer"@en ;
-                  ctp:hasType :Barometer ;
+                  ctp:hasType <http://vocab.getty.edu/tgn/1103873> ;
                   ctp:isPartOf :Novum_Corpus_Fontanianum ;
                   ctp:isPreservedBy :Holder_1 ;
                   ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=PST&voice_code=LST-PST&fcode=SHOW&ref_idk=IT/ItRC/PST/00000001"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Eye
-:Eye rdf:type owl:NamedIndividual ,
-              ctp:Subject ;
-     rdfs:label "Eye"@en ;
-     ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85046642"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Fabbroni_16_Reale_Museo_di_fisica_e_storia_naturale_modelli_anatomici_1770
@@ -530,62 +669,43 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
                                                                             ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/BAL/00000006> ;
                                                                             ctp:hasTime <https://w3id.org/ctp/ncf#1770/1801> ;
                                                                             ctp:hasTitle "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it ;
-                                                                            ctp:hasType :Serie ;
+                                                                            ctp:hasType <http://vocab.getty.edu/aat/300027349> ;
                                                                             ctp:isPartOf :Anatomy_tp ,
                                                                                          :Novum_Corpus_Fontanianum ;
                                                                             ctp:isPreservedBy :Holder_1 ;
                                                                             ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?language=ENG&view=BAL&voice_code=LST-BAL&fcode=SHOW&ref_id=6"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/ncf#Felice_Fontana
-:Felice_Fontana rdf:type owl:NamedIndividual ,
-                         ctp:Person ;
-                ctp:hasName "Felice Fontana" ;
-                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/46818873"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Funder
-:Funder rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Funder"@en .
-
-
 ###  https://w3id.org/ctp/ncf#Funder_1
 :Funder_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Funder"@en ;
-          ctp:hasRole :Funder ;
-          ctp:involves :Caritro_Foundation .
-
-
-###  https://w3id.org/ctp/ncf#Holder
-:Holder rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Holder"@en .
+          ctp:hasRole <http://vocab.getty.edu/aat/300025224> ;
+          ctp:involves <http://viaf.org/viaf/122717139> .
 
 
 ###  https://w3id.org/ctp/ncf#Holder_1
 :Holder_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Holder"@en ;
-          ctp:hasRole :Holder ;
-          ctp:involves <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> .
+          ctp:hasRole <http://vocab.getty.edu/aat/300160390> ;
+          ctp:involves <http://viaf.org/viaf/154305136> .
 
 
 ###  https://w3id.org/ctp/ncf#Holder_2
 :Holder_2 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Holder"@en ;
-          ctp:hasRole :Holder ;
-          ctp:involves <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> .
+          ctp:hasRole <http://vocab.getty.edu/aat/300160390> ;
+          ctp:involves <http://viaf.org/viaf/137156173> .
 
 
 ###  https://w3id.org/ctp/ncf#Holder_3
 :Holder_3 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Holder"@en ;
-          ctp:hasRole :Holder ;
-          ctp:involves <https://w3id.org/ctp/ncf#Municipal_Library,_Trento> .
+          ctp:hasRole <http://vocab.getty.edu/aat/300160390> ;
+          ctp:involves <http://viaf.org/viaf/134954430> .
 
 
 ###  https://w3id.org/ctp/ncf#Index01
@@ -647,48 +767,6 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
          ctp:previousItem :Index06 .
 
 
-###  https://w3id.org/ctp/ncf#Iris
-:Iris rdf:type owl:NamedIndividual ,
-               ctp:Subject ;
-      rdfs:label "Iris"@en ;
-      ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068076"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Irritability
-:Irritability rdf:type owl:NamedIndividual ,
-                       ctp:Subject ;
-              rdfs:label "Irritability"@en ;
-              ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85068313"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Leopoldo_Marco_Antonio_Caldani
-:Leopoldo_Marco_Antonio_Caldani rdf:type owl:NamedIndividual ,
-                                         ctp:Person ;
-                                ctp:hasName "Leopoldo Marco Antonio Caldani" ;
-                                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/46775522"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Letter
-:Letter rdf:type owl:NamedIndividual ,
-                 ctp:Type ;
-        rdfs:label "Letter"@en ;
-        ctp:hasPrimaryIdentifier "http://vocab.getty.edu/page/aat/300026879"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Louis_Joseph_d_Albert_d_Ailly
-:Louis_Joseph_d_Albert_d_Ailly rdf:type owl:NamedIndividual ,
-                                        ctp:Person ;
-                               ctp:hasName "Louis Joseph d_Albert d_Ailly" ;
-                               ctp:hasPrimaryIdentifier "http://viaf.org/viaf/75295027"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Nerves
-:Nerves rdf:type owl:NamedIndividual ,
-                 ctp:Subject ;
-        rdfs:label "Nerves"@en ;
-        ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85090899"^^rdfs:Literal .
-
-
 ###  https://w3id.org/ctp/ncf#Novum_Corpus_Fontanianum
 :Novum_Corpus_Fontanianum rdf:type owl:NamedIndividual ,
                                    ctp:ThematicPath ;
@@ -705,15 +783,8 @@ L'opera fu tradotta in francese nelle \"Observations sur la physique\" e poi ris
                           ctp:hasTitle "Novum Corpus Fontanianum"@la ;
                           ctp:includes :Anatomy_tp ,
                                        :Poisons_tp ;
-                          ctp:isInspiredByAgent :Felice_Fontana ;
+                          ctp:isInspiredByAgent <http://viaf.org/viaf/46818873> ;
                           ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?language=ENG&view=PPS&voice_code=LST-PPS&fcode=SHOW&ref_id=3"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Poisons
-:Poisons rdf:type owl:NamedIndividual ,
-                  ctp:Subject ;
-         rdfs:label "Poisons"@en ;
-         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85103951"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Poisons_theme
@@ -729,10 +800,10 @@ Nonostante fossero disponibili numerosi lavori precedenti ad avvalorare questa t
 Bibliografia: Benedicenti, Alberico, Malati, Medici, e Farmacisti, seconda edizione, Milano, Hoepli, 1951. Fontana, Felice, Trattato del veleno della vipera, de' veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d'un nuovo canale dell'occhio , Napoli, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984."""@it ,
                                   """Fontana began his studies of venomous vipers in 1764 in Pisa and published his first work on them in Lucca in 1767, but subsequently he returned to the subject many times and performed more experiments, as well he might, since he had raised such difficult questions as: how does the venom bring about the death of an animai? At what point is an animal dead, rather than alive? What is death? What is life? Searching for answers to these questions led him down other paths in biology, such as the study of animals which die and revive (anabiosis).During his life, he also studied the so–called American poison, also known by the names Ticunas, Woorara or Curaro. Arrived in London, Fontana received from William Heberden, Fellow of the Royal Society, a number of American arrows, well preserved and impregnated with poison, also a pot labeled: \"Indian poison, brought from the banks of the river of the Amazons, by Don Pedro Maldonado\". Much had been written about this poison, and Fontana's first effort was to dispel the error that had been spread, that the very smell of it was noxious, as written by Gomara in 1554, according to Benedicenti, or as in La Condamine's story that \"this poison is prepared by women condamned to death; and they determine its having attained its point of perfection, when the vapor it emits, during the boiling, kills the person who attends it\". Fontana found that the smoke or vapor from it did no harm to a pigeon, nor to him nauseous and disagreeable though it was. He found that \"the American poison takne internally, is a poison, but that a considerable quantity of it is required to kill even a small animal\". Among the most dangerous poisons studied by Fontana appears the cherry–Laurel. The reason given by Fontana for studying the cherry–laurel was as follows: “ this oil […] is one of the most terrible and deadly poisons known. This important truth will, I hope, destroy once for all the abuse that has crept into several places in Italy, of selling the oil of the cherry–laurel publicly in the shops, to all those who ask for it.” Although many previous works were available to substantiate this thesis, Fontana developed his considerations without mentioning any, following only his principles and formulating various preparations of cherry–laurel for his experiments.
 Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Milan, Hoepli, 1951. Fontana, Felice, Trattato del veleno della vipera, de' veleni americani. Di quelli del lauro–regio, e di altri veleni vegetabili. Vi si aggiungono alcune osservazioni sopra la struttura primitiva del corpo animale, Varie sperienze su la riproduzione dei nervi, e la descrizione d'un nuovo canale dell'occhio, Naples, Nuova Società Letteraria e Tipografica, 1787. Knoefel P.K., Felice Fontana life and works, Trento, 1984."""@en ;
-               ctp:hasSubject :Cherry-Laurel ,
-                              :Poisons ,
-                              :Ticunas ,
-                              :Viper ;
+               ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85103951> ,
+                              <http://id.loc.gov/authorities/subjects/sh85108043> ,
+                              <http://id.loc.gov/authorities/subjects/sh85138478> ,
+                              <http://id.loc.gov/authorities/subjects/sh85143723> ;
                ctp:hasTitle "Poisons"@en ,
                             "Veleni"@it .
 
@@ -743,104 +814,40 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
             ctp:hasCreationDate "2023-01-31"^^xsd:date ;
             ctp:hasPrimaryIdentifier "IT/ItRC/PPS/00000009"^^rdfs:Literal ;
             ctp:hasRelationToAgent :Creator_1 ;
-            ctp:hasSubject :Poisons ;
+            ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85103951> ;
             ctp:hasTheme :Poisons_theme ;
             ctp:hasTitle "Poisons"@en ;
             ctp:isIncludedIn :Novum_Corpus_Fontanianum ;
             ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=PPS&voice_code=LST-PPS&fcode=SHOW&ref_idk=IT/ItRC/PPS/00000009"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/ncf#Recipient
-:Recipient rdf:type owl:NamedIndividual ,
-                    ctp:Role ;
-           rdfs:label "Recipient"@en .
-
-
 ###  https://w3id.org/ctp/ncf#Recipient_1
 :Recipient_1 rdf:type owl:NamedIndividual ,
                       ctp:RelationToAgent ;
              rdfs:label "Recipient"@en ;
-             ctp:hasRole :Recipient ;
-             ctp:involves :Leopoldo_Marco_Antonio_Caldani .
+             ctp:hasRole <http://vocab.getty.edu/aat/300443565> ;
+             ctp:involves <http://viaf.org/viaf/46775522> .
 
 
-###  https://w3id.org/ctp/ncf#Red_corpuscles
-:Red_corpuscles rdf:type owl:NamedIndividual ,
-                         ctp:Subject ;
-                rdfs:label "Red corpuscoles"@en ;
-                ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85014968"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Sender
-:Sender rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Sender"@en .
+###  https://w3id.org/ctp/ncf#Roberta_Maggi
+:Roberta_Maggi rdf:type owl:NamedIndividual ,
+                        ctp:Person ;
+               ctp:hasName "Roberta Maggi" ;
+               ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
 ###  https://w3id.org/ctp/ncf#Sender_1
 :Sender_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Sender"@en ;
-          ctp:hasRole :Sender ;
-          ctp:involves :Felice_Fontana .
-
-
-###  https://w3id.org/ctp/ncf#Serie
-:Serie rdf:type owl:NamedIndividual ,
-                ctp:Type ;
-       rdfs:label "Serie"@en .
-
-
-###  https://w3id.org/ctp/ncf#Ticunas
-:Ticunas rdf:type owl:NamedIndividual ,
-                  ctp:Subject ;
-         rdfs:label "Ticunas"@en ;
-         ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85138478"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Tiziana_Pasciuto
-:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto" ;
-                  ctp:hasName "Tiziana Pasciuto" .
+          ctp:hasRole <http://vocab.getty.edu/aat/300417627> ;
+          ctp:involves <http://viaf.org/viaf/46818873> .
 
 
 ###  https://w3id.org/ctp/ncf#Unknown
 :Unknown rdf:type owl:NamedIndividual ,
-                  ctp:Person .
-
-
-###  https://w3id.org/ctp/ncf#Veterinary_Anatomy
-:Veterinary_Anatomy rdf:type owl:NamedIndividual ,
-                             ctp:Subject ;
-                    rdfs:label "Veterinary anatomy"@en ;
-                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143003"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Viper
-:Viper rdf:type owl:NamedIndividual ,
-                ctp:Subject ;
-       rdfs:label "Viper"@en ;
-       ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85143723"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#atizianapasciuto
-:atizianapasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto"@en ;
-                  org:memberOf :cnrImati ,
-                               :universitaDiGenova ;
-                  foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
-                  foaf:name "Tiziana Pasciuto" .
-
-
-###  https://w3id.org/ctp/ncf#briccardoalbertoni
-:briccardoalbertoni rdf:type owl:NamedIndividual ,
-                             ctp:Person ;
-                    rdfs:label "Riccardo Albertoni"@en ;
-                    org:memberOf :cnrImati ;
-                    foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
-                    foaf:name "Riccardo Albertoni" .
+                  ctp:Person ;
+         rdfs:label "Unknown"@en .
 
 
 ###  https://w3id.org/ctp/ncf#cnrImati
@@ -853,14 +860,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
           ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy> .
 
 
-###  https://w3id.org/ctp/ncf#crobertamaggi
-:crobertamaggi rdf:type owl:NamedIndividual ,
-                        ctp:Person ;
-               rdfs:label "Roberta Maggi"@en ;
-               org:memberOf :cnrImati ;
-               foaf:name "Roberta Maggi" .
-
-
 ###  https://w3id.org/ctp/ncf#lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes
 :lettre_e_M._l_Abbé_Fontana_à_M._le_Duc_de_Chaulnes rdf:type owl:NamedIndividual ,
                                                              ctp:CulturalResource ;
@@ -871,18 +870,10 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
                                                     ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/SP/00038967> ;
                                                     ctp:hasTime <https://w3id.org/ctp/ncf#1783> ;
                                                     ctp:hasTitle "Lettre de M. l'Abbé Fontana à M. le Duc de Chaulnes"@fr ;
-                                                    ctp:hasType :Article ;
+                                                    ctp:hasType <http://vocab.getty.edu/aat/300048715> ;
                                                     ctp:isPartOf :Novum_Corpus_Fontanianum ;
                                                     ctp:isPreservedBy :Holder_2 ;
                                                     ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=SPO&voice_code=LST-SPO&fcode=SHOW&ref_idk=IT/ItRC/SP/00038967"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#universitaDiGenova
-:universitaDiGenova rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "University of Genoa, Italy"@en ;
-                    foaf:homepage "https://unige.it/" ;
-                    foaf:name "University of Genoa, Italy" .
 
 
 ###  https://w3id.org/ctp/ncf#1751
@@ -954,15 +945,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
                                 ctp:hasDate "1801"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris
-<https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris> rdf:type owl:NamedIndividual ,
-                                                                            ctp:Organization ;
-                                                                   rdfs:label "French National Library, Paris"@en ;
-                                                                   ctp:hasName "Bibliothèque Nationale de France" ;
-                                                                   ctp:hasPlace <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> ;
-                                                                   ctp:hasPrimaryIdentifier "http://viaf.org/viaf/137156173"^^rdfs:Literal .
-
-
 ###  https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France
 <https://w3id.org/ctp/ncf#Bibliothèque_Nationale_de_France,_Paris,_France> rdf:type owl:NamedIndividual ,
                                                                                     ctp:Place ;
@@ -970,15 +952,6 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
                                                                            ctp:hasCentroid "48.83486238506279, 2.376380044072828"^^rdfs:Literal ;
                                                                            ctp:hasTitle "Bibliothèque Nationale de France, Paris, France"@fr ,
                                                                                         "French National Library, Paris, France"@en .
-
-
-###  https://w3id.org/ctp/ncf#Galileo_Museum,_Florence
-<https://w3id.org/ctp/ncf#Galileo_Museum,_Florence> rdf:type owl:NamedIndividual ,
-                                                             ctp:Organization ;
-                                                    rdfs:label "Galileo Museum, Florence"@en ;
-                                                    ctp:hasName "Galileo Museum, Florence" ;
-                                                    ctp:hasPlace <https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy> ;
-                                                    ctp:hasPrimaryIdentifier "http://viaf.org/viaf/154305136"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Galileo_Museum,_Florence,_Italy
@@ -1056,19 +1029,10 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
                                                                             ctp:hasSecondaryIdentifier <https://w3id.org/ctp/ncf#IT/ItRC/BAU/00000474> ;
                                                                             ctp:hasTime <https://w3id.org/ctp/ncf#1772-02/1772-03> ;
                                                                             ctp:hasTitle "Lettera di Felice Fontana a Leopoldo Marcantonio Caldani, febbraio–marzo 1772"@it ;
-                                                                            ctp:hasType :Letter ;
+                                                                            ctp:hasType <http://vocab.getty.edu/aat/300026879> ;
                                                                             ctp:isPartOf :Novum_Corpus_Fontanianum ;
                                                                             ctp:isPreservedBy :Holder_3 ;
                                                                             ctp:linkToResource "https://geca.imati.cnr.it/detail_pages.php?view=BAU&voice_code=LST-BAU&fcode=SHOW&ref_idk=IT/ItRC/BAU/00000474"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/ncf#Municipal_Library,_Trento
-<https://w3id.org/ctp/ncf#Municipal_Library,_Trento> rdf:type owl:NamedIndividual ,
-                                                              ctp:Organization ;
-                                                     rdfs:label "Municipal Library, Trento"@en ;
-                                                     ctp:hasName "Municipal Library, Trento" ;
-                                                     ctp:hasPlace <https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy> ;
-                                                     ctp:hasPrimaryIdentifier "http://viaf.org/viaf/134954430"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/ncf#Municipal_Library,_Trento,_Italy

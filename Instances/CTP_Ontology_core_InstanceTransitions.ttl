@@ -18,9 +18,6 @@
 
 <https://w3id.org/ctp/transitions> rdf:type owl:Ontology ;
                                     dcterms:created "2024-03-06"^^xsd:date ;
-                                    dcterms:creator :atizianapasciuto ,
-                                                    :briccardoalbertoni ,
-                                                    :crobertamaggi ;
                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                     dcterms:title "Exhibition Transitions | enterprise - work - society"@en ;
                                     dcterms:description: "Lo scopo di questo scenario è mantenere viva la memoria della mostra Transizioni | impresa - lavoro - società, organizzata dalla Fondazione Ansaldo e tenutasi presso il Teatro Falcone del Palazzo Reale di Genova dal 22 febbraio al 25 aprile 2023. La mostra ha raccontato l'evoluzione di tre percorsi sub-tematici interconnessi (impresa, lavoro e società) associati allo sviluppo della Fondazione Ansaldo, che va dalla sua nascita nei primi anni del 1850 fino ai giorni nostri."@it ,
@@ -297,35 +294,147 @@ ctp:Type rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://orcid.org/0000-0001-5648-2713
-<https://orcid.org/0000-0001-5648-2713> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :briccardoalbertoni .
+###  http://id.loc.gov/authorities/subjects/sh85018285
+<http://id.loc.gov/authorities/subjects/sh85018285> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Enterprise"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85018285"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/transitions#briccardoalbertoni
+###  http://id.loc.gov/authorities/subjects/sh85026379
+<http://id.loc.gov/authorities/subjects/sh85026379> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Human rights"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85026379"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85043134
+<http://id.loc.gov/authorities/subjects/sh85043134> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Energy"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85043134"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85065960
+<http://id.loc.gov/authorities/subjects/sh85065960> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Industry"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85065960"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85081906
+<http://id.loc.gov/authorities/subjects/sh85081906> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Society"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85081906"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85148133
+<http://id.loc.gov/authorities/subjects/sh85148133> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Work"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148133"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh85148148
+<http://id.loc.gov/authorities/subjects/sh85148148> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Work ethic"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148148"^^rdfs:Literal .
+
+
+###  http://id.loc.gov/authorities/subjects/sh88001575
+<http://id.loc.gov/authorities/subjects/sh88001575> rdf:type owl:NamedIndividual ,
+                                                             ctp:Subject ;
+                                                    rdfs:label "Industrial energy"@en ;
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh88001575"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/211013856
+<http://viaf.org/viaf/211013856> rdf:type owl:NamedIndividual ,
+                                          ctp:Group ;
+                                 ctp:hasName "Ansaldo family" ;
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/211013856"^^rdfs:Literal .
+
+
+###  http://viaf.org/viaf/247468924
+<http://viaf.org/viaf/247468924> rdf:type owl:NamedIndividual ,
+                                          ctp:Organization ;
+                                 rdfs:label "Ansaldo Foundation"@en ;
+                                 ctp:hasMember :Ansaldo_Foundation_staff ;
+                                 ctp:hasName "Ansaldo Foundation" ;
+                                 ctp:hasPlace <https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo,_Genoa,_Italy> .
+
+
+###  http://viaf.org/viaf/7770920
+<http://viaf.org/viaf/7770920> rdf:type owl:NamedIndividual ,
+                                        ctp:Person ;
+                               ctp:hasName "Gerolamo Lazzeri" ;
+                               ctp:hasPrimaryIdentifier "http://viaf.org/viaf/7770920"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300025492
+<http://vocab.getty.edu/aat/300025492> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Author"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025492"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300025633
+<http://vocab.getty.edu/aat/300025633> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Curator"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025633"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300026606
+<http://vocab.getty.edu/aat/300026606> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Catalogue"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026606"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300026657
+<http://vocab.getty.edu/aat/300026657> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Periodical"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026657"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300046300
+<http://vocab.getty.edu/aat/300046300> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Photograph"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300046300"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300054402
+<http://vocab.getty.edu/aat/300054402> rdf:type owl:NamedIndividual ,
+                                                ctp:Type ;
+                                       rdfs:label "Oral history"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300054402"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300160390
+<http://vocab.getty.edu/aat/300160390> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Holder"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300160390"^^rdfs:Literal .
+
+
+###  http://vocab.getty.edu/aat/300386174
+<http://vocab.getty.edu/aat/300386174> rdf:type owl:NamedIndividual ,
+                                                ctp:Role ;
+                                       rdfs:label "Creator"@en ;
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174"^^rdfs:Literal .
+
 
 ###  https://orcid.org/0000-0002-2440-2376
-<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :atizianapasciuto .
-
-
-###  https://w3id.org/ctp/transitions#atizianapasciuto
-
-###  https://w3id.org/ctp/transitions#Ansaldo_Family
-:Ansaldo_Family rdf:type owl:NamedIndividual ,
-                         ctp:Group ;
-                ctp:hasName "Ansaldo family" ;
-                ctp:hasPrimaryIdentifier "http://viaf.org/viaf/211013856"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#Ansaldo_Foundation
-:Ansaldo_Foundation rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "Ansaldo Foundation"@en ;
-                    ctp:hasMember :Ansaldo_Foundation_staff ;
-                    ctp:hasName "Ansaldo Foundation" ;
-                    ctp:hasPlace <https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo,_Genoa,_Italy> ;
-                    ctp:hasPrimaryIdentifier "http://viaf.org/viaf/247468924"^^rdfs:Literal .
+<https://orcid.org/0000-0002-2440-2376> rdf:type owl:NamedIndividual ,
+                                                 ctp:Person ;
+                                        foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
+                                        ctp:hasName "Tiziana Pasciuto" ;
+                                        ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
 ###  https://w3id.org/ctp/transitions#Ansaldo_Foundation_staff
@@ -336,20 +445,14 @@ ctp:Type rdf:type owl:Class .
                                         :Lorenzo_Fiori ,
                                         :Pietro_Repetto ;
                           ctp:hasName "Ansaldo Foundation staff" ;
-                          ctp:memberOf :Ansaldo_Foundation .
-
-
-###  https://w3id.org/ctp/transitions#Author
-:Author rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Author"@en .
+                          ctp:memberOf <http://viaf.org/viaf/247468924> .
 
 
 ###  https://w3id.org/ctp/transitions#Author_1
 :Author_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Author"@en ;
-          ctp:hasRole :Author ;
+          ctp:hasRole <http://vocab.getty.edu/aat/300025492> ;
           ctp:involves :Claudia_Cerioli .
 
 
@@ -357,7 +460,7 @@ ctp:Type rdf:type owl:Class .
 :Author_2 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Author"@en ;
-          ctp:hasRole :Author ;
+          ctp:hasRole <http://vocab.getty.edu/aat/300025492> ;
           ctp:involves :Beatrice_Carabelli .
 
 
@@ -365,7 +468,7 @@ ctp:Type rdf:type owl:Class .
 :Author_3 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Author"@en ;
-          ctp:hasRole :Author ;
+          ctp:hasRole <http://vocab.getty.edu/aat/300025492> ;
           ctp:involves :Pietro_Repetto .
 
 
@@ -379,16 +482,10 @@ ctp:Type rdf:type owl:Class .
 ###  https://w3id.org/ctp/transitions#CNR_IMATI_Genoa_staff
 :CNR_IMATI_Genoa_staff rdf:type owl:NamedIndividual ,
                                 ctp:Group ;
-                       ctp:hasMember :atizianapasciuto ,
-                                     :crobertamaggi ;
+                       ctp:hasMember <https://orcid.org/0000-0002-2440-2376> ,
+                                     :Roberta_Maggi ;
                        ctp:hasName "CNR IMATI Genoa staff" ;
                        ctp:memberOf :cnrImati .
-
-
-###  https://w3id.org/ctp/transitions#Catalogue
-:Catalogue rdf:type owl:NamedIndividual ,
-                    ctp:Type ;
-           rdfs:label "Catalogue"@en .
 
 
 ###  https://w3id.org/ctp/transitions#Claudia_Cerioli
@@ -398,68 +495,44 @@ ctp:Type rdf:type owl:Class .
                  ctp:memberOf :Ansaldo_Foundation_staff .
 
 
-###  https://w3id.org/ctp/transitions#Creator
-:Creator rdf:type owl:NamedIndividual ,
-                  ctp:Role ;
-         rdfs:label "Creator"@en .
-
-
 ###  https://w3id.org/ctp/transitions#Creator_1
 :Creator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Tiziana_Pasciuto .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <https://orcid.org/0000-0002-2440-2376> .
 
 
 ###  https://w3id.org/ctp/transitions#Creator_2
 :Creator_2 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Ansaldo_Foundation .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <http://viaf.org/viaf/247468924> .
 
 
 ###  https://w3id.org/ctp/transitions#Creator_3
 :Creator_3 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Gerolamo_Lazzeri .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <http://viaf.org/viaf/7770920> .
 
 
 ###  https://w3id.org/ctp/transitions#Creator_4
 :Creator_4 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
-           ctp:hasRole :Creator ;
-           ctp:involves :Ansaldo_Family .
-
-
-###  https://w3id.org/ctp/transitions#Curator
-:Curator rdf:type owl:NamedIndividual ,
-                  ctp:Role ;
-         rdfs:label "Curator"@en .
+           ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+           ctp:involves <https://viaf.org/viaf/211013856> .
 
 
 ###  https://w3id.org/ctp/transitions#Curator_1
 :Curator_1 rdf:type owl:NamedIndividual ,
                     ctp:RelationToAgent ;
            rdfs:label "Curator"@en ;
-           ctp:hasRole :Curator ;
+           ctp:hasRole <http://vocab.getty.edu/aat/300025633> ;
            ctp:involves :Ansaldo_Foundation_staff .
-
-
-###  https://w3id.org/ctp/transitions#Energy
-:Energy rdf:type owl:NamedIndividual ,
-                 ctp:Subject ;
-        rdfs:label "Energy"@en .
-
-
-###  https://w3id.org/ctp/transitions#Enterprise
-:Enterprise rdf:type owl:NamedIndividual ,
-                     ctp:Subject ;
-            rdfs:label "Enterprise"@en .
 
 
 ###  https://w3id.org/ctp/transitions#Enterprise_section
@@ -479,8 +552,8 @@ ctp:Type rdf:type owl:Class .
                   ctp:hasDescription """In-depth text
 “1765: James Watt perfects the long-invented steam engine, finding a way to generate enough power to propel large vehicles. […]”"""@en ,
                                      "Testo di approfondimento \"1765: James Watt perfeziona il motore a vapore, da lungo tempo inventato, trovando un modo per generare abbastanza potenza da far muovere grandi veicoli. [...]\""@it ;
-                  ctp:hasSubject :Energy ,
-                                 :Industrial_energy ;
+                  ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85043134> ,
+                                 <http://id.loc.gov/authorities/subjects/sh88001575> ;
                   ctp:hasTitle "Enterprise"@en ,
                                "Impresa"@it .
 
@@ -488,60 +561,22 @@ ctp:Type rdf:type owl:Class .
 ###  https://w3id.org/ctp/transitions#GBA.000028
 :GBA.000028 rdf:type owl:NamedIndividual ,
                      ctp:Identifier ;
-            ctp:hasCreator :Ansaldo_Foundation ;
+            ctp:hasCreator <http://viaf.org/viaf/247468924> ;
             ctp:hasNotation "GBA.000028 (fot.)"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#Gerolamo_Lazzeri
-:Gerolamo_Lazzeri rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  ctp:hasName "Gerolamo Lazzeri" ;
-                  ctp:hasPrimaryIdentifier "http://viaf.org/viaf/7770920"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#Holder
-:Holder rdf:type owl:NamedIndividual ,
-                 ctp:Role ;
-        rdfs:label "Holder"@en .
 
 
 ###  https://w3id.org/ctp/transitions#Holder_1
 :Holder_1 rdf:type owl:NamedIndividual ,
                    ctp:RelationToAgent ;
           rdfs:label "Holder"@en ;
-          ctp:hasRole :Holder ;
-          ctp:involves :Ansaldo_Foundation .
-
-
-###  https://w3id.org/ctp/transitions#HumanRights
-:HumanRights rdf:type owl:NamedIndividual ,
-                      ctp:Subject ;
-             rdfs:label "Human rights"@en ;
-             ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85026379"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#Index01
-:Index01 rdf:type owl:NamedIndividual ,
-                  ctp:OrderedListSlot ;
-         ctp:hasIndex 1 .
-
-
-###  https://w3id.org/ctp/transitions#Industrial_energy
-:Industrial_energy rdf:type owl:NamedIndividual ,
-                            ctp:Subject ;
-                   rdfs:label "Industrial energy"@en .
-
-
-###  https://w3id.org/ctp/transitions#Industry
-:Industry rdf:type owl:NamedIndividual ,
-                   ctp:Subject ;
-          rdfs:label "Industry"@en .
+          ctp:hasRole <http://vocab.getty.edu/aat/300160390> ;
+          ctp:involves <http://viaf.org/viaf/247468924> .
 
 
 ###  https://w3id.org/ctp/transitions#LSF.000032
 :LSF.000032 rdf:type owl:NamedIndividual ,
                      ctp:Identifier ;
-            ctp:hasCreator :Ansaldo_Foundation ;
+            ctp:hasCreator <http://viaf.org/viaf/247468924> ;
             ctp:hasNotation "LSF.000032"^^rdfs:Literal .
 
 
@@ -561,28 +596,10 @@ ctp:Type rdf:type owl:Class .
                                             ctp:hasSecondaryIdentifier :GBA.000028 ;
                                             ctp:hasTime <https://w3id.org/ctp/transitions#1904-09-08> ;
                                             ctp:hasTitle "Luigi Ansaldo e due donne non identificate"@it ;
-                                            ctp:hasType :Photograph ;
+                                            ctp:hasType <http://vocab.getty.edu/aat/300046300> ;
                                             ctp:isPartOf :Work_section ;
                                             ctp:isPreservedBy :Holder_1 ;
                                             ctp:linkToResource "https://archimondi.it/s/1/item/2825"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#Oral_history
-:Oral_history rdf:type owl:NamedIndividual ,
-                       ctp:Type ;
-              rdfs:label "Oral history"@en .
-
-
-###  https://w3id.org/ctp/transitions#Periodical
-:Periodical rdf:type owl:NamedIndividual ,
-                     ctp:Type ;
-            rdfs:label "Periodical"@en .
-
-
-###  https://w3id.org/ctp/transitions#Photograph
-:Photograph rdf:type owl:NamedIndividual ,
-                     ctp:Type ;
-            rdfs:label "Photograph"@en .
 
 
 ###  https://w3id.org/ctp/transitions#Pietro_Repetto
@@ -604,16 +621,17 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
                    ctp:hasSecondaryIdentifier :LSF.000032 ;
                    ctp:hasTime <https://w3id.org/ctp/transitions#2006-11-30> ;
                    ctp:hasTitle "Repetto Mariadiva"@it ;
-                   ctp:hasType :Oral_history ;
+                   ctp:hasType <http://vocab.getty.edu/aat/300054402> ;
                    ctp:isPartOf :Work_section ;
                    ctp:isPreservedBy :Holder_1 ;
                    ctp:linkToResource "https://archimondi.it/s/1/item/462"^^rdfs:Literal .
 
 
-###  https://w3id.org/ctp/transitions#Society
-:Society rdf:type owl:NamedIndividual ,
-                  ctp:Subject ;
-         rdfs:label "Society"@en .
+###  https://w3id.org/ctp/transitions#Roberta_Maggi
+:Roberta_Maggi rdf:type owl:NamedIndividual ,
+                        ctp:Person ;
+               ctp:hasName "Roberta Maggi" ;
+               ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
 ###  https://w3id.org/ctp/transitions#Society_section
@@ -632,17 +650,10 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
                         ctp:Theme ;
                ctp:hasDescription "In-depth text .............."@en ,
                                   "Testo di approfondimento ........................."@it ;
-               ctp:hasSubject :Industry ,
-                              :Society ;
+               ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85065960> ,
+                              <http://id.loc.gov/authorities/subjects/sh85081906> ;
                ctp:hasTitle "Society"@en ,
                             "Società"@it .
-
-
-###  https://w3id.org/ctp/transitions#Tiziana_Pasciuto
-:Tiziana_Pasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto" ;
-                  ctp:hasName "Tiziana Pasciuto" .
 
 
 ###  https://w3id.org/ctp/transitions#Transitions
@@ -673,7 +684,7 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
                                 ctp:Product ;
                        ctp:hasTitle "Cerioli, Fiori, Repetto, \"Transitions - Industry-Work-Society\", Erga edizioni, 2023"@en ,
                                     "Cerioli, Fiori, Repetto, \"Transizioni - Impresa-Lavoro-Società\", Erga edizioni, 2023"@it ;
-                       ctp:hasType :Catalogue ;
+                       ctp:hasType <http://vocab.getty.edu/aat/300026606> ;
                        ctp:isSelledBy "https://erga.it/catalogo/transizioni-transitions-impresa-lavoro-societa-industry-work-society/"^^rdfs:Literal .
 
 
@@ -699,27 +710,13 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 ###  https://w3id.org/ctp/transitions#Transitions_theme
 :Transitions_theme rdf:type owl:NamedIndividual ,
                             ctp:Theme ;
-                   ctp:hasDescription "Long text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."@en ,
+                   ctp:hasDescription "In-depth text - Reflection on the theme of the twentieth-century transitions involving business, labor, and society as engines of change."@en ,
                                       "Testo di approfondimento - Riflessione sul tema delle transizioni del XX secolo che coinvolgono imprese, lavoro e società come motori del cambiamento."@it ;
-                   ctp:hasSubject :Enterprise ,
-                                  :Society ,
-                                  :Work ;
+                   ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85018285> ,
+                                  <http://id.loc.gov/authorities/subjects/sh85081906> ,
+                                  <http://id.loc.gov/authorities/subjects/sh85148133> ;
                    ctp:hasTitle "Transitions"@en ,
                                 "Transizioni"@it .
-
-
-###  https://w3id.org/ctp/transitions#Work
-:Work rdf:type owl:NamedIndividual ,
-               ctp:Subject ;
-      rdfs:label "Work"@en ;
-      ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148133"^^rdfs:Literal .
-
-
-###  https://w3id.org/ctp/transitions#WorkEthic
-:WorkEthic rdf:type owl:NamedIndividual ,
-                    ctp:Subject ;
-           rdfs:label "Work ethic"@en ;
-           ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148148"^^rdfs:Literal .
 
 
 ###  https://w3id.org/ctp/transitions#Work_section
@@ -741,29 +738,10 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
                      ctp:Theme ;
             ctp:hasDescription "In-depth text ................................."@en ,
                                "Testo di approfondimento .................................."@it ;
-            ctp:hasSubject :Work ,
-                           :WorkEthic ;
+            ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85148133> ,
+                           <http://id.loc.gov/authorities/subjects/sh85148148> ;
             ctp:hasTitle "Lavoro"@it ,
                          "Work"@en .
-
-
-###  https://w3id.org/ctp/transitions#atizianapasciuto
-:atizianapasciuto rdf:type owl:NamedIndividual ,
-                           ctp:Person ;
-                  rdfs:label "Tiziana Pasciuto"@en ;
-                  org:memberOf :cnrImati ,
-                               :universitaDiGenova ;
-                  foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
-                  foaf:name "Tiziana Pasciuto" .
-
-
-###  https://w3id.org/ctp/transitions#briccardoalbertoni
-:briccardoalbertoni rdf:type owl:NamedIndividual ,
-                             ctp:Person ;
-                    rdfs:label "Riccardo Albertoni"@en ;
-                    org:memberOf :cnrImati ;
-                    foaf:homepage <https://orcid.org/0000-0001-5648-2713> ;
-                    foaf:name "Riccardo Albertoni" .
 
 
 ###  https://w3id.org/ctp/transitions#cnrImati
@@ -774,22 +752,6 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
           foaf:name "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'" ;
           ctp:hasMember :CNR_IMATI_Genoa_staff ;
           ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#de_Marini_street,_6,_Genoa,_Italy> .
-
-
-###  https://w3id.org/ctp/transitions#crobertamaggi
-:crobertamaggi rdf:type owl:NamedIndividual ,
-                        ctp:Person ;
-               rdfs:label "Roberta Maggi"@en ;
-               org:memberOf :cnrImati ;
-               foaf:name "Roberta Maggi" .
-
-
-###  https://w3id.org/ctp/transitions#universitaDiGenova
-:universitaDiGenova rdf:type owl:NamedIndividual ,
-                             ctp:Organization ;
-                    rdfs:label "University of Genoa, Italy"@en ;
-                    foaf:homepage "https://unige.it/" ;
-                    foaf:name "University of Genoa, Italy" .
 
 
 ###  https://w3id.org/ctp/transitions#1850
@@ -873,7 +835,7 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
                                                                     ctp:hasSecondaryIdentifier <https://w3id.org/ctp/transitions#PER.000075/1> ;
                                                                     ctp:hasTime <https://w3id.org/ctp/transitions#1915-08-15> ;
                                                                     ctp:hasTitle "Bianco Rosso e Verde, n. 3, 1915"@it ;
-                                                                    ctp:hasType :Periodical ;
+                                                                    ctp:hasType <http://vocab.getty.edu/aat/300026657> ;
                                                                     ctp:isPartOf :Work_section ;
                                                                     ctp:isPreservedBy :Holder_1 ;
                                                                     ctp:linkToResource "https://archimondi.it/s/1/item/7452"^^rdfs:Literal .
@@ -890,7 +852,7 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 ###  https://w3id.org/ctp/transitions#PER.000075/1
 <https://w3id.org/ctp/transitions#PER.000075/1> rdf:type owl:NamedIndividual ,
                                                          ctp:Identifier ;
-                                                ctp:hasCreator :Ansaldo_Foundation ;
+                                                ctp:hasCreator <http://viaf.org/viaf/247468924> ;
                                                 ctp:hasNotation "PER.000075/1"^^rdfs:Literal .
 
 
