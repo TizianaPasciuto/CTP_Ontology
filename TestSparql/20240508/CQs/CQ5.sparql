@@ -2,11 +2,11 @@
 # By whom were the objects of the thematic path X made?  
 # Da chi sono stati realizzati gli oggetti del percorso tematico X?  
 
-# P.S. Replace the ThematicPathTitle to be searched in row 27, column 21.
+# P.S. Replace the ThematicPathTitle to be searched in row 28, column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?RoleLabel 
 WHERE{  
   {  
     ?ThematicPath ctp:hasPart ?CulturalResource.  
@@ -18,13 +18,13 @@ WHERE{
   }  
   ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role.  
-  ?Role rdfs:label ?Creator.  
+  FILTER(?Role = <http://vocab.getty.edu/aat/300386174> || ?Role = <http://vocab.getty.edu/aat/300025492> || ?Role = <http://vocab.getty.edu/aat/300417627>)
   ?RelationToAgent ctp:involves ?Agent.  
   Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
   Optional{?Agent ctp:hasName ?AgentName}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
-  FILTER(BOUND(?AgentName))  
+  Optional{?Role rdfs:label ?RoleLabel}.  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
 }  
 LIMIT 100  

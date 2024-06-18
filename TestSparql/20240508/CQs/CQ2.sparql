@@ -13,8 +13,8 @@ WHERE {
     ?Theme ctp:hasTitle ?ThemeTitle.  
     ?Theme ctp:hasDescription ?ThemeDescription.  
     BIND(LANG(?ThematicPathTitle) as ?lang).
-    ?ThematicPath ctp:hasTitle ?p.  
-    FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+    #?ThematicPath ctp:hasTitle ?p.  
+    #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
     FILTER(LANGMATCHES(LANG(?ThematicPathTitle), ?lang) &&  
            LANGMATCHES(LANG(?ThemeTitle), ?lang) &&  
            LANGMATCHES(LANG(?ThemeDescription), ?lang))

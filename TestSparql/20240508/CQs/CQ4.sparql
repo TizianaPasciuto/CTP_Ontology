@@ -12,9 +12,10 @@ WHERE{
   Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?TemporalEntity rdfs:label ?TemporalEntityLabel}.  
   BIND(LANG(?ThematicPathTitle) as ?lang).
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
   FILTER(LANGMATCHES(LANG(?ThematicPathTitle), ?lang) &&  
          LANGMATCHES(LANG(?TemporalEntityLabel), ?lang))
 }  
 LIMIT 100  
+

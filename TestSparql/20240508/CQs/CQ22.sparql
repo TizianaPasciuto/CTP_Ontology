@@ -15,8 +15,8 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?Type rdfs:label ?ProductType}.  
   BIND(LANG(?ThematicPathTitle) as ?lang).
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).
   FILTER(LANGMATCHES(LANG(?ThematicPathTitle), ?lang) &&  
          LANGMATCHES(LANG(?ProductTitle), ?lang))
 }  

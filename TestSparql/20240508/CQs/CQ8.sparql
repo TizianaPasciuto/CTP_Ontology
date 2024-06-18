@@ -10,7 +10,7 @@ WHERE{
   ?ThematicPath ctp:isInspiredByAgent ?Agent.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}. 
   Optional{ ?Agent ctp:hasName ?AgentName}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
 }  
 LIMIT 100   

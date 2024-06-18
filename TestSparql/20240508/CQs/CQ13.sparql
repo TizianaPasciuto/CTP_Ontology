@@ -2,15 +2,25 @@
 # Which thematic paths can be identified through the subject "XYZ"?  
 # Quali percorsi tematici sono individuabili attraverso il soggetto "XYZ"? 
 
-# PS. Replace the subject to be searched in row 13, column 27 and choose the language after @.
+# PS. Replace the subject to be searched in row 21, column 27 and choose the language after @.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 SELECT ?SubjectLabel ?ThematicPathTitle  
 WHERE{  
-  ?ThematicPath ctp:hasSubject ?Subject.  
+  {  
+    ?ThematicPath ctp:hasSubject ?Subject.    
+  }  
+  UNION  
+  {  
+    ?ThematicPath ctp:hasTheme ?Theme.
+    ?Theme ctp:hasSubject ?Subject.  
+  }  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?Subject rdfs:label ?SubjectLabel}.  
-  FILTER(?SubjectLabel = "InsertSubjectHere"@LANG).  
+  #FILTER(?SubjectLabel = "InsertSubjectHere"@LANG).  
+  BIND(LANG(?SubjectLabel) as ?lang).
+  FILTER(LANGMATCHES(LANG(?SubjectLabel), ?lang) &&  
+         LANGMATCHES(LANG(?ThematicPathTitle), ?lang))
 }  
 LIMIT 100  

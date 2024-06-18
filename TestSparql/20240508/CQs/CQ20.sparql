@@ -11,7 +11,7 @@ WHERE{
   ?CulturalResource ctp:linkToResource ?Link.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
 }  
 LIMIT 100  

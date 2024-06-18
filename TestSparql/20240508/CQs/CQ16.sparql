@@ -13,8 +13,8 @@ WHERE{
   ?OrderedListSlot ctp:hasIndex ?Index.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).    
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).    
 }  
 ORDER BY ?Index  
 LIMIT 100  

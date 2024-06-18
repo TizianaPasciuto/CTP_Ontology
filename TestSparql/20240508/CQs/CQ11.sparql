@@ -2,18 +2,18 @@
 # Which thematic paths have been funded by the same agent?  
 # Quali percorsi tematici sono stati finanziati dallo stesso agente?  
 
-# PS. Replace the AgentName in row 16, column 34.
+# P.S. Enter the Name to be searched in row 17, by substituting it for ?AgentName and inserting it between "". 
+# i.e. OPTIONAL { ?Agent ctp:hasName "Fondazione Lana&Seta"}.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?ThematicPathTitle  
+SELECT ?ThematicPathTitle ?AgentName  
 WHERE {  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role.  
+  FILTER(?Role = <http://vocab.getty.edu/aat/300025224>)
   ?RelationToAgent ctp:involves ?Agent.  
   OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
-  OPTIONAL { ?Role rdfs:label ?RoleLabel}.  
-  OPTIONAL { ?Agent ctp:hasName "InsertNameHere"}.  
-  FILTER regex(?RoleLabel, "funder", "i").  
+  OPTIONAL { ?Agent ctp:hasName ?AgentName}.  
 }  
 LIMIT 100  

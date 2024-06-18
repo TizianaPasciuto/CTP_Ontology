@@ -6,11 +6,13 @@
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
-SELECT ?IdentifierNumber  
+SELECT ?IdentifierNumber ?CulturalResourceTitle 
 WHERE{  
   ?CulturalResource rdf:type ctp:CulturalResource.  
-  ?CulturalResource ctp:hasTitle "InsertCulturalResourceTitleHere"@LANG.  
+  #?CulturalResource ctp:hasTitle "InsertCulturalResourceTitleHere"@LANG.  
   ?CulturalResource ctp:hasPrimaryIdentifier ?IdentifierNumber.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
 }  
 LIMIT 100  
+
 

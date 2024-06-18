@@ -2,20 +2,20 @@
 # Which thematic paths have been created by the same agent?  
 # Quali percorsi tematici sono stati realizzati dallo stesso agente?  
 
-# PS. Replace the AgentName in row 18, column 34.
+# P.S. Enter the Name to be searched in row 19, by substituting it for ?AgentName and inserting it between "". 
+# i.e. OPTIONAL { ?Agent ctp:hasName "Mario Rossi"}.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
-SELECT ?ThematicPathTitle  
+SELECT ?ThematicPathTitle ?AgentName
 WHERE {  
   ?ThematicPath rdf:type ctp:ThematicPath.  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role.  
+  FILTER(?Role = <http://vocab.getty.edu/aat/300386174>)
   ?RelationToAgent ctp:involves ?Agent.  
-  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
-  OPTIONAL { ?Role rdfs:label ?RoleLabel}.  
-  OPTIONAL { ?Agent ctp:hasName "InsertNameHere"}.  
-  FILTER regex(?RoleLabel, "creator", "i").  
+  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.   
+  OPTIONAL { ?Agent ctp:hasName ?AgentName}.
   }  
 LIMIT 100  

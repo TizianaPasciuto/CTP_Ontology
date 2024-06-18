@@ -20,7 +20,7 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
   Optional{ ?Type rdfs:label ?CulturalResourceType}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
 }  
 LIMIT 100  

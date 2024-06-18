@@ -9,7 +9,10 @@ SELECT ?ThematicPathTitle ?Message
 WHERE{  
   ?ThematicPath ctp:conveys ?Message.  
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
-  ?ThematicPath ctp:hasTitle ?p.  
-  FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+  BIND(LANG(?ThematicPathTitle) as ?lang).
+  FILTER(LANGMATCHES(LANG(?ThematicPathTitle), ?lang) &&  
+         LANGMATCHES(LANG(?Message), ?lang))
 }  
 LIMIT 100  
