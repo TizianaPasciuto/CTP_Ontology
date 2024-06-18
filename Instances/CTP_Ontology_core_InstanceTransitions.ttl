@@ -524,7 +524,7 @@ ctp:Type rdf:type owl:Class .
                     ctp:RelationToAgent ;
            rdfs:label "Creator"@en ;
            ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
-           ctp:involves <https://viaf.org/viaf/211013856> .
+           ctp:involves <http://viaf.org/viaf/211013856> .
 
 
 ###  https://w3id.org/ctp/transitions#Curator_1
