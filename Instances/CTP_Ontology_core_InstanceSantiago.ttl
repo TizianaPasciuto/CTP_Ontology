@@ -270,21 +270,21 @@ ctp:Type rdf:type owl:Class .
 <http://id.loc.gov/authorities/subjects/sh85102131> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Pilgrim"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85102131"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85112549
 <http://id.loc.gov/authorities/subjects/sh85112549> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Religion"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85112549"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85136755
 <http://id.loc.gov/authorities/subjects/sh85136755> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Tradition"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85136755"^^xsd:anyURI .
 
 
 ###  http://viaf.org/viaf/153107650
@@ -293,28 +293,28 @@ ctp:Type rdf:type owl:Class .
                                  rdfs:label "Council of Europe"@en ;
                                  ctp:hasName "Council of Europe" ;
                                  ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex,_France> ;
-                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/153107650"^^rdfs:Literal .
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/153107650"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300188572
 <http://vocab.getty.edu/aat/300188572> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Certification body"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300188572"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300188572"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300386174
 <http://vocab.getty.edu/aat/300386174> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Creator"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174" .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174"^^xsd:anyURI.
 
 
 ###  http://vocab.getty.edu/aat/300417850
 <http://vocab.getty.edu/aat/300417850> rdf:type owl:NamedIndividual ,
                                                 ctp:Type ;
                                        rdfs:label "Architectural heritage"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300417850"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300417850"^^xsd:anyURI.
 
 
 ###  https://orcid.org/0000-0002-2440-2376

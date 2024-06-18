@@ -298,63 +298,63 @@ ctp:Type rdf:type owl:Class .
 <http://id.loc.gov/authorities/subjects/sh85018285> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Enterprise"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85018285"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85018285"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85026379
 <http://id.loc.gov/authorities/subjects/sh85026379> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Human rights"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85026379"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85026379"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85043134
 <http://id.loc.gov/authorities/subjects/sh85043134> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Energy"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85043134"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85043134"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85065960
 <http://id.loc.gov/authorities/subjects/sh85065960> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Industry"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85065960"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85065960"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85081906
 <http://id.loc.gov/authorities/subjects/sh85081906> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Society"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85081906"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85081906"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85148133
 <http://id.loc.gov/authorities/subjects/sh85148133> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Work"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148133"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148133"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh85148148
 <http://id.loc.gov/authorities/subjects/sh85148148> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Work ethic"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148148"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh85148148"^^xsd:anyURI .
 
 
 ###  http://id.loc.gov/authorities/subjects/sh88001575
 <http://id.loc.gov/authorities/subjects/sh88001575> rdf:type owl:NamedIndividual ,
                                                              ctp:Subject ;
                                                     rdfs:label "Industrial energy"@en ;
-                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh88001575"^^rdfs:Literal .
+                                                    ctp:hasPrimaryIdentifier "http://id.loc.gov/authorities/subjects/sh88001575"^^xsd:anyURI .
 
 
 ###  http://viaf.org/viaf/211013856
 <http://viaf.org/viaf/211013856> rdf:type owl:NamedIndividual ,
                                           ctp:Group ;
                                  ctp:hasName "Ansaldo family" ;
-                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/211013856"^^rdfs:Literal .
+                                 ctp:hasPrimaryIdentifier "http://viaf.org/viaf/211013856"^^xsd:anyURI .
 
 
 ###  http://viaf.org/viaf/247468924
@@ -370,63 +370,63 @@ ctp:Type rdf:type owl:Class .
 <http://viaf.org/viaf/7770920> rdf:type owl:NamedIndividual ,
                                         ctp:Person ;
                                ctp:hasName "Gerolamo Lazzeri" ;
-                               ctp:hasPrimaryIdentifier "http://viaf.org/viaf/7770920"^^rdfs:Literal .
+                               ctp:hasPrimaryIdentifier "http://viaf.org/viaf/7770920"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300025492
 <http://vocab.getty.edu/aat/300025492> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Author"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025492"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025492"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300025633
 <http://vocab.getty.edu/aat/300025633> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Curator"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025633"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300025633"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300026606
 <http://vocab.getty.edu/aat/300026606> rdf:type owl:NamedIndividual ,
                                                 ctp:Type ;
                                        rdfs:label "Catalogue"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026606"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026606"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300026657
 <http://vocab.getty.edu/aat/300026657> rdf:type owl:NamedIndividual ,
                                                 ctp:Type ;
                                        rdfs:label "Periodical"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026657"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300026657"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300046300
 <http://vocab.getty.edu/aat/300046300> rdf:type owl:NamedIndividual ,
                                                 ctp:Type ;
                                        rdfs:label "Photograph"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300046300"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300046300"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300054402
 <http://vocab.getty.edu/aat/300054402> rdf:type owl:NamedIndividual ,
                                                 ctp:Type ;
                                        rdfs:label "Oral history"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300054402"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300054402"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300160390
 <http://vocab.getty.edu/aat/300160390> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Holder"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300160390"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300160390"^^xsd:anyURI .
 
 
 ###  http://vocab.getty.edu/aat/300386174
 <http://vocab.getty.edu/aat/300386174> rdf:type owl:NamedIndividual ,
                                                 ctp:Role ;
                                        rdfs:label "Creator"@en ;
-                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174"^^rdfs:Literal .
+                                       ctp:hasPrimaryIdentifier "http://vocab.getty.edu/aat/300386174"^^xsd:anyURI .
 
 
 ###  https://orcid.org/0000-0002-2440-2376
@@ -591,7 +591,7 @@ ctp:Type rdf:type owl:Class .
 :Luigi_Ansaldo_e_due_donne_non_identificate rdf:type owl:NamedIndividual ,
                                                      ctp:CulturalResource ;
                                             ctp:hasDescription "Ritratto di Luigi Ansaldo con due donne non identificate."@it ;
-                                            ctp:hasPrimaryIdentifier "GBA.000028 (fot.)"^^rdfs:Literal ;
+                                            ctp:hasPrimaryIdentifier "https://archimondi.it/s/1/item/2825"^^xsd:anyURI ;
                                             ctp:hasRelationToAgent :Creator_4 ;
                                             ctp:hasSecondaryIdentifier :GBA.000028 ;
                                             ctp:hasTime <https://w3id.org/ctp/transitions#1904-09-08> ;
@@ -616,7 +616,7 @@ ctp:Type rdf:type owl:Class .
 Trasferita all'Oscar Sinigaglia di Cornigliano, lavora come impiegata al reparto Officina, quello di Guido Rossa ed è testimone della tragedia inflitta dal terrorismo delle BR. E' tra le protagoniste della costituzione del \"Coordinamento donne Italsider\" e partecipa ai corsi universitari delle \"150 ore\".
 Anche il marito, esponente del CdF, lavora nello stesso stabilimento. Nel 1987 usufruisce del prepensionamento e lascia l'azienda. Attualmente cura l'organizzazione e l'amministrazione di una scuola di danza fondata dalla figlia.
 In particolare l'abstract realizzato riguarda gli inizi della sua vita professionale e l'impatto, non facile, con una realtà lavorativa prettamente maschile."""@it ;
-                   ctp:hasPrimaryIdentifier "LSF.000032"^^rdfs:Literal ;
+                   ctp:hasPrimaryIdentifier "https://archimondi.it/s/1/item/462"^^xsd:anyURI ;
                    ctp:hasRelationToAgent :Creator_2 ;
                    ctp:hasSecondaryIdentifier :LSF.000032 ;
                    ctp:hasTime <https://w3id.org/ctp/transitions#2006-11-30> ;
@@ -665,7 +665,7 @@ In particolare l'abstract realizzato riguarda gli inizi della sua vita professio
              ctp:hasCreationDate "2024-02-06"^^xsd:date ;
              ctp:hasDescription "Long text - Introduction to the exhibition"@en ,
                                 "Testo lungo - Introduzione alla mostra"@it ;
-             ctp:hasPrimaryIdentifier "cod123450670rrrroas"^^rdfs:Literal ;
+             ctp:hasPrimaryIdentifier "www.transitions-ansaldofoundation.it"^^xsd:anyURI ;
              ctp:hasRelationToAgent :Creator_1 ,
                                     :Curator_1 ;
              ctp:hasTheme :Transitions_theme ;
@@ -830,7 +830,7 @@ Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orar
 - Soldati di domani (di Enzo Tuccio), p. 18
 - Tra le quinte del patriottismo (di Bel ami), p. 20
 - Rimbombi di guerra (di fra Stuono), p. 22"""@it ;
-                                                                    ctp:hasPrimaryIdentifier "PER.000075/1"^^rdfs:Literal ;
+                                                                    ctp:hasPrimaryIdentifier "https://archimondi.it/s/1/item/7452"^^xsd:anyURI ;
                                                                     ctp:hasRelationToAgent :Creator_3 ;
                                                                     ctp:hasSecondaryIdentifier <https://w3id.org/ctp/transitions#PER.000075/1> ;
                                                                     ctp:hasTime <https://w3id.org/ctp/transitions#1915-08-15> ;
