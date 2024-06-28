@@ -850,7 +850,8 @@ Bibliography: Benedicenti, Alberico, Malati, Medici, e Farmacisti, 2nd ed., Mila
 ###  https://w3id.org/ctp/ncf#Unknown
 :Unknown rdf:type owl:NamedIndividual ,
                   ctp:Person ;
-         rdfs:label "Unknown"@en .
+         rdfs:label "Unknown"@en ;
+         ctp:hasName "Unknown" .
 
 
 ###  https://w3id.org/ctp/ncf#cnrImati

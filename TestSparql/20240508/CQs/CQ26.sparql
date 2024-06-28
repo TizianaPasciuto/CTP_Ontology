@@ -1,0 +1,35 @@
+# CQ26
+# What are the thematic path that can be associated with a specific range time?
+# Quali sono i percorsi tematici che possono avere a che fare con un certo range temporale?
+
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?ThematicPathTitle ?B ?E  
+WHERE{  
+  #BIND ("1783"^^xsd:gYear as ?DesiredBeginningDate).
+  #BIND ("2024"^^xsd:gYear as ?DesiredEndDate).
+  ?ThematicPath ctp:hasTime ?TemporalEntity.  
+  {?TemporalEntity ctp:hasDate  ?BeginningDate.
+    BIND (xsd:gYear(?BeginningDate) as ?B).
+    #BIND (xsd:date(?TemporalEntity) as ?E).
+    #FILTER (?B>= ?DesiredBeginningDate && ?B <=?DesiredBeginningDate) 
+    FILTER (?B>= "1783"^^xsd:gYear && ?B <="1783"^^xsd:gYear) 
+    } 
+  UNION
+    {  
+      ?TemporalEntity ctp:hasBeginning ?BDate.
+      ?BDate ctp:hasDate ?BeginningDate.
+      ?TemporalEntity ctp:hasEnd ?EDate.
+      ?EDate ctp:hasDate ?EndDate.  
+      BIND (xsd:gYear(?BeginningDate) as ?B).
+      BIND (xsd:gYear(?EndDate) as ?E).
+      # FILTER (?B>= ?DesiredBeginningDate && ?E <=?DesiredEndDate) 
+      FILTER (?B>="1783"^^xsd:gYear && ?E <="1783"^^xsd:gYear) 
+    }  
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle. 
+  #?TemporalEntity rdfs:label ?TemporalEntityLabel. 
+
+   
+}  
+LIMIT 100  

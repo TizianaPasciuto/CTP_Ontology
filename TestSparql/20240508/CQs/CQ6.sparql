@@ -7,8 +7,7 @@
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?RoleLabel ?BeginningDate ?EndDate  
-WHERE{  
-  {  
+WHERE{    
     {  
       ?ThematicPath ctp:hasPart ?CulturalResource.  
     }  
@@ -17,11 +16,9 @@ WHERE{
       ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
       ?OrderedListSlot ctp:hasItem ?CulturalResource.  
     }  
-  }  
   Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
-  {  
-    {  
+
       ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
       ?RelationToAgent ctp:hasRole ?Role.  
       FILTER(?Role = <http://vocab.getty.edu/aat/300386174> || ?Role = <http://vocab.getty.edu/aat/300025492> || ?Role = <http://vocab.getty.edu/aat/300417627>)  
@@ -30,9 +27,6 @@ WHERE{
       Optional{?Role rdfs:label ?RoleLabel}.  
       #?ThematicPath ctp:hasTitle ?p.  
       #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
-    }  
-    UNION  
-    {
       {
         ?CulturalResource ctp:hasTime ?TemporalEntity.  
         ?TemporalEntity ctp:hasDate  ?BeginningDate.  
@@ -44,7 +38,5 @@ WHERE{
         ?CulturalResource ctp:hasEnd ?EDate.
         ?EDate ctp:hasDate ?EndDate.  
       }
-    }  
-  }  
 }  
 LIMIT 100  

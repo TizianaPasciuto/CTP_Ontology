@@ -154,11 +154,11 @@
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ctp#isPartOf> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ctp#ThematicPath> .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ctp#CulturalResource> .
-_:B9091e024abc832ad654a94ec4f11a140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
-_:B9091e024abc832ad654a94ec4f11a140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B2f6ea26bb3fc58a490a077c3b2fc30cc .
-_:B2f6ea26bb3fc58a490a077c3b2fc30cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
-_:B2f6ea26bb3fc58a490a077c3b2fc30cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:B9091e024abc832ad654a94ec4f11a140 .
+_:Bcd766b26642bb45e7b60be90fd062f79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasSlot> .
+_:Bcd766b26642bb45e7b60be90fd062f79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B3334d64c966d4e8676c876779746c3da .
+_:B3334d64c966d4e8676c876779746c3da <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#hasItem> .
+_:B3334d64c966d4e8676c876779746c3da <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ctp#hasPart> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:Bcd766b26642bb45e7b60be90fd062f79 .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la relazione tra il percorso tematico e le risorse culturali che lo compongono."@it .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relationship between the thematic path and the cultural resources that compose it."@en .
 <https://w3id.org/ctp#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
@@ -615,13 +615,13 @@ _:B2f6ea26bb3fc58a490a077c3b2fc30cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it .
 <https://w3id.org/ctp#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:B9684f08882ac91b6ee8515cf394a4c08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:Bd90479c6ab98247ab934e28d4b047177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
-_:Bd90479c6ab98247ab934e28d4b047177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B513334dda866c05ffd02fa5a214c74d5 .
-_:B513334dda866c05ffd02fa5a214c74d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
-_:B513334dda866c05ffd02fa5a214c74d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:B9684f08882ac91b6ee8515cf394a4c08 <http://www.w3.org/2002/07/owl#unionOf> _:Bd90479c6ab98247ab934e28d4b047177 .
-<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:B9684f08882ac91b6ee8515cf394a4c08 .
+_:Ba88af32ee8c5ad742a37e2bece4b5b0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ba0bff48b8dc508dfad1bc8a075541e85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Instant> .
+_:Ba0bff48b8dc508dfad1bc8a075541e85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B129fcc9973fcc73d664397237ef4272d .
+_:B129fcc9973fcc73d664397237ef4272d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ctp#Interval> .
+_:B129fcc9973fcc73d664397237ef4272d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ba88af32ee8c5ad742a37e2bece4b5b0c <http://www.w3.org/2002/07/owl#unionOf> _:Ba0bff48b8dc508dfad1bc8a075541e85 .
+<https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:Ba88af32ee8c5ad742a37e2bece4b5b0c .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it .
 <https://w3id.org/ctp#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
@@ -1100,6 +1100,7 @@ _:B9684f08882ac91b6ee8515cf394a4c08 <http://www.w3.org/2002/07/owl#unionOf> _:Bd
 <https://w3id.org/ctp/ncf#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Person> .
 <https://w3id.org/ctp/ncf#Unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown"@en .
+<https://w3id.org/ctp/ncf#Unknown> <https://w3id.org/ctp#hasName> "Unknown" .
 <https://w3id.org/ctp/ncf#cnrImati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ctp/ncf#cnrImati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ctp#Organization> .
 <https://w3id.org/ctp/ncf#cnrImati> <http://www.w3.org/2000/01/rdf-schema#label> "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en .

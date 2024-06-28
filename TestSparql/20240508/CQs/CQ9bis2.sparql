@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath (GROUP_CONCAT(?ThematicPathTitle;separator=" | ") as ?label2) (COUNT(?ThematicPath) AS ?PathCount) 
+        WHERE{  
+            ?CulturalResource ctp:isPartOf ?ThematicPath.
+            Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}
+            }
+    GROUP BY ?ThematicPath
+    HAVING (?PathCount > 1)  
