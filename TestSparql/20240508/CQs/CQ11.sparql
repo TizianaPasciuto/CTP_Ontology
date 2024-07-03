@@ -5,6 +5,8 @@
 # P.S. Enter the Name to be searched in row 17, by substituting it for ?AgentName and inserting it between "". 
 # i.e. OPTIONAL { ?Agent ctp:hasName "Fondazione Lana&Seta"}.
 
+#Commenti Riccardo: da decidere come raffinare similmente alle CQ10
+
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 SELECT ?ThematicPathTitle ?AgentName  
