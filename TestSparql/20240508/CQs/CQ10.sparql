@@ -1,28 +1,12 @@
 # CQ10
-# Which thematic paths have been created by the same agent?  
-# Quali percorsi tematici sono stati realizzati dallo stesso agente?  
-
-# P.S. Enter the Name to be searched in row 19, by substituting it for ?AgentName and inserting it between "". 
-# i.e. OPTIONAL { ?Agent ctp:hasName "Mario Rossi"}.
-
-#Nota Riccardo: non mi sembra che la query rispecchi a pieno la CQ. perché la CQ può essere interepretata in differenti modi, 
-# proposta raffinare la query in tre CQs come segue o sceglierne una delle tre,
-#  CQ10:
 # Which thematic paths have been created and by who?  
 # Quali percorsi tematici sono stati realizzati e da quale agente?  
-#  CQ10 bis:
-# Which thematic paths have been created by the agent X?  
-# Quali percorsi tematici sono stati realizzati  dall'agente X?  
-# CQ10 tris
-# quali agenti hanno definito più percorsi?
-#nel caso della CQ10 BIS togliere group, aggiungere Bind a variabile e Filtro su il nome con regex
-
-#la query attuale implementa la prima delle tre.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
-SELECT ?ThematicPath (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedTitles) (GROUP_CONCAT( distinct ?Agent;separator=" | ") as ?GAgentURI) (GROUP_CONCAT( distinct ?AgentName;separator=" | ") as ?GAgentName)
+SELECT ?ThematicPath (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedTitles)
+     (GROUP_CONCAT( distinct ?Agent;separator=" | ") as ?GAgentURI) (GROUP_CONCAT( distinct ?AgentName;separator=" | ") as ?GAgentName)
 WHERE {  
   ?ThematicPath rdf:type ctp:ThematicPath.  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
