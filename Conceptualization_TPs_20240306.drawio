@@ -3747,25 +3747,10 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Instanziazione DigitXL" id="9y8gswLqXU5_ktcIjhfU">
-    <mxGraphModel dx="3412" dy="2034" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="2005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="vpm7ayCTahVIjucIEOgh-0" />
         <mxCell id="vpm7ayCTahVIjucIEOgh-1" parent="vpm7ayCTahVIjucIEOgh-0" />
-        <mxCell id="vpm7ayCTahVIjucIEOgh-43" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.72;exitY=0.001;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=12;shadow=0;" parent="vpm7ayCTahVIjucIEOgh-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="830.8000000000002" y="-207.95600000000013" as="sourcePoint" />
-            <mxPoint x="1121" y="-138" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="831" y="-268" />
-              <mxPoint x="1061" y="-268" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vpm7ayCTahVIjucIEOgh-44" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot; style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;hasBeginning&lt;br style=&quot;font-size: 12px;&quot;&gt;(time:hasBeginning)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=12;" parent="vpm7ayCTahVIjucIEOgh-43" vertex="1" connectable="0">
-          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
-            <mxPoint x="8" y="-10" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="vpm7ayCTahVIjucIEOgh-217" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Cultural Thematic&amp;nbsp; Path (CTP) Ontology&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;DigitXL - Novum Corpus Fontanianum scenario instantiation&lt;/b&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="vpm7ayCTahVIjucIEOgh-1" vertex="1">
           <mxGeometry x="-243.14" y="-550" width="1170" height="101" as="geometry" />
         </mxCell>
