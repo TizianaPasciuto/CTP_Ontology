@@ -1,0 +1,21 @@
+# CQ23
+# Which is the identification code associated with the cultural resource X by holder Y ?  
+# Qual è il codice identificativo associato alla risorsa culturale X dall'agente Y?  
+
+# PS. Replace the CulturalResourceTitle in row 18, column 35, and AgentName in row 19, column 24, and for both choose the language after @.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+SELECT ?IdentifierNumber ?CulturalResourceTitle ?AgentName  
+WHERE{  
+  ?CulturalResource rdf:type ctp:CulturalResource.    
+  ?CulturalResource ctp:hasSecondaryIdentifier ?Identifier.  
+  ?Identifier ctp:hasNotation ?IdentifierNumber.  
+  ?Identifier ctp:hasCreator ?Agent.
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+  Optional{ ?Agent rdfs:label ?AgentName}.  
+  #FILTER(?CulturalResourceTitle ="InsertCulturalHeritageTitleHere"@LANG).
+  #FILTER(?AgentName = "InsertAgentNameHere"@LANG).  
+}  
+LIMIT 100  

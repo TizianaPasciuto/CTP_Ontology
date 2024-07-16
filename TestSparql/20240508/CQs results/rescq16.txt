@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| ThematicPathTitle                         | CulturalResourceTitle                                                                     | Index |
+=================================================================================================================================================
+| "Anatomy"@en                              | "Dei moti dell'iride"@it                                                                  | 1     |
+| "Novum Corpus Fontanianum"@la             | "Lettera di Felice Fontana a Leopoldo Marcantonio Caldani, febbraio–marzo 1772"@it        | 1     |
+| "Road to Santiago de Compostela"@en       | "Church of the Holy Cross"@en                                                             | 1     |
+| "La strada per Santiago de Compostela"@it | "Church of the Holy Cross"@en                                                             | 1     |
+| "Road to Santiago de Compostela"@en       | "Chiesa di Santa Croce"@it                                                                | 1     |
+| "La strada per Santiago de Compostela"@it | "Chiesa di Santa Croce"@it                                                                | 1     |
+| "Novum Corpus Fontanianum"@la             | "Dei moti dell'iride"@it                                                                  | 2     |
+| "Anatomy"@en                              | "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it | 2     |
+| "Road to Santiago de Compostela"@en       | "Strada Nuova"@it                                                                         | 2     |
+| "La strada per Santiago de Compostela"@it | "Strada Nuova"@it                                                                         | 2     |
+| "Road to Santiago de Compostela"@en       | "Via Giuseppe Garibaldi"@it                                                               | 2     |
+| "La strada per Santiago de Compostela"@it | "Via Giuseppe Garibaldi"@it                                                               | 2     |
+| "Novum Corpus Fontanianum"@la             | "Double barometer"@en                                                                     | 3     |
+| "Novum Corpus Fontanianum"@la             | "Barometro doppio"@it                                                                     | 3     |
+| "Road to Santiago de Compostela"@en       | "Church of San Salvador de Vilar de Donas"@en                                             | 3     |
+| "La strada per Santiago de Compostela"@it | "Church of San Salvador de Vilar de Donas"@en                                             | 3     |
+| "Road to Santiago de Compostela"@en       | "Iglesia de San Salvador de Vilar de Donas"@es                                            | 3     |
+| "La strada per Santiago de Compostela"@it | "Iglesia de San Salvador de Vilar de Donas"@es                                            | 3     |
+| "Road to Santiago de Compostela"@en       | "Chiesa di San Salvador de Vilar de Donas"@it                                             | 3     |
+| "La strada per Santiago de Compostela"@it | "Chiesa di San Salvador de Vilar de Donas"@it                                             | 3     |
+| "Novum Corpus Fontanianum"@la             | "Lettre de M. l'Abbé Fontana à M. le Duc de Chaulnes"@fr                                  | 4     |
+| "Road to Santiago de Compostela"@en       | "Santiago de Compostela Cathedral"@en                                                     | 4     |
+| "La strada per Santiago de Compostela"@it | "Santiago de Compostela Cathedral"@en                                                     | 4     |
+| "Road to Santiago de Compostela"@en       | "Catedral de Santiago de Compostela"@es                                                   | 4     |
+| "La strada per Santiago de Compostela"@it | "Catedral de Santiago de Compostela"@es                                                   | 4     |
+| "Road to Santiago de Compostela"@en       | "Cattedrale di Santiago de Compostela"@it                                                 | 4     |
+| "La strada per Santiago de Compostela"@it | "Cattedrale di Santiago de Compostela"@it                                                 | 4     |
+| "Novum Corpus Fontanianum"@la             | "Fabbroni 16: Reale Museo di fisica e storia naturale: modelli anatomici. [1770]–1801"@it | 5     |
+-------------------------------------------------------------------------------------------------------------------------------------------------

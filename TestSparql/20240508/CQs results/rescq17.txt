@@ -1,0 +1,8 @@
+-----------------------------------------------------------------------------
+| ThematicPathTitle | CulturalEventTitle          | CulturalEventDate       |
+=============================================================================
+| "Transizioni"@it  | "Transitions Exhibition"@en | "2023-02-22/2023-04-24" |
+| "Transizioni"@it  | "Mostra Transizioni"@it     | "2023-02-22/2023-04-24" |
+| "Transitions"@en  | "Transitions Exhibition"@en | "2023-02-22/2023-04-24" |
+| "Transitions"@en  | "Mostra Transizioni"@it     | "2023-02-22/2023-04-24" |
+-----------------------------------------------------------------------------

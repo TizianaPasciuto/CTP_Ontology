@@ -1,0 +1,18 @@
+# CQ11
+# Which thematic paths have been funded and by who?  
+# Quali percorsi tematici sono stati finanziati e da chi?  
+
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPath (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedTitles)
+     (GROUP_CONCAT( distinct ?Agent;separator=" | ") as ?GAgentURI) (GROUP_CONCAT( distinct ?AgentName;separator=" | ") as ?GAgentName) 
+WHERE {  
+  ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
+  ?RelationToAgent ctp:hasRole ?Role.  
+  FILTER(?Role = <http://vocab.getty.edu/aat/300025224>)
+  ?RelationToAgent ctp:involves ?Agent.  
+  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  OPTIONAL { ?Agent ctp:hasName ?AgentName}.  
+} Group by ?ThematicPath 
+LIMIT 100  

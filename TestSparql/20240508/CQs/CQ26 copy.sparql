@@ -1,0 +1,23 @@
+# CQ26
+# What are the thematic path that can be associated with a specific range time?
+# Quali sono i percorsi tematici che possono avere a che fare con un certo range temporale?
+
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?ThematicPathTitle ?BeginningDate ?EndDate  
+WHERE{  
+  ?ThematicPath ctp:hasTime ?TemporalEntity.  
+  {?TemporalEntity ctp:hasDate  ?BeginningDate.} 
+  UNION
+    {  
+      ?TemporalEntity ctp:hasBeginning ?BDate.
+      ?BDate ctp:hasDate ?BeginningDate.
+      ?TemporalEntity ctp:hasEnd ?EDate.
+      ?EDate ctp:hasDate ?EndDate.  
+    }  
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle. 
+  #?TemporalEntity rdfs:label ?TemporalEntityLabel. 
+  FILTER (?TemporalEntity >= "1600-01-01"^^<http://www.w3.org/2001/XMLSchema#date> && ?TemporalEntity <="2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>)  
+}  
+LIMIT 100  

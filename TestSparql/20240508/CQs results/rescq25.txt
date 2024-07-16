@@ -1,0 +1,8 @@
+-----------------------------------------------------------------------------------------------------
+| ThematicPathTitle                         | date                                                  |
+=====================================================================================================
+| "La strada per Santiago de Compostela"@it | "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Road to Santiago de Compostela"@en       | "2024-02-04"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Transitions"@en                          | "2024-02-06"^^<http://www.w3.org/2001/XMLSchema#date> |
+| "Transizioni"@it                          | "2024-02-06"^^<http://www.w3.org/2001/XMLSchema#date> |
+-----------------------------------------------------------------------------------------------------

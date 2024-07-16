@@ -1,0 +1,20 @@
+# CQ16
+# Which sorting is used to arrange the cultural objects in the thematic path X?  
+# In che ordine sono disposti gli oggetti culturali nel percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 17, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?Index  
+WHERE{  
+  ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
+  ?OrderedListSlot ctp:hasItem ?CulturalResource.  
+  ?OrderedListSlot ctp:hasIndex ?Index.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).    
+}  
+ORDER BY ?Index  
+LIMIT 100  

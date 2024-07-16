@@ -1,0 +1,18 @@
+-----------------------------------------------------------
+| ThematicPathTitle             | SubThematicPathTitle    |
+===========================================================
+| "Transizioni"@it              | "Sezione Società"@it    |
+| "Transizioni"@it              | "Society section"@en    |
+| "Transitions"@en              | "Sezione Società"@it    |
+| "Transitions"@en              | "Society section"@en    |
+| "Transizioni"@it              | "Enterprise section"@en |
+| "Transizioni"@it              | "Sezione Impresa"@it    |
+| "Transitions"@en              | "Enterprise section"@en |
+| "Transitions"@en              | "Sezione Impresa"@it    |
+| "Transizioni"@it              | "Sezione Lavoro"@it     |
+| "Transizioni"@it              | "Work section"@en       |
+| "Transitions"@en              | "Sezione Lavoro"@it     |
+| "Transitions"@en              | "Work section"@en       |
+| "Novum Corpus Fontanianum"@la | "Poisons"@en            |
+| "Novum Corpus Fontanianum"@la | "Anatomy"@en            |
+-----------------------------------------------------------

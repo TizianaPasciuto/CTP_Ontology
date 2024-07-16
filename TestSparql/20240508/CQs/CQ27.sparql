@@ -1,0 +1,23 @@
+#CQ 27
+# Who or what inspired the thematic path X?
+# Chi o cosa ha ispirato il percorso tematico X?
+
+# P.S. Replace the ThematicPathTitle to be searched in row 21, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?ThematicPathTitle ?AgentName ?PlaceName ?TemporalEntityLabel  
+WHERE{  
+  {?ThematicPath ctp:isInspiredByAgent ?Agent.
+  ?Agent ctp:hasName ?AgentName.}
+  UNION
+  {?ThematicPath ctp:refersToPlace ?Place.
+  ?Place ctp:hasTitle ?PlaceName.}
+  UNION
+  {?ThematicPath ctp:refersToTemporalEntity ?TemporalEntity.
+  ?TemporalEntity rdfs:label ?TemporalEntityLabel.}
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle.
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}  
+LIMIT 100   

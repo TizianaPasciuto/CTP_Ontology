@@ -1,0 +1,6 @@
+------------------------------------
+| SubjectLabel | ThematicPathTitle |
+====================================
+| "Energy"@en  | "Impresa"@it      |
+| "Energy"@en  | "Enterprise"@en   |
+------------------------------------

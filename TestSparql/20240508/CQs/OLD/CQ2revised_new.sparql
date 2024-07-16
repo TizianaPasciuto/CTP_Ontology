@@ -1,0 +1,6 @@
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT ?ThematicPath ?Theme  
+WHERE{  
+  ?ThematicPath ctp:hasTheme ?Theme.  
+}  
+LIMIT 10  
