@@ -1,12 +1,14 @@
 # CQ12
-# Which types of cultural heritage are present in the thematic path X?  
+# Which types of cultural heritage are present in the thematic path X (eg, Novum corpus ...)?  
 # Quali tipologie di beni culturali sono presenti in un percorso tematico X?  
 
-# P.S. Replace the ThematicPathTitle to be searched in row 24, column 21.
+# P.S. Uncomment row 26 and replace the ThematicPathTitle to be searched in column 21.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?ThematicPathTitle ?CulturalResourceTitle ?CulturalResourceType  
+SELECT (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedThematicPathTitles)  ?ThematicPath
+    (GROUP_CONCAT(distinct concat(?CulturalResourceTitle,' (',lang(?CulturalResourceTitle), ')') ;separator=" | ") as ?GroupedCulturalResourceTitle)  (GROUP_CONCAT(distinct ?CulturalResource ;separator=" | ") as ?CulturalResourcURI)
+    (GROUP_CONCAT(distinct concat(?CulturalResourceType  ,' (',lang(?CulturalResourceType), ')') ;separator=" | ") as ?GroupedCulturalResourceType)  (GROUP_CONCAT(distinct ?Type  ;separator=" | ") as ?CulturalResourceTypeURI)
 WHERE{  
   {  
     ?ThematicPath ctp:hasPart ?CulturalResource.  
@@ -20,7 +22,8 @@ WHERE{
   Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
   Optional{ ?Type rdfs:label ?CulturalResourceType}.  
-  #?ThematicPath ctp:hasTitle ?p.  
-  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
-}  
+  ?ThematicPath ctp:hasTitle ?p.  
+ # FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}  group by ?ThematicPath ?CulturalResource
+order by ?ThematicPath ?CulturalResource
 LIMIT 100  

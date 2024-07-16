@@ -1,13 +1,12 @@
 # CQ11
-# Which thematic paths have been funded by the same agent?  
-# Quali percorsi tematici sono stati finanziati dallo stesso agente?  
+# Which thematic paths have been funded and by who?  
+# Quali percorsi tematici sono stati finanziati e da chi?  
 
-# P.S. Enter the Name to be searched in row 17, by substituting it for ?AgentName and inserting it between "". 
-# i.e. OPTIONAL { ?Agent ctp:hasName "Fondazione Lana&Seta"}.
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-SELECT ?ThematicPathTitle ?AgentName  
+SELECT ?ThematicPath (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedTitles)
+     (GROUP_CONCAT( distinct ?Agent;separator=" | ") as ?GAgentURI) (GROUP_CONCAT( distinct ?AgentName;separator=" | ") as ?GAgentName) 
 WHERE {  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
   ?RelationToAgent ctp:hasRole ?Role.  
@@ -15,5 +14,5 @@ WHERE {
   ?RelationToAgent ctp:involves ?Agent.  
   OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
   OPTIONAL { ?Agent ctp:hasName ?AgentName}.  
-}  
+} Group by ?ThematicPath 
 LIMIT 100  

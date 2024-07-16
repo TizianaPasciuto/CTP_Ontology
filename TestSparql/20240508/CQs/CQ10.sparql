@@ -1,14 +1,12 @@
 # CQ10
-# Which thematic paths have been created by the same agent?  
-# Quali percorsi tematici sono stati realizzati dallo stesso agente?  
-
-# P.S. Enter the Name to be searched in row 19, by substituting it for ?AgentName and inserting it between "". 
-# i.e. OPTIONAL { ?Agent ctp:hasName "Mario Rossi"}.
+# Which thematic paths have been created and by who?  
+# Quali percorsi tematici sono stati realizzati e da quale agente?  
 
 PREFIX ctp: <https://w3id.org/ctp#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
-SELECT ?ThematicPathTitle ?AgentName
+SELECT ?ThematicPath (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedTitles)
+     (GROUP_CONCAT( distinct ?Agent;separator=" | ") as ?GAgentURI) (GROUP_CONCAT( distinct ?AgentName;separator=" | ") as ?GAgentName)
 WHERE {  
   ?ThematicPath rdf:type ctp:ThematicPath.  
   ?ThematicPath ctp:hasRelationToAgent ?RelationToAgent.  
@@ -18,4 +16,5 @@ WHERE {
   OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.   
   OPTIONAL { ?Agent ctp:hasName ?AgentName}.
   }  
+  Group by ?ThematicPath 
 LIMIT 100  
