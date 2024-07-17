@@ -1,7 +1,7 @@
 # Competency_Questions
 
 ## CQ1
-What is a Thematic Paths?  
+What is a Thematic Path?  
 Che cosa è un percorso tematico?  
 
 Answer: A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes.  
@@ -14,7 +14,7 @@ What is the theme/What are the themes of the path X?
 Quale è la tematica/Quali sono le tematiche del percorso X?  
 
 ## CQ2bis
-What is the theme/What are the themes of the path X?  
+What is the theme/what are the themes of the paths that contain a certain keyword?  
 Quale è la tematica/Quali sono le tematiche dei percorsi che contengono una certa keyword?  
 
 ## CQ3
@@ -71,7 +71,7 @@ Which are the places related to the thematic path X?
 Quali sono i luoghi legati al percorso tematico X?  
 
 ## CQ15
-Which cultural, ethical and social values does the thematic path X want to convey?  
+Which cultural, ethical, and social values does the thematic path X aim to convey?  
 Quali valori culturali, etici e sociali vuole trasmettere il percorso tematico X?  
 
 ## CQ16
@@ -111,11 +111,11 @@ Which is the internal identifier of the resource X in the XY catalog?
 Qual è l'identificativo interno della risorsa X nel catalogo XY?  
 
 ## CQ25
-Which thematic routes have been created in the year XX?  
-Quali percorsi tematici sono stati creati nell'anno XX?  
+Which thematic routes have been created in the year YYYY?  
+Quali percorsi tematici sono stati creati nell'anno YYYY?  
 
 ## CQ26
-What are the thematic path that can be associated with a specific range time?  
+What are the thematic paths that can be associated with a specific range of time?  
 Quali sono i percorsi tematici che possono avere a che fare con un certo range temporale?  
 
 ## CQ27
