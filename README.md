@@ -5,6 +5,7 @@ This repository is dedicated to the development of an ontological module on the 
 The project is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021, and is driven by Italian National Research Council - [Istituto di matematica applicata e tecnologie informatiche "Enrico Magenes" (IMATI)](https://www.cnr.it/en/istituto/050/)
 
 ===================
+
 We use **https://w3id.org/ctp** for persistent URIs in referring to the ontology and its complementary documentation
 
 We have created:
