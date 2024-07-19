@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-07-19T13:51:04.287Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="DYM9iXIg9-VJNaoKjwNP" version="23.1.5" type="device" pages="5">
+<mxfile host="Electron" modified="2024-07-19T13:58:23.414Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="V9egitkahy_EuvgmzaZn" version="23.1.5" type="device" pages="5">
   <diagram name="Schema MTSR" id="YOZfdnGwV7Tn4Fwu6b-d">
-    <mxGraphModel dx="2261" dy="2005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3218" dy="2363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-0" />
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-1" parent="nvrNKAkMxTsLBetV7wSQ-0" />
@@ -947,9 +947,6 @@
             <mxPoint x="-350" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nvrNKAkMxTsLBetV7wSQ-167" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Cultural Thematic&amp;nbsp; Path (CTP) Ontology&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="nvrNKAkMxTsLBetV7wSQ-1" vertex="1">
-          <mxGeometry x="-21.019999999999996" y="-380" width="870" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-168" value="" style="graphMlID=e2;rounded=0;endArrow=block;strokeColor=#008000;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=12;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="nvrNKAkMxTsLBetV7wSQ-1" source="nvrNKAkMxTsLBetV7wSQ-49" target="nvrNKAkMxTsLBetV7wSQ-55" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="503" y="492" as="sourcePoint" />
@@ -1097,7 +1094,7 @@
           <mxGeometry x="896.9488546339504" y="-58.49642674106204" as="geometry" />
         </mxCell>
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-203" value="Legend" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;html=1;whiteSpace=wrap;" parent="nvrNKAkMxTsLBetV7wSQ-1" vertex="1">
-          <mxGeometry x="-461" y="257.5" width="250" height="370" as="geometry">
+          <mxGeometry x="1070" y="300" width="250" height="370" as="geometry">
             <mxRectangle width="70" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1193,7 +1190,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-225" value="" style="group" parent="nvrNKAkMxTsLBetV7wSQ-1" vertex="1" connectable="0">
-          <mxGeometry x="-454.53" y="294" width="91.89999999999992" height="332.75" as="geometry" />
+          <mxGeometry x="1076.47" y="336.5" width="91.89999999999992" height="332.75" as="geometry" />
         </mxCell>
         <mxCell id="nvrNKAkMxTsLBetV7wSQ-226" value="Datatype" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;container=0;" parent="nvrNKAkMxTsLBetV7wSQ-225" vertex="1">
           <mxGeometry y="112" width="90" height="43" as="geometry" />
@@ -1248,11 +1245,26 @@
             <mxPoint x="3" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="bQ5sfEDOxtai63HUjgi3-0" value="Namespace Declaration" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="nvrNKAkMxTsLBetV7wSQ-1">
+          <mxGeometry x="-490.00000000000006" y="390" width="361.42" height="205.09953721049044" as="geometry" />
+        </mxCell>
+        <mxCell id="bQ5sfEDOxtai63HUjgi3-1" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;adms:&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcat:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcterms:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;foaf:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;locn:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;olo:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;owl:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;prov:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;rdfs:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;skos:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;time:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;xsd:&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="bQ5sfEDOxtai63HUjgi3-0">
+          <mxGeometry x="0.4164524373497329" y="15.099537210490428" width="80" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="bQ5sfEDOxtai63HUjgi3-2" value="http://www.w3.org/ns/adms#&lt;br&gt;http://www.w3.org/ns/dcat#&lt;br&gt;http://purl.org/dc/terms/&lt;br&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;http://www.w3.org/ns/locn#&lt;br&gt;http://purl.org/ontology/olo/core#&lt;br&gt;http://www.w3.org/2002/07/owl#&lt;br&gt;http://www.w3.org/ns/prov#&lt;br&gt;https://www.w3.org/2000/01/rdf-schema#&lt;br&gt;http://www.w3.org/2004/02/skos/core#&lt;br&gt;https://www.w3.org/2006/time#&lt;br&gt;http://www.w3.org/2001/XMLSchema#" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="bQ5sfEDOxtai63HUjgi3-0">
+          <mxGeometry x="75.41645243734973" y="15.099537210490425" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="bQ5sfEDOxtai63HUjgi3-3" value="Riuse of Ontology Design Patterns" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="nvrNKAkMxTsLBetV7wSQ-1">
+          <mxGeometry x="-490.00000000000006" y="600" width="417.21" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bQ5sfEDOxtai63HUjgi3-4" value="http://www.ontologydesignpatterns.org/cp/owl/list.owl&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&amp;nbsp;&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="bQ5sfEDOxtai63HUjgi3-3">
+          <mxGeometry x="5.106452437349732" y="14.99953721049043" width="430" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram name="Schema inverse no box_2024.07.10" id="QRrtgFyzQXJOliTZt9_J">
-    <mxGraphModel dx="3540" dy="2039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5002" dy="2841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="hYLGczo_zQl0j3LtXpNT-0" />
         <mxCell id="hYLGczo_zQl0j3LtXpNT-1" parent="hYLGczo_zQl0j3LtXpNT-0" />
@@ -2012,23 +2024,8 @@
             <mxPoint x="-678" y="-79.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hYLGczo_zQl0j3LtXpNT-132" value="Namespace Declaration" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" parent="hYLGczo_zQl0j3LtXpNT-1" vertex="1">
-          <mxGeometry x="1075" y="369" width="361.42" height="205.09953721049044" as="geometry" />
-        </mxCell>
-        <mxCell id="hYLGczo_zQl0j3LtXpNT-133" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;adms:&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcat:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcterms:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;foaf:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;locn:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;olo:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;owl:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;prov:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;rdfs:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;skos:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;time:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;xsd:&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" parent="hYLGczo_zQl0j3LtXpNT-132" vertex="1">
-          <mxGeometry x="0.4164524373497329" y="15.099537210490428" width="80" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="hYLGczo_zQl0j3LtXpNT-134" value="http://www.w3.org/ns/adms#&lt;br&gt;http://www.w3.org/ns/dcat#&lt;br&gt;http://purl.org/dc/terms/&lt;br&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;http://www.w3.org/ns/locn#&lt;br&gt;http://purl.org/ontology/olo/core#&lt;br&gt;http://www.w3.org/2002/07/owl#&lt;br&gt;http://www.w3.org/ns/prov#&lt;br&gt;https://www.w3.org/2000/01/rdf-schema#&lt;br&gt;http://www.w3.org/2004/02/skos/core#&lt;br&gt;https://www.w3.org/2006/time#&lt;br&gt;http://www.w3.org/2001/XMLSchema#" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" parent="hYLGczo_zQl0j3LtXpNT-132" vertex="1">
-          <mxGeometry x="75.41645243734973" y="15.099537210490425" width="300" height="190" as="geometry" />
-        </mxCell>
         <mxCell id="hYLGczo_zQl0j3LtXpNT-135" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot; style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;isLocationOf&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=12;" parent="hYLGczo_zQl0j3LtXpNT-1" vertex="1" connectable="0">
           <mxGeometry x="320.00144732525894" y="105.4959162971429" as="geometry" />
-        </mxCell>
-        <mxCell id="hYLGczo_zQl0j3LtXpNT-136" value="Riuse of Ontology Design Patterns" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" parent="hYLGczo_zQl0j3LtXpNT-1" vertex="1">
-          <mxGeometry x="1020" y="579" width="417.21" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="hYLGczo_zQl0j3LtXpNT-137" value="http://www.ontologydesignpatterns.org/cp/owl/list.owl&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&amp;nbsp;&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" parent="hYLGczo_zQl0j3LtXpNT-136" vertex="1">
-          <mxGeometry x="5.106452437349732" y="14.99953721049043" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hYLGczo_zQl0j3LtXpNT-138" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=block;startFill=1;endFill=1;exitX=0.382;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.387;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;" parent="hYLGczo_zQl0j3LtXpNT-1" source="hYLGczo_zQl0j3LtXpNT-12" target="hYLGczo_zQl0j3LtXpNT-69" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -2508,11 +2505,29 @@
             <mxPoint x="3" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="pQetWfYzVbrMqKa2J80T-0" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Cultural Thematic&amp;nbsp; Path (CTP) Ontology&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="hYLGczo_zQl0j3LtXpNT-1">
+          <mxGeometry x="-21.019999999999996" y="-380" width="870" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vQml5xlERtx-RHygJkuk-0" value="Namespace Declaration" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="hYLGczo_zQl0j3LtXpNT-1">
+          <mxGeometry x="-879.21" y="-521" width="361.42" height="205.09953721049044" as="geometry" />
+        </mxCell>
+        <mxCell id="vQml5xlERtx-RHygJkuk-1" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;adms:&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcat:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;dcterms:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;foaf:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;locn:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;olo:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;owl:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;prov:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;rdfs:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;skos:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;time:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;xsd:&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="vQml5xlERtx-RHygJkuk-0">
+          <mxGeometry x="0.4164524373497329" y="15.099537210490428" width="80" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vQml5xlERtx-RHygJkuk-2" value="http://www.w3.org/ns/adms#&lt;br&gt;http://www.w3.org/ns/dcat#&lt;br&gt;http://purl.org/dc/terms/&lt;br&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;http://www.w3.org/ns/locn#&lt;br&gt;http://purl.org/ontology/olo/core#&lt;br&gt;http://www.w3.org/2002/07/owl#&lt;br&gt;http://www.w3.org/ns/prov#&lt;br&gt;https://www.w3.org/2000/01/rdf-schema#&lt;br&gt;http://www.w3.org/2004/02/skos/core#&lt;br&gt;https://www.w3.org/2006/time#&lt;br&gt;http://www.w3.org/2001/XMLSchema#" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="vQml5xlERtx-RHygJkuk-0">
+          <mxGeometry x="75.41645243734973" y="15.099537210490425" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vQml5xlERtx-RHygJkuk-3" value="Riuse of Ontology Design Patterns" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="hYLGczo_zQl0j3LtXpNT-1">
+          <mxGeometry x="-879.21" y="-311" width="417.21" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vQml5xlERtx-RHygJkuk-4" value="http://www.ontologydesignpatterns.org/cp/owl/list.owl&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&amp;nbsp;&lt;br&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Courier New;" vertex="1" parent="vQml5xlERtx-RHygJkuk-3">
+          <mxGeometry x="5.106452437349732" y="14.99953721049043" width="430" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram name="Schema (con tutte inverse)_25.03.2024" id="G2HCWfXslGOChl6aEgaX">
-    <mxGraphModel dx="3312" dy="1989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7234" dy="3956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="jF_wMNXfPJOj3b8D-4Wh-0" />
         <mxCell id="jF_wMNXfPJOj3b8D-4Wh-1" parent="jF_wMNXfPJOj3b8D-4Wh-0" />
