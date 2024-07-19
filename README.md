@@ -2,23 +2,23 @@
 ## Cultural Thematic Path Ontology - An ontology to travel in culture  
 This repository is dedicated to the development of an ontological module on the creation of cultural thematic path related to the GLAM (Galleries, Libraries, Archives, and Museum) domain, serving as a tool to "travel" through the cultural heritage by allowing the linking between cultural resources, of various types and stored in different places, unified by one or more themes.  
 
-The project is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021, and is driven by Italian National Research Council - [Istituto di matematica applicata e tecnologie informatiche "Enrico Magenes" (IMATI)](https://www.cnr.it/en/istituto/050/)
+The project is developed under the Ph.D. Research Project in Digital Humanities, supported by PON "Ricerca e Innovazione" 2014-2020, Asse IV "Istruzione e ricerca per il recupero", Azione IV.5 "Dottorati su tematiche Green" DM 1061/2021, and is driven by Italian National Research Council - [Istituto di matematica applicata e tecnologie informatiche "Enrico Magenes" (IMATI)](https://www.cnr.it/en/istituto/050/).
 
 ===================
 
-We use **https://w3id.org/ctp** for persistent URIs in referring to the ontology and its complementary documentation
+We use **https://w3id.org/ctp** for persistent URIs in referring to the ontology and its complementary documentation.
 
 We have created:
-+  `https://w3id.org/ctp` for actual ontology serialized in different syntaxes and ontology documentation
-+  `https://w3id.org/ctp/cq` link to competency questions
-+  `https://w3id.org/ctp/equivalences` for equivalences with other schemes
++  `https://w3id.org/ctp` for actual ontology serialized in different syntaxes and ontology documentation;
++  `https://w3id.org/ctp/cq` link to competency questions;
++  `https://w3id.org/ctp/equivalences` for equivalences with other schemes.
 
-Other links are for specific pieces of documentation.
-+ `https://w3id.org/ctp/cq/CQXX` for SPARQL Query corrisponding to CQXX
-+ `https://w3id.org/ctp/tabular` for tabular description of entities, attribute, etc
-+ `https://w3id.org/ctp/ncf` for the ontology instantiation related to DigitXL - Novum Corpus Fontanianum scenario
-+ `https://w3id.org/ctp/santiagodecompostela` for the ontology instantiation related to Cultural Routes - Camino de Santiago de Compostela scenario
-+ `https://w3id.org/ctp/transitions` for the ontology instantiation related to the exhibition Transitions | enterprise - work - society
+Other links are for specific pieces of documentation:
++ `https://w3id.org/ctp/cq/CQXX` for SPARQL Query corrisponding to CQXX;
++ `https://w3id.org/ctp/tabular` for tabular description of entities, attributes, etc;
++ `https://w3id.org/ctp/ncf` for the ontology instantiation related to DigitXL - Novum Corpus Fontanianum scenario;
++ `https://w3id.org/ctp/santiagodecompostela` for the ontology instantiation related to Cultural Routes - Camino de Santiago de Compostela scenario;
++ `https://w3id.org/ctp/transitions` for the ontology instantiation related to the exhibition Transitions | enterprise - work - society scenario.
 
 ## Development  
 The development of the ontology on Cultural Thematic Paths follows the Linked Open Terms (LOT) methodology, as outlined by [Poveda-Villalón et al.](https://www.sciencedirect.com/science/article/pii/S0952197622000525)  
