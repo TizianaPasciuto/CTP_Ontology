@@ -1,4 +1,4 @@
-# Competency_Questions
+# Competency_Questions  
 
 ## CQ1
 What is a Thematic Path?  
