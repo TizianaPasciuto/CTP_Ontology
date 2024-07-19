@@ -17,7 +17,7 @@
 @base <https://w3id.org/ctp/transitions#> .
 
 <https://w3id.org/ctp/transitions> rdf:type owl:Ontology ;
-                                    dcterms:created "2024-03-06"^^xsd:date ;
+                                    dcterms:created "2024-03-06"^^xsd:date ; 
                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                     dcterms:title "Exhibition Transitions | enterprise - work - society"@en ;
                                     dcterms:description: "Lo scopo di questo scenario è mantenere viva la memoria della mostra Transizioni | impresa - lavoro - società, organizzata dalla Fondazione Ansaldo e tenutasi presso il Teatro Falcone del Palazzo Reale di Genova dal 22 febbraio al 25 aprile 2023. La mostra ha raccontato l'evoluzione di tre percorsi sub-tematici interconnessi (impresa, lavoro e società) associati allo sviluppo della Fondazione Ansaldo, che va dalla sua nascita nei primi anni del 1850 fino ai giorni nostri."@it ,

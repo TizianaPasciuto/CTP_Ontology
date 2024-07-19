@@ -16,7 +16,7 @@
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
 @base <https://w3id.org/ctp/ncf#> .
 
-<https://w3id.org/ctp/ncf#> rdf:type owl:Ontology ;
+<https://w3id.org/ctp/ncf#> rdf:type owl:Ontology ; 
                              dcterms:created "2024-03-06"^^xsd:date ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "DigitXL - Novum Corpus Fontanianum"@en ;
