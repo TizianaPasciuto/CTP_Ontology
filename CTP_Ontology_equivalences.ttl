@@ -796,7 +796,7 @@ ctp:crobertamaggi rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/ctp#universitaDiGenova
 ctp:universitaDiGenova rdf:type owl:NamedIndividual ,
                                 ctp:Organization ;
-                       rdfs:label "University of Genoa, Italy"@en ;
+                       rdfs:label "University of Genoa, Italy"@en ; 
                        foaf:homepage "https://unige.it/" ;
                        foaf:name "University of Genoa, Italy" .
 
