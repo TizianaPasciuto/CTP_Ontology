@@ -14,11 +14,11 @@ What is the theme/What are the themes of the path X?
 Quale è la tematica/Quali sono le tematiche del percorso X?  
 
 ## CQ2bis
-What is the theme/what are the themes of the paths that contain a certain keyword?  
+What is the theme/What are the themes of the paths that contain a certain keyword?  
 Quale è la tematica/Quali sono le tematiche dei percorsi che contengono una certa keyword?  
 
 ## CQ3
-Where are cultural objects connected to thematic route X usually kept?  
+Where are cultural objects connected to thematic path X usually kept?  
 Dove sono solitamente conservati gli oggetti culturali connessi al percorso tematico X?  
 
 ## CQ4
@@ -75,16 +75,16 @@ Which cultural, ethical, and social values does the thematic path X aim to conve
 Quali valori culturali, etici e sociali vuole trasmettere il percorso tematico X?  
 
 ## CQ16
-Which sorting is used to arrange the cultural objects in the thematic path X?  
-In che ordine sono disposti gli oggetti culturali nel percorso tematico X?  
+Which cultural resources are in the thematic path X and in which order?  
+Quali risorse culturali sono presenti nel percorso tematico X e in quale ordine?
 
 ## CQ17
 The thematic path X is realized in one or more events (i.e. virtual or physical exhibition)? Which one/s?  
 Il percorso tematico X è legato a uno o più eventi (per esempio mostra virtuale, mostra fisica)? Quale/i?  
 
 ## CQ18
-The thematic path X is composed by one or more sub-thematic paths (i.e. exhibitions' sub-paths)?  
-Il percorso tematico X è composto da uno o più sotto percorsi tematici (per esempio sottofiloni tematici di una mostra)?  
+Which thematic path is composed by one or more sub-thematic paths (i.e. exhibitions' sub-paths)?  
+Quale percorso tematico è composto da uno o più ercorsi tematici secondari (per esempio sottofiloni tematici di una mostra)?  
 
 ## CQ19
 How is it possible to access the thematic path X?  
