@@ -821,7 +821,6 @@ ctp:hasName rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/ctp#hasNotation
 ctp:hasNotation rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain ctp:Identifier ;
                 rdfs:range rdfs:Literal ;
                 rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
@@ -849,7 +848,6 @@ ctp:hasTitle rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/ctp#isSelledBy
 ctp:isSelledBy rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain ctp:Product ;
                rdfs:range rdfs:Literal ;
                rdfs:comment "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."@it ,
