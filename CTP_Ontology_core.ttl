@@ -769,7 +769,7 @@ ctp:hasBoundingBox rdf:type owl:DatatypeProperty ;
 ctp:hasCentroid rdf:type owl:DatatypeProperty ;
                 rdfs:domain ctp:Place ;
                 rdfs:range rdfs:Literal ;
-                rdfs:comment "Il centro geografico (centroide) di un'entità spaziale."@it ,
+                rdfs:comment "Il centro geografico (centroide) di un oggetto spaziale."@it ,
                              "The geographic center (centroid) of a spatial thing."@en ;
                 rdfs:label "hasCentroid"@en .
 
