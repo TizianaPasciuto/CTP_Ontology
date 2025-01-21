@@ -1,0 +1,18 @@
+# CQ25
+# Which thematic paths have been created in the year YYYY?  
+# Quali percorsi tematici sono stati creati nell'anno YYYY?  
+
+# example with year 2024 at row 14, columns 21 and 86.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT 
+    (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles)  
+    (GROUP_CONCAT(DISTINCT ?Date; SEPARATOR=" | ") AS ?GroupedDate)   
+WHERE{  
+  ?ThematicPath ctp:hasCreationDate ?Date.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  FILTER (?Date >= "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> && ?Date <="2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>)  
+} GROUP BY ?ThematicPath ?Date
+ORDER BY ?ThematicPath ?Date
+
+LIMIT 100  

@@ -1,0 +1,41 @@
+# CQ26
+# What are the thematic paths that can be associated with a specific range of time?
+# Quali sono i percorsi tematici che possono avere a che fare con un certo range temporale?
+
+# example with years 1200 and 2000 at rows 23 and 35, columns 20 and 47.
+
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX ctp: <https://w3id.org/ctp#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles) 
+       ?BeginningDate 
+       ?EndDate  
+WHERE {  
+  ?ThematicPath ctp:hasTime ?TemporalEntity.  
+  {
+    ?TemporalEntity ctp:hasDate ?SingleDate.  
+    BIND (xsd:gYear(?SingleDate) AS ?B).  
+    FILTER (?B >= "1200"^^xsd:gYear && ?B <= "2000"^^xsd:gYear) 
+    BIND (?SingleDate AS ?BeginningDate).
+    BIND ("N/A" AS ?EndDate) 
+  } 
+  UNION
+  {
+    ?TemporalEntity ctp:hasBeginning ?BDate.  
+    ?BDate ctp:hasDate ?BeginningDate.  
+    ?TemporalEntity ctp:hasEnd ?EDate.  
+    ?EDate ctp:hasDate ?EndDate.  
+    BIND (xsd:gYear(?BeginningDate) AS ?B).  
+    BIND (xsd:gYear(?EndDate) AS ?E).  
+    FILTER (?B >= "1200"^^xsd:gYear && ?E <= "2000"^^xsd:gYear)  
+  }
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle. 
+}
+GROUP BY ?BeginningDate ?EndDate
+ORDER BY ?BeginningDate
+LIMIT 100

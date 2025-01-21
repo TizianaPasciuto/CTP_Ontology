@@ -1,0 +1,29 @@
+# CQ5bis
+# Who is involved in the production of the objects in the thematic path X and what is their role?  
+# Chi è coinvolto nella produzione degli oggetti del percorso tematico X e con che ruolo?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 27, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?RoleLabel 
+WHERE{  
+  {  
+    ?ThematicPath ctp:hasPart ?CulturalResource.  
+  }  
+  UNION  
+  {  
+    ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
+    ?OrderedListSlot ctp:hasItem ?CulturalResource.  
+  }  
+  ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
+  ?RelationToAgent ctp:hasRole ?Role.  
+  ?RelationToAgent ctp:involves ?Agent.  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+  Optional{?Agent ctp:hasName ?AgentName}.  
+  Optional{?Role rdfs:label ?RoleLabel}.  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+}  
+LIMIT 100  

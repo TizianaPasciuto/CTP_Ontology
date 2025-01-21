@@ -1,0 +1,31 @@
+#CQ 27
+# Who or what inspired the thematic path X?
+# Chi o cosa ha ispirato il percorso tematico X?
+
+# P.S. Replace the ThematicPathTitle to be searched in row 28, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT   
+  (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles)  
+  (GROUP_CONCAT(DISTINCT ?AgentName; SEPARATOR=" | ") AS ?GroupedAgentNames)  
+  (GROUP_CONCAT(DISTINCT CONCAT(?PlaceName, ' (', LANG(?PlaceName), ')') ; SEPARATOR=" | ") AS ?GroupedPlaceNames)
+  (GROUP_CONCAT(DISTINCT CONCAT(?TemporalEntityLabel, ' (', LANG(?TemporalEntityLabel), ')') ; SEPARATOR=" | ") AS ?GroupedTemporalEntities)
+WHERE{  
+  {?ThematicPath ctp:refersToAgent ?Agent.
+  ?Agent ctp:hasName ?AgentName.}
+  UNION
+  {?ThematicPath ctp:isInspiredByAgent ?Agent.
+  ?Agent ctp:hasName ?AgentName.}
+  UNION
+  {?ThematicPath ctp:refersToPlace ?Place.
+  ?Place ctp:hasTitle ?PlaceName.}
+  UNION
+  {?ThematicPath ctp:refersToTemporalEntity ?TemporalEntity.
+  ?TemporalEntity rdfs:label ?TemporalEntityLabel.}
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle.
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}  GROUP BY ?ThematicPath
+ORDER BY ?ThematicPath
+LIMIT 100   

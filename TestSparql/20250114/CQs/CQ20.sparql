@@ -1,0 +1,21 @@
+# CQ20
+# Where can cultural resources related to the thematic path X be viewed?
+# Dove sono visualizzabili gli oggetti legati al percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 18, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT 
+  (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles) 
+  (GROUP_CONCAT(DISTINCT CONCAT(?CulturalResourceTitle, ' (', LANG(?CulturalResourceTitle), ')') ; SEPARATOR=" | ") AS ?GroupedCulturalResourceTitles) 
+  (GROUP_CONCAT(DISTINCT ?Link; SEPARATOR=" | ") AS ?GroupedLinks)  
+WHERE{  
+  ?CulturalResource ctp:isPartOf ?ThematicPath.  
+  ?CulturalResource ctp:linkToDigitalization ?Link.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}  GROUP BY ?ThematicPath ?CulturalResource
+ORDER BY ?ThematicPath ?CulturalResource
+LIMIT 100  

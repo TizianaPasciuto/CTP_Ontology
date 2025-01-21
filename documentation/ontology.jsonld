@@ -176,6 +176,9 @@
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
@@ -228,14 +231,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-    "@value" : "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>\r\nIn this module the following Ontology Design Patterns have been used:<br><ul>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\r\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\r\n<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" />"
+    "@value" : "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>\nIn this module the following Ontology Design Patterns have been used:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" />"
   }, {
     "@language" : "it",
-    "@value" : "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>\r\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\r\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\r\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\r\n<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"
+    "@value" : "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<img src=\"<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" /> -->"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-03-06"
+    "@value" : "2025-01-14"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://w3id.org/ctp#atizianapasciuto"
@@ -256,17 +259,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-    "@value" : "The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.<br>\r\nThe development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.<br>\r\nWith regard to the scope, although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to the cultural heritage."
+    "@value" : "The creation of digital thematic paths represents an innovative approach to the enjoyment of online content, enabling users to navigate in a structured manner through information relevant to a specific topic and/or sector. In order to maximize the effectiveness of such paths, the intention is to develop an ontology that guides in their structure and organization.<br>\nThe development of an ontology for thematic paths aims not only to provide a clear and comprehensive definition of the concept but also to specify its main and basic requirements and the organization of content. The main purpose is to facilitate the enhancement of cultural heritage by facilitating user navigation through a series of described and interconnected information and resources. This achievement can be attained through the development of an ontology that serves as a tool for the organization, management, exchange, and enjoyment of online information.<br>\nWith regard to the scope, although the structuring of thematic paths can be related to any sector, in this study the attention will be focused on the GLAM domain. Therefore, the reference scope will be related to the cultural heritage."
   }, {
     "@language" : "it",
-    "@value" : "La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \r\nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\r\nPer quanto riguarda l'ambito, nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."
+    "@value" : "La creazione di percorsi tematici digitali rappresenta un approccio innovativo per la fruizione di contenuti online, consentendo agli utenti di navigare in modo strutturato attraverso informazioni pertinenti a un determinato argomento e/o settore. Al fine di massimizzare l'efficacia di tali percorsi, si intende sviluppare un'ontologia che ne guidi la struttura e l'organizzazione. \nLa realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.\nPer quanto riguarda l'ambito, nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Cultural Thematic Path (CTP) Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.1"
+    "@value" : "1.0.0"
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#Agent",
@@ -537,6 +540,34 @@
     "@value" : "Role"
   } ]
 }, {
+  "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'identificatore secondario originato da altri sistemi di catalogazione e distinto dall'identifcatore primario del catalogo principale di riferimento."
+  }, {
+    "@language" : "en",
+    "@value" : "The secondary identifier originates from other cataloging systems and is distinct from the primary identifier of the main reference catalog."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SecondaryMetadataDescription"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#Standard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Lo standard utilizzato per descrivere un'entità (per esempio CIDOC-CRM, RiC-O, etc.)."
+  }, {
+    "@language" : "en",
+    "@value" : "The standard used for describing an entity (i. e. CIDOC-CRM, RiC-O, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Standard"
+  } ]
+}, {
   "@id" : "https://w3id.org/ctp#Subject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -572,7 +603,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes. \r\nThe chosen theme, which may concern specific topics, contexts, events, places, historical periods or characters and so on, is expressed synthetically by a title and in-depth with a written descriptive text; they can be further identified through subjects. \r\nThe thematic path could be structured either as a collector of cultural objects, without establishing an order of priority, or present a predetermined order. \r\nThe development and use of this enjoyment strategy can be profitable to convey messages and cultural, ethical and social values."
+    "@value" : "A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes. \nThe chosen theme, which may concern specific topics, contexts, events, places, historical periods or characters and so on, is expressed synthetically by a title and in-depth with a written descriptive text; they can be further identified through subjects. \nThe thematic path could be structured either as a collector of cultural objects, without establishing an order of priority, or present a predetermined order. \nThe development and use of this enjoyment strategy can be profitable to convey messages and cultural, ethical and social values."
   }, {
     "@language" : "it",
     "@value" : "Un percorso tematico è uno strumento per  la valorizzazione del patrimonio culturale che consente di collegare oggetti culturali di diversa natura (tangibili e intangibili) attraverso l'identificazione di temi comuni. Il tema scelto, che può riguardare argomenti specifici, contesti, eventi, luoghi, periodi storici o personaggi e così via, è espresso in modo sintetico da un titolo e approfondito con un testo descrittivo scritto; possono essere ulteriormente identificati attraverso soggettazioni. Il percorso tematico potrebbe essere strutturato sia come un collezionista di oggetti culturali, senza stabilire un ordine di priorità, sia presentare un ordine predefinito. Lo sviluppo e l'uso di questa strategia di valorizzazione possono essere utili per trasmettere messaggi e valori culturali, etici e sociali."
@@ -586,10 +617,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."
+    "@value" : "Il soggetto generale del percorso tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."
   }, {
     "@language" : "en",
-    "@value" : "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."
+    "@value" : "The overall subject of the thematic path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -610,14 +641,40 @@
     "@value" : "Type"
   } ]
 }, {
+  "@id" : "https://w3id.org/ctp#agentRefersTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione fra un agente e un percorso tematico al quale si riferisce."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between an agent and the thematic path to which it refers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "agentRefersTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ctp#isSubjectOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ctp#refersToAgent"
+  } ]
+}, {
   "@id" : "https://w3id.org/ctp#allowsTheSaleOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."
+    "@value" : "Indica che una risorsa legata a un percorso tematico può essere venduta attraverso il percorso stesso (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."
+    "@value" : "Indicates that a thematic path is linked to a resource that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#ThematicPath"
@@ -691,6 +748,33 @@
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#conformsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il tipo di standard (CIDOC-CRM, RiC-O, and so on) adoperato nella descrizione dei metadati di una risorsa culturale."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates the type of standard (CIDOC-CRM, RiC-O, and so on) is used for the metadata description of a cultural resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "conformsTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#Standard"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ctp#isConformedBy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#conveys",
@@ -783,10 +867,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "La cornice geografica delimitante di un'entità spaziale."
+    "@value" : "Il centro geografico (centroide) di un oggetto spaziale."
   }, {
     "@language" : "en",
-    "@value" : "The geographic bounding box of a spatial thing."
+    "@value" : "The geographic center (centroid) of a spatial thing."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Place"
@@ -949,7 +1033,7 @@
     "@value" : "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."
+    "@value" : "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (e.g. alphabetical, chronological, etc)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#OrderedListSlot"
@@ -1010,6 +1094,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ctp#isLocationOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#hasMember",
@@ -1033,6 +1121,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ctp#memberOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#hasName",
@@ -1073,9 +1165,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#hasOrderedList",
@@ -1135,13 +1224,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la localizzazione di un agente."
+    "@value" : "Indica la localizzazione di un agente con uno specifico ruolo."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the location of an agent."
+    "@value" : "Indicates the location of an agent with a specific role."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ctp#Agent"
+    "@id" : "https://w3id.org/ctp#RelationToAgent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1235,10 +1324,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."
+    "@value" : "Indica la relazione fra un'entità e il suo codice identificativo."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."
+    "@value" : "Indicates the relationship beetween an entity and its identification code."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -1252,6 +1341,33 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ctp#isSecondaryIdentifierOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#hasSecondaryMetadataDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa relazione è adoperata per indicare che una risorsa culturale è stata descritta secondo un determinato standard (RiC-O, CIDOC-CRM, e via dicendo)."
+  }, {
+    "@language" : "en",
+    "@value" : "This relation is used to indicated that a cultural resource has been described according to a specific standard (RiC-O, CIDOC-CRM, and so on)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#CulturalResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSecondaryMetadataDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ctp#isSecondaryMetadataDescriptionOf"
   } ],
   "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
     "@language" : "en",
@@ -1276,6 +1392,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ctp#OrderedListSlot"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#hasSubject",
@@ -1285,7 +1405,7 @@
     "@value" : "Indica a quale/i soggetto/i l'entità si riferisce."
   }, {
     "@language" : "en",
-    "@value" : "Indicates to which subject/subjects the entity refers/refer."
+    "@value" : "Indicates to which subject/subjects the entity refers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -1456,10 +1576,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la relazione tra il percorso tematico e l'agente che lo ispira."
+    "@value" : "Indica la relazione tra un agente che ispira il percorso tematico e il percorso tematico stesso."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the relationship between the thematic path and the agent that inspires it."
+    "@value" : "Indicates the relationship between an agent that inspires a thematic path and the thematic path itself."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Agent"
@@ -1472,7 +1592,7 @@
     "@id" : "https://w3id.org/ctp#ThematicPath"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ctp#isSubjectOf"
+    "@id" : "https://w3id.org/ctp#agentRefersTo"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ctp#isInspiredByAgent"
@@ -1505,7 +1625,7 @@
   "@id" : "https://w3id.org/ctp#isBeginningOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
+    "@language" : "it",
     "@value" : "Indica da quale istante inizia un'entità temporale."
   }, {
     "@language" : "en",
@@ -1523,6 +1643,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/ctp#isTimeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#isConformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che un determinato standard (CIDOC-CRM, RiC-O, eccetera) è conforme a fornire una descrizione di metadati secondari di una risorsa culturale."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates that a specific type of standard (CIDOC-CRM, RiC-O, and so on) is conformed to provide a secondary metadata description of a cultural resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#Standard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isConformedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription"
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#isCreatorOf",
@@ -1548,7 +1688,7 @@
   "@id" : "https://w3id.org/ctp#isEndOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
+    "@language" : "it",
     "@value" : "Indica da quale istante termina un'entità temporale."
   }, {
     "@language" : "en",
@@ -1628,7 +1768,7 @@
     "@id" : "https://w3id.org/ctp#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ctp#hasSubject"
+    "@id" : "https://w3id.org/ctp#refersToAgent"
   } ],
   "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
     "@language" : "en",
@@ -1699,10 +1839,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la localizzazione di un agente."
+    "@value" : "Indica la localizzazione di un agente con un ruolo specifico."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the location of an agent."
+    "@value" : "Indicates that an agent with a specific role is located in a place."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Place"
@@ -1712,34 +1852,7 @@
     "@value" : "isPlaceOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ctp#Agent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ctp#isPreservedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the public or private agent responsible for preserving the cultural resource."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ctp#CulturalResource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "isPreservedBy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ctp#RelationToAgent"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ctp#preserves"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "en",
-    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#isRealizedIn",
@@ -1749,7 +1862,7 @@
     "@value" : "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."
+    "@value" : "Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#ThematicPath"
@@ -1762,7 +1875,7 @@
     "@id" : "https://w3id.org/ctp#CulturalEvent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ctp#occursIn"
+    "@id" : "https://w3id.org/ctp#realizes"
   } ],
   "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
     "@language" : "en",
@@ -1796,7 +1909,7 @@
     "@value" : "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the type of role played by the agent (i.e. creator, funder, etc)."
+    "@value" : "Indicates the type of role played by the agent (e.g. creator, funder, etc)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Role"
@@ -1813,7 +1926,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."
+    "@value" : "Indica la relazione fra un'entità e il codice identificativo assegnato ad esso da un agente che lo gestisce."
   }, {
     "@language" : "en",
     "@value" : "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."
@@ -1829,27 +1942,24 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "https://w3id.org/ctp#isSelledBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://w3id.org/ctp#isSecondaryMetadataDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."
+    "@value" : "Questa relazione indica che una descrizione di metadati addizionale, che segue un determinato standard (quali ad esempio RiC-O, CIDOC-CRM, eccetera), è disponibile per caratterizzare la risorsa culturale."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the link that allows purchasing the resource available on the web through an hyperlink."
+    "@value" : "This relation indicates that an additional metadata description, following a specific standard (such as RiC-O, CIDOC-CRM, etc.), is available to characterize the cultural resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ctp#Product"
+    "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "isSelledBy"
+    "@value" : "isSecondaryMetadataDescriptionOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    "@id" : "https://w3id.org/ctp#CulturalResource"
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#isSubjectOf",
@@ -1859,7 +1969,7 @@
     "@value" : "Indica a quale/i soggetto/i l'entità si riferisce."
   }, {
     "@language" : "en",
-    "@value" : "Indicates to which subject/subjects the entity refers/refer."
+    "@value" : "Indicates to which subject/subjects the entity refers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Subject"
@@ -1932,24 +2042,64 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "https://w3id.org/ctp#linkToResource",
+  "@id" : "https://w3id.org/ctp#landingPage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."
+    "@value" : "Indica una pagina web a cui si può accedere tramite un browser per visualizzare un catalogo, un dataset, le loro distribuzioni, e/o informazioni relative aggiuntive riguardanti l'entità."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."
+    "@value" : "Indicates a web page that can be accessed in a browser to view a catalog, a dataset, its distributions, and/or additional related information about the entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
+    "@value" : "landingPage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#linkToDigitalization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica il link che permette di visualizzare l'entità disponibile sul web attraverso un iperlink (per esempio IIIF manifest)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the link that allows viewing the entity available on the web through an hyperlink (e.g. IIIF manifest)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "linkToDigitalization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#linkToResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica che il record dell'oggetto culturale è descritto secondo lo standard di terzi e collegato attraverso la descrizione dei metadati secondari."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the cultural object record described according to third-party standard and linked through the secondary metadata description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#SecondaryMetadataDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "linkToResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#memberOf",
@@ -1995,26 +2145,6 @@
     "@id" : "https://w3id.org/ctp#previousItem"
   } ]
 }, {
-  "@id" : "https://w3id.org/ctp#occursIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ctp#CulturalEvent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "occursIn"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ctp#ThematicPath"
-  } ]
-}, {
   "@id" : "https://w3id.org/ctp#placeRefersTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2041,26 +2171,6 @@
     "@id" : "https://w3id.org/ctp#refersToPlace"
   } ]
 }, {
-  "@id" : "https://w3id.org/ctp#preserves",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "it",
-    "@value" : "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates the public or private agent responsible for preserving the cultural resource."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ctp#RelationToAgent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "preserves"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ctp#CulturalResource"
-  } ]
-}, {
   "@id" : "https://w3id.org/ctp#previousItem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2079,6 +2189,53 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ctp#OrderedListSlot"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#realizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#CulturalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "realizes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#ThematicPath"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ctp#refersToAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica la relazione fra il percorso tematico e l'agente con il quale è collegato."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates the relationship between the thematic path and the agent to which is linked."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ctp#ThematicPath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "refersToAgent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ctp#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ctp#hasSubject"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "Preferred direction of the relationship."
   } ]
 }, {
   "@id" : "https://w3id.org/ctp#refersToPlace",
@@ -2186,10 +2343,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."
+    "@value" : "Indica la relazione tra un periodo storico e il percorso tematico al quale è collegato."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the relationship between the thematic path and the historical period to which it refers."
+    "@value" : "It indicates the relationship between an historical period and the thematic path to which it is linked."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#TemporalEntity"

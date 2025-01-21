@@ -1,0 +1,21 @@
+# CQ24
+# Which is the internal identifier of the resource X in the XY catalog?  
+# Qual è l'identificativo interno della risorsa X nel catalogo XY?  
+
+# PS. Replace the CulturalResourceTitle to be searched in row 14, column 35, and choose the language after @.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+SELECT 
+  (GROUP_CONCAT(DISTINCT ?IdentifierNumber; SEPARATOR=" | ") AS ?GroupedIdentifierNumber)  
+  (GROUP_CONCAT(DISTINCT CONCAT(?CulturalResourceTitle, ' (', LANG(?CulturalResourceTitle), ')') ; SEPARATOR=" | ") AS ?GroupedCulturalResourceTitles)    
+WHERE{  
+  ?CulturalResource rdf:type ctp:CulturalResource.  
+  #?CulturalResource ctp:hasTitle "InsertCulturalResourceTitleHere"@LANG.  
+  ?CulturalResource ctp:hasPrimaryIdentifier ?IdentifierNumber.  
+  Optional{ ?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+}  GROUP BY ?Identifier ?CulturalResource
+ORDER BY ?Identifier ?CulturalResource
+LIMIT 100  
+
+

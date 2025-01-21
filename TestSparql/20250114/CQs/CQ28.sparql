@@ -1,0 +1,20 @@
+#CQ 28
+# Which are the agents related to the thematic path X?   
+# Quali sono gli agenti legati al percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 17, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT   
+  (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles)  
+  (GROUP_CONCAT(DISTINCT ?AgentName; SEPARATOR=" | ") AS ?GroupedAgentNames)  
+WHERE{  
+  {?ThematicPath ctp:refersToAgent ?Agent.
+  ?Agent ctp:hasName ?AgentName.}
+  ?ThematicPath ctp:hasTitle ?ThematicPathTitle.
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+}  GROUP BY ?ThematicPath
+ORDER BY ?ThematicPath
+LIMIT 100 

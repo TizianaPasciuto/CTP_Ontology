@@ -20,8 +20,8 @@ In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
 Questo lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
-<!-- img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true\" -->"""@it ;
-                        <http://purl.org/dc/terms/created> "2024-03-06"^^xsd:date ;
+<img src=\"<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" /> -->"""@it ;
+                        <http://purl.org/dc/terms/created> "2025-01-14"^^xsd:date ;
                         <http://purl.org/dc/terms/creator> :atizianapasciuto ,
                                                            :briccardoalbertoni ,
                                                            :crobertamaggi ;
@@ -35,7 +35,7 @@ With regard to the scope, although the structuring of thematic paths can be rela
 La realizzazione di un'ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l'organizzazione dei contenuti. L'obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un'ontologia che funga da strumento per l'organizzazione, la gestione, l'interscambio e la fruizione delle informazioni online.
 Per quanto riguarda l'ambito, nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l'attenzione verrà focalizzata sul dominio GLAM, quindi l'ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione."""@it ;
                         rdfs:label "Cultural Thematic Path (CTP) Ontology"@en ;
-                        owl:versionInfo "0.0.1" .
+                        owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -164,6 +164,10 @@ rdf:comment rdf:type owl:AnnotationProperty .
 rdf:HTML rdf:type rdfs:Datatype .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
 
@@ -182,15 +186,37 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "isInvolvedIn"@en .
 
 
+###  https://w3id.org/ctp#agentRefersTo
+:agentRefersTo rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isSubjectOf ;
+               owl:inverseOf :refersToAgent ;
+               rdfs:domain :Agent ;
+               rdfs:range :ThematicPath ;
+               rdfs:comment "Indica la relazione fra un agente e un percorso tematico al quale si riferisce."@it ,
+                            "Indicates the relationship between an agent and the thematic path to which it refers."@en ;
+               rdfs:label "agentRefersTo"@en .
+
+
 ###  https://w3id.org/ctp#allowsTheSaleOf
 :allowsTheSaleOf rdf:type owl:ObjectProperty ;
                  owl:inverseOf :soldThrough ;
                  rdfs:domain :ThematicPath ;
                  rdfs:range :Product ;
-                 rdfs:comment "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
-                              "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en ;
+                 rdfs:comment "Indica che una risorsa legata a un percorso tematico può essere venduta attraverso il percorso stesso (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
+                              "Indicates that a thematic path is linked to a resource that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en ;
                  rdfs:label "allowsTheSaleOf"@en ;
                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+
+
+###  https://w3id.org/ctp#conformsTo
+:conformsTo rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isConformedBy ;
+            rdfs:domain :SecondaryMetadataDescription ;
+            rdfs:range :Standard ;
+            rdfs:comment "Indica il tipo di standard (CIDOC-CRM, RiC-O, and so on) adoperato nella descrizione dei metadati di una risorsa culturale."@it ,
+                         "It indicates the type of standard (CIDOC-CRM, RiC-O, and so on) is used for the metadata description of a cultural resource."@en ;
+            rdfs:label "conformsTo"@en ;
+            <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#hasBeginning
@@ -257,7 +283,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:range :Place ;
              rdfs:comment "Indica la posizione dell'entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.)."@it ,
                           "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.)."@en ;
-             rdfs:label "hasLocation"@en .
+             rdfs:label "hasLocation"@en ;
+             <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#hasMember
@@ -267,7 +294,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:range :Agent ;
            rdfs:comment "Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri."@it ,
                         "Indicates that a group (intended as a simple grouping of people or as a company) has agents as members."@en ;
-           rdfs:label "hasMember"@en .
+           rdfs:label "hasMember"@en ;
+           <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#hasOrderedList
@@ -296,10 +324,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#hasPlace
 :hasPlace rdf:type owl:ObjectProperty ;
           owl:inverseOf :isPlaceOf ;
-          rdfs:domain :Agent ;
+          rdfs:domain :RelationToAgent ;
           rdfs:range :Place ;
-          rdfs:comment "Indica la localizzazione di un agente."@it ,
-                       "Indicates the location of an agent."@en ;
+          rdfs:comment "Indica la localizzazione di un agente con uno specifico ruolo."@it ,
+                       "Indicates the location of an agent with a specific role."@en ;
           rdfs:label "hasPlace"@en ;
           <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -331,10 +359,21 @@ xsd:date rdf:type rdfs:Datatype .
                         owl:inverseOf :isSecondaryIdentifierOf ;
                         rdfs:domain owl:Thing ;
                         rdfs:range :Identifier ;
-                        rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
-                                     "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en ;
+                        rdfs:comment "Indica la relazione fra un'entità e il suo codice identificativo."@it ,
+                                     "Indicates the relationship beetween an entity and its identification code."@en ;
                         rdfs:label "hasSecondaryIdentifier"@en ;
                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
+
+
+###  https://w3id.org/ctp#hasSecondaryMetadataDescription
+:hasSecondaryMetadataDescription rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf :isSecondaryMetadataDescriptionOf ;
+                                 rdfs:domain :CulturalResource ;
+                                 rdfs:range :SecondaryMetadataDescription ;
+                                 rdfs:comment "Questa relazione è adoperata per indicare che una risorsa culturale è stata descritta secondo un determinato standard (RiC-O, CIDOC-CRM, e via dicendo)."@it ,
+                                              "This relation is used to indicated that a cultural resource has been described according to a specific standard (RiC-O, CIDOC-CRM, and so on)."@en ;
+                                 rdfs:label "hasSecondaryMetadataDescription"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#hasSlot
@@ -343,7 +382,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:range :OrderedListSlot ;
          rdfs:comment "Per consentire la classificazione delle risorse culturali secondo un determinato criterio, il percorso tematico è organizzato attraverso slot che possono essere indicizzati."@it ,
                       "To allow the sorting of cultural resources according to a certain criterion, the thematic path is organized through slots that can be indexed."@en ;
-         rdfs:label "hasSlot"@en .
+         rdfs:label "hasSlot"@en ;
+         <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#hasSubject
@@ -352,7 +392,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:domain owl:Thing ;
             rdfs:range :Subject ;
             rdfs:comment "Indica a quale/i soggetto/i l'entità si riferisce."@it ,
-                         "Indicates to which subject/subjects the entity refers/refer."@en ;
+                         "Indicates to which subject/subjects the entity refers."@en ;
             rdfs:label "hasSubject"@en ;
             <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -412,12 +452,12 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ctp#inspires
 :inspires rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :isSubjectOf ;
+          rdfs:subPropertyOf :agentRefersTo ;
           owl:inverseOf :isInspiredByAgent ;
           rdfs:domain :Agent ;
           rdfs:range :ThematicPath ;
-          rdfs:comment "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it ,
-                       "Indicates the relationship between the thematic path and the agent that inspires it."@en ;
+          rdfs:comment "Indica la relazione tra un agente che ispira il percorso tematico e il percorso tematico stesso."@it ,
+                       "Indicates the relationship between an agent that inspires a thematic path and the thematic path itself."@en ;
           rdfs:label "inspires"@en .
 
 
@@ -436,9 +476,18 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:subPropertyOf :isTimeOf ;
                rdfs:domain :Instant ;
                rdfs:range :TemporalEntity ;
-               rdfs:comment "Indica da quale istante inizia un'entità temporale."@en ,
+               rdfs:comment "Indica da quale istante inizia un'entità temporale."@it ,
                             "Indicates from which moment a temporal entity begins."@en ;
                rdfs:label "isBeginningOf"@en .
+
+
+###  https://w3id.org/ctp#isConformedBy
+:isConformedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Standard ;
+               rdfs:range :SecondaryMetadataDescription ;
+               rdfs:comment "Indica che un determinato standard (CIDOC-CRM, RiC-O, eccetera) è conforme a fornire una descrizione di metadati secondari di una risorsa culturale."@it ,
+                            "It indicates that a specific type of standard (CIDOC-CRM, RiC-O, and so on) is conformed to provide a secondary metadata description of a cultural resource."@en ;
+               rdfs:label "isConformedBy"@en .
 
 
 ###  https://w3id.org/ctp#isCreatorOf
@@ -455,7 +504,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subPropertyOf :isTimeOf ;
          rdfs:domain :Instant ;
          rdfs:range :TemporalEntity ;
-         rdfs:comment "Indica da quale istante termina un'entità temporale."@en ,
+         rdfs:comment "Indica da quale istante termina un'entità temporale."@it ,
                       "Indicates from which moment a temporal entity ends."@en ;
          rdfs:label "isEndOf"@en .
 
@@ -480,7 +529,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ctp#isInspiredByAgent
 :isInspiredByAgent rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :hasSubject ;
+                   rdfs:subPropertyOf :refersToAgent ;
                    rdfs:domain :ThematicPath ;
                    rdfs:range :Agent ;
                    rdfs:comment "Indica la relazione tra il percorso tematico e l'agente che lo ispira."@it ,
@@ -519,30 +568,19 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#isPlaceOf
 :isPlaceOf rdf:type owl:ObjectProperty ;
            rdfs:domain :Place ;
-           rdfs:range :Agent ;
-           rdfs:comment "Indica la localizzazione di un agente."@it ,
-                        "Indicates the location of an agent."@en ;
+           rdfs:range :RelationToAgent ;
+           rdfs:comment "Indica la localizzazione di un agente con un ruolo specifico."@it ,
+                        "Indicates that an agent with a specific role is located in a place."@en ;
            rdfs:label "isPlaceOf"@en .
-
-
-###  https://w3id.org/ctp#isPreservedBy
-:isPreservedBy rdf:type owl:ObjectProperty ;
-               owl:inverseOf :preserves ;
-               rdfs:domain :CulturalResource ;
-               rdfs:range :RelationToAgent ;
-               rdfs:comment "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it ,
-                            "Indicates the public or private agent responsible for preserving the cultural resource."@en ;
-               rdfs:label "isPreservedBy"@en ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#isRealizedIn
 :isRealizedIn rdf:type owl:ObjectProperty ;
-              owl:inverseOf :occursIn ;
+              owl:inverseOf :realizes ;
               rdfs:domain :ThematicPath ;
               rdfs:range :CulturalEvent ;
               rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
-                           "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en ;
+                           "Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition)."@en ;
               rdfs:label "isRealizedIn"@en ;
               <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -561,7 +599,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:domain :Role ;
           rdfs:range :RelationToAgent ;
           rdfs:comment "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it ,
-                       "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en ;
+                       "Indicates the type of role played by the agent (e.g. creator, funder, etc)."@en ;
           rdfs:label "isRoleOf"@en .
 
 
@@ -569,9 +607,18 @@ xsd:date rdf:type rdfs:Datatype .
 :isSecondaryIdentifierOf rdf:type owl:ObjectProperty ;
                          rdfs:domain :Identifier ;
                          rdfs:range owl:Thing ;
-                         rdfs:comment "Indica la relazione tra un'entità e il codice di identificazione assegnato ad essa da un agente che la gestisce."@it ,
+                         rdfs:comment "Indica la relazione fra un'entità e il codice identificativo assegnato ad esso da un agente che lo gestisce."@it ,
                                       "Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it."@en ;
                          rdfs:label "isSecondaryIdentifierOf"@en .
+
+
+###  https://w3id.org/ctp#isSecondaryMetadataDescriptionOf
+:isSecondaryMetadataDescriptionOf rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :SecondaryMetadataDescription ;
+                                  rdfs:range :CulturalResource ;
+                                  rdfs:comment "Questa relazione indica che una descrizione di metadati addizionale, che segue un determinato standard (quali ad esempio RiC-O, CIDOC-CRM, eccetera), è disponibile per caratterizzare la risorsa culturale."@it ,
+                                               "This relation indicates that an additional metadata description, following a specific standard (such as RiC-O, CIDOC-CRM, etc.), is available to characterize the cultural resource."@en ;
+                                  rdfs:label "isSecondaryMetadataDescriptionOf"@en .
 
 
 ###  https://w3id.org/ctp#isSubjectOf
@@ -579,7 +626,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :Subject ;
              rdfs:range owl:Thing ;
              rdfs:comment "Indica a quale/i soggetto/i l'entità si riferisce."@it ,
-                          "Indicates to which subject/subjects the entity refers/refer."@en ;
+                          "Indicates to which subject/subjects the entity refers."@en ;
              rdfs:label "isSubjectOf"@en .
 
 
@@ -629,15 +676,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "nextItem"@en .
 
 
-###  https://w3id.org/ctp#occursIn
-:occursIn rdf:type owl:ObjectProperty ;
-          rdfs:domain :CulturalEvent ;
-          rdfs:range :ThematicPath ;
-          rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
-                       "Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition)."@en ;
-          rdfs:label "occursIn"@en .
-
-
 ###  https://w3id.org/ctp#placeRefersTo
 :placeRefersTo rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :isSubjectOf ;
@@ -649,15 +687,6 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "placeRefersTo"@en .
 
 
-###  https://w3id.org/ctp#preserves
-:preserves rdf:type owl:ObjectProperty ;
-           rdfs:domain :RelationToAgent ;
-           rdfs:range :CulturalResource ;
-           rdfs:comment "Indica l'agente pubblico o privato responsabile della conservazione della risorsa culturale."@it ,
-                        "Indicates the public or private agent responsible for preserving the cultural resource."@en ;
-           rdfs:label "preserves"@en .
-
-
 ###  https://w3id.org/ctp#previousItem
 :previousItem rdf:type owl:ObjectProperty ;
               rdfs:domain :OrderedListSlot ;
@@ -665,6 +694,26 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:comment "In an ordered collection, indicates the link to the previous item in a list."@en ,
                            "In un insieme ordinato, indica il collegamento all'elemento precedente in un elenco."@it ;
               rdfs:label "previousItem"@en .
+
+
+###  https://w3id.org/ctp#realizes
+:realizes rdf:type owl:ObjectProperty ;
+          rdfs:domain :CulturalEvent ;
+          rdfs:range :ThematicPath ;
+          rdfs:comment "Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica)."@it ,
+                       "Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition)."@en ;
+          rdfs:label "realizes"@en .
+
+
+###  https://w3id.org/ctp#refersToAgent
+:refersToAgent rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSubject ;
+               rdfs:domain :ThematicPath ;
+               rdfs:range :Agent ;
+               rdfs:comment "Indica la relazione fra il percorso tematico e l'agente con il quale è collegato."@it ,
+                            "It indicates the relationship between the thematic path and the agent to which is linked."@en ;
+               rdfs:label "refersToAgent"@en ;
+               <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
 
 ###  https://w3id.org/ctp#refersToPlace
@@ -714,8 +763,8 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :isSubjectOf ;
                         rdfs:domain :TemporalEntity ;
                         rdfs:range :ThematicPath ;
-                        rdfs:comment "Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce."@it ,
-                                     "Indicates the relationship between the thematic path and the historical period to which it refers."@en ;
+                        rdfs:comment "Indica la relazione tra un periodo storico e il percorso tematico al quale è collegato."@it ,
+                                     "It indicates the relationship between an historical period and the thematic path to which it is linked."@en ;
                         rdfs:label "temporalEntityRefersTo"@en .
 
 
@@ -745,8 +794,8 @@ xsd:date rdf:type rdfs:Datatype .
 :hasCentroid rdf:type owl:DatatypeProperty ;
              rdfs:domain :Place ;
              rdfs:range rdfs:Literal ;
-             rdfs:comment "La cornice geografica delimitante di un'entità spaziale."@it ,
-                          "The geographic bounding box of a spatial thing."@en ;
+             rdfs:comment "Il centro geografico (centroide) di un oggetto spaziale."@it ,
+                          "The geographic center (centroid) of a spatial thing."@en ;
              rdfs:label "hasCentroid"@en .
 
 
@@ -782,7 +831,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:domain :OrderedListSlot ;
           rdfs:range rdfs:Literal ;
           rdfs:comment "Indica come le risorse culturali vengono indicizzate all'interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.)."@it ,
-                       "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc)."@en ;
+                       "Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (e.g. alphabetical, chronological, etc)."@en ;
           rdfs:label "hasIndex"@en .
 
 
@@ -797,7 +846,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ctp#hasNotation
 :hasNotation rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :Identifier ;
              rdfs:range rdfs:Literal ;
              rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
@@ -823,22 +871,30 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "hasTitle"@en .
 
 
-###  https://w3id.org/ctp#isSelledBy
-:isSelledBy rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain :Product ;
-            rdfs:range rdfs:Literal ;
-            rdfs:comment "Indica il collegamento che consente l'acquisto della risorsa disponibile sul web attraverso un hyperlink."@it ,
-                         "Indicates the link that allows purchasing the resource available on the web through an hyperlink."@en ;
-            rdfs:label "isSelledBy"@en .
+###  https://w3id.org/ctp#landingPage
+:landingPage rdf:type owl:DatatypeProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range rdfs:Resource ;
+             rdfs:comment "Indica una pagina web a cui si può accedere tramite un browser per visualizzare un catalogo, un dataset, le loro distribuzioni, e/o informazioni relative aggiuntive riguardanti l'entità."@it ,
+                          "Indicates a web page that can be accessed in a browser to view a catalog, a dataset, its distributions, and/or additional related information about the entity."@en ;
+             rdfs:label "landingPage"@en .
+
+
+###  https://w3id.org/ctp#linkToDigitalization
+:linkToDigitalization rdf:type owl:DatatypeProperty ;
+                      rdfs:domain owl:Thing ;
+                      rdfs:range rdfs:Resource ;
+                      rdfs:comment "Indica il link che permette di visualizzare l'entità disponibile sul web attraverso un iperlink (per esempio IIIF manifest)."@it ,
+                                   "Indicates the link that allows viewing the entity available on the web through an hyperlink (e.g. IIIF manifest)."@en ;
+                      rdfs:label "linkToDigitalization"@en .
 
 
 ###  https://w3id.org/ctp#linkToResource
 :linkToResource rdf:type owl:DatatypeProperty ;
-                rdfs:domain owl:Thing ;
-                rdfs:range rdfs:Literal ;
-                rdfs:comment "Indica il collegamento che consente di visualizzare l'entità disponibile sul web attraverso un hyperlink o un codice QR."@it ,
-                             "Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code."@en ;
+                rdfs:domain :SecondaryMetadataDescription ;
+                rdfs:range rdfs:Resource ;
+                rdfs:comment "Indica che il record dell'oggetto culturale è descritto secondo lo standard di terzi e collegato attraverso la descrizione dei metadati secondari."@it ,
+                             "Indicates the cultural object record described according to third-party standard and linked through the secondary metadata description."@en ;
                 rdfs:label "linkToResource"@en .
 
 
@@ -965,6 +1021,20 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:label "Role"@en .
 
 
+###  https://w3id.org/ctp#SecondaryMetadataDescription
+:SecondaryMetadataDescription rdf:type owl:Class ;
+                              rdfs:comment "L'identificatore secondario originato da altri sistemi di catalogazione e distinto dall'identifcatore primario del catalogo principale di riferimento."@it ,
+                                           "The secondary identifier originates from other cataloging systems and is distinct from the primary identifier of the main reference catalog."@en ;
+                              rdfs:label "SecondaryMetadataDescription"@en .
+
+
+###  https://w3id.org/ctp#Standard
+:Standard rdf:type owl:Class ;
+          rdfs:comment "Lo standard utilizzato per descrivere un'entità (per esempio CIDOC-CRM, RiC-O, etc.)."@it ,
+                       "The standard used for describing an entity (i. e. CIDOC-CRM, RiC-O, etc.)."@en ;
+          rdfs:label "Standard"@en .
+
+
 ###  https://w3id.org/ctp#Subject
 :Subject rdf:type owl:Class ;
          rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ,
@@ -996,8 +1066,8 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 ###  https://w3id.org/ctp#Theme
 :Theme rdf:type owl:Class ;
-       rdfs:comment "Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ,
-                    "The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ;
+       rdfs:comment "Il soggetto generale del percorso tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione."@it ,
+                    "The overall subject of the thematic path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes."@en ;
        rdfs:label "Theme"@en .
 
 

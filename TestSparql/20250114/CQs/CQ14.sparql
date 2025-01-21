@@ -1,0 +1,17 @@
+# CQ14
+# Which are the places related to the thematic path X?  
+# Quali sono i luoghi legati al percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 14, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+SELECT (GROUP_CONCAT(distinct concat(?ThematicPathTitle,' (',lang(?ThematicPathTitle), ')') ;separator=" | ") as ?GroupedThematicPathTitles) (GROUP_CONCAT(distinct concat(?PlaceName,' (',lang(?PlaceName), ')') ;separator=" | ") as ?GroupedPlaceNames)   
+WHERE{  
+  ?ThematicPath ctp:refersToPlace ?Place.  
+  Optional{ ?Place ctp:hasTitle ?PlaceName}.  
+  Optional{ ?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  ?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+}  group by ?ThematicPath ?Place
+order by ?ThematicPath ?Place
+LIMIT 100  

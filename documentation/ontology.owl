@@ -27,8 +27,8 @@ In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:&lt;b
 &lt;li&gt; &lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt; &lt;a href=&quot;http://www.ontologydesignpatterns.org/cp/owl/place.owl&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/place.owl&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;
 Questo lavoro è stato sviluppato nell&apos;ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON &quot;Ricerca e Innovazione&quot; 2014-2020, Asse IV &quot;Istruzione e ricerca per il recupero&quot;, Azione IV.5 &quot;Dottorati su tematiche Green&quot; DM 1061/2021.&lt;br&gt;
-&lt;!-- img src=&quot;https://github.com/TizianaPasciuto/CTP_Ontology/blob/6fe971888fee889b3639a847ce0d2697396b2917/Conceptualization_TPs_20240306-Schema%2006.03.2024.drawio.png?raw=true&quot; --&gt;</terms:abstract>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-06</terms:created>
+&lt;img src=&quot;&lt;img src=&quot;https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true&quot; height=&quot;1000px&quot; /&gt; --&gt;</terms:abstract>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-14</terms:created>
         <terms:creator rdf:resource="https://w3id.org/ctp#atizianapasciuto"/>
         <terms:creator rdf:resource="https://w3id.org/ctp#briccardoalbertoni"/>
         <terms:creator rdf:resource="https://w3id.org/ctp#crobertamaggi"/>
@@ -42,7 +42,7 @@ With regard to the scope, although the structuring of thematic paths can be rela
 La realizzazione di un&apos;ontologia sui percorsi tematici punta non solo a fornire una definizione chiara ed onnicomprensiva del concetto, ma anche ad esplicitandone i requisiti fondanti e basilari e l&apos;organizzazione dei contenuti. L&apos;obiettivo finale è favorire la valorizzazione del patrimonio culturale, facilitando la navigazione degli utenti attraverso una serie di informazioni e risorse descritte e collegate fra loro. Il suo raggiungimento può essere raggiunto attraverso lo sviluppo di un&apos;ontologia che funga da strumento per l&apos;organizzazione, la gestione, l&apos;interscambio e la fruizione delle informazioni online.
 Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tematici possa essere riferita a qualsiasi settore, in questo studio l&apos;attenzione verrà focalizzata sul dominio GLAM, quindi l&apos;ambito di riferimento sarà circoscritto al patrimonio culturale e la sua valorizzazione.</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural Thematic Path (CTP) Ontology</rdfs:label>
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -271,6 +271,13 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
 
@@ -304,6 +311,21 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
+    <!-- https://w3id.org/ctp#agentRefersTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#agentRefersTo">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#isSubjectOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/ctp#refersToAgent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica la relazione fra un agente e un percorso tematico al quale si riferisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between an agent and the thematic path to which it refers.</rdfs:comment>
+        <rdfs:label xml:lang="en">agentRefersTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ctp#allowsTheSaleOf -->
 
 
@@ -311,9 +333,24 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <owl:inverseOf rdf:resource="https://w3id.org/ctp#soldThrough"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#ThematicPath"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#Product"/>
-        <rdfs:comment xml:lang="it">Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica che una risorsa legata a un percorso tematico può essere venduta attraverso il percorso stesso (ad esempio, il catalogo di una mostra descritta dal percorso tematico).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that a thematic path is linked to a resource that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path).</rdfs:comment>
         <rdfs:label xml:lang="en">allowsTheSaleOf</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#conformsTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#conformsTo">
+        <owl:inverseOf rdf:resource="https://w3id.org/ctp#isConformedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#SecondaryMetadataDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#Standard"/>
+        <rdfs:comment xml:lang="it">Indica il tipo di standard (CIDOC-CRM, RiC-O, and so on) adoperato nella descrizione dei metadati di una risorsa culturale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the type of standard (CIDOC-CRM, RiC-O, and so on) is used for the metadata description of a cultural resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">conformsTo</rdfs:label>
         <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
@@ -406,6 +443,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="it">Indica la posizione dell&apos;entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.).</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates the location of the entity. In the case of CulturalResource, it&apos;s referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.).</rdfs:comment>
         <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
 
@@ -420,6 +458,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="it">Indica che un gruppo (inteso come semplice raggruppamento di persone o come società) ha agenti come membri.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates that a group (intended as a simple grouping of people or as a company) has agents as members.</rdfs:comment>
         <rdfs:label xml:lang="en">hasMember</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
 
@@ -461,10 +500,10 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#hasPlace">
         <owl:inverseOf rdf:resource="https://w3id.org/ctp#isPlaceOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ctp#Agent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#RelationToAgent"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#Place"/>
-        <rdfs:comment xml:lang="it">Indica la localizzazione di un agente.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the location of an agent.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica la localizzazione di un agente con uno specifico ruolo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the location of an agent with a specific role.</rdfs:comment>
         <rdfs:label xml:lang="en">hasPlace</rdfs:label>
         <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
@@ -508,9 +547,24 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <owl:inverseOf rdf:resource="https://w3id.org/ctp#isSecondaryIdentifierOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#Identifier"/>
-        <rdfs:comment xml:lang="it">Indica la relazione tra un&apos;entità e il codice di identificazione assegnato ad essa da un agente che la gestisce.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica la relazione fra un&apos;entità e il suo codice identificativo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship beetween an entity and its identification code.</rdfs:comment>
         <rdfs:label xml:lang="en">hasSecondaryIdentifier</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#hasSecondaryMetadataDescription -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#hasSecondaryMetadataDescription">
+        <owl:inverseOf rdf:resource="https://w3id.org/ctp#isSecondaryMetadataDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#CulturalResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#SecondaryMetadataDescription"/>
+        <rdfs:comment xml:lang="it">Questa relazione è adoperata per indicare che una risorsa culturale è stata descritta secondo un determinato standard (RiC-O, CIDOC-CRM, e via dicendo).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This relation is used to indicated that a cultural resource has been described according to a specific standard (RiC-O, CIDOC-CRM, and so on).</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSecondaryMetadataDescription</rdfs:label>
         <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
@@ -525,6 +579,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="it">Per consentire la classificazione delle risorse culturali secondo un determinato criterio, il percorso tematico è organizzato attraverso slot che possono essere indicizzati.</rdfs:comment>
         <rdfs:comment xml:lang="en">To allow the sorting of cultural resources according to a certain criterion, the thematic path is organized through slots that can be indexed.</rdfs:comment>
         <rdfs:label xml:lang="en">hasSlot</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
 
@@ -537,7 +592,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#Subject"/>
         <rdfs:comment xml:lang="it">Indica a quale/i soggetto/i l&apos;entità si riferisce.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates to which subject/subjects the entity refers/refer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates to which subject/subjects the entity refers.</rdfs:comment>
         <rdfs:label xml:lang="en">hasSubject</rdfs:label>
         <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
@@ -621,12 +676,12 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#inspires">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#isSubjectOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#agentRefersTo"/>
         <owl:inverseOf rdf:resource="https://w3id.org/ctp#isInspiredByAgent"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#ThematicPath"/>
-        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e l&apos;agente che lo ispira.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the relationship between the thematic path and the agent that inspires it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un agente che ispira il percorso tematico e il percorso tematico stesso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between an agent that inspires a thematic path and the thematic path itself.</rdfs:comment>
         <rdfs:label xml:lang="en">inspires</rdfs:label>
     </owl:ObjectProperty>
     
@@ -653,9 +708,22 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#isTimeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Instant"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">Indica da quale istante inizia un&apos;entità temporale.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica da quale istante inizia un&apos;entità temporale.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates from which moment a temporal entity begins.</rdfs:comment>
         <rdfs:label xml:lang="en">isBeginningOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#isConformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isConformedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#Standard"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#SecondaryMetadataDescription"/>
+        <rdfs:comment xml:lang="it">Indica che un determinato standard (CIDOC-CRM, RiC-O, eccetera) è conforme a fornire una descrizione di metadati secondari di una risorsa culturale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates that a specific type of standard (CIDOC-CRM, RiC-O, and so on) is conformed to provide a secondary metadata description of a cultural resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">isConformedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -680,7 +748,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#isTimeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Instant"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
-        <rdfs:comment xml:lang="en">Indica da quale istante termina un&apos;entità temporale.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica da quale istante termina un&apos;entità temporale.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates from which moment a temporal entity ends.</rdfs:comment>
         <rdfs:label xml:lang="en">isEndOf</rdfs:label>
     </owl:ObjectProperty>
@@ -717,7 +785,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isInspiredByAgent">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#hasSubject"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#refersToAgent"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#ThematicPath"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#Agent"/>
         <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e l&apos;agente che lo ispira.</rdfs:comment>
@@ -772,25 +840,10 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isPlaceOf">
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Place"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#Agent"/>
-        <rdfs:comment xml:lang="it">Indica la localizzazione di un agente.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the location of an agent.</rdfs:comment>
-        <rdfs:label xml:lang="en">isPlaceOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ctp#isPreservedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isPreservedBy">
-        <owl:inverseOf rdf:resource="https://w3id.org/ctp#preserves"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ctp#CulturalResource"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#RelationToAgent"/>
-        <rdfs:comment xml:lang="it">Indica l&apos;agente pubblico o privato responsabile della conservazione della risorsa culturale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the public or private agent responsible for preserving the cultural resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">isPreservedBy</rdfs:label>
-        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
+        <rdfs:comment xml:lang="it">Indica la localizzazione di un agente con un ruolo specifico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that an agent with a specific role is located in a place.</rdfs:comment>
+        <rdfs:label xml:lang="en">isPlaceOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -799,11 +852,11 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isRealizedIn">
-        <owl:inverseOf rdf:resource="https://w3id.org/ctp#occursIn"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/ctp#realizes"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#ThematicPath"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#CulturalEvent"/>
         <rdfs:comment xml:lang="it">Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition).</rdfs:comment>
         <rdfs:label xml:lang="en">isRealizedIn</rdfs:label>
         <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
@@ -830,7 +883,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Role"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#RelationToAgent"/>
         <rdfs:comment xml:lang="it">Indica il tipo di ruolo svolto dall&apos;agente (ad esempio creatore, finanziatore, ecc.).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the type of role played by the agent (i.e. creator, funder, etc).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the type of role played by the agent (e.g. creator, funder, etc).</rdfs:comment>
         <rdfs:label xml:lang="en">isRoleOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -842,9 +895,22 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isSecondaryIdentifierOf">
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="it">Indica la relazione tra un&apos;entità e il codice di identificazione assegnato ad essa da un agente che la gestisce.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica la relazione fra un&apos;entità e il codice identificativo assegnato ad esso da un agente che lo gestisce.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates the relationship between an entity and the identification code assigned to it by an agent that manages it.</rdfs:comment>
         <rdfs:label xml:lang="en">isSecondaryIdentifierOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#isSecondaryMetadataDescriptionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#isSecondaryMetadataDescriptionOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#SecondaryMetadataDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#CulturalResource"/>
+        <rdfs:comment xml:lang="it">Questa relazione indica che una descrizione di metadati addizionale, che segue un determinato standard (quali ad esempio RiC-O, CIDOC-CRM, eccetera), è disponibile per caratterizzare la risorsa culturale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This relation indicates that an additional metadata description, following a specific standard (such as RiC-O, CIDOC-CRM, etc.), is available to characterize the cultural resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">isSecondaryMetadataDescriptionOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -856,7 +922,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="it">Indica a quale/i soggetto/i l&apos;entità si riferisce.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates to which subject/subjects the entity refers/refer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates to which subject/subjects the entity refers.</rdfs:comment>
         <rdfs:label xml:lang="en">isSubjectOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -928,19 +994,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
-    <!-- https://w3id.org/ctp#occursIn -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#occursIn">
-        <rdfs:domain rdf:resource="https://w3id.org/ctp#CulturalEvent"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#ThematicPath"/>
-        <rdfs:comment xml:lang="it">Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the relationship between a thematic path and a cultural event that originates it (i.e. physical exhibition).</rdfs:comment>
-        <rdfs:label xml:lang="en">occursIn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ctp#placeRefersTo -->
 
 
@@ -956,19 +1009,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
-    <!-- https://w3id.org/ctp#preserves -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#preserves">
-        <rdfs:domain rdf:resource="https://w3id.org/ctp#RelationToAgent"/>
-        <rdfs:range rdf:resource="https://w3id.org/ctp#CulturalResource"/>
-        <rdfs:comment xml:lang="it">Indica l&apos;agente pubblico o privato responsabile della conservazione della risorsa culturale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the public or private agent responsible for preserving the cultural resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">preserves</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ctp#previousItem -->
 
 
@@ -978,6 +1018,34 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:comment xml:lang="en">In an ordered collection, indicates the link to the previous item in a list.</rdfs:comment>
         <rdfs:comment xml:lang="it">In un insieme ordinato, indica il collegamento all&apos;elemento precedente in un elenco.</rdfs:comment>
         <rdfs:label xml:lang="en">previousItem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#realizes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#realizes">
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#CulturalEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#ThematicPath"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un percorso tematico e un evento culturale che lo origina (ad esempio, una mostra fisica).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship between a thematic path and a cultural event that originates it (e.g. physical exhibition).</rdfs:comment>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#refersToAgent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ctp#refersToAgent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#hasSubject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#ThematicPath"/>
+        <rdfs:range rdf:resource="https://w3id.org/ctp#Agent"/>
+        <rdfs:comment xml:lang="it">Indica la relazione fra il percorso tematico e l&apos;agente con il quale è collegato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the relationship between the thematic path and the agent to which is linked.</rdfs:comment>
+        <rdfs:label xml:lang="en">refersToAgent</rdfs:label>
+        <skos:editorialNote xml:lang="en">Preferred direction of the relationship.</skos:editorialNote>
     </owl:ObjectProperty>
     
 
@@ -1047,8 +1115,8 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ctp#isSubjectOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#TemporalEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/ctp#ThematicPath"/>
-        <rdfs:comment xml:lang="it">Indica la relazione tra il percorso tematico e il periodo storico a cui si riferisce.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the relationship between the thematic path and the historical period to which it refers.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un periodo storico e il percorso tematico al quale è collegato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the relationship between an historical period and the thematic path to which it is linked.</rdfs:comment>
         <rdfs:label xml:lang="en">temporalEntityRefersTo</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1098,8 +1166,8 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#hasCentroid">
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">La cornice geografica delimitante di un&apos;entità spaziale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The geographic bounding box of a spatial thing.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il centro geografico (centroide) di un oggetto spaziale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The geographic center (centroid) of a spatial thing.</rdfs:comment>
         <rdfs:label xml:lang="en">hasCentroid</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1151,7 +1219,7 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
         <rdfs:domain rdf:resource="https://w3id.org/ctp#OrderedListSlot"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">Indica come le risorse culturali vengono indicizzate all&apos;interno del percorso tematico, in modo che appaiano ordinate secondo un criterio specifico (ad esempio, alfabetico, cronologico, ecc.).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (i.e. alphabetical, chronological, etc).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates how cultural resources are indexed within the thematic path, so they appear ordered according to a specific criterion (e.g. alphabetical, chronological, etc).</rdfs:comment>
         <rdfs:label xml:lang="en">hasIndex</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1174,7 +1242,6 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#hasNotation">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ctp#Identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">Indica il codice di identificazione associato all&apos;entità.</rdfs:comment>
@@ -1210,16 +1277,28 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
-    <!-- https://w3id.org/ctp#isSelledBy -->
+    <!-- https://w3id.org/ctp#landingPage -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#isSelledBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ctp#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Indica il collegamento che consente l&apos;acquisto della risorsa disponibile sul web attraverso un hyperlink.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the link that allows purchasing the resource available on the web through an hyperlink.</rdfs:comment>
-        <rdfs:label xml:lang="en">isSelledBy</rdfs:label>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#landingPage">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="it">Indica una pagina web a cui si può accedere tramite un browser per visualizzare un catalogo, un dataset, le loro distribuzioni, e/o informazioni relative aggiuntive riguardanti l&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a web page that can be accessed in a browser to view a catalog, a dataset, its distributions, and/or additional related information about the entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">landingPage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ctp#linkToDigitalization -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#linkToDigitalization">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="it">Indica il link che permette di visualizzare l&apos;entità disponibile sul web attraverso un iperlink (per esempio IIIF manifest).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the link that allows viewing the entity available on the web through an hyperlink (e.g. IIIF manifest).</rdfs:comment>
+        <rdfs:label xml:lang="en">linkToDigitalization</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1228,10 +1307,10 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ctp#linkToResource">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Indica il collegamento che consente di visualizzare l&apos;entità disponibile sul web attraverso un hyperlink o un codice QR.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates the link that allows viewing the entity available on the web through an hyperlink or a QR code.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/ctp#SecondaryMetadataDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="it">Indica che il record dell&apos;oggetto culturale è descritto secondo lo standard di terzi e collegato attraverso la descrizione dei metadati secondari.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the cultural object record described according to third-party standard and linked through the secondary metadata description.</rdfs:comment>
         <rdfs:label xml:lang="en">linkToResource</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1432,6 +1511,28 @@ Per quanto riguarda l&apos;ambito, nonostante la strutturazione di percorsi tema
     
 
 
+    <!-- https://w3id.org/ctp#SecondaryMetadataDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ctp#SecondaryMetadataDescription">
+        <rdfs:comment xml:lang="it">L&apos;identificatore secondario originato da altri sistemi di catalogazione e distinto dall&apos;identifcatore primario del catalogo principale di riferimento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The secondary identifier originates from other cataloging systems and is distinct from the primary identifier of the main reference catalog.</rdfs:comment>
+        <rdfs:label xml:lang="en">SecondaryMetadataDescription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ctp#Standard -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ctp#Standard">
+        <rdfs:comment xml:lang="it">Lo standard utilizzato per descrivere un&apos;entità (per esempio CIDOC-CRM, RiC-O, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The standard used for describing an entity (i. e. CIDOC-CRM, RiC-O, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Standard</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ctp#Subject -->
 
 
@@ -1480,8 +1581,8 @@ The development and use of this enjoyment strategy can be profitable to convey m
 
 
     <owl:Class rdf:about="https://w3id.org/ctp#Theme">
-        <rdfs:comment xml:lang="it">Il soggetto generale del Percorso Tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The overall subject of the Thematic Path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il soggetto generale del percorso tematico fornisce una descrizione approfondita del tema trattato. Può comprendere uno o più concetti interconnessi, fungendo da preziosa risorsa per scopi di indicizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The overall subject of the thematic path providing an in-depth description of the treated subject. It may encompass one or multiple interconnected concepts, serving as a valuable resources for indexing purposes.</rdfs:comment>
         <rdfs:label xml:lang="en">Theme</rdfs:label>
     </owl:Class>
     

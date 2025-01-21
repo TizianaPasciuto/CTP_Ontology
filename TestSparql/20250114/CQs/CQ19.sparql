@@ -1,0 +1,23 @@
+# CQ19
+# How is it possible to access the thematic path X?  
+# Come è possibile accedere al percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 19, column 21.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+SELECT 
+  (GROUP_CONCAT(DISTINCT CONCAT(?ThematicPathTitle, ' (', LANG(?ThematicPathTitle), ')') ; SEPARATOR=" | ") AS ?GroupedThematicPathTitles) 
+  (GROUP_CONCAT(DISTINCT ?Link; SEPARATOR=" | ") AS ?GroupedLinks)  
+WHERE {  
+  ?ThematicPath rdf:type ctp:ThematicPath.
+  ?ThematicPath ctp:landingPage ?Link.  
+  OPTIONAL { ?ThematicPath ctp:hasTitle ?ThematicPathTitle. }
+  #?ThematicPath ctp:hasTitle ?p.  
+  #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).  
+}  
+GROUP BY ?ThematicPath
+ORDER BY ?ThematicPath
+LIMIT 100

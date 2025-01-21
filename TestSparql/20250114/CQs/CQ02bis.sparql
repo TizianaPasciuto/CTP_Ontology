@@ -1,0 +1,22 @@
+# CQ2bis
+
+# What is the theme/What are the themes of the paths that contain a certain keyword? 
+# Quale è la tematica/Quali sono le tematiche dei percorsi che contengono una certa keyword?  
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?ThemeTitle ?ThemeDescription
+WHERE {
+    BIND (("Transitions") as ?Keyword).
+    ?ThematicPath ctp:hasTheme ?Theme.  
+    ?ThematicPath ctp:hasTitle ?ThematicPathTitle.  
+    ?Theme ctp:hasTitle ?ThemeTitle.  
+    ?Theme ctp:hasDescription ?ThemeDescription.  
+    BIND(LANG(?ThematicPathTitle) as ?lang).
+    ?ThematicPath ctp:hasTitle ?p.  
+    FILTER(REGEX(?p, ?Keyword, "i")). 
+    FILTER(LANGMATCHES(LANG(?ThematicPathTitle), ?lang) &&  
+           LANGMATCHES(LANG(?ThemeTitle), ?lang) &&  
+           LANGMATCHES(LANG(?ThemeDescription), ?lang))  
+}  
+LIMIT 100  

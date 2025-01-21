@@ -1,7 +1,7 @@
 # Competency_Questions  
 
 ## CQ01
-What is a Thematic Path?  
+What is a thematic path?  
 Che cosa è un percorso tematico?  
 
 Answer: A thematic path is a tool for the enjoyment of cultural heritage that allows to connect cultural objects of different nature (tangible and intangible) through the identification of common themes.  
@@ -79,11 +79,11 @@ Which cultural resources are in the thematic path X and in which order?
 Quali risorse culturali sono presenti nel percorso tematico X e in quale ordine?
 
 ## CQ17
-The thematic path X is realized in one or more events (i.e. virtual or physical exhibition)? Which one/s?  
+The thematic path X is realized in one or more events (e.g. virtual or physical exhibition)? Which one/s?  
 Il percorso tematico X è legato a uno o più eventi (per esempio mostra virtuale, mostra fisica)? Quale/i?  
 
 ## CQ18
-Which thematic path is composed by one or more sub-thematic paths (i.e. exhibitions' sub-paths)?  
+Which thematic path is composed by one or more sub-thematic paths (e.g. exhibitions' sub-paths)?  
 Quale percorso tematico è composto da uno o più percorsi tematici secondari (per esempio sottofiloni tematici di una mostra)?  
 
 ## CQ19
@@ -103,7 +103,7 @@ Where is it possible to buy products related to the thematic path X?
 Dove è possibile acquistare prodotti relativi al percorso tematico X?  
 
 ## CQ23
-Which is the identification code associated with the cultural resource X by Cq Y?  
+Which is the identification code associated with the cultural resource X by holder Y?  
 Qual è il codice identificativo associato alla risorsa culturale X dall'agente Y?  
 
 ## CQ24
@@ -121,3 +121,7 @@ Quali sono i percorsi tematici che possono avere a che fare con un certo range t
 ## CQ27
 Who or what inspired the thematic path X?  
 Chi o cosa ha ispirato il percorso tematico X?  
+
+## CQ28
+Which are the agents related to the thematic path X?   
+Quali sono gli agenti legati al percorso tematico X?  

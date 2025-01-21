@@ -1,0 +1,43 @@
+# CQ6
+# By whom and when were the objects belonging to the thematic path X made?  
+# Da chi e quando sono stati realizzati gli oggetti appartenenti al percorso tematico X?  
+
+# P.S. Replace the ThematicPathTitle to be searched in row 29, column 25.
+
+PREFIX ctp: <https://w3id.org/ctp#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+SELECT ?ThematicPathTitle ?CulturalResourceTitle ?AgentName ?RoleLabel ?BeginningDate ?EndDate  
+WHERE{    
+    {  
+      ?ThematicPath ctp:hasPart ?CulturalResource.  
+    }  
+    UNION  
+    {  
+      ?ThematicPath ctp:hasSlot ?OrderedListSlot.  
+      ?OrderedListSlot ctp:hasItem ?CulturalResource.  
+    }  
+  Optional{?ThematicPath ctp:hasTitle ?ThematicPathTitle}.  
+  Optional{?CulturalResource ctp:hasTitle ?CulturalResourceTitle}.  
+
+      ?CulturalResource ctp:hasRelationToAgent ?RelationToAgent.  
+      ?RelationToAgent ctp:hasRole ?Role.  
+      FILTER(?Role = <http://vocab.getty.edu/aat/300386174> || ?Role = <http://vocab.getty.edu/aat/300025492> || ?Role = <http://vocab.getty.edu/aat/300417627>)  
+      ?RelationToAgent ctp:involves ?Agent.  
+      Optional{?Agent ctp:hasName ?AgentName}. 
+      Optional{?Role rdfs:label ?RoleLabel}.  
+      #?ThematicPath ctp:hasTitle ?p.  
+      #FILTER(REGEX(?p, "InsertThematicPathTitleHere", "i")).   
+      {
+        ?CulturalResource ctp:hasTime ?TemporalEntity.  
+        ?TemporalEntity ctp:hasDate ?BeginningDate.  
+      } 
+    UNION
+      {  
+        ?CulturalResource ctp:hasTime ?TemporalEntity.
+        ?TemporalEntity ctp:hasBeginning ?BDate.
+        ?BDate ctp:hasDate ?BeginningDate.
+        ?TemporalEntity ctp:hasEnd ?EDate.
+        ?EDate ctp:hasDate ?EndDate.  
+      }
+}  
+LIMIT 100  

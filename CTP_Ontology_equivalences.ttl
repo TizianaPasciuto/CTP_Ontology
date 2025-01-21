@@ -20,6 +20,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
+@prefix ctp: <https://w3id.org/ctp#> .
 @base <https://w3id.org/ctp/equivalences#> .
 
 <https://w3id.org/ctp/equivalences#> rdf:type owl:Ontology ;
@@ -33,7 +34,7 @@
                                               dcterms:title "Cultural Thematic Path (CTP) Ontology Equivalences"@en ;
                                               vann:preferredNamespacePrefix "ctpe" ;
                                               rdfs:label "Cultural Thematic Path (CTP) Ontology Equivalences"@en ;
-                                              owl:versionInfo "0.0.1" .
+                                              owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -248,9 +249,9 @@ dcterms:type rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:item
-olo:olo:item rdf:type owl:ObjectProperty ;
+olo:item rdf:type owl:ObjectProperty ;
              owl:equivalentProperty ctp:hasItem ;
-             rdfs:domain olo:olo:Slot ;
+             rdfs:domain olo:Slot ;
              rdfs:comment "An item of a slot in an ordered list."@en ;
              rdfs:isDefinedBy olo: ;
              rdfs:label "has item"@en ;
@@ -258,12 +259,12 @@ olo:olo:item rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:next
-olo:olo:next rdf:type owl:ObjectProperty ;
+olo:next rdf:type owl:ObjectProperty ;
              owl:equivalentProperty ctp:nextItem ;
-             owl:inverseOf olo:olo:previous ;
+             owl:inverseOf olo:previous ;
              rdf:type owl:FunctionalProperty ;
-             rdfs:domain olo:olo:Slot ;
-             rdfs:range olo:olo:Slot ;
+             rdfs:domain olo:Slot ;
+             rdfs:range olo:Slot ;
              rdfs:comment "Associates the next slot in an ordered list."@en ;
              rdfs:isDefinedBy olo: ;
              rdfs:label "has next"@en ;
@@ -271,11 +272,11 @@ olo:olo:next rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:ordered_list
-olo:olo:ordered_list rdf:type owl:ObjectProperty ;
+olo:ordered_list rdf:type owl:ObjectProperty ;
                      owl:equivalentProperty ctp:hasOrderedList ;
-                     owl:inverseOf olo:olo:slot ;
+                     owl:inverseOf olo:slot ;
                      rdf:type owl:FunctionalProperty ;
-                     rdfs:domain olo:olo:Slot ;
+                     rdfs:domain olo:Slot ;
                      rdfs:comment "An ordered list of an slot."@en ;
                      rdfs:isDefinedBy olo: ;
                      rdfs:label "has ordered list"@en ;
@@ -283,11 +284,11 @@ olo:olo:ordered_list rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:previous
-olo:olo:previous rdf:type owl:ObjectProperty ;
+olo:previous rdf:type owl:ObjectProperty ;
                  owl:equivalentProperty ctp:previousItem ;
                  rdf:type owl:InverseFunctionalProperty ;
-                 rdfs:domain olo:olo:Slot ;
-                 rdfs:range olo:olo:Slot ;
+                 rdfs:domain olo:Slot ;
+                 rdfs:range olo:Slot ;
                  rdfs:comment "Associates the previous slot in an ordered list"@en ;
                  rdfs:isDefinedBy olo: ;
                  rdfs:label "has previous"@en ;
@@ -295,9 +296,9 @@ olo:olo:previous rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:slot
-olo:olo:slot rdf:type owl:ObjectProperty ;
+olo:slot rdf:type owl:ObjectProperty ;
              owl:equivalentProperty ctp:hasSlot ;
-             rdfs:range olo:olo:Slot ;
+             rdfs:range olo:Slot ;
              rdfs:comment "A slot in an ordered list."@en ;
              rdfs:isDefinedBy olo: ;
              rdfs:label "has slot"@en ;
@@ -416,11 +417,36 @@ prov:hadRole rdf:type owl:ObjectProperty ;
              prov:inverse "wasRoleIn" ;
              prov:sharesDefinitionWith prov:Role .
 
+###  http://www.w3.org/ns/dcat#landingPage
+dcat:landingPage rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty ctp:landingPage ;
+              rdfs:range foaf:Document ;
+              rdfs:subPropertyOf foaf:page ;
+              rdfs:comment "A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information."@en ,
+                           "Una pagina web che puÃ² essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it ,
+                           "Una pÃ¡gina web que puede ser visitada en un explorador Web para tener acceso el catÃ¡logo, un conjunto de datos, sus distribuciones y/o informaciÃ³n adicional."@es ,
+                           "WebovÃ¡ strÃ¡nka, na kterou lze pro zÃ­skÃ¡nÃ­ pÅ™Ã­stupu ke katalogu, datovÃ© sadÄ›, jejÃ­m distribucÃ­m a/nebo dalÅ¡Ã­m informacÃ­m pÅ™istoupit webovÃ½m prohlÃ­Å¾eÄem."@cs ,
+                           "En webside som der kan navigeres til i en webbrowser for at fÃ¥ adgang til kataloget, et datasÃ¦t, dets distributioner og/eller yderligere information."@da ;
+              rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+              rdfs:label "landing page"@en ,
+                         "pagina di destinazione"@it ,
+                         "pÃ¡gina de destino"@es ,
+                         "vstupnÃ­ strÃ¡nka"@cs ,
+                         "destinationsside"@da ;
+              skos:definition "A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information."@en ,
+                              "Una pagina web che puÃ² essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it ,
+                              "Una pÃ¡gina web que puede ser visitada en un explorador Web para tener acceso el catÃ¡logo, un conjunto de datos, sus distribuciones y/o informaciÃ³n adicional."@es ,
+                              "WebovÃ¡ strÃ¡nka, na kterou lze pro zÃ­skÃ¡nÃ­ pÅ™Ã­stupu ke katalogu, datovÃ© sadÄ›, jejÃ­m distribucÃ­m a/nebo dalÅ¡Ã­m informacÃ­m pÅ™istoupit webovÃ½m prohlÃ­Å¾eÄem."@cs ,
+                              "En webside som en webbrowser kan navigeres til for at fÃ¥ adgang til kataloget, et datasÃ¦t, dets distritbutioner og/eller yderligere information."@da ;
+              skos:scopeNote "If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."@en ,
+                             "Pokud je distribuce dostupnÃ¡ pouze pÅ™es vstupnÃ­ strÃ¡nku, t.j. pÅ™Ã­mÃ½ URL odkaz ke staÅ¾enÃ­ nenÃ­ znÃ¡m, URL pÅ™Ã­stupovÃ© strÃ¡nky by mÄ›lo bÃ½t duplikovÃ¡no ve vlastnosti distribuce accessURL."@cs ,
+                             "Se la distribuzione Ã¨ accessibile solo attraverso una pagina di destinazione (cioÃ¨, un URL di download diretto non Ã¨ noto), il link alla pagina di destinazione deve essere duplicato come accessURL sulla distribuzione."@it ,
+                             "Si la distribuciÃ³n es accesible solamente travÃ©s de una pÃ¡gina de aterrizaje (i.e., no se conoce una URL de descarga directa), entonces el enlance a la pÃ¡gina de aterrizaje debe ser duplicado como accessURL sobre la distribuciÃ³n."@es ,
+                             "Hvis en eller flere distributioner kun er tilgÃ¦ngelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), sÃ¥ bÃ¸r destinationssidelinket gentages som adgangsadresse for en distribution."@da .
 
 #################################################################
 #    Data properties
 #################################################################
-
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:DatatypeProperty ;
@@ -443,10 +469,10 @@ dcterms:title rdf:type owl:DatatypeProperty ;
 
 
 ###  http://purl.org/ontology/olo/core#olo:index
-olo:olo:index rdf:type owl:DatatypeProperty ;
+olo:index rdf:type owl:DatatypeProperty ;
               owl:equivalentProperty ctp:hasIndex ;
               rdf:type owl:FunctionalProperty ;
-              rdfs:domain olo:olo:Slot ;
+              rdfs:domain olo:Slot ;
               rdfs:range xsd:positiveInteger ;
               rdfs:comment "An index of a slot in an ordered list."@en ;
               rdfs:isDefinedBy olo: ;
@@ -539,7 +565,6 @@ foaf:name rdf:type owl:DatatypeProperty ;
           rdfs:label "name" ;
           ns:term_status "testing" .
 
-
 #################################################################
 #    Classes
 #################################################################
@@ -552,23 +577,23 @@ dcterms:Location rdf:type owl:Class ;
                  rdfs:label "Location"@en .
 
 
-###  http://purl.org/ontology/olo/core#olo:Slot
-olo:olo:Slot rdf:type owl:Class ;
+###  http://purl.org/ontology/olo/core#Slot
+olo:Slot rdf:type owl:Class ;
              owl:equivalentClass ctp:OrderedListSlot ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty olo:olo:next ;
+                               owl:onProperty olo:next ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty olo:olo:ordered_list ;
+                               owl:onProperty olo:ordered_list ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty olo:olo:previous ;
+                               owl:onProperty olo:previous ;
                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty olo:olo:index ;
+                               owl:onProperty olo:index ;
                                owl:cardinality "1"^^xsd:nonNegativeInteger
                              ] ;
              rdfs:comment "A slot in an ordered list with a fixed index."@en ;
@@ -684,6 +709,21 @@ foaf:Person rdf:type owl:Class ;
             ns:term_status "stable" .
 
 
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class ;
+           owl:equivalentClass ctp:Agent ;
+           rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+           rdfs:label "Agent" ;
+           ns:term_status "stable" .
+
+
+###  http://www.w3.org/2004/02/skos/core#concept
+skos:Concept rdf:type owl:Class ;
+             owl:equivalentClass ctp:Type ; 
+             rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+             rdfs:label  "Concept"@en ;
+             skos:definition   "An idea or notion; a unit of thought."@en .
+
 #################################################################
 #    Annotations
 #################################################################
@@ -733,8 +773,6 @@ dcterms:type dcterms:description "Recommended practice is to use a controlled vo
              rdfs:comment "The nature or genre of the resource."@en ;
              rdfs:isDefinedBy dcterms: ;
              rdfs:label "Type"@en .
-
-
 
 #################################################################
 #    Individuals
