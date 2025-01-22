@@ -12,8 +12,9 @@ In this module the following Ontology Design Patterns have been used:<br><ul>
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>
-This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>
-<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" />"""^^rdf:HTML ,
+For more information, consult the <a href=\"https://github.com/TizianaPasciuto/CTP_Ontology/tree/master\">GitHub repository</a><br><br>
+This work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br><br>
+<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/ConceptualizationCTP_20250109.png?raw=true\" height=\"1000px\" />"""^^rdf:HTML ,
                                                             """Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>
 In questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>
 <li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>
@@ -203,7 +204,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:domain :ThematicPath ;
                  rdfs:range :Product ;
                  rdfs:comment "Indica che una risorsa legata a un percorso tematico può essere venduta attraverso il percorso stesso (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
-                              "Indicates that a thematic path is linked to a resource that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en ;
+                              "Indicates that a thematic path is linked to a resource that can be sold during its use (e.g. the catalog of an exhibition described by the thematic path)."@en ;
                  rdfs:label "allowsTheSaleOf"@en ;
                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -282,7 +283,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain owl:Thing ;
              rdfs:range :Place ;
              rdfs:comment "Indica la posizione dell'entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.)."@it ,
-                          "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.)."@en ;
+                          "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (e.g. landscape assets, historical buildings, churches, etc.)."@en ;
              rdfs:label "hasLocation"@en ;
              <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -349,7 +350,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:domain :RelationToAgent ;
          rdfs:range :Role ;
          rdfs:comment "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."@it ,
-                      "Indicates the type of role played by the agent (i.e. creator, funder, etc)."@en ;
+                      "Indicates the type of role played by the agent (e.g. creator, funder, etc)."@en ;
          rdfs:label "hasRole"@en ;
          <http://www.w3.org/2004/02/skos/core#editorialNote> "Preferred direction of the relationship."@en .
 
@@ -744,7 +745,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :Product ;
              rdfs:range :ThematicPath ;
              rdfs:comment "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."@it ,
-                          "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."@en ;
+                          "Indicates a resource linked to the thematic path that can be sold during its use (e.g. the catalog of an exhibition described by the thematic path)."@en ;
              rdfs:label "soldThrough"@en .
 
 
@@ -849,7 +850,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :Identifier ;
              rdfs:range rdfs:Literal ;
              rdfs:comment "Indica il codice di identificazione associato all'entità."@it ,
-                          "The string that constitutes the cultural resource identifier."@en ;
+                          "The string that constitutes the entity identifier."@en ;
              rdfs:label "hasNotation"@en .
 
 
@@ -971,7 +972,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ctp#OrderedListSlot
 :OrderedListSlot rdf:type owl:Class ;
-                 rdfs:comment "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (i.e. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."@en ,
+                 rdfs:comment "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (e.g. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."@en ,
                               "Un percorso tematico è strutturato come un collezionista di oggetti culturali o presentato con un ordine casuale o predeterminato. In quest'ultimo caso, gli oggetti culturali possono essere ordinati secondo un certo criterio (ad esempio, alfabetico, cronologico, in base all'autore, ecc.). Questa classe indica lo slot in una lista ordinata con un indice fisso."@it ;
                  rdfs:label "OrderedListSlot"@en .
 
@@ -996,7 +997,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#Place
 :Place rdf:type owl:Class ;
        rdfs:comment "Posizione specifica nello spazio fisico; identifica la localizzazione di qualsiasi entità. Può essere un punto preciso nello spazio (ad esempio, coordinate geografiche) o un'area più ampia (ad esempio, regione geografica)."@it ,
-                    "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (i.e. geographical coordinates) or a larger area (i.e. geographical region)."@en ;
+                    "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (e.g. geographical coordinates) or a larger area (e.g. geographical region)."@en ;
        rdfs:label "Place"@en .
 
 
@@ -1017,7 +1018,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#Role
 :Role rdf:type owl:Class ;
       rdfs:comment "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ,
-                   "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
+                   "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
       rdfs:label "Role"@en .
 
 
@@ -1031,13 +1032,13 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ctp#Standard
 :Standard rdf:type owl:Class ;
           rdfs:comment "Lo standard utilizzato per descrivere un'entità (per esempio CIDOC-CRM, RiC-O, etc.)."@it ,
-                       "The standard used for describing an entity (i. e. CIDOC-CRM, RiC-O, etc.)."@en ;
+                       "The standard used for describing an entity (e.g. CIDOC-CRM, RiC-O, etc.)."@en ;
           rdfs:label "Standard"@en .
 
 
 ###  https://w3id.org/ctp#Subject
 :Subject rdf:type owl:Class ;
-         rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ,
+         rdfs:comment "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ,
                       "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ;
          rdfs:label "Subject"@en .
 
@@ -1074,7 +1075,7 @@ The development and use of this enjoyment strategy can be profitable to convey m
 ###  https://w3id.org/ctp#Type
 :Type rdf:type owl:Class ;
       rdfs:comment "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."@it ,
-                   "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
+                   "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."@en ;
       rdfs:label "Type"@en .
 
 

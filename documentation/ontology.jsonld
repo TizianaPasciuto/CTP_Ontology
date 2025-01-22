@@ -231,7 +231,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-    "@value" : "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>\nIn this module the following Ontology Design Patterns have been used:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" />"
+    "@value" : "This document describes an ontological module for the creation and structuring of cultural thematic paths, aimed at supporting the linked data publishing and managing for the fruition of cultural heritage.<br>The namespace for CTP terms is <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> The suggested prefix for CTP namespace is <b>ctp</b>.<br><br>\nIn this module the following Ontology Design Patterns have been used:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nFor more information, consult the <a href=\"https://github.com/TizianaPasciuto/CTP_Ontology/tree/master\">GitHub repository</a><br><br>\nThis work is developed under the Ph.D. Research Project in Digital Humanities, supported by PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br><br>\n<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/ConceptualizationCTP_20250109.png?raw=true\" height=\"1000px\" />"
   }, {
     "@language" : "it",
     "@value" : "Questo documento descrive un modulo ontologico per la creazione e la strutturazione di percorsi tematici culturali, mirato a supportare la pubblicazione e la gestione dei dati collegati per la fruizione del patrimonio culturale.<br> Il namespace per i termini CTP è <a href=\"https://w3id.org/ctp#\">https://w3id.org/ctp#</a><br> Il prefisso suggerito per il namespace CTP è <b>ctp</b>.<br><br>\nIn questo modulo sono stati utilizzati i seguenti Ontology Design Patterns:<br><ul>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/list.owl\">http://www.ontologydesignpatterns.org/cp/owl/list.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/partof.owl\">http://www.ontologydesignpatterns.org/cp/owl/partof.owl</a></li>\n<li> <a href=\"http://www.ontologydesignpatterns.org/cp/owl/place.owl\">http://www.ontologydesignpatterns.org/cp/owl/place.owl</a></li></ul><br>\nQuesto lavoro è stato sviluppato nell'ambito del Progetto di Ricerca per il Dottorato in Discipline Umanistiche Digitali, supportato dal PON \"Ricerca e Innovazione\" 2014-2020, Asse IV \"Istruzione e ricerca per il recupero\", Azione IV.5 \"Dottorati su tematiche Green\" DM 1061/2021.<br>\n<img src=\"<img src=\"https://github.com/TizianaPasciuto/CTP_Ontology/blob/master/Conceptualization_TPs_20240306.png?raw=true\" height=\"1000px\" /> -->"
@@ -437,7 +437,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (i.e. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."
+    "@value" : "A thematic path is structured as a collector of cultural objects or present with a casual or predetermined order. In the latter case, cultural objects can be sorted according to a certain criterion (e.g. alphabetical, chronological, in order of author, etc.). This class indicates the slot in an ordered list with a fixed index."
   }, {
     "@language" : "it",
     "@value" : "Un percorso tematico è strutturato come un collezionista di oggetti culturali o presentato con un ordine casuale o predeterminato. In quest'ultimo caso, gli oggetti culturali possono essere ordinati secondo un certo criterio (ad esempio, alfabetico, cronologico, in base all'autore, ecc.). Questa classe indica lo slot in una lista ordinata con un indice fisso."
@@ -491,7 +491,7 @@
     "@value" : "Posizione specifica nello spazio fisico; identifica la localizzazione di qualsiasi entità. Può essere un punto preciso nello spazio (ad esempio, coordinate geografiche) o un'area più ampia (ad esempio, regione geografica)."
   }, {
     "@language" : "en",
-    "@value" : "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (i.e. geographical coordinates) or a larger area (i.e. geographical region)."
+    "@value" : "Specific position in physical space; identify the localization of any entity. It can be a precise point in space (e.g. geographical coordinates) or a larger area (e.g. geographical region)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -533,7 +533,7 @@
     "@value" : "Il ruolo svolto da un agente in un contesto specifico. I termini che caratterizzano i ruoli possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."
   }, {
     "@language" : "en",
-    "@value" : "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
+    "@value" : "The role performed by an agent in a specific context. The terms characterizing the roles can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -561,7 +561,7 @@
     "@value" : "Lo standard utilizzato per descrivere un'entità (per esempio CIDOC-CRM, RiC-O, etc.)."
   }, {
     "@language" : "en",
-    "@value" : "The standard used for describing an entity (i. e. CIDOC-CRM, RiC-O, etc.)."
+    "@value" : "The standard used for describing an entity (e.g. CIDOC-CRM, RiC-O, etc.)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -572,7 +572,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
+    "@value" : "A concept or a series of concepts that concern and describe the thematic path. The terms characterizing the subjects can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
   }, {
     "@language" : "it",
     "@value" : "Un concetto o una serie di concetti che riguardano e descrivono il percorso tematico. I termini che caratterizzano gli argomenti possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."
@@ -634,7 +634,7 @@
     "@value" : "La categorizzazione di cose o entità che sono raggruppate in base a caratteristiche o attributi condivisi. I termini che caratterizzano le tipologie possono essere tratti da tesauri e vocabolari controllati (ad esempio, il Library of Congress Subject Headings (LCSH) e il Getty's Art & Architecture Thesaurus)."
   }, {
     "@language" : "en",
-    "@value" : "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (i.e. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
+    "@value" : "The categorization of things or entities that are grouped based on shared characteristics or attributes. The terms characterizing the types can be taken from thesauri and controlled vocabularies (e.g. Library of Congress Subject Headings (LCSH) and Getty's Art & Architecture Thesaurus)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -674,7 +674,7 @@
     "@value" : "Indica che una risorsa legata a un percorso tematico può essere venduta attraverso il percorso stesso (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates that a thematic path is linked to a resource that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."
+    "@value" : "Indicates that a thematic path is linked to a resource that can be sold during its use (e.g. the catalog of an exhibition described by the thematic path)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#ThematicPath"
@@ -1080,7 +1080,7 @@
     "@value" : "Indica la posizione dell'entità. Nel caso di una CulturalResource, ci si riferisce a risorse immobili (ad esempio, beni paesaggistici, edifici storici, chiese, ecc.)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (i.e. landscape assets, historical buildings, churches, etc.)."
+    "@value" : "Indicates the location of the entity. In the case of CulturalResource, it's referred to immovable resources (e.g. landscape assets, historical buildings, churches, etc.)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -1154,7 +1154,7 @@
     "@value" : "Indica il codice di identificazione associato all'entità."
   }, {
     "@language" : "en",
-    "@value" : "The string that constitutes the cultural resource identifier."
+    "@value" : "The string that constitutes the entity identifier."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Identifier"
@@ -1300,7 +1300,7 @@
     "@value" : "Indica il tipo di ruolo svolto dall'agente (ad esempio creatore, finanziatore, ecc.)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates the type of role played by the agent (i.e. creator, funder, etc)."
+    "@value" : "Indicates the type of role played by the agent (e.g. creator, funder, etc)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#RelationToAgent"
@@ -2302,7 +2302,7 @@
     "@value" : "Indica una risorsa collegata al percorso tematico che può essere venduta durante il suo utilizzo (ad esempio, il catalogo di una mostra descritta dal percorso tematico)."
   }, {
     "@language" : "en",
-    "@value" : "Indicates a resource linked to the thematic path that can be sold during its use (i.e. the catalog of an exhibition described by the thematic path)."
+    "@value" : "Indicates a resource linked to the thematic path that can be sold during its use (e.g. the catalog of an exhibition described by the thematic path)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ctp#Product"
