@@ -1074,8 +1074,8 @@ ctp:TemporalEntity rdf:type owl:Class ;
                                                        ctp:Interval
                                                      )
                                        ] ;
-                   rdfs:comment "An abstract concept that allows the measurement of events that occur. It is a dimension in which events take place in the present, in the past and in the future."@en ,
-                                "Un concetto astratto che consente la misurazione degli eventi che si verificano. È una dimensione in cui gli eventi hanno luogo nel presente, nel passato e nel futuro."@it ;
+                   rdfs:comment "An abstract concept that allows the measurement of events that occur."@en ,
+                                "Un concetto astratto che consente la misurazione degli eventi che si verificano."@it ;
                    rdfs:label "TemporalEntity"@en .
 
 

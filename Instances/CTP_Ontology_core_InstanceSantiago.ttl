@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/ctp/santiagodecompostela/> .
+@prefix : <https://w3id.org/ctp/santiagodecompostela#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix ctp: <https://w3id.org/ctp#> .
@@ -14,9 +14,9 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
-@base <https://w3id.org/ctp/santiagodecompostela/> .
+@base <https://w3id.org/ctp/santiagodecompostela#> .
 
-<https://w3id.org/ctp/santiagodecompostela/> rdf:type owl:Ontology ; 
+<https://w3id.org/ctp/santiagodecompostela#> rdf:type owl:Ontology ; 
                                               dcterms:created "2024-03-06"^^xsd:date ;
                                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                               dcterms:title "Cultural Routes - Camino de Santiago de Compostela"@en ;
@@ -339,7 +339,7 @@ ctp:Type rdf:type owl:Class .
                                           ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/CNR_IMATI_Genoa_staff
+###  https://w3id.org/ctp/santiagodecompostela#CNR_IMATI_Genoa_staff
 :CNR_IMATI_Genoa_staff a ctp:Group ;
                          ctp:hasMember <https://orcid.org/0000-0002-2440-2376> ,
                                        :Roberta_Maggi ;
@@ -347,12 +347,12 @@ ctp:Type rdf:type owl:Class .
                          ctp:memberOf :cnrImati .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Catedral_de_Santiago_de_Compostela
+###  https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela
 :Catedral_de_Santiago_de_Compostela a ctp:CulturalResource ;
                                       ctp:hasDescription "La basilica cattedrale di San Giacomo di Compostela (in galiziano e spagnolo: Catedral basílica metropolitana de Santiago de Compostela), o semplicemente la cattedrale di San Giacomo di Compostela, è la chiesa madre dell'arcidiocesi di Santiago de Compostela, una basilica minore e uno dei più grandi santuari cattolici al mondo; all'interno, nella cripta, i fedeli venerano le reliquie dell'apostolo Santiago o Maior/el Mayor (San Giacomo Maggiore), il santo patrono della Spagna. La Cattedrale di Santiago segna la fine del Cammino di Santiago de Compostela, un pellegrinaggio storico di origine medievale. Nel 2010 sono stati eseguiti significativi lavori di restauro nella cattedrale in previsione di un afflusso molto più ampio di pellegrini quell'anno. Secondo la leggenda, il corpo dell'apostolo San Giacomo Maggiore fu scoperto nel IX secolo nella zona dove ora sorge la cattedrale. Una prima chiesa dedicata a San Giacomo fu costruita qui all'inizio del IX secolo, per ordine di Alfonso II delle Asturie. Successivamente, nel 899, sotto il re Alfonso III, la prima chiesa fu sostituita da una più grande, in stile protoromanico. Nel 997, durante il saccheggio della città di Santiago de Compostela da parte dei Berberi comandati da Almanzor, la chiesa protoromanica fu incendiata e le sue porte e campane furono portate, da schiavi cristiani, alla Grande Moschea di Cordoba. Nel 1095, Papa Urbano II decretò il trasferimento della sede vescovile da Iria Flavia, l'odierna Padrón, a Santiago de Compostela. La costruzione dell'attuale cattedrale iniziò nel 1075. Il tempio, in stile romanico, fu completato nel XIII secolo e consacrato nel 1211, alla presenza del re Alfonso IX di León. È uno degli edifici che meglio rappresenta il tipo di chiesa romanica che segna il Cammino di Santiago de Compostela tra Francia e Spagna (Sainte-Foy de Conques, Saint-Martial de Limoges, San Martín de Tours e Saint-Sernin a Tolosa), caratterizzato dall'abside con cappelle radiali e dall'ambulacro. Ha subito modifiche tra il XVI e il XVIII secolo."@it ,
                                                          "The basilica cathedral of San Giacomo di Compostela (in Galician and Spanish: Catedral basílica metropolitana de Santiago de Compostela), or simply the cathedral of San Giacomo di Compostela, is the mother church of the archdiocese of Santiago de Compostela, a minor basilica, and one of the greatest Catholic sanctuaries in the world; inside, in the crypt, the faithful venerate the relics of the apostle Santiago or Maior/el Mayor (St. James the Greater), the patron saint of Spain. The Cathedral of Santiago marks the end of the Camino de Santiago de Compostela, a historic pilgrimage of medieval origin. In 2010, significant restoration work was carried out in the cathedral in anticipation of a much larger influx of pilgrims that year. According to legend, the body of the apostle St. James the Greater was discovered in the 9th century in the area where the cathedral now stands. A first church dedicated to St. James was built here in the early 9th century, by order of Alfonso II of Asturias. Subsequently, in 899, under King Alfonso III, the first church was replaced by a larger one, in proto-Romanesque style. In 997, during the sack of the city of Santiago de Compostela by the Berbers commanded by Almanzor, the proto-Romanesque church was set on fire and its doors and bells were taken, by Christian slaves, to the Great Mosque of Cordoba. In 1095, Pope Urban II decreed the transfer of the episcopal see from Iria Flavia, present-day Padrón, to Santiago de Compostela. The construction of the current cathedral began in 1075. The temple, in Romanesque style, was completed in the 13th century and consecrated in 1211, in the presence of King Alfonso IX of León. It is one of the buildings that best represents the type of Romanesque church that marks the Camino de Santiago de Compostela between France and Spain (Sainte-Foy de Conques, Saint-Martial de Limoges, San Martín de Tours, and Saint-Sernin in Toulouse), characterized by the apse with radial chapels and ambulatory. It underwent modifications between the 16th and 18th centuries."@en ;
-                                      ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela/Catedral_de_Santiago_de_Compostela_Spain> ;
-                                      ctp:hasTime <https://w3id.org/ctp/santiagodecompostela/1075> ;
+                                      ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain> ;
+                                      ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1075> ;
                                       ctp:hasTitle "Catedral de Santiago de Compostela"@es ,
                                                  "Cattedrale di Santiago de Compostela"@it ,
                                                  "Santiago de Compostela Cathedral"@en ;
@@ -360,21 +360,21 @@ ctp:Type rdf:type owl:Class .
                                       ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Certification_body_1
+###  https://w3id.org/ctp/santiagodecompostela#Certification_body_1
 :Certification_body_1 a ctp:RelationToAgent ;
                         rdfs:label "Certification body"@en ;
-                        ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela/Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France> ;
+                        ctp:hasPlace <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France> ;
                         ctp:hasRole <http://vocab.getty.edu/aat/300188572> ;
                         ctp:hasTitle "Certification body"@en ;
                         ctp:involves <http://viaf.org/viaf/153107650> ;
                         ctp:isRelatedTo :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Church_of_the_Holy_Cross
+###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross
 :Church_of_the_Holy_Cross a ctp:CulturalResource ;
                             ctp:hasDescription "La piccola chiesa di Santa Croce è originaria della metà del XIII secolo ed è stata modificata nel corso del Seicento. L’impianto è quello di stile romanico, con navata unica e fronte a capanna, qui sormontata da un piccolo campanile a vela di fattura posteriore. Il portale voltato richiama nelle forme quello del muro verso il giardino e presenta una cornice superiore a sesto acuto; la nicchia collocata superiormente è frutto di una recente ricostruzione. Il semplice interno è ritmato da due archi a sesto acuto in laterizio impostati su pilastri in pietra connessi alle murature. Il confronto tra questo edificio e altri esempi simili del territorio, inclusa la chiesa di Santo Stefano ad Assisi, ha messo in luce come la chiesa di Santa Croce appaia singolarmente ridotta nella lunghezza e priva di catino absidale. È ipotizzabile quindi che le proporzioni originarie fossero più allungate e la copertura absidale fosse voltata È datato invece 1643 l’affresco che arricchisce la parete di fondo: attribuito al pittore assisano Gerolamo Marinelli, vi sono raffigurate Sant’Elena e la Vergine in adorazione della nuda Croce. Come ricorda lo storico dell’arte Bruno Toscano, il tema che pone come protagonista il lignum crucis, ossia la croce in sé priva della figura di Cristo, era piuttosto frequente e includeva solitamente Sant’Elena e il figlio Costantino, l’imperatore."@it ,
                                                "The small church of Santa Croce dates back to the mid-13th century and was modified during the seventeenth century. Its layout follows Romanesque style, with a single nave and a gabled facade, topped by a small later-built sail-shaped bell tower. The arched portal resembles that of the garden-facing wall and features an upper pointed arch frame; the niche placed above is a recent reconstruction. The simple interior is punctuated by two pointed brick arches supported by stone pillars connected to the walls. Comparing this building to other similar examples in the area, including the church of Santo Stefano in Assisi, highlights how the church of Santa Croce appears notably shorter in length and lacking an apse. It is therefore hypothesized that the original proportions were more elongated and the apse was vaulted. The fresco adorning the rear wall is dated to 1643: attributed to the Assisi painter Gerolamo Marinelli, it depicts Saint Helena and the Virgin adoring the naked Cross. As art historian Bruno Toscano recalls, the theme featuring the lignum crucis, the cross itself without the figure of Christ, was quite common and typically included Saint Helena and her son Constantine, the emperor."@en ;
-                            ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela/Church_of_the_Holy_Cross_Assisi_Italy> ;
+                            ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross_Assisi_Italy> ;
                             ctp:hasTime :XIII_century ;
                             ctp:hasTitle "Chiesa di Santa Croce"@it ,
                                          "Church of the Holy Cross"@en ;
@@ -382,7 +382,7 @@ ctp:Type rdf:type owl:Class .
                             ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Creator_1
+###  https://w3id.org/ctp/santiagodecompostela#Creator_1
 :Creator_1 a ctp:RelationToAgent ;
              rdfs:label "Creator"@en ;
              ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
@@ -391,11 +391,11 @@ ctp:Type rdf:type owl:Class .
              ctp:isRelatedTo :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Iglesia_de_San_Salvador_de_Vilar_de_Donas
+###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas
 :Iglesia_de_San_Salvador_de_Vilar_de_Donas a ctp:CulturalResource ;
                                              ctp:hasDescription "La Iglesia de San Salvador de Vilar de Donas testimonia sia la storia religiosa che militare della Spagna medievale. Incastonata nel pittoresco villaggio di Vilar de Donas nella provincia di Lugo, questa chiesa romanica incarna secoli di significato culturale e bellezza architettonica. Uno degli aspetti più sorprendenti di questa chiesa è il suo legame storico con l'Ordine di Santiago, un importante ordine militare fondato durante il periodo della Reconquista in Spagna. La chiesa fungeva da punto focale per le attività dell'ordine, non solo come luogo di culto ma anche come sede e luogo di sepoltura per i suoi membri. Questa associazione con l'Ordine di Santiago conferisce alla storia della chiesa una dimensione unica e affascinante, riflettendo l'intreccio di devozione religiosa e valore militare durante questo periodo tumultuoso nella storia della Spagna. Dal punto di vista architettonico, la Iglesia de San Salvador de Vilar de Donas è un esempio eccellente di design romanico, caratterizzato dalla sua estetica semplice ma elegante. La costruzione in pietra della chiesa e le sue caratteristiche distintive, come l'abside rettangolare e i robusti contrafforti, mostrano l'abilità e l'ingegno dei costruttori medievali. All'interno, i visitatori possono godere di un tripudio visivo di affreschi risalenti al XV secolo, che offrono uno sguardo alla maestria artistica del periodo e forniscono approfondimenti sulle narrazioni religiose e simbolismo. Negli ultimi anni sono stati compiuti sforzi di conservazione per salvaguardare la Iglesia de San Salvador de Vilar de Donas per le generazioni future. Questi sforzi mirano non solo a proteggere l'integrità architettonica della chiesa, ma anche a onorare il suo ricco lascito storico e significato culturale. Attraverso progetti di restauro e manutenzione continua, la chiesa continua a ergersi come un monumento vivente allo spirito duraturo di fede, patrimonio e tradizione in Galizia, Spagna. Nel complesso, la Iglesia de San Salvador de Vilar de Donas è più di un luogo di culto: è un simbolo di resilienza, perseveranza e del duraturo lascito della Spagna medievale. Mentre i visitatori varcano le sue sacre porte e si immergono nel suo passato ricco di storia, vengono trasportati indietro nel tempo a un'epoca di cavalleria, pietà e bellezza senza tempo."@it ,
                                                                 "The Iglesia de San Salvador de Vilar de Donas stands as a testament to both the religious and military history of medieval Spain. Nestled in the picturesque village of Vilar de Donas in the province of Lugo, this Romanesque church embodies centuries of cultural significance and architectural beauty. One of the most striking aspects of this church is its historical connection to the Order of Santiago, a prominent military order established during the Reconquista period in Spain. The church served as a focal point for the activities of the order, functioning not only as a place of worship but also as a headquarters and burial site for its members. This association with the Order of Santiago lends a unique and compelling dimension to the church's history, reflecting the intertwining of religious devotion and military valor during this tumultuous period in Spain's past. Architecturally, the Iglesia de San Salvador de Vilar de Donas is a prime example of Romanesque design, characterized by its simple yet elegant aesthetic. The church's stone construction and distinctive features, such as its rectangular apse and sturdy buttresses, showcase the craftsmanship and ingenuity of medieval builders. Inside, visitors are treated to a visual feast of frescoes dating back to the 15th century, offering a glimpse into the artistic mastery of the period and providing insights into religious narratives and symbolism. In recent years, preservation efforts have been undertaken to safeguard the Iglesia de San Salvador de Vilar de Donas for future generations. These efforts not only aim to protect the architectural integrity of the church but also seek to honor its rich historical legacy and cultural significance. Through restoration projects and ongoing maintenance, the church continues to stand as a living monument to the enduring spirit of faith, heritage, and tradition in Galicia, Spain. Overall, the Iglesia de San Salvador de Vilar de Donas is more than just a place of worship—it is a symbol of resilience, perseverance, and the enduring legacy of medieval Spain. As visitors step through its hallowed doors and immerse themselves in its storied past, they are transported back in time to an era of chivalry, piety, and timeless beauty."@en ;
-                                             ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela/Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain> ;
+                                             ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain> ;
                                              ctp:hasTime :XII_century ;
                                              ctp:hasTitle "Chiesa di San Salvador de Vilar de Donas"@it ,
                                                           "Church of San Salvador de Vilar de Donas"@en ,
@@ -404,14 +404,14 @@ ctp:Type rdf:type owl:Class .
                                              ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Index01
+###  https://w3id.org/ctp/santiagodecompostela#Index01
 :Index01 a ctp:OrderedListSlot ;
            ctp:hasIndex 1 ;
            ctp:hasItem :Church_of_the_Holy_Cross ;
            ctp:nextItem :Index02 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Index02
+###  https://w3id.org/ctp/santiagodecompostela#Index02
 :Index02 a ctp:OrderedListSlot ;
            ctp:hasIndex 2 ;
            ctp:hasItem :Strada_Nuova ;
@@ -419,7 +419,7 @@ ctp:Type rdf:type owl:Class .
            ctp:previousItem :Index01 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Index03
+###  https://w3id.org/ctp/santiagodecompostela#Index03
 :Index03 a ctp:OrderedListSlot ;
            ctp:hasIndex 3 ;
            ctp:hasItem :Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
@@ -427,14 +427,14 @@ ctp:Type rdf:type owl:Class .
            ctp:previousItem :Index02 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Index04
+###  https://w3id.org/ctp/santiagodecompostela#Index04
 :Index04 a ctp:OrderedListSlot ;
            ctp:hasIndex 4 ;
            ctp:hasItem :Catedral_de_Santiago_de_Compostela ;
            ctp:previousItem :Index03 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Road_to_Santiago_de_Compostela
+###  https://w3id.org/ctp/santiagodecompostela#Road_to_Santiago_de_Compostela
 :Road_to_Santiago_de_Compostela a ctp:ThematicPath ;
                                   ctp:conveys "Questa antica strada offre un'esperienza umana intensa, creando un senso di fratellanza tra i viaggiatori e un forte legame con la terra."@it ,
                                               "This ancient route provides an intense human experience, creating a sense of fraternity amongst travellers and a strong bonding with the land."@en ;
@@ -451,16 +451,16 @@ ctp:Type rdf:type owl:Class .
                                   ctp:hasTitle "La strada per Santiago de Compostela"@it ,
                                                "Road to Santiago de Compostela"@en ;
                                   ctp:landingPage <https://saintjamesway.eu/blog/portfolios/it_itine/> ;
-                                  ctp:refersToPlace <https://w3id.org/ctp/santiagodecompostela/Catedral_de_Santiago_de_Compostela_Spain> .
+                                  ctp:refersToPlace <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain> .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Roberta_Maggi
+###  https://w3id.org/ctp/santiagodecompostela#Roberta_Maggi
 :Roberta_Maggi a ctp:Person ;
                  ctp:hasName "Roberta Maggi" ;
                  ctp:memberOf :CNR_IMATI_Genoa_staff .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Santiago_de_Compostela_pilgrim_routes
+###  https://w3id.org/ctp/santiagodecompostela#Santiago_de_Compostela_pilgrim_routes
 :Santiago_de_Compostela_pilgrim_routes a ctp:Theme ;
                                          ctp:hasDescription "La leggenda narra che le spoglie di San Giacomo furono trasportate via mare da Gerusalemme fino al nord della Spagna, dove fu sepolto nella città di Santiago de Compostela, oggi. Dalla scoperta della presunta tomba del santo nel IX secolo, il Cammino di Santiago divenne una delle più importanti pellegrinaggi cristiani durante il Medioevo, poiché il suo completamento garantiva l'ottenimento di un'indulgenza plenaria. Patrimonio - Come risultato di questo pellegrinaggio, si è sviluppato un ricco patrimonio. Il patrimonio tangibile, come luoghi di culto, ospedali, strutture ricettive, ponti, così come il patrimonio non tangibile sotto forma di miti, leggende e canzoni, sono presenti lungo le Vie di Santiago e possono essere apprezzati dai viaggiatori. Viaggiare oggi - Ogni anno, centinaia di migliaia di viaggiatori si mettono in viaggio verso Santiago de Compostela. Poiché ci sono un numero infinito di diramazioni del percorso, è comune iniziare il viaggio letteralmente dalla propria porta di casa. La maggior parte viaggia a piedi, alcuni in bicicletta, e pochi viaggiano a cavallo o in asino, come facevano alcuni dei loro corrispettivi medievali."@it ,
                                                             "The legend holds that St. James's remains were carried by boat from Jerusalem to northern Spain, where he was buried in what is now the city of Santiago de Compostela. Since the discovery of the supposed tomb of the saint in the 9th century, the Way of St. James became one of the most important Christian pilgrimages during the Middle Ages, as its completion guaranteed earning a plenary indulgence. Heritage - As a result of this pilgrimage, a rich heritage was formed. Tangible heritage such as places of worship, hospitals, accommodation facilities, bridges, as well as non-tangible heritage in the form of myths, legends and songs are present along the Santiago Routes and can be enjoyed by the traveller. Travelling today - Each year, hundreds of thousands of travellers set out to make their way to Santiago de Compostela. As there are endless numbers of branches to the route, it is common to begin the journey literally from one's doorstep. Most travel by foot, some by bicycle, and a few travel on horseback or by donkey, as some of their medieval counterparts did."@en ;
@@ -471,33 +471,33 @@ ctp:Type rdf:type owl:Class .
                                                       "Santiago de Compostela pilgrim routes"@en .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Strada_Nuova
+###  https://w3id.org/ctp/santiagodecompostela#Strada_Nuova
 :Strada_Nuova a ctp:CulturalResource ;
                 ctp:hasDescription "Via Giuseppe Garibaldi is a street in the historical centre of Genoa, in Northwestern Italy, well known for its ancient palaces. It is one of the Strade Nuove (Italian for \"new streets\") built by the Genoese aristocracy during the Renaissance. Since July 2006 it is inscribed in the list of UNESCO World Heritage Site Genoa: the Strade Nuove and the system of the Palazzi dei Rolli. The street, sanctioned in 1550, was built in 1558–1583. Originally named Strada Maggiore or Strada Nuova, in 1882 it was dedicated to Giuseppe Garibaldi. The street is 250 metres long and 7.5 metres wide. Between the first half of the 16th century and the first half of the 17th century, the nobility of the Republic of Genoa started a careful town planning to transform the existing medieval city and initiate a sizeable urban expansion to the North. The move to expand the antique palaces and to build new sumptuous ones was driven by the extraordinary wealth that came into the city through prosperous financing activities towards several European powers. In particular, the Genoese aristocracy financed the expensive undertakings of the Spanish Crown, such as the mercenary army that Spain kept in Flanders from 1566 to the peace of Westphalia in 1648. The ruling class of Genoa, mixing nobility of blood with new mercantile wealth, sought to underpin their prestige by the construction of grand city palaces and suburban villas of unusual splendor."@en ,
                                    "Via Giuseppe Garibaldi è una strada nel centro storico di Genova, nel nord-ovest dell'Italia, ben nota per i suoi antichi palazzi. È una delle Strade Nuove costruite dalla nobiltà genovese durante il Rinascimento. Dal luglio 2006 è iscritta nell'elenco dei siti del patrimonio mondiale dell'UNESCO Genova: le Strade Nuove e il sistema dei Palazzi dei Rolli. La strada, approvata nel 1550, fu costruita tra il 1558 e il 1583. Originariamente chiamata Strada Maggiore o Strada Nuova, nel 1882 fu dedicata a Giuseppe Garibaldi. La strada è lunga 250 metri e larga 7,5 metri. Tra la prima metà del XVI secolo e la prima metà del XVII secolo, la nobiltà della Repubblica di Genova avviò una pianificazione urbana attenta per trasformare la città medievale esistente e avviare una considerevole espansione urbana verso nord. La decisione di ampliare i palazzi antichi e costruirne di nuovi sfarzosi fu motivata dalla straordinaria ricchezza che entrò in città attraverso attività finanziarie prosperose verso diverse potenze europee. In particolare, l'aristocrazia genovese finanziò le costose imprese della Corona di Spagna, come l'esercito mercenario che la Spagna manteneva nelle Fiandre dal 1566 alla pace di Westfalia nel 1648. La classe dirigente di Genova, mescolando nobiltà di sangue con la nuova ricchezza mercantile, cercò di sostenere il proprio prestigio attraverso la costruzione di grandi palazzi cittadini e ville suburbane di splendore insolito."@it ;
-                ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela/Giuseppe_Garibaldi_street_Genoa_Italy> ;
-                ctp:hasTime <https://w3id.org/ctp/santiagodecompostela/1550> ;
+                ctp:hasLocation <https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street_Genoa_Italy> ;
+                ctp:hasTime <https://w3id.org/ctp/santiagodecompostela#1550> ;
                 ctp:hasTitle "Strada Nuova"@it ,
                              "Via Giuseppe Garibaldi"@it ;
                 ctp:hasType <http://vocab.getty.edu/aat/300417850> ;
                 ctp:isPartOf :Road_to_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/XIII_century
+###  https://w3id.org/ctp/santiagodecompostela#XIII_century
 :XIII_century a ctp:Interval ;
                 rdfs:label "XIII century"@en ;
-                 ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela/1201> ;
-                 ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela/1300> .
+                 ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1201> ;
+                 ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1300> .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/XII_century
+###  https://w3id.org/ctp/santiagodecompostela#XII_century
 :XII_century a ctp:Interval ;
                rdfs:label "XII century"@en ;
-               ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela/1101> ;
-               ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela/1200> .
+               ctp:hasBeginning <https://w3id.org/ctp/santiagodecompostela#1101> ;
+               ctp:hasEnd <https://w3id.org/ctp/santiagodecompostela#1200> .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/cnrImati
+###  https://w3id.org/ctp/santiagodecompostela#cnrImati
 :cnrImati a ctp:Organization ;
             rdfs:label "Istitute for Applied Mathematics and Information Technologies 'Enrico Magenes'"@en ;
             foaf:homepage "https://imati.cnr.it/" ;
@@ -505,38 +505,38 @@ ctp:Type rdf:type owl:Class .
             ctp:hasMember :CNR_IMATI_Genoa_staff .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1075
-<https://w3id.org/ctp/santiagodecompostela/1075> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1075
+<https://w3id.org/ctp/santiagodecompostela#1075> a ctp:Istant ;
                                                    ctp:hasDate "1075"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1101
-<https://w3id.org/ctp/santiagodecompostela/1101> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1101
+<https://w3id.org/ctp/santiagodecompostela#1101> a ctp:Istant ;
                                                    ctp:hasDate "1101"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1200
-<https://w3id.org/ctp/santiagodecompostela/1200> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1200
+<https://w3id.org/ctp/santiagodecompostela#1200> a ctp:Istant ;
                                                    ctp:hasDate "1200"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1201
-<https://w3id.org/ctp/santiagodecompostela/1201> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1201
+<https://w3id.org/ctp/santiagodecompostela#1201> a ctp:Istant ;
                                                    ctp:hasDate "1201"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1300
-<https://w3id.org/ctp/santiagodecompostela/1300> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1300
+<https://w3id.org/ctp/santiagodecompostela#1300> a ctp:Istant ;
                                                    ctp:hasDate "1300"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/1550
-<https://w3id.org/ctp/santiagodecompostela/1550> a ctp:Istant ;
+###  https://w3id.org/ctp/santiagodecompostela#1550
+<https://w3id.org/ctp/santiagodecompostela#1550> a ctp:Istant ;
                                                    ctp:hasDate "1550"^^xsd:gYear . 
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France
-<https://w3id.org/ctp/santiagodecompostela/Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France> a ctp:Place ;
+###  https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France
+<https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France> a ctp:Place ;
                                                                                                  ctp:hasCentroid "48.59492549284726, 7.773523691421236"^^rdfs:Literal ;
                                                                                                  ctp:hasTitle "Avenue de l'Europa F-67075 Strasburgo Cedex, Francia"@it ,
                                                                                                               "Avenue de l'Europe F-67075 Strasbourg Cedex, France"@fr ,
@@ -544,8 +544,8 @@ ctp:Type rdf:type owl:Class .
                                                                                                  ctp:isPlaceOf :Certification_body_1 .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Catedral_de_Santiago_de_Compostela_Spain
-<https://w3id.org/ctp/santiagodecompostela/Catedral_de_Santiago_de_Compostela_Spain> a ctp:Place ;
+###  https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain
+<https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain> a ctp:Place ;
                                                                                        ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^rdfs:Literal ;
                                                                                        ctp:hasTitle "Catedral de Santiago de Compostela, España"@es ,
                                                                                                     "Cattedrale di Santiago de Compostela, Italia"@it ,
@@ -553,16 +553,16 @@ ctp:Type rdf:type owl:Class .
                                                                                        ctp:isLocationOf :Catedral_de_Santiago_de_Compostela .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Church_of_the_Holy_Cross_Assisi_Italy
-<https://w3id.org/ctp/santiagodecompostela/Church_of_the_Holy_Cross_Assisi_Italy> a ctp:Place ;
+###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross_Assisi_Italy
+<https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross_Assisi_Italy> a ctp:Place ;
                                                                                     ctp:hasCentroid "43.082236792101796, 12.615436731593"^^rdfs:Literal ;
                                                                                     ctp:hasTitle "Chiesa della Santa Croce, Assisi, Italia"@it ,
                                                                                                  "Church of Holy Cross, Assisi, Italy"@en ;
                                                                                     ctp:isLocationOf :Church_of_the_Holy_Cross .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Giuseppe_Garibaldi_street_Genoa_Italy
-<https://w3id.org/ctp/santiagodecompostela/Giuseppe_Garibaldi_street_Genoa_Italy> a ctp:Place ;
+###  https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street_Genoa_Italy
+<https://w3id.org/ctp/santiagodecompostela#Giuseppe_Garibaldi_street_Genoa_Italy> a ctp:Place ;
                                                                                     ctp:hasBoundingBox """POLYGON ((
 44.4113889 8.931388888888888 , 44.4116667 8.931388888888888
 44.4105556 8.934722222222222 , 44.4108333 , 8.935
@@ -572,8 +572,8 @@ ctp:Type rdf:type owl:Class .
                                                                                     ctp:isLocationOf :Strada_Nuova .
 
 
-###  https://w3id.org/ctp/santiagodecompostela/Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain
-<https://w3id.org/ctp/santiagodecompostela/Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain> a ctp:Place ;
+###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain
+<https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain> a ctp:Place ;
                                                                                                            ctp:hasCentroid "42.89254902812202, -7.807993849231925"^^rdfs:Literal ;
                                                                                                            ctp:hasTitle "Church of San Salvador de Vilar de Donas, Palas de Rei, Spain"@en ,
                                                                                                                         "Iglesia de San Salvador de Vilar de Donas, Palais de Rei, España"@es ;
