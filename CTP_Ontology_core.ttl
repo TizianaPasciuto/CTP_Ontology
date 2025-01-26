@@ -958,16 +958,16 @@ ctp:Geometry rdf:type owl:Class ;
 ###  https://w3id.org/ctp#Group
 ctp:Group rdf:type owl:Class ;
           rdfs:subClassOf ctp:GroupOfPeople ;
-          rdfs:comment "A collection of individual agents that can itself act as an agent, capable of performing actions."@en ,
-                       "Una collezione di agenti individuali che può a sua volta agire come un agente, capace di compiere azioni."@it ;
+          rdfs:comment "A collection of individual human agents, which may or may not be structured as an organization. It refers to any grouping of people, regardless of formal structure."@en ,
+                       "Una raccolta di agenti umani individuali, che può essere strutturata o meno come un'organizzazione. Si riferisce a qualsiasi raggruppamento di persone, indipendentemente dalla struttura formale."@it ;
           rdfs:label "Group"@en .
 
 
 ###  https://w3id.org/ctp#GroupOfPeople
 ctp:GroupOfPeople rdf:type owl:Class ;
                   rdfs:subClassOf ctp:Agent ;
-                  rdfs:comment "A collection of individual agents."@en ,
-                               "Una collezione di agenti individuali."@it ;
+                  rdfs:comment "A collection of individual human agents that is not an organization. It refers to informal or non-structured groupings of people."@en ,
+                               "Una raccolta di agenti umani individuali che non è un'organizzazione. Si riferisce a raggruppamenti informali o non strutturati di persone. "@it ;
                   rdfs:label "GroupOfPeople"@en .
 
 
@@ -1048,8 +1048,8 @@ ctp:Role rdf:type owl:Class ;
 
 ###  https://w3id.org/ctp#SecondaryMetadataDescription
 ctp:SecondaryMetadataDescription rdf:type owl:Class ;
-                                 rdfs:comment "L'identificatore secondario originato da altri sistemi di catalogazione e distinto dall'identifcatore primario del catalogo principale di riferimento."@it ,
-                                              "The secondary identifier originates from other cataloging systems and is distinct from the primary identifier of the main reference catalog."@en ;
+                                 rdfs:comment "Descrizione strutturata fornita secondo uno standard specifico per offrire informazioni supplementari e contestuali su una risorsa culturale."@it ,
+                                              "Structured description provided according to a specific standard to offer supplementary, contextual information about a cultural resource."@en ;
                                  rdfs:label "SecondaryMetadataDescription"@en .
 
 

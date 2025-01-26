@@ -13,6 +13,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
 @base <https://w3id.org/ctp/santiagodecompostela#> .
 
@@ -46,7 +47,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 dcterms:title rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/description:
+###  http://purl.org/dc/terms/description
 dcterms:description: rdf:type owl:AnnotationProperty .
 
 
@@ -200,6 +201,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2001/XMLSchema#gYear
 xsd:gYear rdf:type rdfs:Datatype .
+
+
+### http://www.opengis.net/ont/geosparql#asWKT
+geosparql:wktLiteral rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -406,14 +411,14 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index01
 :Index01 a ctp:OrderedListSlot ;
-           ctp:hasIndex 1 ;
+           ctp:hasIndex "1"^^xsd:positiveInteger ;
            ctp:hasItem :Church_of_the_Holy_Cross ;
            ctp:nextItem :Index02 .
 
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index02
 :Index02 a ctp:OrderedListSlot ;
-           ctp:hasIndex 2 ;
+           ctp:hasIndex "2"^^xsd:positiveInteger ;
            ctp:hasItem :Strada_Nuova ;
            ctp:nextItem :Index03 ;
            ctp:previousItem :Index01 .
@@ -421,7 +426,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index03
 :Index03 a ctp:OrderedListSlot ;
-           ctp:hasIndex 3 ;
+           ctp:hasIndex "3"^^xsd:positiveInteger ;
            ctp:hasItem :Iglesia_de_San_Salvador_de_Vilar_de_Donas ;
            ctp:nextItem :Index04 ;
            ctp:previousItem :Index02 .
@@ -429,7 +434,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Index04
 :Index04 a ctp:OrderedListSlot ;
-           ctp:hasIndex 4 ;
+           ctp:hasIndex "4"^^xsd:positiveInteger ;
            ctp:hasItem :Catedral_de_Santiago_de_Compostela ;
            ctp:previousItem :Index03 .
 
@@ -537,7 +542,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France
 <https://w3id.org/ctp/santiagodecompostela#Avenue_de_l_Europe_F-67075_Strasbourg_Cedex_France> a ctp:Place ;
-                                                                                                 ctp:hasCentroid "48.59492549284726, 7.773523691421236"^^rdfs:Literal ;
+                                                                                                 ctp:hasCentroid "48.59492549284726, 7.773523691421236"^^geosparql:wktLiteral ;
                                                                                                  ctp:hasTitle "Avenue de l'Europa F-67075 Strasburgo Cedex, Francia"@it ,
                                                                                                               "Avenue de l'Europe F-67075 Strasbourg Cedex, France"@fr ,
                                                                                                               "Avenue of Europe F-67075 Strasbourg Cedex, France"@it ;
@@ -546,7 +551,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain
 <https://w3id.org/ctp/santiagodecompostela#Catedral_de_Santiago_de_Compostela_Spain> a ctp:Place ;
-                                                                                       ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^rdfs:Literal ;
+                                                                                       ctp:hasCentroid "42.88086088375868, -8.543676555620761"^^geosparql:wktLiteral ;
                                                                                        ctp:hasTitle "Catedral de Santiago de Compostela, España"@es ,
                                                                                                     "Cattedrale di Santiago de Compostela, Italia"@it ,
                                                                                                     "Santiago de Compostela Cathedral, Spain"@en ;
@@ -555,7 +560,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross_Assisi_Italy
 <https://w3id.org/ctp/santiagodecompostela#Church_of_the_Holy_Cross_Assisi_Italy> a ctp:Place ;
-                                                                                    ctp:hasCentroid "43.082236792101796, 12.615436731593"^^rdfs:Literal ;
+                                                                                    ctp:hasCentroid "43.082236792101796, 12.615436731593"^^geosparql:wktLiteral ;
                                                                                     ctp:hasTitle "Chiesa della Santa Croce, Assisi, Italia"@it ,
                                                                                                  "Church of Holy Cross, Assisi, Italy"@en ;
                                                                                     ctp:isLocationOf :Church_of_the_Holy_Cross .
@@ -566,7 +571,7 @@ ctp:Type rdf:type owl:Class .
                                                                                     ctp:hasBoundingBox """POLYGON ((
 44.4113889 8.931388888888888 , 44.4116667 8.931388888888888
 44.4105556 8.934722222222222 , 44.4108333 , 8.935
-))"""^^rdfs:Literal ;
+))"""^^geosparql:wktLiteral ;
                                                                                     ctp:hasTitle "Giuseppe Garibaldi street, Genoa, Italy"@en ,
                                                                                                  "Via Giuseppe Garibaldi, Genova, Italia"@it ;
                                                                                     ctp:isLocationOf :Strada_Nuova .
@@ -574,7 +579,7 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain
 <https://w3id.org/ctp/santiagodecompostela#Iglesia_de_San_Salvador_de_Vilar_de_Donas_Palas_de_Rei_Spain> a ctp:Place ;
-                                                                                                           ctp:hasCentroid "42.89254902812202, -7.807993849231925"^^rdfs:Literal ;
+                                                                                                           ctp:hasCentroid "42.89254902812202, -7.807993849231925"^^geosparql:wktLiteral ;
                                                                                                            ctp:hasTitle "Church of San Salvador de Vilar de Donas, Palas de Rei, Spain"@en ,
                                                                                                                         "Iglesia de San Salvador de Vilar de Donas, Palais de Rei, España"@es ;
                                                                                                            ctp:isLocationOf :Iglesia_de_San_Salvador_de_Vilar_de_Donas .

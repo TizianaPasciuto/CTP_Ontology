@@ -161,7 +161,25 @@ skos:changeNote rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
+skos:definition rdf:type owl:AnnotationProperty ;
+                owl:equivalentProperty ctp:hasDescription ;
+                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                rdfs:label "description"@en ;
+                skos:definition "A statement or formal explanation of the meaning of a concept."@en ;
+                rdfs:subPropertyOf skos:note .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel  rdfs:label "preferred label"@en ;
+                owl:equivalentProperty ctp:hasTitle ;
+                rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                skos:definition "The preferred lexical label for a resource, in a given language."@en ;
+                rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf rdfs:label ;
+                rdfs:comment "A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag."@en ;
+                rdfs:comment "The range of skos:prefLabel is the class of RDF plain literals."@en ;
+                rdfs:comment "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise\n disjoint properties."@en ;
+                rdf:type rdf:Property .
 
 
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
@@ -444,6 +462,11 @@ dcat:landingPage rdf:type owl:ObjectProperty ;
                              "Si la distribuciÃ³n es accesible solamente travÃ©s de una pÃ¡gina de aterrizaje (i.e., no se conoce una URL de descarga directa), entonces el enlance a la pÃ¡gina de aterrizaje debe ser duplicado como accessURL sobre la distribuciÃ³n."@es ,
                              "Hvis en eller flere distributioner kun er tilgÃ¦ngelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), sÃ¥ bÃ¸r destinationssidelinket gentages som adgangsadresse for en distribution."@da .
 
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty ctp:conformsTo .
+
 #################################################################
 #    Data properties
 #################################################################
@@ -568,6 +591,15 @@ foaf:name rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+
+###  http://purl.org/dc/terms/Standard
+dcterms:Standard rdf:type owl:Class ;
+                 owl:equivalentClass ctp:Standard ;
+                 rdfs:comment "A reference point against which other things can be evaluated or compared."@en ;
+                 rdfs:isDefinedBy dcterms: ;
+                 rdfs:label "Standard"@en .
+
 
 ###  http://purl.org/dc/terms/Location
 dcterms:Location rdf:type owl:Class ;
@@ -773,6 +805,7 @@ dcterms:type dcterms:description "Recommended practice is to use a controlled vo
              rdfs:comment "The nature or genre of the resource."@en ;
              rdfs:isDefinedBy dcterms: ;
              rdfs:label "Type"@en .
+
 
 #################################################################
 #    Individuals

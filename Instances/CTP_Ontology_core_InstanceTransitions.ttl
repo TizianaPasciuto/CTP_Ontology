@@ -13,6 +13,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
 @base <https://w3id.org/ctp/transitions#> .
 
@@ -208,6 +209,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2001/XMLSchema#gYear
 xsd:gYear rdf:type rdfs:Datatype .
+
+
+### http://www.opengis.net/ont/geosparql#asWKT
+geosparql:wktLiteral rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -710,7 +715,7 @@ ctp:Type rdf:type owl:Class .
                ctp:isRealizedIn :Transitions_exhibition ;
                ctp:landingPage <www.transitions-ansaldofoundation.it> ;
                ctp:refersToAgent <http://viaf.org/viaf/247468924> ;
-               ctp:refersToTemporalEntity <https://w3id.org/ctp/transitions#1850/2023> .
+               ctp:refersToTemporalEntity <https://w3id.org/ctp/transitions#1850_2023> .
 
 
 ###  https://w3id.org/ctp/transitions#Transitions_catalogue
@@ -726,7 +731,7 @@ ctp:Type rdf:type owl:Class .
                           ctp:hasDescription "Mostra TRANSIZIONI Ι impresa – lavoro – società Una mostra che invita a riflettere sui grandi cambiamenti del Novecento attraverso fotografie, filmati e opere d’arte. Palazzo Reale, Teatro del Falcone dal 22 febbraio al 10 aprile 2023 – PROROGATA AL 25 APRILE 2023. Palazzo Reale di Genova, ospita nella sua sede espositiva del Teatro del Falcone, fino al 25 aprile 2023 la mostra a cura della Fondazione Ansaldo TRANSIZIONI Ι impresa – lavoro – società. Le grandi transizioni del Novecento sono i temi attorno ai quali si snoda il percorso espositivo, suddiviso in tre macroaree: Impresa, Lavoro e Società. Il ricco corredo fotografico e audiovisivo proveniente dagli archivi della Fondazione è ulteriormente impreziosito da una nutrita selezione di opere d’arte provenienti da musei pubblici e collezioni private che hanno lo scopo di illustrare il rapporto arte-industria. Infine, ampio spazio è dato alla Street art, forma di arte contemporanea e urbana per eccellenza, simbolo delle nevrosi, dei bisogni, della rabbia e dei desideri delle nuove generazioni. Approfondimento alla pagina della Fondazione Ansaldo. Ingresso gratuito. Orari di apertura coincidenti con quelli del Museo consultabili alla pagina Orari e biglietti."@it ,
                                              "Exhibition TRANSITIONS Ι enterprise - labor - society An exhibition inviting reflection on the great changes of the 20th century through photographs, films and works of art. Palazzo Reale, Falcone Theater from Feb. 22 to April 10, 2023 - POSTPONED TO APRIL 25, 2023. Palazzo Reale in Genoa, hosts in its exhibition venue of the Falcone Theater, until April 25, 2023 the exhibition curated by the Ansaldo Foundation TRANSIZIONI Ι impresa - lavoro - società. The great transitions of the twentieth century are the themes around which the exhibition is divided into three macro-areas: Enterprise, Work and Society. The rich photographic and audiovisual collection from the Foundation's archives is further enhanced by a large selection of artworks from public museums and private collections that aim to illustrate the art-industry relationship. Finally, ample space is given to Street art, a contemporary and urban art form par excellence, a symbol of the neuroses, needs, anger and desires of the new generations. Read more at the Ansaldo Foundation page. Free admission. Opening hours coinciding with those of the museum can be found on the Timetable and Tickets page."@en ;
                         ctp:hasRelationToAgent :Curator_1 ;
-                        ctp:hasTime <https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> ;
+                        ctp:hasTime <https://w3id.org/ctp/transitions#2023-02-22_2023-04-25> ;
                         ctp:hasTitle "Mostra Transizioni"@it ,
                                      "Transitions Exhibition"@en ;
                         ctp:landingPage <https://palazzorealegenova.cultura.gov.it/mostra-transizioni/> ;
@@ -780,8 +785,8 @@ ctp:Type rdf:type owl:Class .
                                           ctp:hasDate "1850"^^xsd:gYear .
 
 
-###  https://w3id.org/ctp/transitions#1850/2023
-<https://w3id.org/ctp/transitions#1850/2023> a ctp:Interval ;
+###  https://w3id.org/ctp/transitions#1850_2023
+<https://w3id.org/ctp/transitions#1850_2023> a ctp:Interval ;
                                                rdfs:label "Industrial revolution"@en ,
                                                           "Rivoluzione industriale"@it ;
                                                ctp:hasBeginning <https://w3id.org/ctp/transitions#1850> ;
@@ -815,8 +820,8 @@ ctp:Type rdf:type owl:Class .
                                                 ctp:hasDate "2023-02-22"^^xsd:date .
 
 
-###  https://w3id.org/ctp/transitions#2023-02-22/2023-04-25
-<https://w3id.org/ctp/transitions#2023-02-22/2023-04-25> a ctp:Interval ;
+###  https://w3id.org/ctp/transitions#2023-02-22_2023-04-25
+<https://w3id.org/ctp/transitions#2023-02-22_2023-04-25> a ctp:Interval ;
                                                            rdfs:label "2023-02-22/2023-04-24" ;
                                                            ctp:hasBeginning <https://w3id.org/ctp/transitions#2023-02-22> ;
                                                            ctp:hasEnd <https://w3id.org/ctp/transitions#2023-04-25> ;
@@ -846,14 +851,14 @@ ctp:Type rdf:type owl:Class .
 
 ###  https://w3id.org/ctp/transitions#Falcone_Theater_Royal_Palace_Genoa_Italy
 <https://w3id.org/ctp/transitions#Falcone_Theater_Royal_Palace_Genoa_Italy> a ctp:Place ;
-                                                                              ctp:hasCentroid "44.414913 8.92616"^^rdfs:Literal ;
+                                                                              ctp:hasCentroid "44.414913 8.92616"^^geosparql:wktLiteral ;
                                                                               ctp:hasTitle "Falcone Theater, Royal Palace, Genoa, Italy"@en ,
                                                                                            "Teatro del Falcone, Palazzo Reale, Genova, Italia"@it .
 
 
 ###  https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo_Genoa_Italy
 <https://w3id.org/ctp/transitions#Villa_Cattaneo_dell_Olmo_Genoa_Italy> a ctp:Place ;
-                                                                          ctp:hasCentroid "44.4355125628061, 8.88577224883766"^^rdfs:Literal ;
+                                                                          ctp:hasCentroid "44.4355125628061, 8.88577224883766"^^geosparql:wktLiteral ;
                                                                           ctp:hasTitle "Villa Cattaneo dell'Olmo, Genoa, Italy"@en ,
                                                                                        "Villa Cattaneo dell'Olmo, Genova, Italia"@it ;
                                                                           ctp:isPlaceOf :Holder_1 .
