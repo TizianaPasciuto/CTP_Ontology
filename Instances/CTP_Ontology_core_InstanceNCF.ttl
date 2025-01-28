@@ -18,14 +18,14 @@
 @base <https://w3id.org/ctp/ncf#> .
 
 <https://w3id.org/ctp/ncf#> rdf:type owl:Ontology ; 
-                             dcterms:created "2024-03-06"^^xsd:date ;
+                             dcterms:created "2025-01-14"^^xsd:date ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "DigitXL - Novum Corpus Fontanianum"@en ;
                              dcterms:description: "Questo scenario mira a celebrare il lascito dello scienziato Felice Fontana compilando i suoi lavori professionali in un'opera omnia completa disponibile sia alla comunità scientifica che al pubblico in generale. Come figura di spicco nella comunità della ricerca scientifica italiana ed europea durante i secoli XVIII e XIX, Fontana ha condotto studi in vari campi delle scienze naturali, pionieristici nei metodi all'avanguardia, nei modelli e negli strumenti analitici."@it ,
                                                   "This scenario aims to celebrate the legacy of the scientist Felice Fontana by compiling his professional works into a comprehensive opera omnia available to both the scientific community and the general public. As prominent figure in the Italian and European scientific research community during the 18th and 19th centuries, Fontana conducted studies across various natural science fields, pioneering cutting-edge methods, models, and analytical tools."@en ;
                              vann:preferredNamespacePrefix "ctp_ncf" ;
                              rdfs:label "DigitXL - Novum Corpus Fontanianum"@en ;
-                             owl:versionInfo "0.0.1" .
+                             owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties

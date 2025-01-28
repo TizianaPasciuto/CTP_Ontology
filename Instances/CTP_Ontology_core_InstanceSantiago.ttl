@@ -18,14 +18,14 @@
 @base <https://w3id.org/ctp/santiagodecompostela#> .
 
 <https://w3id.org/ctp/santiagodecompostela#> rdf:type owl:Ontology ; 
-                                              dcterms:created "2024-03-06"^^xsd:date ;
+                                              dcterms:created "2025-01-14"^^xsd:date ;
                                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                               dcterms:title "Cultural Routes - Camino de Santiago de Compostela"@en ;
                                               dcterms:description: "Il seguente scenario mira a promuovere i principi fondamentali e i valori fondamentali della cultura europea attraverso l'istituzione di itinerari culturali. Questi itinerari non sono semplicemente percorsi fisici, ma veri e propri canali per il dialogo interculturale, servendo come mezzo per superare le barriere geografiche e le differenze storiche. Gli itinerari culturali diventano un veicolo per una comprensione più profonda della storia europea, creando un ponte tra il passato e il presente."@it ,
                                                                    "The following scenario aims to promote the fundamental principles and foundational values of European culture through the establishment of cultural itineraries. These itineraries are not merely physical routes but genuine channels for intercultural dialogue, serving as a means to overcome geographic barriers and historical differences. Cultural itineraries become a vehicle for a deeper understanding of European history, creating a bridge between the past and the present."@en ;
                                               vann:preferredNamespacePrefix "ctp_sc" ;
                                               rdfs:label "Cultural Routes - Camino de Santiago de Compostela"@en ;
-                                              owl:versionInfo "0.0.1" .
+                                              owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties

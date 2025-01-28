@@ -18,14 +18,14 @@
 @base <https://w3id.org/ctp/transitions#> .
 
 <https://w3id.org/ctp/transitions#> rdf:type owl:Ontology ;
-                                    dcterms:created "2024-03-06"^^xsd:date ; 
+                                    dcterms:created "2025-01-14"^^xsd:date ; 
                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                     dcterms:title "Exhibition Transitions | enterprise - work - society"@en ;
                                     dcterms:description: "Lo scopo di questo scenario è mantenere viva la memoria della mostra Transizioni | impresa - lavoro - società, organizzata dalla Fondazione Ansaldo e tenutasi presso il Teatro Falcone del Palazzo Reale di Genova dal 22 febbraio al 25 aprile 2023. La mostra ha raccontato l'evoluzione di tre percorsi sub-tematici interconnessi (impresa, lavoro e società) associati allo sviluppo della Fondazione Ansaldo, che va dalla sua nascita nei primi anni del 1850 fino ai giorni nostri."@it ,
                                                          "The purpose of this scenario is to keep the memory alive of the exhibition Transitions | enterprise - work - society, organized by the Ansaldo Foundation and held at the Falcone Theater of the Royal Palace of Genoa from 22 February to 25 April 2023. The exhibition recounted the evolution of three interconnected sub-thematic paths (enterprise, work, and society) associated with the development of the Ansaldo Company, spanning from its inception in the early 1850s to the present day."@en ;
                                     vann:preferredNamespacePrefix "ctp_trns" ;
                                     rdfs:label "Exhibition Transitions | enterprise - work - society"@en ;
-                                    owl:versionInfo "0.0.1" .
+                                    owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
