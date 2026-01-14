@@ -19,6 +19,9 @@ Other links are for specific pieces of documentation:
 + `https://w3id.org/ctp/ncf` for the ontology instantiation related to DigitXL - Novum Corpus Fontanianum scenario;
 + `https://w3id.org/ctp/santiagodecompostela` for the ontology instantiation related to Cultural Routes - Camino de Santiago de Compostela scenario;
 + `https://w3id.org/ctp/transitions` for the ontology instantiation related to the exhibition Transitions | enterprise - work - society scenario.
++ `https://w3id.org/ctp/git` the Git in which the ontology sources and pertaining materials are available
++ `https://w3id.org/ctp/diagram` the URI to the diagram of the ontology in different formats
+
 
 ## Development  
 The development of the ontology on Cultural Thematic Paths follows the Linked Open Terms (LOT) methodology, as outlined by [Poveda-Villalón et al.](https://www.sciencedirect.com/science/article/pii/S0952197622000525)  
