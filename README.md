@@ -65,12 +65,12 @@ The documentation for the Cultural Thematic Path Ontology is realized using [WID
 The objective of this activity is to update the ontology during its life cycle, detecting bugs and new requirements.  
 
 ## Mappings
-In‑progress mappings to third‑party ontologies are available in the mapping directory and can be accessed via the persistent URI pattern:
+In‑progress mappings to third‑party ontologies are available in the `mapping` directory and can be accessed via the persistent URI pattern:
 
-https://w3id.org/ctp/mapping/[mappingName]
+`https://w3id.org/ctp/mapping/[mappingName]`
 
 For example:
 
-https://w3id.org/ctp/mapping/LinkedArt
+`https://w3id.org/ctp/mapping/LinkedArt`
 
 These mappings differ from alignments, as they are intended as conceptual correspondences rather than directly actionable alignments.
