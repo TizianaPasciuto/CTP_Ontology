@@ -1,0 +1,581 @@
+@prefix : <https://w3id.org/ctp/arci/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ctp: <https://w3id.org/ctp#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix powder-s: <http://www.w3.org/2007/05/powder-s#> .
+@base <https://w3id.org/ctp/arci/> .
+
+<https://w3id.org/ctp/arci/> rdf:type owl:Ontology ; 
+                             dcterms:created "2026-10-01"^^xsd:date ;
+                             dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                             dcterms:title "Arcimboldo, l'artista che faceva ritratti con la natura"@it ,
+                                           "Arcimboldo, the artist who made portraits with nature"@en ;
+                             dcterms:description: "Un artista manierista dell'Italia rinascimentale"@it ;
+                             vann:preferredNamespacePrefix "ctp_arci" ;
+                             rdfs:label "Arcimboldo"@en ,
+                                        "Arcimboldo"@it;
+                             owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description:
+dcterms:description: rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#memberOf
+org:memberOf rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#conformsTo
+ctp:conformsTo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#conveys
+ctp:conveys rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasBeginning
+ctp:hasBeginning rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasCentroid
+ctp:hasCentroid rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasCreationDate
+ctp:hasCreationDate rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasCreator
+ctp:hasCreator rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasDate
+ctp:hasDate rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasDescription
+ctp:hasDescription rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasEnd
+ctp:hasEnd rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasIndex
+ctp:hasIndex rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasItem
+ctp:hasItem rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasMember
+ctp:hasMember rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasName
+ctp:hasName rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasNotation
+ctp:hasNotation rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasPlace
+ctp:hasPlace rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasPrimaryIdentifier
+ctp:hasPrimaryIdentifier rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasRelationToAgent
+ctp:hasRelationToAgent rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasRole
+ctp:hasRole rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSecondaryIdentifier
+ctp:hasSecondaryIdentifier rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSecondaryMetadataDescription
+ctp:hasSecondaryMetadataDescription rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSlot
+ctp:hasSlot rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasSubject
+ctp:hasSubject rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTheme
+ctp:hasTheme rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTime
+ctp:hasTime rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasTitle
+ctp:hasTitle rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#hasType
+ctp:hasType rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#includes
+ctp:includes rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#involves
+ctp:involves rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#isIncludedIn
+ctp:isIncludedIn rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#isInspiredByAgent
+ctp:isInspiredByAgent rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#isPartOf
+ctp:isPartOf rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#linkToResource
+ctp:linkToResource rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#memberOf
+ctp:memberOf rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#nextItem
+ctp:nextItem rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ctp#previousItem
+ctp:previousItem rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonth
+xsd:gYearMonth rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ctp#CulturalResource
+ctp:CulturalResource rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Group
+ctp:Group rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Identifier
+ctp:Identifier rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Interval
+ctp:Interval rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Istant
+ctp:Istant rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#OrderedListSlot
+ctp:OrderedListSlot rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Organization
+ctp:Organization rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Person
+ctp:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Place
+ctp:Place rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#RelationToAgent
+ctp:RelationToAgent rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Role
+ctp:Role rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#SecondaryMetadataDescription
+ctp:SecondaryMetadataDescription rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Subject
+ctp:Subject rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#ThematicPath
+ctp:ThematicPath rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Theme
+ctp:Theme rdf:type owl:Class .
+
+
+###  https://w3id.org/ctp#Type
+ctp:Type rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.getty.edu/page/aat/300054138
+<http://vocab.getty.edu/page/aat/300054138> a ctp:Subject ;
+                                         rdfs:label "art(discipline)"@en ,
+                                         rdfs:label "arte(disciplina)"@it;
+                                         ctp:hasDescription "Discipline that concerns expertise or the study of objects, environments, or experiences (as in performance art) that are visual in nature, were created by the use of skill and imagination, and possess an aesthetic that is valued and of a quality and type that would be collected by art museums. It may refer to the study of the fine arts or the fine and decorative arts together. The meaning is broader than works of art or art objects, including architecture as well."@en ;
+                                         ctp:hasPrimaryIdentifier "aat/300054138"^^rdfs:Literal ;
+                                         ctp:hasTitle "art(discipline)"@en ;
+                                         ctp:landingPage <http://vocab.getty.edu/page/aat/300054138> .
+
+
+###  https://orcid.org/0000-0002-2440-2376
+<https://orcid.org/0000-0002-2440-2376> a ctp:Person ;
+                                          foaf:homepage <https://orcid.org/0000-0002-2440-2376> ;
+                                          ctp:hasName "Tiziana Pasciuto" .
+
+### https://viaf.org/en/viaf/22412735
+<https://viaf.org/en/viaf/22412735> a ctp:Person ;
+                                      foaf:homepage <https://viaf.org/en/viaf/22412735> ;
+                                      ctp:hasName "Giuseppe Arcimboldo" .
+
+###  https://pro.europeana.eu/person/adrian-murphy
+<https://pro.europeana.eu/person/adrian-murphy> a ctp:Person ;
+                                                  foaf:homepage <https://pro.europeana.eu/person/adrian-murphy> ;
+                                                  ctp:hasName "Adrian Murphy" .
+
+                                          
+###  https://w3id.org/ctp/arci/Arcimboldo_theme
+:Arcimboldo_theme a ctp:Theme ;
+                 ctp:hasDescription "Chi era Giuseppe Arcimboldo e perché dipingeva piante, frutta, verdura e fiori nei suoi ritratti?"@it ;
+                 ctp:hasSubject <http://id.loc.gov/authorities/subjects/sh85004835> ;
+                 ctp:hasTitle "Arcimboldo"@it ,
+                              "Arcimboldo"@en .
+
+
+###  https://w3id.org/ctp/arci/Arcimboldo_tp
+:Anatomy_tp a ctp:ThematicPath ;
+              ctp:hasCreationDate "2025-04-05"^^xsd:date ;
+              ctp:hasRelationToAgent :Creator_1 ,
+                                     :Creator_2 ;
+              ctp:hasSlot :Index01 ,
+                          :Index02 , 
+                          :Index03 ,
+                          :Index04 ,
+                          :Index05 ,
+                          :Index06 ,
+                          :Index07 ,
+                          :Index08 , 
+                          :Index09 ,
+                          :Index10 ;
+              ctp:hasSubject <http://vocab.getty.edu/page/aat/300054138> ;
+              ctp:hasTheme :Arcimboldo_theme ;
+              ctp:hasTitle "Arcimboldo"@en , 
+                           "Arcimboldo"@it ;
+              ctp:landingPage <https://www.europeana.eu/it/stories/arcimboldo-the-artist-who-made-portraits-with-nature> .
+
+
+###  https://w3id.org/ctp/arci/Author_1
+:Author_1 a ctp:RelationToAgent ;
+            rdfs:label "Author"@en ;
+            ctp:hasRole <http://vocab.getty.edu/aat/300025492> ;
+            ctp:hasTitle "Author"@en ;
+            ctp:involves <https://viaf.org/en/viaf/22412735> ;
+                ctp:isRelatedTo <https://www.europeana.eu/it/item/15502/GG_4510> ,
+                                <> .
+
+
+###  https://w3id.org/ctp/arci/Creator_1
+:Creator_1 a ctp:RelationToAgent ;
+             rdfs:label "Creator"@en ;
+             ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+             ctp:hasTitle "Creator"@en ;
+             ctp:involves <https://orcid.org/0000-0002-2440-2376> ;
+             ctp:isRelatedTo :Arcimboldo_tp .
+
+
+###  https://w3id.org/ctp/arci/Creator_2
+:Creator_2 a ctp:RelationToAgent ;
+             rdfs:label "Creator"@en ;
+             ctp:hasRole <http://vocab.getty.edu/aat/300386174> ;
+             ctp:hasTitle "Creator"@en ;
+             ctp:involves <https://pro.europeana.eu/person/adrian-murphy> ;
+             ctp:isRelatedTo :Arcimboldo_tp .
+
+
+###  https://www.europeana.eu/it/item/15502/GG_4510
+<https://www.europeana.eu/it/item/15502/GG_4510> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/15502/GG_4510"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ,
+                                                                          :Holder_1 ;
+                                              ctp:hasTitle "Erzherzogin Magdalena (1532-1590), Brustbild"@de ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_4510> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_4510> .
+
+
+###  https://www.europeana.eu/it/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_32631?lang=
+<https://www.europeana.eu/it/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_32631?lang=> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/2064105"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1  ;
+                                              ctp:hasTitle "Vertumnus"@de ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_32631?lang=> .
+
+
+###  https://www.europeana.eu/it/item/2022703/pages_Main_idt_121867_inventary_0606_table_FMUS_museum_MRABASF
+<https://www.europeana.eu/it/item/2022703/pages_Main_idt_121867_inventary_0606_table_FMUS_museum_MRABASF> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/2022703"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ;
+                                              ctp:hasTitle "La Primavera"@it ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/2022703/pages_Main_idt_121867_inventary_0606_table_FMUS_museum_MRABASF> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/2022703/pages_Main_idt_121867_inventary_0606_table_FMUS_museum_MRABASF> .
+
+
+###  https://www.europeana.eu/it/item/15502/GG_1589
+<https://www.europeana.eu/it/item/15502/GG_1589> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/15502/GG_1589"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ;
+                                              ctp:hasTitle "Summer"@en ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_1589> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_1589> .
+
+
+###  https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Autumn,_1573.jpg
+<https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Autumn,_1573.jpg> a ctp:CulturalResource ;
+                                                   ctp:hasRelationToAgent :Author_1 ;
+                                              ctp:hasTitle "Autumn"@en ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Autumn,_1573.jpg> ;
+                                              ctp:linkToDigitalization <https://upload.wikimedia.org/wikipedia/commons/b/bf/Giuseppe_Arcimboldo_-_Autumn%2C_1573.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original> .
+
+
+###  https://www.europeana.eu/it/item/15502/GG_1590
+<https://www.europeana.eu/it/item/15502/GG_1590> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/15502/GG_1590"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ,
+                                                                          :Holder_1 ;
+                                              ctp:hasTitle "Summer"@en ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_1590> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_1590> .
+
+
+###  https://www.europeana.eu/it/item/15502/GG_1585
+<https://www.europeana.eu/it/item/15502/GG_1585> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/15502/GG_1585"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ,
+                                                                          :Holder_1 ;
+                                              ctp:hasTitle "Feuer"@de ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_1585> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_1585> .
+
+
+###  https://www.europeana.eu/it/item/15502/GG_1586
+<https://www.europeana.eu/it/item/15502/GG_1586> a ctp:CulturalResource ;
+                                                   ctp:hasPrimaryIdentifier "item/15502/GG_1586"^^rdfs:Literal ;
+                                                   ctp:hasRelationToAgent :Author_1 ,
+                                                                          :Holder_1 ;
+                                              ctp:hasTitle "Wasser"@de ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_1586> ;
+                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_1586> .
+
+
+###  https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Earth_-_WGA0823.jpg
+<https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Earth_-_WGA0823.jpg> a ctp:CulturalResource ;
+                                                   ctp:hasRelationToAgent :Author_1 ;
+                                              ctp:hasTitle "Earth"@en ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Earth_-_WGA0823.jpg> ;
+                                              ctp:linkToDigitalization <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Earth_-_WGA0823.jpg> .
+
+
+###  https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_Air.jpg
+<https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_Air.jpg> a ctp:CulturalResource ;
+                                                   ctp:hasRelationToAgent :Author_1 ;
+                                              ctp:hasTitle "Air"@en ;
+                                              ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
+                                              ctp:isPartOf :Arcimboldo_tp ;
+                                              ctp:landingPage <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_Air.jpg> ;
+                                              ctp:linkToDigitalization <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_Air.jpg> .
+
+
+###  https://w3id.org/ctp/arci/Holder_1
+:Holder_1 a ctp:RelationToAgent ;
+            rdfs:label "Holder"@en ;
+            ctp:hasRole <http://vocab.getty.edu/aat/300160390> ;
+            ctp:hasTitle "Holder"@en ;
+            ctp:involves <https://viaf.org/en/viaf/126584224> ;
+            ctp:isRelatedTo <https://www.europeana.eu/it/item/15502/GG_4510> ,
+                            <> .
+
+
+###  https://w3id.org/ctp/arci/Index01
+:Index01 a ctp:OrderedListSlot ;
+           ctp:hasIndex 1 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/15502/GG_4510> ;
+           ctp:nextItem :Index02 .
+
+
+###  https://w3id.org/ctp/arci/Index02
+:Index02 a ctp:OrderedListSlot ;
+           ctp:hasIndex 2 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_32631?lang=> ;
+           ctp:nextItem :Index03 ;
+           ctp:previousItem :Index01 .
+
+
+###  https://w3id.org/ctp/arci/Index03
+:Index03 a ctp:OrderedListSlot ;
+           ctp:hasIndex 3 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/2022703/pages_Main_idt_121867_inventary_0606_table_FMUS_museum_MRABASF> ;
+           ctp:nextItem :Index04 ;
+           ctp:previousItem :Index02 .
+
+
+###  https://w3id.org/ctp/arci/Index04
+:Index04 a ctp:OrderedListSlot ;
+           ctp:hasIndex 4 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/15502/GG_1589> ;
+           ctp:nextItem :Index05 ;
+           ctp:previousItem :Index03 .
+
+
+###  https://w3id.org/ctp/arci/Index05
+:Index05 a ctp:OrderedListSlot ;
+           ctp:hasIndex 5 ;
+           ctp:hasItem <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Autumn,_1573.jpg> ;
+           ctp:nextItem :Index06 ;
+           ctp:previousItem :Index04 .
+
+
+###  https://w3id.org/ctp/arci/Index06
+:Index06 a ctp:OrderedListSlot ;
+           ctp:hasIndex 6 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/15502/GG_1590> ;
+           ctp:nextItem :Index07 ;
+           ctp:previousItem :Index05 .
+
+
+###  https://w3id.org/ctp/arci/Index07
+:Index07 a ctp:OrderedListSlot ;
+           ctp:hasIndex 7 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/15502/GG_1585> ;
+           ctp:nextItem :Index08 ;
+           ctp:previousItem :Index06 .
+
+
+###  https://w3id.org/ctp/arci/Index08
+:Index08 a ctp:OrderedListSlot ;
+           ctp:hasIndex 8 ;
+           ctp:hasItem <https://www.europeana.eu/it/item/15502/GG_1586> ;
+           ctp:nextItem :Index09 ;
+           ctp:previousItem :Index07 .
+
+
+###  https://w3id.org/ctp/arci/Index09
+:Index09 a ctp:OrderedListSlot ;
+           ctp:hasIndex 9 ;
+           ctp:hasItem <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_-_Earth_-_WGA0823.jpg> ;
+           ctp:nextItem :Index10 ;
+           ctp:previousItem :Index08 .
+
+
+###  https://w3id.org/ctp/arci/Index10
+:Index10 a ctp:OrderedListSlot ;
+           ctp:hasIndex 10 ;
+           ctp:hasItem <https://commons.wikimedia.org/wiki/File:Giuseppe_Arcimboldo_Air.jpg> ;
+           ctp:previousItem :Index09 .
+
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
